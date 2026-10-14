@@ -3141,3 +3141,39 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
   margin-bottom:0!important;
   padding-bottom:88px!important;
 }
+
+/* Rich journal notes (HTML body). Scoped so the paragraph notes are unchanged. */
+.ip-article-page .article-rich{max-width:1040px;margin:0 auto;padding-bottom:28px}
+.ip-article-page .article-rich .back-link{margin-bottom:28px}
+.ip-article-page .article-rich h1{font-family:'Manrope',Arial,sans-serif;font-weight:700;font-size:clamp(40px,5vw,64px);line-height:1.08;letter-spacing:-.04em;color:#f6f3ee;max-width:18ch;margin:0 0 18px}
+.ip-article-page .article-rich h2{font-family:'Manrope',Arial,sans-serif;font-weight:700;font-size:clamp(28px,3vw,36px);line-height:1.2;letter-spacing:-.03em;color:#f6f3ee;margin:56px 0 16px;scroll-margin-top:120px}
+.ip-article-page .article-rich h3{font-family:'Manrope',Arial,sans-serif;font-weight:700;font-size:24px;line-height:1.3;letter-spacing:-.03em;color:#f6f3ee;margin:36px 0 8px;scroll-margin-top:120px}
+.ip-article-page .article-rich h4{font-family:'Manrope',Arial,sans-serif;font-weight:600;font-size:12px;line-height:1.4;letter-spacing:.12em;text-transform:uppercase;color:#7fd1c3;margin:22px 0 6px}
+.ip-article-page .article-rich p{font-size:17px;line-height:1.8;color:#c9c8cf;margin-top:14px}
+.ip-article-page .article-rich h1+p{margin-top:0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#7fd1c3}
+.ip-article-page .article-rich h1+p+p{margin-top:8px;font-size:15px;letter-spacing:0;text-transform:none;font-weight:500;color:#ceb89f}
+.ip-article-page .article-rich strong{color:#f6f3ee;font-weight:600}
+.ip-article-page .article-rich a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}
+.ip-article-page .article-rich a:hover{color:#ffe2c9}
+.ip-article-page .article-rich ul,.ip-article-page .article-rich ol{margin:16px 0 0;padding-left:1.25em;color:#c9c8cf}
+.ip-article-page .article-rich li{margin:10px 0;font-size:16.5px;line-height:1.7}
+.ip-article-page .article-rich h2#contents+ul{list-style:none;padding:0;margin-top:8px;border-top:1px solid rgba(255,255,255,.12)}
+.ip-article-page .article-rich h2#contents+ul li{margin:0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ip-article-page .article-rich h2#contents+ul a{display:block;padding:13px 0;text-decoration:none;color:#f6f3ee}
+.ip-article-page .article-rich h2#contents+ul a:hover{color:#f2c7a4}
+.ip-article-page .article-rich figure{margin:28px 0 8px}
+.ip-article-page .article-rich img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
+.ip-article-page .article-rich figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:#8e8a84}
+.ip-article-page .article-rich blockquote{margin:28px 0;padding:22px 24px;border-left:3px solid #f07c32;border-radius:0 16px 16px 0;background:rgba(240,124,50,.08)}
+.ip-article-page .article-rich blockquote p{margin:0;color:#f6f3ee}
+.ip-article-page .article-rich .article-table{overflow-x:auto;margin:22px 0 8px;-webkit-overflow-scrolling:touch}
+.ip-article-page .article-rich table{width:100%;min-width:680px;border-collapse:collapse;font-size:14.5px;line-height:1.45}
+.ip-article-page .article-rich th,.ip-article-page .article-rich td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(255,255,255,.1);color:#c9c8cf}
+.ip-article-page .article-rich th{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9a9690}
+.ip-article-page .article-rich h2#find-out-where-your-brand-stands-in-ai-answers{margin-top:64px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
+.ip-article-page .article-rich h2#about-the-author+p{margin-top:16px;padding:22px 24px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.03)}
+@media(max-width:720px){
+ .ip-article-page .article-rich h1{font-size:34px}
+ .ip-article-page .article-rich h3{font-size:20px}
+ .ip-article-page .article-rich p,.ip-article-page .article-rich li{font-size:16px}
+}
