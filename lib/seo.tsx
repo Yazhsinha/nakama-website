@@ -11,13 +11,15 @@ export const OG_IMAGE={url:'/opengraph-image.png',width:1200,height:630,alt:'Nak
 export const FEEDS={'application/rss+xml':[{url:'/rss.xml',title:'Nakama Growth — Field notes'}]};
 
 /** Per-page metadata: canonical URL plus matching Open Graph and Twitter cards. */
-export function pageMeta(path:string,{title,description,type='website',publishedTime}:{title:string;description:string;type?:'website'|'article';publishedTime?:string}):Metadata{
+export function pageMeta(path:string,{title,description,type='website',publishedTime,modifiedTime,image,author}:{title:string;description:string;type?:'website'|'article';publishedTime?:string;modifiedTime?:string;image?:{url:string;width:number;height:number;alt:string;type?:string};author?:string}):Metadata{
+ const ogImage=image??OG_IMAGE;
  return {
   title:{absolute:title},
   description,
+  ...(author?{authors:[{name:author}]}:{}),
   alternates:{canonical:path,types:FEEDS},
-  openGraph:{type,url:path,siteName:SITE_NAME,title,description,locale:'en_IN',images:[OG_IMAGE],...(publishedTime?{publishedTime}:{})},
-  twitter:{card:'summary_large_image',title,description,images:['/twitter-image.png']},
+  openGraph:{type,url:path,siteName:SITE_NAME,title,description,locale:'en_IN',images:[ogImage],...(publishedTime?{publishedTime}:{}),...(modifiedTime?{modifiedTime}:{})},
+  twitter:{card:'summary_large_image',title,description,images:image?[image]:['/twitter-image.png']},
  };
 }
 
