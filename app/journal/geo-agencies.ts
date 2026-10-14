@@ -32,7 +32,15 @@ export const geoAgenciesJsonLd = {
     "description": "Co-founder and CEO of Nakama Growth, which runs generative and answer engine optimization for B2B and SaaS brands."
    },
    "publisher": {
-    "@id": "https://www.nakama.in/#organization"
+    "@type": "Organization",
+    "@id": "https://www.nakama.in/#organization",
+    "name": "Nakama Growth",
+    "url": "https://www.nakama.in",
+    "address": {
+     "@type": "PostalAddress",
+     "addressLocality": "Delhi",
+     "addressCountry": "IN"
+    }
    },
    "about": "Generative engine optimization agencies",
    "inLanguage": "en"
