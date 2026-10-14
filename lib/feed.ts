@@ -4,7 +4,7 @@ import {posts,caseStudies,openings} from '@/lib/content';
 /** The original article library shipped on 28 Sep 2026; admin posts carry their own date. */
 export const LIBRARY_DATE='2026-09-28';
 
-export function articleDate(slug:string){return posts.find(p=>p.slug===slug)?.date||LIBRARY_DATE;}
+export function articleDate(slug:string){return posts.find(p=>p.slug===slug)?.date||articles.find(a=>a.slug===slug)?.date||LIBRARY_DATE;}
 export const feedArticles=articles.map(a=>({...a,date:articleDate(a.slug)}));
 
 export const corePages:{path:string;title:string;summary:string;priority:number;freq:'weekly'|'monthly'|'yearly';src:string[]}[]=[
