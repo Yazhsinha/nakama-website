@@ -1,5 +1,6 @@
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Check} from 'lucide-react';
 import {Shell,Reveal} from '../site';
 import {IpAtmos,IpHero,IpSection,BookBtn,LinkBtn,FitSplit,IpFaq} from '../inner/kit';
@@ -45,6 +46,7 @@ export default function Pricing(){
    </IpHero>
 
    <IpSection id="plan">
+    <p className="pr-aeo-note">Comparing providers? See how <Link href="/journal/best-aeo-agencies#how-much-do-aeo-services-cost">AEO services cost</Link> across ten agencies.</p>
     <Reveal className="ip-card pr-one">
      <div className="pr-one-head">
       <div>
