@@ -3194,3 +3194,23 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 .next-article.has-image .next-article-img{flex:0 0 auto;width:260px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.1);display:block}
 .next-article.has-image>div{flex:1 1 auto;min-width:0}
 @media(max-width:700px){.next-article.has-image{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:18px 16px}.next-article.has-image .next-article-img{grid-column:1/-1;width:100%;max-width:100%}}
+
+/* Author profile page (/authors/<slug>). */
+.author-page .ip-hero h1{font-size:clamp(44px,6vw,76px)}
+.author-page .ip-hero.has-aside .ip-hero-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}
+.author-card{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.author-card img{display:block;width:min(280px,100%);height:auto;aspect-ratio:1/1;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.14);box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.author-card-role{margin:0;font:600 18px/1.3 'Manrope',Arial,sans-serif;color:#f6f3ee;letter-spacing:-.01em}
+.author-card-role small{display:block;margin-top:4px;font-size:14px;font-weight:500;color:#ceb89f}
+.author-bio{max-width:760px}
+.author-bio p{font-size:18px;line-height:1.75;color:#c9c8cf}
+.author-articles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px;margin-top:8px}
+.author-article{display:flex;flex-direction:column;gap:10px;height:100%;text-decoration:none;color:inherit}
+.author-article:hover{border-color:rgba(242,199,164,.45);transform:translateY(-2px)}
+.author-article-meta{font:600 12px/1.4 'Manrope',Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#7fd1c3}
+.author-article h3{margin:0;font:700 22px/1.3 'Manrope',Arial,sans-serif;letter-spacing:-.02em;color:#f6f3ee}
+.author-article p{margin:0;font-size:15.5px;line-height:1.65;color:#c9c8cf}
+.author-article-go{display:inline-flex;align-items:center;gap:6px;margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:#f2c7a4}
+@media(max-width:900px){.author-card img{width:200px}.author-page .ip-hero.has-aside .ip-hero-in{grid-template-columns:1fr}}
+.author-page .ip-section.author-bio-sec{padding-top:0;padding-bottom:0}
+.author-page .ip-section.author-bio-sec+.ip-section{padding-top:56px}

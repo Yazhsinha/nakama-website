@@ -1,5 +1,6 @@
 import {articles} from '@/app/journal/all';
 import {posts,caseStudies,openings} from '@/lib/content';
+import {authors,authorPath} from '@/lib/authors';
 
 /** The original article library shipped on 28 Sep 2026; admin posts carry their own date. */
 export const LIBRARY_DATE='2026-09-28';
@@ -16,6 +17,7 @@ export const corePages:{path:string;title:string;summary:string;priority:number;
  {path:'/about',title:'About',summary:'Who Nakama is and the principles behind the work.',priority:.7,freq:'monthly',src:['app/about']},
  {path:'/resources',title:'Resources',summary:'Field notes on AI visibility and an index of client work.',priority:.7,freq:'weekly',src:['app/resources', 'app/journal', 'content/posts.json', 'content/case-studies.json']},
  {path:'/careers',title:'Careers',summary:'Open roles at Nakama.',priority:.5,freq:'weekly',src:['app/careers', 'content/careers.json']},
+ ...authors.map(a=>({path:authorPath(a.slug),title:a.name,summary:`${a.jobTitle} of Nakama Growth, and author of the Nakama guides to AEO and GEO agencies.`,priority:.5,freq:'monthly' as const,src:['app/authors','lib/authors.ts']})),
  {path:'/contact',title:'Contact',summary:'Book a call, request a quote or email hello@nakama.in.',priority:.6,freq:'yearly',src:['app/contact']},
  {path:'/privacy',title:'Privacy',summary:'Privacy policy.',priority:.2,freq:'yearly',src:['app/privacy']},
  {path:'/terms',title:'Terms',summary:'Terms of service.',priority:.2,freq:'yearly',src:['app/terms']},

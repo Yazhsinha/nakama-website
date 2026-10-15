@@ -6,9 +6,10 @@ export const aeoAgenciesJsonLd = {
  "@graph": [
   {
    "@type": "Person",
-   "@id": "https://www.nakama.in/#yash-kumar",
+   "@id": "https://www.nakama.in/authors/yash-kumar#person",
    "name": "Yash Kumar",
    "jobTitle": "Co-founder and CEO",
+   "url": "https://www.nakama.in/authors/yash-kumar",
    "description": "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read.",
    "image": {
     "@type": "ImageObject",
@@ -93,7 +94,7 @@ export const aeoAgenciesJsonLd = {
    "articleSection": "Answer engine optimization",
    "keywords": "AEO agency, AEO agencies, AEO services, best AEO agencies, answer engine optimization agency",
    "author": {
-    "@id": "https://www.nakama.in/#yash-kumar"
+    "@id": "https://www.nakama.in/authors/yash-kumar#person"
    },
    "publisher": {
     "@id": "https://www.nakama.in/#organization"
@@ -825,7 +826,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <div class="author-box" id="yash-kumar">
 <img src="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.webp" srcset="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.webp 400w, /journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
 <div class="author-box-text">
-<p>Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>
+<p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>
 </div>
 </div>`;
 

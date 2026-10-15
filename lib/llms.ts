@@ -1,6 +1,7 @@
 import {abs,SITE_NAME,SITE_DESCRIPTION,CONTACT_EMAIL} from '@/lib/seo';
 import {corePages,feedArticles,caseStudies,openings} from '@/lib/feed';
 import {proofClients} from '@/app/proof-data';
+import {authors,authorUrl,articlesBy} from '@/lib/authors';
 
 const services=[
  ['AEO (answer engines)','Buyer-question research, answer-first content and FAQ structure, citation tracking.'],
@@ -71,6 +72,10 @@ ${services.map(([t,d])=>`### ${t}\n\n${d}`).join('\n\n')}
 Captured when each placement went live; live answers vary by location, account and date.
 
 ${proofClients.map(c=>`### ${c.name}\n\n${c.description}\n\n${c.entries.map(e=>`- ${e.platform} — query “${e.query}”: ${e.description}`).join('\n')}`).join('\n\n')}
+
+## Authors
+
+${authors.map(a=>`### ${a.name}, ${a.jobTitle}, Nakama Growth\n\nURL: ${authorUrl(a.slug)}\n\n${a.bio.join('\n\n')}\n\nArticles: ${articlesBy(a).map(x=>`[${x.title}](${abs(`/journal/${x.slug}`)})`).join('; ')}`).join('\n\n')}
 
 ## Articles
 

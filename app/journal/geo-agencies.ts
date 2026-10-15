@@ -21,6 +21,7 @@ export const geoAgenciesJsonLd = {
    ],
    "author": {
     "@type": "Person",
+    "@id": "https://www.nakama.in/authors/yash-kumar#person",
     "name": "Yash Kumar",
     "jobTitle": "Co-founder and CEO",
     "image": {
@@ -36,7 +37,7 @@ export const geoAgenciesJsonLd = {
      "name": "Nakama Growth",
      "url": "https://www.nakama.in"
     },
-    "url": "https://www.nakama.in",
+    "url": "https://www.nakama.in/authors/yash-kumar",
     "description": "Co-founder and CEO of Nakama Growth, which runs generative and answer engine optimization for B2B and SaaS brands."
    },
    "publisher": {
@@ -612,7 +613,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <div class="author-box" id="yash-kumar">
 <img src="/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo.webp" srcset="/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo.webp 400w, /journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
 <div class="author-box-text">
-<p><strong>Yash Kumar</strong> is Co-founder and CEO of Nakama Growth, a GEO and AEO agency based in India that runs generative and answer engine optimization for B2B and SaaS brands. Nakama gets brands named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to pick, by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites.</p>
+<p><strong><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a></strong> is Co-founder and CEO of Nakama Growth, a GEO and AEO agency based in India that runs generative and answer engine optimization for B2B and SaaS brands. Nakama gets brands named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to pick, by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites.</p>
 </div>
 </div>`;
 
