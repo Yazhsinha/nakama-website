@@ -3177,3 +3177,10 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
  .ip-article-page .article-rich h3{font-size:20px}
  .ip-article-page .article-rich p,.ip-article-page .article-rich li{font-size:16px}
 }
+
+/* AEO agencies guide: CTA heading styling (same treatment as the GEO guide) and the small internal links on /services and /pricing. */
+.ip-article-page .article-rich h2#where-does-your-brand-stand-in-ai-answers-today{margin-top:64px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
+.ip-svc .ip-svc-more{margin:10px 0 0;font-size:14px}
+.ip-svc .ip-svc-more a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}
+.pricing-page .pr-aeo-note{margin:0 0 18px;font-size:15px;color:#c9c8cf}
+.pricing-page .pr-aeo-note a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}

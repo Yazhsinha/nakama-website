@@ -1,4 +1,5 @@
 import {geoAgenciesArticle} from './geo-agencies';
+import {aeoAgenciesArticle} from './aeo-agencies';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -13,6 +14,7 @@ export type Article={
  bodyHtml?:string,
 };
 export const articles:Article[]=[
+ aeoAgenciesArticle,
  geoAgenciesArticle,
  {slug:'build-around-the-buyers-next-question',category:'Strategy',title:'Build around the buyer’s next question.',description:'A practical way to turn product expertise into a content plan built around the questions buyers ask next, so AI answers and search results can cite you.',readTime:'4 min read',motif:'question',sections:[
  {heading:'Start with uncertainty.',paragraphs:['A content plan often starts with a list of things a company wants to say. We prefer to begin one step earlier: what is a buyer still trying to understand? That question changes the shape of the work. It gives an article, a comparison or a video a clear reason to exist.','For a software product, the uncertainty might be about accuracy, team adoption, implementation or the effort of switching. A useful plan makes room for those specific concerns instead of treating every reader as if they are ready for a demo.']},
