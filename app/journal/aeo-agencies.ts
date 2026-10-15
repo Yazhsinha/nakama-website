@@ -839,6 +839,7 @@ export const aeoAgenciesArticle: Article = {
  metaTitle: "AEO Agencies and AEO Services: 10 Best (Oct 2026)",
  date: '2026-10-15',
  authorName: 'Yash Kumar',
+ coverImage: {src: '/journal/best-aeo-agencies/best-aeo-agencies-2026-cover.png', width: 1600, height: 900},
  ogImage: {
   url: 'https://www.nakama.in/journal/best-aeo-agencies/best-aeo-agencies-2026-og.png',
   width: 1200,

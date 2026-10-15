@@ -613,6 +613,7 @@ export const geoAgenciesArticle: Article = {
  metaTitle: "Best Generative Engine Optimization Agencies in 2026",
  date: '2026-10-14',
  authorName: 'Yash Kumar',
+ coverImage: {src: '/journal/best-generative-engine-optimization-agencies/best-generative-engine-optimization-agencies-cover.webp', width: 1920, height: 1080},
  ogImage: {
   url: 'https://www.nakama.in/journal/best-generative-engine-optimization-agencies/og-image.png',
   width: 1200,

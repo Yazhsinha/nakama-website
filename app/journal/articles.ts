@@ -12,6 +12,8 @@ export type Article={
  jsonLd?:object,
  /** When set, the note renders this HTML instead of the paragraph sections. */
  bodyHtml?:string,
+ /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Decorative: the title beside it names the article, so the image has an empty alt. */
+ coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
  aeoAgenciesArticle,

@@ -3188,3 +3188,9 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 .ip-article-page .article-rich .author-box img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
 .ip-article-page .article-rich .author-box-text p:first-child{margin-top:0}
 @media(max-width:560px){.ip-article-page .article-rich .author-box{grid-template-columns:1fr}}
+
+/* Optional image on the "Keep reading" card. Only applies when the next article has a coverImage. */
+.next-article.has-image{gap:32px}
+.next-article.has-image .next-article-img{flex:0 0 auto;width:260px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:14px;border:1px solid rgba(255,255,255,.1);display:block}
+.next-article.has-image>div{flex:1 1 auto;min-width:0}
+@media(max-width:700px){.next-article.has-image{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:18px 16px}.next-article.has-image .next-article-img{grid-column:1/-1;width:100%;max-width:100%}}
