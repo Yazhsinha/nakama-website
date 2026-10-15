@@ -110,15 +110,7 @@ export const aeoAgenciesJsonLd = {
     {
      "@type": "ListItem",
      "position": 1,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#1-nakama",
-     "item": {
-      "@id": "https://www.nakama.in/#organization"
-     }
-    },
-    {
-     "@type": "ListItem",
-     "position": 2,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#2-discovered-labs",
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#1-discovered-labs",
      "item": {
       "@type": "Organization",
       "name": "Discovered Labs",
@@ -127,8 +119,8 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 3,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#3-nogood",
+     "position": 2,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#2-nogood",
      "item": {
       "@type": "Organization",
       "name": "NoGood",
@@ -137,8 +129,8 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 4,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#4-omniscient-digital",
+     "position": 3,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#3-omniscient-digital",
      "item": {
       "@type": "Organization",
       "name": "Omniscient Digital",
@@ -147,8 +139,8 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 5,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#5-minuttia",
+     "position": 4,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#4-minuttia",
      "item": {
       "@type": "Organization",
       "name": "Minuttia",
@@ -157,8 +149,8 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 6,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#6-optimist",
+     "position": 5,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#5-optimist",
      "item": {
       "@type": "Organization",
       "name": "Optimist",
@@ -167,8 +159,8 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 7,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#7-first-page-sage",
+     "position": 6,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#6-first-page-sage",
      "item": {
       "@type": "Organization",
       "name": "First Page Sage",
@@ -177,12 +169,20 @@ export const aeoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 8,
-     "url": "https://www.nakama.in/journal/best-aeo-agencies#8-ipullrank",
+     "position": 7,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#7-ipullrank",
      "item": {
       "@type": "Organization",
       "name": "iPullRank",
       "url": "https://ipullrank.com"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "url": "https://www.nakama.in/journal/best-aeo-agencies#8-nakama",
+     "item": {
+      "@id": "https://www.nakama.in/#organization"
      }
     },
     {
@@ -294,12 +294,12 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 </blockquote>
 <p>The best AEO agency depends on your category, budget and team:</p>
 <ul>
-<li><strong>Nakama:</strong> SaaS and software brands that need to be named through off-site sources such as Reddit, YouTube, review sites and editorial.</li>
-<li><strong>Optimist:</strong> B2B tech teams that want AEO and SEO strategy together, with <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">its guide</a> quoting advising from USD 3,000 a month.</li>
 <li><strong>Discovered Labs:</strong> B2B SaaS teams that want published tiers and an in-house AI visibility tracker.</li>
-<li><strong>Omniscient Digital:</strong> B2B software companies with a larger budget, with <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">full-service engagements from USD 120,000 a year</a>.</li>
 <li><strong>NoGood:</strong> growth teams that want AEO next to paid media and creative, at premium retainers.</li>
+<li><strong>Omniscient Digital:</strong> B2B software companies with a larger budget, with <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">full-service engagements from USD 120,000 a year</a>.</li>
+<li><strong>Optimist:</strong> B2B tech teams that want AEO and SEO strategy together, with <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">its guide</a> quoting advising from USD 3,000 a month.</li>
 <li><strong>iPullRank:</strong> enterprise teams with complex search programs.</li>
+<li><strong>Nakama:</strong> SaaS and software brands that need to be named through off-site sources such as Reddit, YouTube, review sites and editorial.</li>
 </ul>
 <h2 id="key-takeaways">Key takeaways</h2>
 <ul>
@@ -326,7 +326,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <li><a href="#about-the-author">About the author</a></li>
 </ul>
 <h2 id="how-do-the-10-best-aeo-agencies-compare">How do the 10 best AEO agencies compare?</h2>
-<p>The 10 agencies below are compared on best fit, where each says it is based, published price and standout strength. The evidence matrix in the next section scores agencies on five checks, using what each publishes on its own site. Prices and locations come from each agency's own site, October 2026.</p>
+<p>The 10 agencies below are compared on best fit, where each says it is based, published price and standout strength, and are listed in the order of the evidence matrix in the next section, which scores all 10 on five checks. Prices and locations come from each agency's own site, October 2026.</p>
 <div class="article-table"><table>
 <thead>
 <tr>
@@ -341,14 +341,6 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <tbody>
 <tr>
 <td>1</td>
-<td>Nakama</td>
-<td>SaaS brands that need to be named via off-site sources</td>
-<td>India (no US office stated)</td>
-<td>Custom quote</td>
-<td>Off-site AEO and GEO with checkable queries</td>
-</tr>
-<tr>
-<td>2</td>
 <td>Discovered Labs</td>
 <td>B2B SaaS teams that want published tiers</td>
 <td>Not stated on pages we checked</td>
@@ -356,7 +348,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>In-house tracker, Reddit and PR work</td>
 </tr>
 <tr>
-<td>3</td>
+<td>2</td>
 <td>NoGood</td>
 <td>Growth teams wanting AEO plus paid and creative</td>
 <td>New York (Soho), Miami, Dubai</td>
@@ -364,7 +356,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Award-recognized AEO practice, SteelSeries case study</td>
 </tr>
 <tr>
-<td>4</td>
+<td>3</td>
 <td>Omniscient Digital</td>
 <td>B2B software companies with budget</td>
 <td>Five US addresses listed; team is distributed worldwide</td>
@@ -372,7 +364,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Named AEO case studies, demand modeling</td>
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
 <td>Minuttia</td>
 <td>Established B2B SaaS brands</td>
 <td>Not stated on pages we checked</td>
@@ -380,7 +372,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Free AEO report, named Meilisearch case study</td>
 </tr>
 <tr>
-<td>6</td>
+<td>5</td>
 <td>Optimist</td>
 <td>B2B tech teams that want AEO and SEO strategy</td>
 <td>Not stated on pages we checked</td>
@@ -388,7 +380,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Long B2B record, 21-factor audit</td>
 </tr>
 <tr>
-<td>7</td>
+<td>6</td>
 <td>First Page Sage</td>
 <td>Teams that want to read the research first</td>
 <td>SF Bay Area (per contact page title)</td>
@@ -396,12 +388,20 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Large library of AI search guides</td>
 </tr>
 <tr>
-<td>8</td>
+<td>7</td>
 <td>iPullRank</td>
 <td>Enterprise search programs</td>
 <td>Not stated (a staff bio mentions a New York office)</td>
 <td>Not published</td>
 <td>Relevance engineering, AI Search Manual</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nakama</td>
+<td>SaaS brands that need to be named via off-site sources</td>
+<td>India (no US office stated)</td>
+<td>Custom quote</td>
+<td>Off-site AEO and GEO with checkable queries</td>
 </tr>
 <tr>
 <td>9</td>
@@ -424,7 +424,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <figure><img src="/journal/best-aeo-agencies/aeo-agencies-comparison-table-2026.png" alt="Table comparing 10 AEO agencies by best-for use case and published price, checked October 2026" width="1600" height="1100" loading="lazy" decoding="async"></figure>
 <p>NoGood, Marcel Digital and First Page Sage (Bay Area, per its contact page title) state a US location on the pages we checked. Omniscient Digital lists five US addresses but says its team is distributed around the world. Animalz says it started in New York and now works remotely. iPullRank's about page hints at a New York office in one staff bio. If you need a US-based team, ask each agency where your account team sits.</p>
 <h2 id="how-did-we-rank-these-aeo-agencies">How did we rank these AEO agencies?</h2>
-<p>We compared the agencies by what each publishes on its own website, checked on 15 October 2026. The evidence matrix below scores agencies on five checks, using what each agency publishes on its own site. Each check is a Yes, Partial or No you can verify yourself. We did not use review-platform scores, paid directories or invented point scores.</p>
+<p>We compared the agencies by what each publishes on its own website, checked on 15 October 2026. The evidence matrix below scores all 10 agencies on five checks. Each check is a Yes, Partial or No you can verify yourself. We did not use review-platform scores, paid directories or invented point scores.</p>
 <p><strong>What the five columns mean</strong></p>
 <ol>
 <li><strong>Published price.</strong> Yes: a price for the AEO service is shown on the agency's own site. Partial: a price shown only in a guide or FAQ, or one that covers all its services. No: no price found.</li>
@@ -433,7 +433,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <li><strong>Method described.</strong> Yes: it names a framework or process phases and what it measures. Partial: it lists services without a process.</li>
 <li><strong>HQ stated.</strong> Yes: an address or named offices. Partial: a hint, such as a page title, a remote note or a mailbox address. No: nothing found.</li>
 </ol>
-<p>In the matrix, agencies are ordered by the number of Yes answers in columns 1 and 2, then the number of Partial answers there, then the same counts for columns 3 to 5. Ties are alphabetical. These are our readings of public pages, so check them yourself.</p>
+<p>In the matrix, agencies are ordered by the number of Yes answers in columns 1 and 2, then the number of Partial answers there, then the same counts for columns 3 to 5. Ties are alphabetical. All 10 agencies are ordered this way, and the comparison table and the entries below follow the same order. These are our readings of public pages, so check them yourself.</p>
 <div class="article-table"><table>
 <thead>
 <tr>
@@ -448,7 +448,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 </thead>
 <tbody>
 <tr>
-<td>2</td>
+<td>1</td>
 <td>Discovered Labs</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -457,7 +457,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>No</td>
 </tr>
 <tr>
-<td>3</td>
+<td>2</td>
 <td>NoGood</td>
 <td>Partial</td>
 <td>Yes</td>
@@ -466,7 +466,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Yes</td>
 </tr>
 <tr>
-<td>4</td>
+<td>3</td>
 <td>Omniscient Digital</td>
 <td>Partial</td>
 <td>Yes</td>
@@ -475,7 +475,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Partial</td>
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
 <td>Minuttia</td>
 <td>Partial</td>
 <td>Yes</td>
@@ -484,7 +484,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>No</td>
 </tr>
 <tr>
-<td>6</td>
+<td>5</td>
 <td>Optimist</td>
 <td>Partial</td>
 <td>Partial</td>
@@ -493,7 +493,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>No</td>
 </tr>
 <tr>
-<td>7</td>
+<td>6</td>
 <td>First Page Sage</td>
 <td>No</td>
 <td>Partial</td>
@@ -502,8 +502,17 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Partial</td>
 </tr>
 <tr>
-<td>8</td>
+<td>7</td>
 <td>iPullRank</td>
+<td>No</td>
+<td>Partial</td>
+<td>Partial</td>
+<td>Yes</td>
+<td>Partial</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nakama</td>
 <td>No</td>
 <td>Partial</td>
 <td>Partial</td>
@@ -537,6 +546,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <li>Discovered Labs' proof is client testimonials with figures, without calendar dates or queries.</li>
 <li>Optimist's AEO results on its AEO page carry no client name, so its proof is Partial.</li>
 <li>First Page Sage and iPullRank are Partial on proof because their AI results have no client name.</li>
+<li>Nakama's price is No because its pricing page shows a custom quote and no figure. Its proof is Partial because its Work page names seven clients and the searches behind each placement but shows no metrics. Its AEO page cell is Partial because AEO is one of six disciplines on its Services page. Its HQ cell is Partial because its footer says "Made in India" with no address.</li>
 <li>Omniscient Digital's HQ cell is Partial because its about page says its team is distributed around the world, and three of its five listed addresses carry mailbox (PMB) numbers.</li>
 <li>iPullRank's HQ cell is Partial because a staff bio on its about page mentions a New York office.</li>
 </ul>
@@ -613,14 +623,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 </ol>
 <h2 id="which-are-the-10-best-aeo-agencies-in-2026">Which are the 10 best AEO agencies in 2026?</h2>
 <p>The 10 agencies below are listed in the order shown in the comparison table. Each entry follows the same format: best for, services, strength, pricing, limitation and HQ. Every figure comes from the agency's own site and is marked self-reported where we could not verify it independently.</p>
-<h3 id="1-nakama">1. Nakama</h3>
-<p><strong>Best for:</strong> SaaS and software brands, and brands in competitive categories, that need to be named when buyers ask AI tools what to pick.</p>
-<p><strong>Services:</strong> AEO work (buyer-question and answer-gap research, answer-first content and FAQ structure, citation tracking) plus GEO, Reddit and community, editorial content, YouTube and video, and digital PR. It tracks ChatGPT, Perplexity, Gemini and Google AI Overviews and starts with a buyer prompt map and a competitor and source audit. See Nakama's <a href="https://www.nakama.in/services">AEO and GEO services</a> and <a href="https://www.nakama.in/process">how an engagement runs</a>.</p>
-<p><strong>Strength:</strong> Off-site work with proof you can run. The <a href="https://www.nakama.in/work">Work page</a> lists seven clients with the exact searches where Nakama's work surfaced. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a client's recommendation. Every community post is disclosed, and nothing publishes without the client's sign-off.</p>
-<p><strong>Pricing:</strong> No price is published. Nakama sells one all-inclusive plan with no tiers or add-ons. A written proposal arrives within two business days of a 15-minute pricing call, and the minimum commitment is three months. See <a href="https://www.nakama.in/pricing">how Nakama pricing works</a>.</p>
-<p><strong>Limitation:</strong> Nakama is a small team and takes a small number of partners at a time. Its Work page shows placements and the searches behind them but no performance metrics. It is based in India, so live calls with US teams need planning around the time difference. Its focus is off-site visibility, so a large site that needs deep technical SEO may need a specialist for that part.</p>
-<p><strong>HQ:</strong> India.</p>
-<h3 id="2-discovered-labs">2. Discovered Labs</h3>
+<h3 id="1-discovered-labs">1. Discovered Labs</h3>
 <p><strong>Best for:</strong> B2B SaaS teams that want published tiers and an in-house tracking tool.</p>
 <p><strong>Services:</strong> Its <a href="https://discoveredlabs.com/services/answer-engine-optimization-agency" rel="noopener" target="_blank">AEO agency page</a> lists an AI visibility tracker across ChatGPT, Claude, Perplexity and Gemini and content built on its CITABLE framework. It also lists Reddit and community work, digital PR and review sites, and technical readiness checks covering llms.txt, structured data and AI crawler access.</p>
 <p><strong>Strength:</strong> Published prices and flexible terms. Retainers on its <a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">pricing page</a> run month to month with no long-term lock-in and 30 days notice, and a 3 or 6 month commitment lowers the rate. Its one-off Search Visibility Diagnostic is credited to the first retainer month if you sign within 14 days of the walkthrough.</p>
@@ -634,48 +637,55 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 </ul>
 <p><strong>Limitation:</strong> It measures AI visibility with its own tracker, so independent checks are up to you. Its proof on its <a href="https://discoveredlabs.com/services/answer-engine-optimization-agency" rel="noopener" target="_blank">AEO agency page</a> is client testimonials with figures, such as 7x sales-accepted leads from Gladia's head of marketing, and none comes with a calendar date or the query behind it. It focuses on B2B SaaS.</p>
 <p><strong>HQ:</strong> Not stated on the pages we checked.</p>
-<h3 id="3-nogood">3. NoGood</h3>
+<h3 id="2-nogood">2. NoGood</h3>
 <p><strong>Best for:</strong> Growth teams that want AEO alongside paid media, social and creative.</p>
 <p><strong>Services:</strong> <a href="https://nogood.io/answer-engine-optimization-aeo/" rel="noopener" target="_blank">AEO across four pillars</a>: AI visibility intelligence and strategy, content and owned media optimization, earned media with digital PR and citation building, and technical AEO infrastructure. It covers ChatGPT, Google AI Overviews, AI Mode, Gemini, Perplexity, Claude and Copilot.</p>
 <p><strong>Strength:</strong> A named case study with numbers, all self-reported. The <a href="https://nogood.io/case-study/steelseries-aeo/" rel="noopener" target="_blank">SteelSeries case study</a> headline reports a 23x increase in year over year AI search traffic and 27x in year over year conversions from AI platforms. Its results text says AI traffic grew 6.7x from January 2025 to October 2025, with a 7.1x increase in conversions. The page does not explain the gap, so ask which basis applies. Its <a href="https://nogood.io/answer-engine-optimization-aeo/" rel="noopener" target="_blank">AEO page</a> lists AEO awards from The Shorty Awards, The Drum and The Webby Awards.</p>
 <p><strong>Pricing:</strong> Monthly retainers. The FAQ on its <a href="https://nogood.io/" rel="noopener" target="_blank">homepage</a> says the average retainer across all NoGood services is above USD 20,000 a month. That figure covers paid, social, creative and organic work together, so it applies to all NoGood services.</p>
 <p><strong>Limitation:</strong> It is priced at the premium end and tracks AI visibility with Goodie AI, a third-party tool. It is a broad growth agency, so AEO is one practice among several.</p>
 <p><strong>HQ:</strong> New York City (Soho), with offices in Miami and Dubai.</p>
-<h3 id="4-omniscient-digital">4. Omniscient Digital</h3>
+<h3 id="3-omniscient-digital">3. Omniscient Digital</h3>
 <p><strong>Best for:</strong> B2B software companies with an organic growth budget.</p>
 <p><strong>Services:</strong> A <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">dedicated AEO service</a> built on buyer-demand modeling, a visibility baseline, competitor and source intelligence, technical foundations, content and third-party validation, and measurement tied to pipeline. It also runs structured AEO experiments.</p>
 <p><strong>Strength:</strong> Named case studies. Its <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">AEO page</a> links to Convert (LLM visibility up 81% and AI citations up 140%) and OnBoard (number one AI share of voice). It sits in a wider SEO, digital PR and content team.</p>
 <p><strong>Pricing:</strong> Its <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">AEO page</a> says full-service engagements start at USD 120,000 a year.</p>
 <p><strong>Limitation:</strong> The price may put it out of reach for smaller teams. AEO is one service on a broader menu that also covers SEO, programmatic SEO, link building and content, so confirm how much of the budget goes to AEO. It serves B2B software only.</p>
 <p><strong>HQ:</strong> Five US addresses are listed in the footer of its <a href="https://beomniscient.com/contact/" rel="noopener" target="_blank">contact page</a>: Austin, New York, San Francisco, Chicago and Boston. Three of them carry PMB (private mailbox) numbers. Its <a href="https://beomniscient.com/about/" rel="noopener" target="_blank">about page</a> says its team is distributed around the world.</p>
-<h3 id="5-minuttia">5. Minuttia</h3>
+<h3 id="4-minuttia">4. Minuttia</h3>
 <p><strong>Best for:</strong> Established B2B SaaS brands that want AEO tied to a content program.</p>
 <p><strong>Services:</strong> Google and AI search strategy, human and AI-assisted content creation, digital PR, Reddit marketing and agent analytics, per its <a href="https://minuttia.com/" rel="noopener" target="_blank">homepage</a>. It offers a <a href="https://minuttia.com/aeo/report/" rel="noopener" target="_blank">free AEO report</a> that runs your brand through a set of prompts across AI platforms and shows visibility score, share of voice, citations and sentiment.</p>
 <p><strong>Strength:</strong> Research and retention. It publishes a study of 24,067 prompts across five AI search platforms. Its <a href="https://minuttia.com/case-studies/" rel="noopener" target="_blank">case studies page</a> names Meilisearch, with a 665% increase in LLM-driven traffic and 2,700% growth in LLM-driven conversions (self-reported). Its <a href="https://minuttia.com/" rel="noopener" target="_blank">homepage</a> reports 94% average client retention (as of June 2026), 24+ months average client tenure and 60+ clients (all self-reported).</p>
 <p><strong>Pricing:</strong> Not on its <a href="https://minuttia.com/aeo-agency/" rel="noopener" target="_blank">AEO agency page</a>. Its own <a href="https://minuttia.com/best-llmo-agencies/" rel="noopener" target="_blank">LLMO agency list</a>, with data as of 20 January 2026, states a minimum project size of USD 4,000+.</p>
 <p><strong>Limitation:</strong> It is built for established brands, so early-stage startups may not fit. Its free report tool currently tracks citations on Perplexity only, per the <a href="https://minuttia.com/aeo/report/" rel="noopener" target="_blank">tool page</a>. The Meilisearch result is the only named AI-search case we found, and its case studies page does not give the query behind it.</p>
 <p><strong>HQ:</strong> Not stated on the pages we checked.</p>
-<h3 id="6-optimist">6. Optimist</h3>
+<h3 id="5-optimist">5. Optimist</h3>
 <p><strong>Best for:</strong> B2B tech and SaaS teams that want AEO and SEO strategy and advice in one engagement.</p>
 <p><strong>Services:</strong> Its <a href="https://www.yesoptimist.com/aeo-agency/" rel="noopener" target="_blank">AEO page</a> lists a 21-factor AEO audit it calls the CORE analysis, content strategy and page structure, technical AEO, entity and knowledge graph support, digital PR and citations, and monthly executive AEO reports. Its <a href="https://www.yesoptimist.com/about/" rel="noopener" target="_blank">about page</a> lists four engagement options. They are a free Organic Revenue Opportunity Report, a one-time CORE Roadmap, a monthly CORE Advisory with monthly visibility tracking, and a CORE Principal tier with monthly planning and weekly check-ins. Both Advisory and Principal are available only after a CORE Roadmap.</p>
 <p><strong>Strength:</strong> A long B2B record and named client results. Its <a href="https://www.yesoptimist.com/about/" rel="noopener" target="_blank">about page</a> says Optimist was founded in 2016 and lists results for HelloSign (organic traffic up 1,300%), Stampli (400% lift in MQLs and conversions) and Glide (14x leads attributed to content). These are SEO and content results, and all are self-reported.</p>
 <p><strong>Pricing:</strong> Its own <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">guide</a>, dated 11 October 2026, says ongoing AEO advising starts at USD 3,000 a month. The same guide puts audits, strategy and roadmap projects from USD 2,500. Its about page lists the options without prices and says both CORE Advisory and CORE Principal are available only after a CORE Roadmap, so confirm the current price and the entry path. The <a href="https://www.yesoptimist.com/aeo-agency/" rel="noopener" target="_blank">AEO page</a> says AEO is offered month to month.</p>
 <p><strong>Limitation:</strong> The AEO results on its <a href="https://www.yesoptimist.com/aeo-agency/" rel="noopener" target="_blank">AEO page</a> carry no client names: a large B2B tech client (49x LLM revenue and 26x LLM referral traffic), a retail client (13x LLM revenue) and a fintech client (8x conversions from LLMs and 25x LLM referral traffic). Its about page says your team owns execution and that done-for-you production goes to partners, while its AEO page describes hands-on help, so confirm scope. Its <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">guide</a> calls it a smaller team with most experience in B2B technology.</p>
 <p><strong>HQ:</strong> Not stated on the pages we checked.</p>
-<h3 id="7-first-page-sage">7. First Page Sage</h3>
+<h3 id="6-first-page-sage">6. First Page Sage</h3>
 <p><strong>Best for:</strong> Teams that want to study an agency's research before hiring it.</p>
 <p><strong>Services:</strong> An <a href="https://firstpagesage.com/aeo-services/" rel="noopener" target="_blank">AEO service</a> built on six elements: a full AEO audit, authoritative content, technical implementation with structured data, continuous optimization, publicizing awards and usage statistics, and strategic coordination. The team also does list and database outreach.</p>
 <p><strong>Strength:</strong> A deep library of guides, including ChatGPT, SearchGPT and Perplexity optimization guides and a <a href="https://firstpagesage.com/seo-blog/generative-engine-optimization-geo-cost-breakdown/" rel="noopener" target="_blank">GEO cost breakdown</a>. Its <a href="https://firstpagesage.com/aeo-services/" rel="noopener" target="_blank">AEO page</a> says it has more than 15 years of experience in SEO and AEO (self-reported).</p>
 <p><strong>Pricing:</strong> Not published. Its <a href="https://firstpagesage.com/seo-blog/generative-engine-optimization-geo-cost-breakdown/" rel="noopener" target="_blank">GEO cost breakdown</a> lists market tiers based on pricing it has seen among the small number of companies offering GEO services. It does not list its own fees.</p>
 <p><strong>Limitation:</strong> Its <a href="https://firstpagesage.com/aeo-services/" rel="noopener" target="_blank">AEO page</a> is headlined "The #1 AEO Agency", a self-claim with no client results on that page. Its <a href="https://firstpagesage.com/case-studies/" rel="noopener" target="_blank">case studies page</a> shows anonymous AI results, such as AI recommendation share rising from 11% to 64% across 31 queries for an unnamed client (self-reported). The page also names Cadence Design Systems, for an SEO result.</p>
 <p><strong>HQ:</strong> SF Bay Area, based on its <a href="https://firstpagesage.com/contact/" rel="noopener" target="_blank">contact page</a> title. No street address was given.</p>
-<h3 id="8-ipullrank">8. iPullRank</h3>
+<h3 id="7-ipullrank">7. iPullRank</h3>
 <p><strong>Best for:</strong> Enterprise brands and category leaders with complex, multi-team search programs.</p>
 <p><strong>Services:</strong> <a href="https://ipullrank.com/services/geo" rel="noopener" target="_blank">GEO and AI search programs</a> with startup, mid-market and Fortune 500 paths. Work covers technical structure, content engineering, off-site presence such as press, forums and video, and attribution that ties citations and AI referral traffic to leads and revenue. It tracks metrics such as fan-out coverage and citation frequency.</p>
 <p><strong>Strength:</strong> Technical depth and published thinking. Mike King founded the agency, and it publishes an AI Search Manual. It says it has delivered USD 5B+ in organic search results (self-reported), per its <a href="https://ipullrank.com/services/geo" rel="noopener" target="_blank">GEO page</a>.</p>
 <p><strong>Pricing:</strong> Not published.</p>
 <p><strong>Limitation:</strong> Its <a href="https://ipullrank.com/case-studies" rel="noopener" target="_blank">case studies</a> are labeled by industry, such as financial services, eCommerce marketplace and telecommunications, and carry no client name. The telecommunications study reports a 253% increase in AI Overviews visibility (self-reported). It calls its work GEO and treats AEO as the same thing. It is built around enterprise-scale programs, so confirm what the startup path includes.</p>
 <p><strong>HQ:</strong> No headquarters statement on the pages we checked. A staff bio on its <a href="https://ipullrank.com/about-us" rel="noopener" target="_blank">about page</a> mentions a New York office.</p>
+<h3 id="8-nakama">8. Nakama</h3>
+<p><strong>Best for:</strong> SaaS and software brands, and brands in competitive categories, that need to be named when buyers ask AI tools what to pick.</p>
+<p><strong>Services:</strong> AEO work (buyer-question and answer-gap research, answer-first content and FAQ structure, citation tracking) plus GEO, Reddit and community, editorial content, YouTube and video, and digital PR. It tracks ChatGPT, Perplexity, Gemini and Google AI Overviews and starts with a buyer prompt map and a competitor and source audit. See Nakama's <a href="https://www.nakama.in/services">AEO and GEO services</a> and <a href="https://www.nakama.in/process">how an engagement runs</a>.</p>
+<p><strong>Strength:</strong> Off-site work with proof you can run. The <a href="https://www.nakama.in/work">Work page</a> lists seven clients with the exact searches where Nakama's work surfaced. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a client's recommendation. Every community post is disclosed, and nothing publishes without the client's sign-off.</p>
+<p><strong>Pricing:</strong> No price is published. Nakama sells one all-inclusive plan with no tiers or add-ons. A written proposal arrives within two business days of a 15-minute pricing call, and the minimum commitment is three months. See <a href="https://www.nakama.in/pricing">how Nakama pricing works</a>.</p>
+<p><strong>Limitation:</strong> Nakama is a small team and takes a small number of partners at a time. Its Work page shows placements and the searches behind them but no performance metrics. It is based in India, so live calls with US teams need planning around the time difference. Its focus is off-site visibility, so a large site that needs deep technical SEO may need a specialist for that part.</p>
+<p><strong>HQ:</strong> India.</p>
 <h3 id="9-marcel-digital">9. Marcel Digital</h3>
 <p><strong>Best for:</strong> Organizations that want AEO inside a full-service digital team. Its <a href="https://www.marceldigital.com/services/answer-engine-optimization" rel="noopener" target="_blank">AEO page</a> lists technology, associations, financial services, manufacturing, logistics and telecom as sectors.</p>
 <p><strong>Services:</strong> Its <a href="https://www.marceldigital.com/services/answer-engine-optimization" rel="noopener" target="_blank">AEO page</a> lists an AEO readiness assessment, question and topic mapping, answer-first content optimization and schema and structured data (FAQ, HowTo, Organization and others). It also lists technical support and monitoring across AI Overviews, AI Mode, ChatGPT, Perplexity and Copilot. It also offers a free AEO starter kit.</p>
@@ -703,44 +713,9 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 </thead>
 <tbody>
 <tr>
-<td>Optimist</td>
-<td>Ongoing advising from USD 3,000/mo, per <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">its own guide</a>. Its about page says both Advisory and Principal follow a CORE Roadmap</td>
-<td>Month to month</td>
-</tr>
-<tr>
-<td>Optimist</td>
-<td>Audits, strategy and roadmaps from USD 2,500, per <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">its own guide</a></td>
-<td>One-time projects</td>
-</tr>
-<tr>
-<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a>, Establish</td>
-<td>USD 9,138/mo monthly, USD 8,567 on 3 months, USD 7,995 on 6 months (EUR 7,995, 7,495 and 6,995)</td>
-<td>Month to month, 30 days notice, lower rate for 3 or 6 months</td>
-</tr>
-<tr>
-<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a>, Compete</td>
-<td>USD 14,853/mo monthly, USD 13,710 on 3 months, USD 12,567 on 6 months (EUR 12,995, 11,995 and 10,995)</td>
-<td>Same terms</td>
-</tr>
-<tr>
-<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a>, Outlier and custom</td>
-<td>From USD 18,282/mo (EUR 15,995)</td>
-<td>Custom engagement</td>
-</tr>
-<tr>
-<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a>, diagnostic</td>
-<td>USD 4,995 one-off (EUR 4,370), credited to the first retainer month if you sign within 14 days of the walkthrough</td>
-<td>One-off</td>
-</tr>
-<tr>
-<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a>, add-ons</td>
-<td>Reddit Marketing from USD 5,709/mo (EUR 4,995). Backlink Building from USD 2,852/mo (EUR 2,495)</td>
-<td>Monthly</td>
-</tr>
-<tr>
-<td>Omniscient Digital</td>
-<td>Full-service engagements from USD 120,000/yr, on <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">its AEO page</a></td>
-<td>Not published</td>
+<td><a href="https://discoveredlabs.com/pricing" rel="noopener" target="_blank">Discovered Labs</a></td>
+<td>Establish: USD 9,138/mo monthly, USD 8,567 on 3 months, USD 7,995 on 6 months (EUR 7,995, 7,495 and 6,995); Compete: USD 14,853/mo monthly, USD 13,710 on 3 months, USD 12,567 on 6 months (EUR 12,995, 11,995 and 10,995); Outlier and custom: from USD 18,282/mo (EUR 15,995); diagnostic: USD 4,995 one-off (EUR 4,370), credited to the first retainer month if you sign within 14 days of the walkthrough; add-ons: Reddit Marketing from USD 5,709/mo (EUR 4,995), Backlink Building from USD 2,852/mo (EUR 2,495)</td>
+<td>Establish and Compete: month to month, 30 days notice, lower rate for 3 or 6 months; Outlier and custom: custom engagement; diagnostic: one-off; add-ons: monthly</td>
 </tr>
 <tr>
 <td>NoGood</td>
@@ -748,9 +723,19 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <td>Monthly retainers</td>
 </tr>
 <tr>
+<td>Omniscient Digital</td>
+<td>Full-service engagements from USD 120,000/yr, on <a href="https://beomniscient.com/services/answer-engine-optimization/" rel="noopener" target="_blank">its AEO page</a></td>
+<td>Not published</td>
+</tr>
+<tr>
 <td>Minuttia</td>
 <td>Minimum project size USD 4,000+, per <a href="https://minuttia.com/best-llmo-agencies/" rel="noopener" target="_blank">its own LLMO list</a> (data as of 20 January 2026). Not on <a href="https://minuttia.com/aeo-agency/" rel="noopener" target="_blank">its AEO page</a></td>
 <td>Not published</td>
+</tr>
+<tr>
+<td>Optimist</td>
+<td>Ongoing advising from USD 3,000/mo; audits, strategy and roadmaps from USD 2,500; both per <a href="https://www.yesoptimist.com/best-aeo-agencies/" rel="noopener" target="_blank">its own guide</a>; its about page says both Advisory and Principal follow a CORE Roadmap</td>
+<td>Advising: month to month; audits, strategy and roadmaps: one-time projects</td>
 </tr>
 <tr>
 <td>Nakama</td>
@@ -864,12 +849,12 @@ export const aeoAgenciesArticle: Article = {
    "AEO stands for answer engine optimization. An AEO agency, or answer engine optimization agency, gets your brand named and recommended inside AI answers. Its AEO services cover buyer-question research, answer-first content, structured data, third-party mentions and tracking. This guide compares 10 AEO agencies and companies for US buyers, using what each publishes on its own website, checked October 2026.",
    "AEO agency, defined. An AEO agency helps a brand get named, cited and recommended in AI-generated answers. It researches the questions buyers ask AI tools, structures your pages so AI tools can quote them, and tracks how often your brand appears. Many also earn third-party mentions, which some agencies sell as GEO.",
    "The best AEO agency depends on your category, budget and team:",
-   "Nakama: SaaS and software brands that need to be named through off-site sources such as Reddit, YouTube, review sites and editorial.",
-   "Optimist: B2B tech teams that want AEO and SEO strategy together, with its guide quoting advising from USD 3,000 a month.",
    "Discovered Labs: B2B SaaS teams that want published tiers and an in-house AI visibility tracker.",
-   "Omniscient Digital: B2B software companies with a larger budget, with full-service engagements from USD 120,000 a year.",
    "NoGood: growth teams that want AEO next to paid media and creative, at premium retainers.",
-   "iPullRank: enterprise teams with complex search programs."
+   "Omniscient Digital: B2B software companies with a larger budget, with full-service engagements from USD 120,000 a year.",
+   "Optimist: B2B tech teams that want AEO and SEO strategy together, with its guide quoting advising from USD 3,000 a month.",
+   "iPullRank: enterprise teams with complex search programs.",
+   "Nakama: SaaS and software brands that need to be named through off-site sources such as Reddit, YouTube, review sites and editorial."
   ]
  },
  {
@@ -885,15 +870,15 @@ export const aeoAgenciesArticle: Article = {
  {
   "heading": "How do the 10 best AEO agencies compare?",
   "paragraphs": [
-   "The 10 agencies below are compared on best fit, where each says it is based, published price and standout strength. The evidence matrix in the next section scores agencies on five checks, using what each publishes on its own site. Prices and locations come from each agency's own site, October 2026.",
-   "1 | Nakama | SaaS brands that need to be named via off-site sources | India (no US office stated) | Custom quote | Off-site AEO and GEO with checkable queries",
-   "2 | Discovered Labs | B2B SaaS teams that want published tiers | Not stated on pages we checked | Establish from USD 7,995/mo on a 6-month term (EUR 6,995) | In-house tracker, Reddit and PR work",
-   "3 | NoGood | Growth teams wanting AEO plus paid and creative | New York (Soho), Miami, Dubai | Average above USD 20,000/mo across all services | Award-recognized AEO practice, SteelSeries case study",
-   "4 | Omniscient Digital | B2B software companies with budget | Five US addresses listed; team is distributed worldwide | Full service from USD 120,000/yr | Named AEO case studies, demand modeling",
-   "5 | Minuttia | Established B2B SaaS brands | Not stated on pages we checked | Minimum project USD 4,000+ (its own list, Jan 2026) | Free AEO report, named Meilisearch case study",
-   "6 | Optimist | B2B tech teams that want AEO and SEO strategy | Not stated on pages we checked | Advising from USD 3,000/mo, after a Roadmap (its guide, 11 Oct 2026) | Long B2B record, 21-factor audit",
-   "7 | First Page Sage | Teams that want to read the research first | SF Bay Area (per contact page title) | Not published | Large library of AI search guides",
-   "8 | iPullRank | Enterprise search programs | Not stated (a staff bio mentions a New York office) | Not published | Relevance engineering, AI Search Manual",
+   "The 10 agencies below are compared on best fit, where each says it is based, published price and standout strength, and are listed in the order of the evidence matrix in the next section, which scores all 10 on five checks. Prices and locations come from each agency's own site, October 2026.",
+   "1 | Discovered Labs | B2B SaaS teams that want published tiers | Not stated on pages we checked | Establish from USD 7,995/mo on a 6-month term (EUR 6,995) | In-house tracker, Reddit and PR work",
+   "2 | NoGood | Growth teams wanting AEO plus paid and creative | New York (Soho), Miami, Dubai | Average above USD 20,000/mo across all services | Award-recognized AEO practice, SteelSeries case study",
+   "3 | Omniscient Digital | B2B software companies with budget | Five US addresses listed; team is distributed worldwide | Full service from USD 120,000/yr | Named AEO case studies, demand modeling",
+   "4 | Minuttia | Established B2B SaaS brands | Not stated on pages we checked | Minimum project USD 4,000+ (its own list, Jan 2026) | Free AEO report, named Meilisearch case study",
+   "5 | Optimist | B2B tech teams that want AEO and SEO strategy | Not stated on pages we checked | Advising from USD 3,000/mo, after a Roadmap (its guide, 11 Oct 2026) | Long B2B record, 21-factor audit",
+   "6 | First Page Sage | Teams that want to read the research first | SF Bay Area (per contact page title) | Not published | Large library of AI search guides",
+   "7 | iPullRank | Enterprise search programs | Not stated (a staff bio mentions a New York office) | Not published | Relevance engineering, AI Search Manual",
+   "8 | Nakama | SaaS brands that need to be named via off-site sources | India (no US office stated) | Custom quote | Off-site AEO and GEO with checkable queries",
    "9 | Marcel Digital | Organizations that want AEO inside a full-service team | Chicago, IL | Not published | Schema and on-page AEO, 20+ years in search (self-reported)",
    "10 | Animalz | B2B software brands that want editorial quality | Remote (started in New York) | Not published | Content craft plus Reddit and outreach",
    "Image: Table comparing 10 AEO agencies by best-for use case and published price, checked October 2026",
@@ -903,21 +888,22 @@ export const aeoAgenciesArticle: Article = {
  {
   "heading": "How did we rank these AEO agencies?",
   "paragraphs": [
-   "We compared the agencies by what each publishes on its own website, checked on 15 October 2026. The evidence matrix below scores agencies on five checks, using what each agency publishes on its own site. Each check is a Yes, Partial or No you can verify yourself. We did not use review-platform scores, paid directories or invented point scores.",
+   "We compared the agencies by what each publishes on its own website, checked on 15 October 2026. The evidence matrix below scores all 10 agencies on five checks. Each check is a Yes, Partial or No you can verify yourself. We did not use review-platform scores, paid directories or invented point scores.",
    "What the five columns mean",
    "Published price. Yes: a price for the AEO service is shown on the agency's own site. Partial: a price shown only in a guide or FAQ, or one that covers all its services. No: no price found.",
    "Named case study with an AEO metric. Yes: a named client with an AEO or AI-search result on its own site. Partial: results without a client name, or named placements without metrics. No: none found on the pages we checked.",
    "Dedicated AEO page. Yes: a page on its own site about AEO or answer engine work. Partial: AEO sits inside a wider page.",
    "Method described. Yes: it names a framework or process phases and what it measures. Partial: it lists services without a process.",
    "HQ stated. Yes: an address or named offices. Partial: a hint, such as a page title, a remote note or a mailbox address. No: nothing found.",
-   "In the matrix, agencies are ordered by the number of Yes answers in columns 1 and 2, then the number of Partial answers there, then the same counts for columns 3 to 5. Ties are alphabetical. These are our readings of public pages, so check them yourself.",
-   "2 | Discovered Labs | Yes | Yes | Yes | Yes | No",
-   "3 | NoGood | Partial | Yes | Yes | Yes | Yes",
-   "4 | Omniscient Digital | Partial | Yes | Yes | Yes | Partial",
-   "5 | Minuttia | Partial | Yes | Yes | Partial | No",
-   "6 | Optimist | Partial | Partial | Yes | Yes | No",
-   "7 | First Page Sage | No | Partial | Yes | Partial | Partial",
-   "8 | iPullRank | No | Partial | Partial | Yes | Partial",
+   "In the matrix, agencies are ordered by the number of Yes answers in columns 1 and 2, then the number of Partial answers there, then the same counts for columns 3 to 5. Ties are alphabetical. All 10 agencies are ordered this way, and the comparison table and the entries below follow the same order. These are our readings of public pages, so check them yourself.",
+   "1 | Discovered Labs | Yes | Yes | Yes | Yes | No",
+   "2 | NoGood | Partial | Yes | Yes | Yes | Yes",
+   "3 | Omniscient Digital | Partial | Yes | Yes | Yes | Partial",
+   "4 | Minuttia | Partial | Yes | Yes | Partial | No",
+   "5 | Optimist | Partial | Partial | Yes | Yes | No",
+   "6 | First Page Sage | No | Partial | Yes | Partial | Partial",
+   "7 | iPullRank | No | Partial | Partial | Yes | Partial",
+   "8 | Nakama | No | Partial | Partial | Yes | Partial",
    "9 | Marcel Digital | No | No | Yes | Yes | Yes",
    "10 | Animalz | No | No | Yes | Partial | Partial",
    "Notes on the matrix:",
@@ -926,6 +912,7 @@ export const aeoAgenciesArticle: Article = {
    "Discovered Labs' proof is client testimonials with figures, without calendar dates or queries.",
    "Optimist's AEO results on its AEO page carry no client name, so its proof is Partial.",
    "First Page Sage and iPullRank are Partial on proof because their AI results have no client name.",
+   "Nakama's price is No because its pricing page shows a custom quote and no figure. Its proof is Partial because its Work page names seven clients and the searches behind each placement but shows no metrics. Its AEO page cell is Partial because AEO is one of six disciplines on its Services page. Its HQ cell is Partial because its footer says \"Made in India\" with no address.",
    "Omniscient Digital's HQ cell is Partial because its about page says its team is distributed around the world, and three of its five listed addresses carry mailbox (PMB) numbers.",
    "iPullRank's HQ cell is Partial because a staff bio on its about page mentions a New York office.",
    "If you are an enterprise team or have a large paid budget, NoGood or iPullRank may fit better. Optimist and Discovered Labs publish prices for B2B teams.",
@@ -976,14 +963,7 @@ export const aeoAgenciesArticle: Article = {
   "heading": "Which are the 10 best AEO agencies in 2026?",
   "paragraphs": [
    "The 10 agencies below are listed in the order shown in the comparison table. Each entry follows the same format: best for, services, strength, pricing, limitation and HQ. Every figure comes from the agency's own site and is marked self-reported where we could not verify it independently.",
-   "1. Nakama",
-   "Best for: SaaS and software brands, and brands in competitive categories, that need to be named when buyers ask AI tools what to pick.",
-   "Services: AEO work (buyer-question and answer-gap research, answer-first content and FAQ structure, citation tracking) plus GEO, Reddit and community, editorial content, YouTube and video, and digital PR. It tracks ChatGPT, Perplexity, Gemini and Google AI Overviews and starts with a buyer prompt map and a competitor and source audit. See Nakama's AEO and GEO services and how an engagement runs.",
-   "Strength: Off-site work with proof you can run. The Work page lists seven clients with the exact searches where Nakama's work surfaced. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a client's recommendation. Every community post is disclosed, and nothing publishes without the client's sign-off.",
-   "Pricing: No price is published. Nakama sells one all-inclusive plan with no tiers or add-ons. A written proposal arrives within two business days of a 15-minute pricing call, and the minimum commitment is three months. See how Nakama pricing works.",
-   "Limitation: Nakama is a small team and takes a small number of partners at a time. Its Work page shows placements and the searches behind them but no performance metrics. It is based in India, so live calls with US teams need planning around the time difference. Its focus is off-site visibility, so a large site that needs deep technical SEO may need a specialist for that part.",
-   "HQ: India.",
-   "2. Discovered Labs",
+   "1. Discovered Labs",
    "Best for: B2B SaaS teams that want published tiers and an in-house tracking tool.",
    "Services: Its AEO agency page lists an AI visibility tracker across ChatGPT, Claude, Perplexity and Gemini and content built on its CITABLE framework. It also lists Reddit and community work, digital PR and review sites, and technical readiness checks covering llms.txt, structured data and AI crawler access.",
    "Strength: Published prices and flexible terms. Retainers on its pricing page run month to month with no long-term lock-in and 30 days notice, and a 3 or 6 month commitment lowers the rate. Its one-off Search Visibility Diagnostic is credited to the first retainer month if you sign within 14 days of the walkthrough.",
@@ -995,48 +975,55 @@ export const aeoAgenciesArticle: Article = {
    "Add-ons: Reddit Marketing from USD 5,709 a month (EUR 4,995) and Backlink Building from USD 2,852 a month (EUR 2,495).",
    "Limitation: It measures AI visibility with its own tracker, so independent checks are up to you. Its proof on its AEO agency page is client testimonials with figures, such as 7x sales-accepted leads from Gladia's head of marketing, and none comes with a calendar date or the query behind it. It focuses on B2B SaaS.",
    "HQ: Not stated on the pages we checked.",
-   "3. NoGood",
+   "2. NoGood",
    "Best for: Growth teams that want AEO alongside paid media, social and creative.",
    "Services: AEO across four pillars: AI visibility intelligence and strategy, content and owned media optimization, earned media with digital PR and citation building, and technical AEO infrastructure. It covers ChatGPT, Google AI Overviews, AI Mode, Gemini, Perplexity, Claude and Copilot.",
    "Strength: A named case study with numbers, all self-reported. The SteelSeries case study headline reports a 23x increase in year over year AI search traffic and 27x in year over year conversions from AI platforms. Its results text says AI traffic grew 6.7x from January 2025 to October 2025, with a 7.1x increase in conversions. The page does not explain the gap, so ask which basis applies. Its AEO page lists AEO awards from The Shorty Awards, The Drum and The Webby Awards.",
    "Pricing: Monthly retainers. The FAQ on its homepage says the average retainer across all NoGood services is above USD 20,000 a month. That figure covers paid, social, creative and organic work together, so it applies to all NoGood services.",
    "Limitation: It is priced at the premium end and tracks AI visibility with Goodie AI, a third-party tool. It is a broad growth agency, so AEO is one practice among several.",
    "HQ: New York City (Soho), with offices in Miami and Dubai.",
-   "4. Omniscient Digital",
+   "3. Omniscient Digital",
    "Best for: B2B software companies with an organic growth budget.",
    "Services: A dedicated AEO service built on buyer-demand modeling, a visibility baseline, competitor and source intelligence, technical foundations, content and third-party validation, and measurement tied to pipeline. It also runs structured AEO experiments.",
    "Strength: Named case studies. Its AEO page links to Convert (LLM visibility up 81% and AI citations up 140%) and OnBoard (number one AI share of voice). It sits in a wider SEO, digital PR and content team.",
    "Pricing: Its AEO page says full-service engagements start at USD 120,000 a year.",
    "Limitation: The price may put it out of reach for smaller teams. AEO is one service on a broader menu that also covers SEO, programmatic SEO, link building and content, so confirm how much of the budget goes to AEO. It serves B2B software only.",
    "HQ: Five US addresses are listed in the footer of its contact page: Austin, New York, San Francisco, Chicago and Boston. Three of them carry PMB (private mailbox) numbers. Its about page says its team is distributed around the world.",
-   "5. Minuttia",
+   "4. Minuttia",
    "Best for: Established B2B SaaS brands that want AEO tied to a content program.",
    "Services: Google and AI search strategy, human and AI-assisted content creation, digital PR, Reddit marketing and agent analytics, per its homepage. It offers a free AEO report that runs your brand through a set of prompts across AI platforms and shows visibility score, share of voice, citations and sentiment.",
    "Strength: Research and retention. It publishes a study of 24,067 prompts across five AI search platforms. Its case studies page names Meilisearch, with a 665% increase in LLM-driven traffic and 2,700% growth in LLM-driven conversions (self-reported). Its homepage reports 94% average client retention (as of June 2026), 24+ months average client tenure and 60+ clients (all self-reported).",
    "Pricing: Not on its AEO agency page. Its own LLMO agency list, with data as of 20 January 2026, states a minimum project size of USD 4,000+.",
    "Limitation: It is built for established brands, so early-stage startups may not fit. Its free report tool currently tracks citations on Perplexity only, per the tool page. The Meilisearch result is the only named AI-search case we found, and its case studies page does not give the query behind it.",
    "HQ: Not stated on the pages we checked.",
-   "6. Optimist",
+   "5. Optimist",
    "Best for: B2B tech and SaaS teams that want AEO and SEO strategy and advice in one engagement.",
    "Services: Its AEO page lists a 21-factor AEO audit it calls the CORE analysis, content strategy and page structure, technical AEO, entity and knowledge graph support, digital PR and citations, and monthly executive AEO reports. Its about page lists four engagement options. They are a free Organic Revenue Opportunity Report, a one-time CORE Roadmap, a monthly CORE Advisory with monthly visibility tracking, and a CORE Principal tier with monthly planning and weekly check-ins. Both Advisory and Principal are available only after a CORE Roadmap.",
    "Strength: A long B2B record and named client results. Its about page says Optimist was founded in 2016 and lists results for HelloSign (organic traffic up 1,300%), Stampli (400% lift in MQLs and conversions) and Glide (14x leads attributed to content). These are SEO and content results, and all are self-reported.",
    "Pricing: Its own guide, dated 11 October 2026, says ongoing AEO advising starts at USD 3,000 a month. The same guide puts audits, strategy and roadmap projects from USD 2,500. Its about page lists the options without prices and says both CORE Advisory and CORE Principal are available only after a CORE Roadmap, so confirm the current price and the entry path. The AEO page says AEO is offered month to month.",
    "Limitation: The AEO results on its AEO page carry no client names: a large B2B tech client (49x LLM revenue and 26x LLM referral traffic), a retail client (13x LLM revenue) and a fintech client (8x conversions from LLMs and 25x LLM referral traffic). Its about page says your team owns execution and that done-for-you production goes to partners, while its AEO page describes hands-on help, so confirm scope. Its guide calls it a smaller team with most experience in B2B technology.",
    "HQ: Not stated on the pages we checked.",
-   "7. First Page Sage",
+   "6. First Page Sage",
    "Best for: Teams that want to study an agency's research before hiring it.",
    "Services: An AEO service built on six elements: a full AEO audit, authoritative content, technical implementation with structured data, continuous optimization, publicizing awards and usage statistics, and strategic coordination. The team also does list and database outreach.",
    "Strength: A deep library of guides, including ChatGPT, SearchGPT and Perplexity optimization guides and a GEO cost breakdown. Its AEO page says it has more than 15 years of experience in SEO and AEO (self-reported).",
    "Pricing: Not published. Its GEO cost breakdown lists market tiers based on pricing it has seen among the small number of companies offering GEO services. It does not list its own fees.",
    "Limitation: Its AEO page is headlined \"The #1 AEO Agency\", a self-claim with no client results on that page. Its case studies page shows anonymous AI results, such as AI recommendation share rising from 11% to 64% across 31 queries for an unnamed client (self-reported). The page also names Cadence Design Systems, for an SEO result.",
    "HQ: SF Bay Area, based on its contact page title. No street address was given.",
-   "8. iPullRank",
+   "7. iPullRank",
    "Best for: Enterprise brands and category leaders with complex, multi-team search programs.",
    "Services: GEO and AI search programs with startup, mid-market and Fortune 500 paths. Work covers technical structure, content engineering, off-site presence such as press, forums and video, and attribution that ties citations and AI referral traffic to leads and revenue. It tracks metrics such as fan-out coverage and citation frequency.",
    "Strength: Technical depth and published thinking. Mike King founded the agency, and it publishes an AI Search Manual. It says it has delivered USD 5B+ in organic search results (self-reported), per its GEO page.",
    "Pricing: Not published.",
    "Limitation: Its case studies are labeled by industry, such as financial services, eCommerce marketplace and telecommunications, and carry no client name. The telecommunications study reports a 253% increase in AI Overviews visibility (self-reported). It calls its work GEO and treats AEO as the same thing. It is built around enterprise-scale programs, so confirm what the startup path includes.",
    "HQ: No headquarters statement on the pages we checked. A staff bio on its about page mentions a New York office.",
+   "8. Nakama",
+   "Best for: SaaS and software brands, and brands in competitive categories, that need to be named when buyers ask AI tools what to pick.",
+   "Services: AEO work (buyer-question and answer-gap research, answer-first content and FAQ structure, citation tracking) plus GEO, Reddit and community, editorial content, YouTube and video, and digital PR. It tracks ChatGPT, Perplexity, Gemini and Google AI Overviews and starts with a buyer prompt map and a competitor and source audit. See Nakama's AEO and GEO services and how an engagement runs.",
+   "Strength: Off-site work with proof you can run. The Work page lists seven clients with the exact searches where Nakama's work surfaced. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a client's recommendation. Every community post is disclosed, and nothing publishes without the client's sign-off.",
+   "Pricing: No price is published. Nakama sells one all-inclusive plan with no tiers or add-ons. A written proposal arrives within two business days of a 15-minute pricing call, and the minimum commitment is three months. See how Nakama pricing works.",
+   "Limitation: Nakama is a small team and takes a small number of partners at a time. Its Work page shows placements and the searches behind them but no performance metrics. It is based in India, so live calls with US teams need planning around the time difference. Its focus is off-site visibility, so a large site that needs deep technical SEO may need a specialist for that part.",
+   "HQ: India.",
    "9. Marcel Digital",
    "Best for: Organizations that want AEO inside a full-service digital team. Its AEO page lists technology, associations, financial services, manufacturing, logistics and telecom as sectors.",
    "Services: Its AEO page lists an AEO readiness assessment, question and topic mapping, answer-first content optimization and schema and structured data (FAQ, HowTo, Organization and others). It also lists technical support and monitoring across AI Overviews, AI Mode, ChatGPT, Perplexity and Copilot. It also offers a free AEO starter kit.",
@@ -1058,16 +1045,11 @@ export const aeoAgenciesArticle: Article = {
   "paragraphs": [
    "There is no standard AEO pricing, and many agencies do not publish a price for AEO services. Five of the 10 agencies here show a price figure, Nakama quotes after a call, and the other four show nothing. We did not average the figures because currencies, terms and scopes differ.",
    "None of the 10 publishes an ongoing monthly price below USD 3,000, so a smaller budget means comparing productized providers outside this list.",
-   "Optimist | Ongoing advising from USD 3,000/mo, per its own guide. Its about page says both Advisory and Principal follow a CORE Roadmap | Month to month",
-   "Optimist | Audits, strategy and roadmaps from USD 2,500, per its own guide | One-time projects",
-   "Discovered Labs, Establish | USD 9,138/mo monthly, USD 8,567 on 3 months, USD 7,995 on 6 months (EUR 7,995, 7,495 and 6,995) | Month to month, 30 days notice, lower rate for 3 or 6 months",
-   "Discovered Labs, Compete | USD 14,853/mo monthly, USD 13,710 on 3 months, USD 12,567 on 6 months (EUR 12,995, 11,995 and 10,995) | Same terms",
-   "Discovered Labs, Outlier and custom | From USD 18,282/mo (EUR 15,995) | Custom engagement",
-   "Discovered Labs, diagnostic | USD 4,995 one-off (EUR 4,370), credited to the first retainer month if you sign within 14 days of the walkthrough | One-off",
-   "Discovered Labs, add-ons | Reddit Marketing from USD 5,709/mo (EUR 4,995). Backlink Building from USD 2,852/mo (EUR 2,495) | Monthly",
-   "Omniscient Digital | Full-service engagements from USD 120,000/yr, on its AEO page | Not published",
+   "Discovered Labs | Establish: USD 9,138/mo monthly, USD 8,567 on 3 months, USD 7,995 on 6 months (EUR 7,995, 7,495 and 6,995); Compete: USD 14,853/mo monthly, USD 13,710 on 3 months, USD 12,567 on 6 months (EUR 12,995, 11,995 and 10,995); Outlier and custom: from USD 18,282/mo (EUR 15,995); diagnostic: USD 4,995 one-off (EUR 4,370), credited to the first retainer month if you sign within 14 days of the walkthrough; add-ons: Reddit Marketing from USD 5,709/mo (EUR 4,995), Backlink Building from USD 2,852/mo (EUR 2,495) | Establish and Compete: month to month, 30 days notice, lower rate for 3 or 6 months; Outlier and custom: custom engagement; diagnostic: one-off; add-ons: monthly",
    "NoGood | Average retainer above USD 20,000/mo across all its services, per its homepage FAQ | Monthly retainers",
+   "Omniscient Digital | Full-service engagements from USD 120,000/yr, on its AEO page | Not published",
    "Minuttia | Minimum project size USD 4,000+, per its own LLMO list (data as of 20 January 2026). Not on its AEO page | Not published",
+   "Optimist | Ongoing advising from USD 3,000/mo; audits, strategy and roadmaps from USD 2,500; both per its own guide; its about page says both Advisory and Principal follow a CORE Roadmap | Advising: month to month; audits, strategy and roadmaps: one-time projects",
    "Nakama | Custom quote after a 15-minute call, per its pricing page. No tiers | Three-month minimum",
    "Discovered Labs figures were read from its pricing page on 15 October 2026. The page opened in euros with the 6-month term selected when we read it.",
    "Price follows scope. A program that only edits your own pages costs less than one that also earns mentions on Reddit, YouTube, review sites and publications. Ask each agency how many engines and prompts it tracks, how much content it produces each month, and what the minimum term is."
