@@ -840,6 +840,7 @@ export const aeoAgenciesArticle: Article = {
  date: '2026-10-15',
  publishedAt: '2026-10-15T18:15:38+05:30',
  authorName: 'Yash Kumar',
+ coverImage: {src: '/journal/best-aeo-agencies/best-aeo-agencies-2026-cover.png', width: 1600, height: 900},
  ogImage: {
   url: 'https://www.nakama.in/journal/best-aeo-agencies/best-aeo-agencies-2026-og.png',
   width: 1200,
