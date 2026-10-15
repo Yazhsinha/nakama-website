@@ -23,6 +23,14 @@ export const geoAgenciesJsonLd = {
     "@type": "Person",
     "name": "Yash Kumar",
     "jobTitle": "Co-founder and CEO",
+    "image": {
+     "@type": "ImageObject",
+     "url": "https://www.nakama.in/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo-800.webp",
+     "contentUrl": "https://www.nakama.in/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo-800.webp",
+     "width": 800,
+     "height": 800,
+     "caption": "Yash Kumar, Co-founder and CEO of Nakama Growth"
+    },
     "worksFor": {
      "@type": "Organization",
      "name": "Nakama Growth",
@@ -601,7 +609,12 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <p>The best generative engine optimization agency for you is the one that can show you, with queries you can run yourself, where your brand appears today and what it will take to get named. Nakama starts every conversation by checking a few of your buyers' questions before the call, then gives you a clear next step: an audit, a proposal or an honest "not a fit."</p>
 <p><a href="https://www.nakama.in/contact">Book a call with Nakama</a> or <a href="https://www.nakama.in/pricing#quote">request a custom quote</a>. Prefer email? Write to hello@nakama.in.</p>
 <h2 id="about-the-author">About the author</h2>
-<p><strong>Yash Kumar</strong> is Co-founder and CEO of Nakama Growth, a GEO and AEO agency based in India that runs generative and answer engine optimization for B2B and SaaS brands. Nakama gets brands named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to pick, by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites.</p>`;
+<div class="author-box" id="yash-kumar">
+<img src="/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo.webp" srcset="/journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo.webp 400w, /journal/best-generative-engine-optimization-agencies/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
+<div class="author-box-text">
+<p><strong>Yash Kumar</strong> is Co-founder and CEO of Nakama Growth, a GEO and AEO agency based in India that runs generative and answer engine optimization for B2B and SaaS brands. Nakama gets brands named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to pick, by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites.</p>
+</div>
+</div>`;
 
 export const geoAgenciesArticle: Article = {
  slug: 'best-generative-engine-optimization-agencies',
@@ -900,6 +913,7 @@ export const geoAgenciesArticle: Article = {
  {
   "heading": "About the author",
   "paragraphs": [
+   "Image: Yash Kumar, Co-founder and CEO of Nakama Growth",
    "\nYash Kumar is Co-founder and CEO of Nakama Growth, a GEO and AEO agency based in India that runs generative and answer engine optimization for B2B and SaaS brands. Nakama gets brands named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to pick, by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites."
   ]
  }
