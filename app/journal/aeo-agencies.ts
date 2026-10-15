@@ -9,6 +9,14 @@ export const aeoAgenciesJsonLd = {
    "@id": "https://www.nakama.in/#yash-kumar",
    "name": "Yash Kumar",
    "jobTitle": "Co-founder and CEO",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://www.nakama.in/journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.jpg",
+    "contentUrl": "https://www.nakama.in/journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.jpg",
+    "width": 800,
+    "height": 800,
+    "caption": "Yash Kumar, Co-founder and CEO of Nakama Growth"
+   },
    "worksFor": {
     "@id": "https://www.nakama.in/#organization"
    }
@@ -769,7 +777,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <li><strong>What does it cost, and what is the minimum term?</strong> Get the pricing model and commitment in writing before you compare scopes.</li>
 <li><strong>Where is the team, and who will work on my account?</strong> US buyers should ask about time zones, US clients and the people on the call.</li>
 </ol>
-<figure><img src="/journal/best-aeo-agencies/aeo-agency-questions-checklist.png" alt="Checklist of nine questions to ask an AEO agency before you hire one" width="1080" height="1350" loading="lazy" decoding="async"></figure>
+<figure><img src="/journal/best-aeo-agencies/aeo-agency-questions-checklist.png" alt="Checklist of nine questions to ask an AEO agency before you hire one" width="1600" height="900" loading="lazy" decoding="async"></figure>
 <p>Match the agency to your situation. A SaaS brand that is missing from "best tool for" answers fits an off-site specialist. A B2B team with an in-house writer and a small budget may fit an advisory firm with published prices. An enterprise with several business lines may fit a larger program.</p>
 <h2 id="what-should-an-aeo-agency-report-each-month">What should an AEO agency report each month?</h2>
 <p>A useful AEO report shows your baseline, the prompts tracked, how often your brand is mentioned or cited, and your share of voice against named competitors. It links to the answers behind every number and connects AI referral traffic and leads to the work done. If a report shows only a score, ask for the answers.</p>
@@ -813,7 +821,13 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <h2 id="where-does-your-brand-stand-in-ai-answers-today">Where does your brand stand in AI answers today?</h2>
 <p>The right AEO agency shows you, with queries you can run yourself, where your brand appears today and what it will take to get named. Nakama checks a few of your buyers' questions before the call, then gives you a clear next step: an audit, a proposal or a plain "not a fit." <a href="https://www.nakama.in/pricing#quote">Book a 15-minute pricing call</a>.</p>
 <h2 id="about-the-author">About the author</h2>
-<p>Yash Kumar is Co-founder and CEO of Nakama Growth, a GEO and AEO agency in India that runs answer engine and generative engine optimization for B2B and SaaS brands. Nakama gets brands named in ChatGPT, Perplexity, Gemini and Google AI Overviews by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>`;
+<div class="author-box" id="yash-kumar">
+<img src="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.jpg" srcset="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.jpg 400w, /journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.jpg 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
+<div class="author-box-text">
+<p>Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose.</p>
+<p>He leads Nakama's work on earning mentions on the sources those tools read, including Reddit, YouTube, LinkedIn, Quora, editorial and review sites. For this guide, every agency claim comes from that agency's own website, with the page linked so you can check it yourself. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>
+</div>
+</div>`;
 
 export const aeoAgenciesArticle: Article = {
  slug: 'best-aeo-agencies',
@@ -1140,7 +1154,9 @@ export const aeoAgenciesArticle: Article = {
  {
   "heading": "About the author",
   "paragraphs": [
-   "Yash Kumar is Co-founder and CEO of Nakama Growth, a GEO and AEO agency in India that runs answer engine and generative engine optimization for B2B and SaaS brands. Nakama gets brands named in ChatGPT, Perplexity, Gemini and Google AI Overviews by earning mentions on the sources those tools rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites. Read more about Nakama."
+   "Image: Yash Kumar, Co-founder and CEO of Nakama Growth",
+   "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose.",
+   "He leads Nakama's work on earning mentions on the sources those tools read, including Reddit, YouTube, LinkedIn, Quora, editorial and review sites. For this guide, every agency claim comes from that agency's own website, with the page linked so you can check it yourself. Read more about Nakama."
   ]
  }
 ],
