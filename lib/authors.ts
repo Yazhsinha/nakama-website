@@ -9,6 +9,8 @@ export type Author={
  bio:string[],
  metaTitle:string,metaDescription:string,
  image:{src:string,src800:string,width:number,height:number,alt:string},
+ /** Verified public profiles. Optional; rendered as links on the page and emitted as Person sameAs. */
+ links?:{label:'LinkedIn'|'Instagram',url:string}[],
 };
 
 export const authors:Author[]=[
@@ -23,8 +25,26 @@ export const authors:Author[]=[
   ],
   image:{src:'/authors/yash-kumar-nakama-ceo.webp',src800:'/authors/yash-kumar-nakama-ceo-800.webp',width:800,height:800,alt:'Yash Kumar, Co-founder and CEO of Nakama Growth'},
  },
+ {
+  slug:'snehil-srivastava',
+  name:'Snehil Srivastava',
+  jobTitle:'CEO & Creative Director',
+  metaTitle:'Snehil Srivastava, CEO & Creative Director of Nakama Growth',
+  metaDescription:'Snehil Srivastava is CEO and Creative Director of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named in AI answers.',
+  bio:[
+   'Snehil Srivastava is CEO and Creative Director of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask AI tools what to choose. He is a creative strategist and content lead. He has spent multiple years building brands.',
+   'Snehil is a passionate photographer who loves cameras. He holds Certified Professional Photographer certificates from National Geographic and Michigan State University. He is hands-on with video editing and commercial photography. He completed his studies at the University of Leeds.',
+  ],
+  image:{src:'/authors/snehil-srivastava-nakama-ceo.webp',src800:'/authors/snehil-srivastava-nakama-ceo-800.webp',width:800,height:800,alt:'Snehil Srivastava, CEO & Creative Director of Nakama Growth'},
+  links:[
+   {label:'LinkedIn',url:'https://www.linkedin.com/in/snehil-srivastava-356739175/'},
+   {label:'Instagram',url:'https://www.instagram.com/maazakthakya/'},
+  ],
+ },
 ];
 
+/** Job title for running text, with "&" spelled out. */
+export const jobTitleText=(a:Author)=>a.jobTitle.replace(/ & /g,' and ');
 export const authorPath=(slug:string)=>`/authors/${slug}`;
 export const authorUrl=(slug:string)=>abs(authorPath(slug));
 export const authorId=(slug:string)=>`${authorUrl(slug)}#person`;

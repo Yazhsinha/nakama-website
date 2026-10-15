@@ -3214,3 +3214,5 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 @media(max-width:900px){.author-card img{width:200px}.author-page .ip-hero.has-aside .ip-hero-in{grid-template-columns:1fr}}
 .author-page .ip-section.author-bio-sec{padding-top:0;padding-bottom:0}
 .author-page .ip-section.author-bio-sec+.ip-section{padding-top:56px}
+.author-page .author-social svg{flex:none;width:16px;height:16px}
+.author-page .author-social:hover svg{transform:none}
