@@ -9,6 +9,7 @@ export const aeoAgenciesJsonLd = {
    "@id": "https://www.nakama.in/#yash-kumar",
    "name": "Yash Kumar",
    "jobTitle": "Co-founder and CEO",
+   "description": "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read.",
    "image": {
     "@type": "ImageObject",
     "url": "https://www.nakama.in/journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.jpg",
@@ -824,8 +825,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <div class="author-box" id="yash-kumar">
 <img src="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.jpg" srcset="/journal/best-aeo-agencies/yash-kumar-nakama-ceo.jpg 400w, /journal/best-aeo-agencies/yash-kumar-nakama-ceo-800.jpg 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
 <div class="author-box-text">
-<p>Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose.</p>
-<p>He leads Nakama's work on earning mentions on the sources those tools read, including Reddit, YouTube, LinkedIn, Quora, editorial and review sites. For this guide, every agency claim comes from that agency's own website, with the page linked so you can check it yourself. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>
+<p>Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read. Read more about <a href="https://www.nakama.in/about">Nakama</a>.</p>
 </div>
 </div>`;
 
@@ -1155,8 +1155,7 @@ export const aeoAgenciesArticle: Article = {
   "heading": "About the author",
   "paragraphs": [
    "Image: Yash Kumar, Co-founder and CEO of Nakama Growth",
-   "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose.",
-   "He leads Nakama's work on earning mentions on the sources those tools read, including Reddit, YouTube, LinkedIn, Quora, editorial and review sites. For this guide, every agency claim comes from that agency's own website, with the page linked so you can check it yourself. Read more about Nakama."
+   "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read. Read more about Nakama."
   ]
  }
 ],
