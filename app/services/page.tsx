@@ -1,5 +1,6 @@
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
+import Link from 'next/link';
 import {Sparkles,Bot,FileText,MessageCircle,Play,Share2,ChartNoAxesCombined,Check} from 'lucide-react';
 import {Shell,Reveal} from '../site';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
@@ -7,7 +8,7 @@ import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../in
 export const metadata:Metadata=pageMeta('/services',{title:'AEO, GEO & AI Visibility Services — Nakama Growth',description:'AEO, GEO, Reddit and community, content, YouTube, digital PR and measurement, run by one team and included in one plan to get you named in AI answers.'});
 
 const services=[
- {icon:Sparkles,tag:'AEO · Answer engines',name:'Be part of the answer.',p:'We turn buyer questions into clear, structured answers that search and answer engines can understand, retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first content and FAQ structure','Citation and visibility tracking']},
+ {icon:Sparkles,tag:'AEO · Answer engines',name:'Be part of the answer.',p:'We turn buyer questions into clear, structured answers that search and answer engines can understand, retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first content and FAQ structure','Citation and visibility tracking'],more:{href:'/journal/best-aeo-agencies',text:'AEO agencies compared'}},
  {icon:Bot,tag:'GEO · Generative engines',name:'Build a brand AI understands.',p:'We strengthen the content, context and third-party sources that teach ChatGPT, Perplexity, Gemini and Google where your product fits.',items:['AI answer and competitor audits','Consistent product and category context','Source strategy for citation-ready content']},
  {icon:MessageCircle,tag:'Reddit & community',name:'Earn a place in the conversation.',p:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {icon:FileText,tag:'Content & editorial',name:'Make your expertise useful.',p:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
@@ -50,6 +51,7 @@ export default function Services(){
       <span className="tag">{s.tag}</span>
       <h3>{s.name}</h3>
       <p>{s.p}</p>
+      {'more' in s&&<p className="ip-svc-more"><Link href={s.more.href}>{s.more.text}</Link></p>}
       <ul>{s.items.map(i=><li key={i}>{i}</li>)}</ul>
      </Reveal>)}
      <Reveal className="ip-card ip-svc wide" style={{gridColumn:'1/-1'}}>

@@ -3177,3 +3177,14 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
  .ip-article-page .article-rich h3{font-size:20px}
  .ip-article-page .article-rich p,.ip-article-page .article-rich li{font-size:16px}
 }
+
+/* AEO agencies guide: CTA heading styling (same treatment as the GEO guide) and the small internal links on /services and /pricing. */
+.ip-article-page .article-rich h2#where-does-your-brand-stand-in-ai-answers-today{margin-top:64px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
+.ip-svc .ip-svc-more{margin:10px 0 0;font-size:14px}
+.ip-svc .ip-svc-more a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}
+.pricing-page .pr-aeo-note{margin:0 0 18px;font-size:15px;color:#c9c8cf}
+.pricing-page .pr-aeo-note a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}
+.ip-article-page .article-rich .author-box{margin-top:16px;padding:22px 24px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.03);display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:start;scroll-margin-top:120px}
+.ip-article-page .article-rich .author-box img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
+.ip-article-page .article-rich .author-box-text p:first-child{margin-top:0}
+@media(max-width:560px){.ip-article-page .article-rich .author-box{grid-template-columns:1fr}}

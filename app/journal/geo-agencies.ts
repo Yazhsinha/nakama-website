@@ -269,7 +269,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <h2 id="geo-vs-seo-what-a-geo-agency-does">GEO vs SEO: what a GEO agency does</h2>
 <p>A GEO agency, sometimes called a generative AI search engine optimization agency, gets your brand cited or recommended inside AI-generated answers. When a buyer asks ChatGPT "what is the best CRM for a small real estate team," the answer draws on pages the model trusts. A GEO agency works out which pages those are, then makes sure your brand appears on them and on your own site in a form the model can quote.</p>
 <p>The term comes from the research paper <a href="https://arxiv.org/abs/2311.09735" rel="noopener" target="_blank">GEO: Generative Engine Optimization</a> by Pranjal Aggarwal and colleagues. The authors report that their methods can boost "visibility by up to 40% in generative engine responses," and that results vary by domain.</p>
-<p>In practice, <a href="https://www.nakama.in/services">GEO services</a> cover four things: mapping the questions buyers ask AI tools, auditing which sources those tools cite, creating or earning content on those sources, and measuring how often your brand appears in the answers.</p>
+<p>In practice, <a href="https://www.nakama.in/services">GEO services</a> cover four things: mapping the questions buyers ask AI tools, auditing which sources those tools cite, creating or earning content on those sources, and measuring how often your brand appears in the answers. Some agencies call the same work AEO, or answer engine optimization. For that side of the market, see our comparison of the <a href="https://www.nakama.in/journal/best-aeo-agencies">best AEO agencies</a>.</p>
 <h3 id="geo-agency-vs-seo-agency">GEO agency vs SEO agency</h3>
 <div class="article-table"><table>
 <thead>
@@ -667,7 +667,7 @@ export const geoAgenciesArticle: Article = {
   "paragraphs": [
    "\nA GEO agency, sometimes called a generative AI search engine optimization agency, gets your brand cited or recommended inside AI-generated answers. When a buyer asks ChatGPT \"what is the best CRM for a small real estate team,\" the answer draws on pages the model trusts. A GEO agency works out which pages those are, then makes sure your brand appears on them and on your own site in a form the model can quote.",
    "The term comes from the research paper GEO: Generative Engine Optimization by Pranjal Aggarwal and colleagues. The authors report that their methods can boost \"visibility by up to 40% in generative engine responses,\" and that results vary by domain.",
-   "In practice, GEO services cover four things: mapping the questions buyers ask AI tools, auditing which sources those tools cite, creating or earning content on those sources, and measuring how often your brand appears in the answers.",
+   "In practice, GEO services cover four things: mapping the questions buyers ask AI tools, auditing which sources those tools cite, creating or earning content on those sources, and measuring how often your brand appears in the answers. Some agencies call the same work AEO, or answer engine optimization. For that side of the market, see our comparison of the best AEO agencies.",
    "GEO agency vs SEO agency",
    "SEO agency | GEO agency",
    "Main goal | Rank pages in Google's blue links | Get the brand named or cited in AI answers",
