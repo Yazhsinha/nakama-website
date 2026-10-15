@@ -87,8 +87,8 @@ export const aeoAgenciesJsonLd = {
     "https://www.nakama.in/journal/best-aeo-agencies/best-aeo-agencies-2026-cover.png",
     "https://www.nakama.in/journal/best-aeo-agencies/best-aeo-agencies-2026-og.png"
    ],
-   "datePublished": "2026-10-15T16:44:15+05:30",
-   "dateModified": "2026-10-15T16:44:15+05:30",
+   "datePublished": "2026-10-15T18:15:38+05:30",
+   "dateModified": "2026-10-15T18:15:38+05:30",
    "inLanguage": "en-US",
    "articleSection": "Answer engine optimization",
    "keywords": "AEO agency, AEO agencies, AEO services, best AEO agencies, answer engine optimization agency",
@@ -244,7 +244,7 @@ export const aeoAgenciesJsonLd = {
      "name": "Which AEO agencies are considered the best?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It depends on your category and budget. For B2B software, Optimist and Discovered Labs publish prices, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed."
+      "text": "It depends on your category and budget. For B2B software, Discovered Labs publishes tiers, Optimist states a starting price in its guide, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed."
      }
     },
     {
@@ -559,7 +559,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <li>Omniscient Digital's HQ cell is Partial because its about page says its team is distributed around the world, and three of its five listed addresses carry mailbox (PMB) numbers.</li>
 <li>iPullRank's HQ cell is Partial because a staff bio on its about page mentions a New York office.</li>
 </ul>
-<p>If you are an enterprise team or have a large paid budget, NoGood or iPullRank may fit better. Optimist and Discovered Labs publish prices for B2B teams.</p>
+<p>If you are an enterprise team or have a large paid budget, NoGood or iPullRank may fit better. Discovered Labs publishes tiers, and Optimist, Omniscient Digital and Minuttia state a starting price on their own pages or guides.</p>
 <p>"Self-reported" means the figure comes from the agency's own site and we could not verify it independently. "Not published" means we did not find it on the pages we checked.</p>
 <p>Every entry below includes a limitation.</p>
 <h2 id="what-is-answer-engine-optimization-and-what-does-an-aeo-agency-do">What is answer engine optimization, and what does an AEO agency do?</h2>
@@ -808,7 +808,7 @@ const bodyHtml = `<h1 id="best-aeo-agencies-and-aeo-services-in-2026-compared">B
 <h3 id="what-are-aeo-services">What are AEO services?</h3>
 <p>AEO services, also called answer engine optimization services, usually include an AI visibility audit, question and prompt mapping and answer-first content. They add structured data, technical access for AI crawlers, off-site mentions on sources such as Reddit and review sites, and tracking of mentions, citations and AI referral traffic. Scope and depth differ by agency, so compare the actual deliverables.</p>
 <h3 id="which-aeo-agencies-are-considered-the-best">Which AEO agencies are considered the best?</h3>
-<p>It depends on your category and budget. For B2B software, Optimist and Discovered Labs publish prices, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed.</p>
+<p>It depends on your category and budget. For B2B software, Discovered Labs publishes tiers, Optimist states a starting price in its guide, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed.</p>
 <h3 id="how-much-does-an-aeo-agency-cost">How much does an AEO agency cost?</h3>
 <p>Many agencies do not publish prices. Optimist's guide says advising starts at USD 3,000 a month. Discovered Labs starts at USD 7,995 a month on a six month term (EUR 6,995). Omniscient Digital's full-service engagements start at USD 120,000 a year. NoGood's average retainer across all services is above USD 20,000 a month. Nakama quotes after a call.</p>
 <h3 id="how-is-aeo-different-from-geo-and-seo">How is AEO different from GEO and SEO?</h3>
@@ -838,6 +838,7 @@ export const aeoAgenciesArticle: Article = {
  motif: 'guide',
  metaTitle: "AEO Agencies and AEO Services: 10 Best (Oct 2026)",
  date: '2026-10-15',
+ publishedAt: '2026-10-15T18:15:38+05:30',
  authorName: 'Yash Kumar',
  coverImage: {src: '/journal/best-aeo-agencies/best-aeo-agencies-2026-cover.png', width: 1600, height: 900},
  ogImage: {
@@ -930,7 +931,7 @@ export const aeoAgenciesArticle: Article = {
    "Nakama's price is No because its pricing page shows a custom quote and no figure. Its proof is Partial because its Work page names seven clients and the searches behind each placement but shows no metrics. Its AEO page cell is Partial because AEO is one of six disciplines on its Services page. Its HQ cell is Partial because its footer says \"Made in India\" with no address.",
    "Omniscient Digital's HQ cell is Partial because its about page says its team is distributed around the world, and three of its five listed addresses carry mailbox (PMB) numbers.",
    "iPullRank's HQ cell is Partial because a staff bio on its about page mentions a New York office.",
-   "If you are an enterprise team or have a large paid budget, NoGood or iPullRank may fit better. Optimist and Discovered Labs publish prices for B2B teams.",
+   "If you are an enterprise team or have a large paid budget, NoGood or iPullRank may fit better. Discovered Labs publishes tiers, and Optimist, Omniscient Digital and Minuttia state a starting price on their own pages or guides.",
    "\"Self-reported\" means the figure comes from the agency's own site and we could not verify it independently. \"Not published\" means we did not find it on the pages we checked.",
    "Every entry below includes a limitation."
   ]
@@ -1133,7 +1134,7 @@ export const aeoAgenciesArticle: Article = {
    "What are AEO services?",
    "AEO services, also called answer engine optimization services, usually include an AI visibility audit, question and prompt mapping and answer-first content. They add structured data, technical access for AI crawlers, off-site mentions on sources such as Reddit and review sites, and tracking of mentions, citations and AI referral traffic. Scope and depth differ by agency, so compare the actual deliverables.",
    "Which AEO agencies are considered the best?",
-   "It depends on your category and budget. For B2B software, Optimist and Discovered Labs publish prices, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed.",
+   "It depends on your category and budget. For B2B software, Discovered Labs publishes tiers, Optimist states a starting price in its guide, and Omniscient Digital fits larger budgets. NoGood fits teams that want paid media and creative too, and iPullRank fits enterprise programs. Nakama suits SaaS brands that need off-site mentions. Pick the agency that shows you AI answers it changed.",
    "How much does an AEO agency cost?",
    "Many agencies do not publish prices. Optimist's guide says advising starts at USD 3,000 a month. Discovered Labs starts at USD 7,995 a month on a six month term (EUR 6,995). Omniscient Digital's full-service engagements start at USD 120,000 a year. NoGood's average retainer across all services is above USD 20,000 a month. Nakama quotes after a call.",
    "How is AEO different from GEO and SEO?",

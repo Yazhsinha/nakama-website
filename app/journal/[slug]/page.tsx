@@ -16,8 +16,8 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{
   title:article.metaTitle??`${article.title.replace(/\.$/,'')} — Nakama Growth`,
   description:article.description,
   type:'article',
-  publishedTime:articleDate(article.slug),
-  modifiedTime:article.date,
+  publishedTime:article.publishedAt??articleDate(article.slug),
+  modifiedTime:article.publishedAt??article.date,
   image:article.ogImage,
   author:article.authorName,
  });

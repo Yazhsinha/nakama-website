@@ -6,6 +6,8 @@ export type Article={
  /** Set only on posts that need a title different from the on-page H1. */
  metaTitle?:string,
  date?:string,
+ /** Optional full go-live timestamp (ISO 8601 with offset). Used for og/article published and modified times and the RSS dates when set; otherwise the day in `date` is used. */
+ publishedAt?:string,
  authorName?:string,
  ogImage?:{url:string,width:number,height:number,alt:string,type?:string},
  /** Replaces the generic Article schema (and the shared breadcrumb schema) when set. */
