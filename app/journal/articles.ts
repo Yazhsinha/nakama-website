@@ -1,5 +1,6 @@
 import {geoAgenciesArticle} from './geo-agencies';
 import {aeoAgenciesArticle} from './aeo-agencies';
+import {aeoVsSeoVsGeoArticle} from './aeo-vs-seo-vs-geo';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -18,6 +19,7 @@ export type Article={
  coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
+ aeoVsSeoVsGeoArticle,
  aeoAgenciesArticle,
  geoAgenciesArticle,
  {slug:'build-around-the-buyers-next-question',category:'Strategy',title:'Build around the buyer’s next question.',description:'A practical way to turn product expertise into a content plan built around the questions buyers ask next, so AI answers and search results can cite you.',readTime:'4 min read',motif:'question',sections:[
