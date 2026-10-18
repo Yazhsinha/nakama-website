@@ -45,7 +45,7 @@
 }
 .monochrome img { filter: brightness(0) invert(1); }
 .cell:hover .tool img { filter: none; opacity: 1; transform: translateY(-2px); }
-.cell:hover .monochrome img { filter: drop-shadow(0 0 1px #ffffffb3); }
+.cell:hover .monochrome img { filter: brightness(0) invert(1); }
 @media (max-width: 900px) {
   .logos { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 }
