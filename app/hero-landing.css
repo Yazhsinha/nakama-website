@@ -309,3 +309,11 @@
 @keyframes orbital-drift {from{margin-top:-12px;opacity:.45}to{margin-top:20px;opacity:1}}
 @media(max-width:760px){.hero-orbital i{top:68%;width:180%;height:65%}.hero-orbital i:nth-child(2){top:73%;width:205%}.hero-orbital i:nth-child(3){top:78%;width:220%}}
 @media(prefers-reduced-motion:reduce){.hero-orbital{transform:none;transition:none}.hero-orbital i{animation:none}.hero-cursor-light{display:none}}
+
+@media(max-width:760px), (pointer:coarse) and (max-height:700px) {
+ .hero-runtime.hero-giga.hero-landing .hero-pane {
+   height:auto!important; min-height:100svh; padding-top:110px; padding-bottom:20px;
+ }
+ .hero-runtime.hero-landing .hero-copy.hero-copy-giga { min-width:0; }
+ .hero-runtime.hero-landing .hero-ctas { flex-wrap:wrap; }
+}

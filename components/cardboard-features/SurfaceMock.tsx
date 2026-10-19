@@ -178,7 +178,7 @@ export function SurfaceMock({activeIndex, onNavigate, mobile}: {activeIndex: num
   }, []);
   const tab = TABS[activeIndex];
   const tilt = (e: PointerEvent<HTMLDivElement>) => {
-    if (mobile || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (e.pointerType !== "mouse" || mobile || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const r = e.currentTarget.getBoundingClientRect();
     e.currentTarget.style.setProperty("--rx", `${((e.clientY - r.top) / r.height - 0.5) * -4}deg`);
     e.currentTarget.style.setProperty("--ry", `${((e.clientX - r.left) / r.width - 0.5) * 5}deg`);
@@ -196,6 +196,7 @@ export function SurfaceMock({activeIndex, onNavigate, mobile}: {activeIndex: num
             <div className="sm-tabs" role="tablist" aria-label="Buyer research tabs">
               {TABS.map((t, i) => (
                 <button key={t.id} type="button" role="tab" aria-selected={i === activeIndex} tabIndex={mobile ? -1 : 0}
+                  disabled={mobile}
                   className={`sm-tab${i === activeIndex ? " on" : ""}`} onClick={() => onNavigate(i)}>
                   <span className="fav">{t.mark}</span><span className="lbl">{t.label}</span>{i === activeIndex && !mobile ? <i className="sm-tab-prog" /> : null}
                 </button>

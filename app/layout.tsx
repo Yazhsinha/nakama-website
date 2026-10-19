@@ -11,6 +11,7 @@ import "./homepage-refinement.css";
 import "./answer-hero.css";
 import "./polish-oct.css";
 import "./perf-polish.css";
+import "./responsive-touch.css";
 import { SiteTheme } from "./theme";
 export const metadata: Metadata = {
  metadataBase: new URL(SITE_URL),

@@ -74,7 +74,8 @@ function DragFrame({
   }, []);
 
   const pointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if ((event.target as HTMLElement).closest("button,input")) return;
+    if (event.pointerType !== "mouse" || event.button !== 0 || matchMedia("(max-width: 1199px), (pointer: coarse), (hover: none)").matches) return;
+    if ((event.target as HTMLElement).closest("button,input,a,select,textarea")) return;
     drag.current.active = true;
     drag.current.x = event.clientX;
     drag.current.y = event.clientY;
@@ -94,7 +95,7 @@ function DragFrame({
 
   const pointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
     drag.current.active = false;
-    event.currentTarget.releasePointerCapture(event.pointerId);
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
     event.currentTarget.classList.remove("dragging");
   };
 
@@ -150,7 +151,7 @@ export function SequenceShowcase() {
   const snapping = useRef(false);
 
   useLayoutEffect(() => {
-    const media = matchMedia("(max-width: 1199px)");
+    const media = matchMedia("(max-width: 1199px), (pointer: coarse), (hover: none)");
     const layout = () => {
       const isCompact = media.matches;
       setCompact(isCompact);
@@ -276,7 +277,7 @@ export function SequenceShowcase() {
   );
 
   return (
-    <section id="how" ref={rootRef} className="visibility-how">
+    <section id="how" ref={rootRef} className={`visibility-how${compact ? " is-compact" : ""}`}>
       <div className="visibility-layout">
         <div className="visibility-rails">
           {ROWS.map((row, rowIndex) => {
@@ -301,12 +302,11 @@ export function SequenceShowcase() {
                           <Prototype step={steps[rowIndex]} />
                         </div>
                       )}
-                      <div className="visibility-steps" role="tablist" aria-label={`${row.eyebrow} steps`}>
+                      <div className="visibility-steps" role="group" aria-label={`${row.eyebrow} steps`}>
                         {row.steps.map((step, stepIndex) => (
                           <button
                             type="button"
-                            role="tab"
-                            aria-selected={steps[rowIndex] === stepIndex}
+                            aria-pressed={steps[rowIndex] === stepIndex}
                             className={`visibility-step${steps[rowIndex] === stepIndex ? " active" : ""}`}
                             onClick={() => choose(rowIndex, stepIndex)}
                             key={step.title}

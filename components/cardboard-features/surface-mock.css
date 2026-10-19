@@ -139,3 +139,35 @@
 @media(prefers-reduced-motion:reduce){.sm-count{transition:none}.sm-panel.on .sm-brand{animation:none}}
 
 .sm-gpt-side .sm-gpt-logo{padding:0!important;overflow:visible!important;width:26px;height:26px;margin:2px 0 12px 8px}
+
+/* Reflow mobile illustrations at native text size instead of shrinking 775px to a phone. */
+@media(max-width:1023px), (pointer:coarse), (hover:none) {
+ .surface-mock.is-mobile{aspect-ratio:auto;perspective:none}
+ .surface-mock.is-mobile .sm-stage{position:relative;width:100%;height:auto;transform:none;transition:none}
+ .surface-mock.is-mobile .sm-window{position:relative;inset:auto;border-radius:14px}
+ .surface-mock.is-mobile .sm-view{position:relative;inset:auto;overflow:visible}
+ .surface-mock.is-mobile .sm-panel{display:none;position:relative;inset:auto;transform:none}
+ .surface-mock.is-mobile .sm-panel.on{display:block}
+ .surface-mock.is-mobile .sm-badge{display:none}
+ .surface-mock.is-mobile .sm-tab:not(.on){display:none}
+ .surface-mock.is-mobile .sm-tab.on{max-width:none;font-size:13px;height:36px;cursor:default}
+ .surface-mock.is-mobile .sm-url{overflow:hidden;white-space:nowrap;font-size:11px}
+ .surface-mock.is-mobile .sm-gpt-side{display:none}
+ .surface-mock.is-mobile .sm-gpt-thread{padding:16px;overflow:visible}
+ .surface-mock.is-mobile .sm-gpt-user{max-width:100%;font-size:14px}
+ .surface-mock.is-mobile .sm-gpt-answer{font-size:14px}
+ .surface-mock.is-mobile .sm-gpt-compose{margin:16px}
+ .surface-mock.is-mobile .sm-gpt-acts{flex-wrap:wrap}
+ .surface-mock.is-mobile .sm-rd-body{padding:16px}
+ .surface-mock.is-mobile .sm-rd-meta{flex-wrap:wrap;line-height:1.5}
+ .surface-mock.is-mobile .sm-rd-post p,.surface-mock.is-mobile .sm-rd-comment p{font-size:14px}
+ .surface-mock.is-mobile .sm-rd-comment.reply{margin-left:12px}
+ .surface-mock.is-mobile .sm-yt-head,.surface-mock.is-mobile .sm-qa-head{padding-inline:12px;gap:10px}
+ .surface-mock.is-mobile .sm-yt-search,.surface-mock.is-mobile .sm-qa-search{min-width:0;overflow:hidden;white-space:nowrap}
+ .surface-mock.is-mobile .sm-yt-chips{overflow:hidden;flex-wrap:wrap;gap:6px}
+ .surface-mock.is-mobile .sm-yt-result{flex-direction:column;gap:12px}
+ .surface-mock.is-mobile .sm-yt-thumb,.surface-mock.is-mobile .sm-yt-thumb.plain{width:100%;height:auto;aspect-ratio:16/9}
+ .surface-mock.is-mobile .sm-qa-body{padding:16px}
+ .surface-mock.is-mobile .sm-qa-answer{padding:16px}
+ .surface-mock.is-mobile .sm-qa-answer p{font-size:14px}
+}

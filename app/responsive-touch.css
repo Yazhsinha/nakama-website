@@ -1,0 +1,108 @@
+/* Responsive corrections only. Desktop mouse layouts retain their original rules. */
+@media (max-width: 1199px), (pointer: coarse), (hover: none) {
+  .home-cinema main > section.visibility-how,
+  .home-cinema main > section.cardboard-features {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+  .site-frame :is(input, textarea, select) { font-size: 16px; }
+  .site-frame :is(.ip-ghost, .wb-actions a, .wb-actions button, .evidence-copy, .pd-chip) { min-height: 44px; }
+  .site-frame :is(.ip-wrap, .ip-form, .ip-field, .wb-body, .evidence-stage) { min-width: 0; }
+  .site-frame :is(.ip-lead, .wb-query, .doc, .article-rich, .article-body) { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 1023px), (pointer: coarse), (hover: none) {
+  .site-frame .site-nav, .site-frame .site-nav.is-scrolled {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .site-frame .site-nav .desktop-nav { display: none; }
+  .site-frame .site-nav .menu-button { display: flex; min-width: 44px; min-height: 44px; }
+  .mobile-menu {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    padding-top: max(40px, env(safe-area-inset-top)) !important;
+    padding-bottom: max(24px, env(safe-area-inset-bottom)) !important;
+  }
+  .mobile-menu nav { margin-top: 20px; }
+  .mobile-menu nav > a { min-height: 48px; padding-block: 12px; font-size: 20px; }
+  .home-cinema .evidence-search { height: auto; min-height: 68px; }
+  .home-cinema .evidence-search-text { white-space: normal; overflow-wrap: anywhere; min-width: 0; }
+  .home-cinema .evidence-copy { flex: none; }
+  .site-frame .cs-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .site-frame .ip-input { font-size: 16px; }
+  .site-frame .ip-includes { flex-wrap: wrap; }
+  .site-frame .ip-includes span { white-space: normal; }
+}
+
+@media (max-width: 700px) {
+  .site-frame .site-nav .brand .nakama-gate-lockup { max-width: 100%; height: auto; width: 132px; margin-left: 0; }
+  .site-frame .site-nav .brand { min-width: 0; padding-inline: 6px; }
+  .site-frame .site-nav .nav-actions { gap: 6px; }
+  .site-frame .site-nav .nav-contact { white-space: nowrap; }
+  .site-frame .page-width { width: calc(100% - 40px); margin-inline: auto; }
+  .site-frame .ip-wrap { width: calc(100% - 40px); }
+  .site-frame .ip-hero { padding-top: 120px; padding-bottom: 40px; }
+  .site-frame .ip-hero h1 { font-size: clamp(34px, 9vw, 44px); line-height: 1.1; overflow-wrap: anywhere; }
+  .site-frame .ip-section { padding-block: 40px; }
+  .site-frame .ip-head h2 { font-size: clamp(28px, 8vw, 36px); }
+  .site-frame :is(.ip-g2, .ip-g3, .ip-g4, .ip-fit-grid, .ip-split, .ip-plans, .ip-ways) { grid-template-columns: minmax(0, 1fr); }
+  .site-frame .ip-quote { grid-template-columns: minmax(0, 1fr); padding: 24px 16px; gap: 28px; }
+  .site-frame .ip-form { grid-template-columns: minmax(0, 1fr); padding: 20px 14px; }
+  .site-frame .ip-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-frame .ip-chip span { height: auto; min-height: 44px; padding: 10px; }
+  .site-frame .ip-cta { padding: 28px 22px; }
+  .site-frame .wb-tabs { display: flex; min-width: 0; width: max-content; }
+  .site-frame .wb-tabs button { flex: none; padding-inline: 14px; }
+  .site-frame .wb-query { padding: 12px; font-size: 16px; align-items: flex-start; }
+  .site-frame .wb-meta div { flex-wrap: wrap; }
+  .site-frame .wb-meta dd { text-align: left; overflow-wrap: anywhere; }
+  .site-frame .ps-copy { padding: 24px 18px; }
+  .site-frame .ps-copy ul { grid-template-columns: minmax(0, 1fr); }
+  .home-cinema .evidence-heading { gap: 20px; }
+  .home-cinema .evidence-search { display: flex; flex-wrap: wrap; padding: 14px; gap: 10px; }
+  .home-cinema .evidence-search-text { flex: 1 1 calc(100% - 44px); }
+  .home-cinema .evidence-copy { margin-left: auto; }
+  .home-cinema .evidence-case { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+  .home-cinema .evidence-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-cinema .evidence-card { min-width: 0; text-align: left; }
+  .home-cinema .faq-editorial { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .home-cinema .faq-editorial-intro { position: static; }
+  .home-cinema .faq-editorial-item summary { gap: 12px; }
+  .home-cinema .contact-flare-inner { grid-template-columns: minmax(0, 1fr); padding: 32px 22px; gap: 28px; }
+  .home-cinema .contact-flare-actions { flex-wrap: wrap; gap: 16px; }
+  .site-frame .nkf-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-frame .nkf-col { min-width: 0; overflow-wrap: anywhere; }
+  .site-frame .nkf-col nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .site-frame .article-body-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .site-frame .article-body-layout > aside { position: static; }
+  .site-frame .article-rich { padding-top: 112px; }
+  .site-frame .article-rich :is(h1, h2, h3) { overflow-wrap: anywhere; }
+  .site-frame .article-rich table { display: block; max-width: 100%; min-width: 0; overflow-x: auto; }
+  .site-frame .article-rich :is(th, td) { min-width: 150px; }
+  .site-frame .article-rich pre { max-width: 100%; overflow-x: auto; }
+  .site-frame .next-article { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .site-frame .next-article-img { width: 100%; max-width: 100%; height: auto; }
+}
+
+@media (max-width: 360px) {
+  .site-frame .site-nav .brand .nakama-gate-lockup { width: 112px; }
+  .site-frame .site-nav .nav-contact { padding-inline: 9px; font-size: 12px; }
+  .site-frame .site-nav .nav-contact svg { display: none; }
+}
+
+@media(max-width:1023px), (pointer:coarse), (hover:none) {
+ .mobile-menu > button { min-width:44px; min-height:44px; display:grid; place-items:center; }
+ #prompts { padding-top:64px; padding-bottom:56px; }
+ .home-cinema main > section#prompts { -webkit-mask-image:none!important; mask-image:none!important; }
+ .pd-send { width:44px; height:44px; }
+ .pd-textarea { font-size:16px; }
+}
+@media(max-width:700px) {
+ .home-cinema .faq-editorial-item p { padding-left:0; padding-right:0; }
+ .site-frame .ip-stats { grid-template-columns:minmax(0,1fr); }
+ .site-frame .ip-stat { border-left:0; border-top:1px solid var(--ip-line); }
+ .site-frame .ip-stat:first-child { border-top:0; }
+}

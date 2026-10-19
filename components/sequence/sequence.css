@@ -909,7 +909,7 @@
 .cycle-line .active { color:#fff; }
 .cycle-line svg { width:11px;fill:none;stroke:currentColor;stroke-width:1.5; }
 
-@media (max-width:1199px) {
+@media (max-width:1199px), (pointer:coarse), (hover:none) {
   .visibility-layout { display:block;padding:0; }
   .visibility-rails { display:contents; }
   .visibility-stage { display:none; }
@@ -988,4 +988,33 @@
   .visibility-progress {
     transition-duration:1ms;
   }
+}
+/* A document-flow workflow on tablets and touch devices, including landscape. */
+@media (max-width:1199px), (pointer:coarse), (hover:none) {
+  .visibility-how .visibility-row-inner { padding-inline:clamp(20px,4vw,40px); }
+  .visibility-how .visibility-compact-panel {
+    height:auto; min-height:0; padding:12px;
+    overflow:visible; border:1px solid #ffffff1a;
+  }
+  .visibility-how .visibility-frame {
+    position:relative; inset:auto; width:100%; height:auto;
+    transform:none; cursor:auto; user-select:auto; touch-action:pan-y;
+  }
+  .visibility-how .visibility-reset { display:none; }
+  .visibility-how .visibility-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); overflow:visible; gap:18px; }
+  .visibility-how .visibility-step { padding:16px 0; min-height:48px; }
+  .visibility-how .visibility-step strong { opacity:.7; font-size:16px; }
+  .visibility-how .visibility-step.active strong { opacity:1; }
+  .visibility-how .visibility-step span { font-size:14px; line-height:1.6; }
+  .visibility-how .visibility-step.active span { max-height:none; }
+  .visibility-how .visibility-copy p { font-size:16px; line-height:1.65; color:#ffffffb3; }
+  .visibility-how .visibility-eyebrow { font-size:12px; }
+  .visibility-step:focus-visible { outline:2px solid #f0b58b; outline-offset:4px; }
+}
+@media (max-width:700px) {
+  .visibility-how .visibility-rail { gap:24px; }
+  .visibility-how .visibility-row-sticky { padding:32px 0; }
+  .visibility-how .visibility-steps { grid-template-columns:minmax(0,1fr); gap:0; }
+  .visibility-how .visibility-compact-panel { padding:8px; }
+  .visibility-how .visibility-copy h2 { font-size:28px; }
 }

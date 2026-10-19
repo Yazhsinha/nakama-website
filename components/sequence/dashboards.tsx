@@ -79,7 +79,7 @@ export function MapDash({step}: {step: number}) {
             })}
           </div>
           <div className="dx-insight" key={row}><span className="dx-spark">✦</span>{PROMPTS[row].who}</div>
-          <div className="dx-legend"><span><i className="dx-yn yes">✓</i>You show up in the answer</span><span><i className="dx-yn no">✕</i>You don't</span></div>
+          <div className="dx-legend"><span><i className="dx-yn yes">✓</i>You show up in the answer</span><span><i className="dx-yn no">✕</i>You don&apos;t</span></div>
         </div>
       )}
       {step === 1 && (
@@ -166,7 +166,7 @@ export function EarnDash({step}: {step: number}) {
         <div className="dx-body dx-in dx-earn0" key="e0">
           <div className="dx-draft">
             <small>Draft · answer-first</small>
-            <h4>What's the best payroll software for a startup?</h4>
+            <h4>What&apos;s the best payroll software for a startup?</h4>
             <p><mark>For teams under 50, tools like YourBrand cut payroll from a day to under an hour</mark>, because filings and payslips run automatically. Larger companies with complex benefits may prefer NorthPeak.</p>
             <p className="dim">Source: 2026 survey of 140 startup founders · full method linked</p>
           </div>
@@ -217,7 +217,7 @@ export function EarnDash({step}: {step: number}) {
               <button type="button" key={n.name} className={`dx-node${node === i ? " on" : ""}`} style={{left: `${n.x}%`, top: `${n.y}%`}} onMouseEnter={() => setNode(i)} onFocus={() => setNode(i)} onClick={() => setNode(i)}>{n.name === "Listicles" ? <i className="dx-list-ic">≡</i> : sourceMarks[n.name]}{n.name}</button>
             ))}
           </div>
-          <div className="dx-insight" key={node}><span className="dx-spark">✓</span><b>{NODES[node].name}</b>&nbsp;describes you as {NODES[node].says}. Same story, every source.</div>
+          <div className="dx-insight" key={node}><span className="dx-spark">✓</span><span><b>{NODES[node].name}</b> describes you as {NODES[node].says}. Same story, every source.</span></div>
         </div>
       )}
     </div>
@@ -258,7 +258,7 @@ export function CompoundDash({step}: {step: number}) {
               <path key={metric + "l"} className="dx-line" d={line} />
             </svg>
             {pts.map((p, i) => (
-              <span key={i} className={`dx-hit${hover === i ? " on" : ""}`} style={{left: `${p[0]}%`}} onMouseEnter={() => setHover(i)}>
+              <span key={i} className={`dx-hit${hover === i ? " on" : ""}`} style={{left: `${p[0]}%`}} onMouseEnter={() => setHover(i)} onTouchStart={() => setHover(i)}>
                 <i style={{top: `${p[1]}%`}} />
               </span>
             ))}

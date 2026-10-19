@@ -45,7 +45,7 @@ export function ProcessStepper(){
  useEffect(()=>{const el=ref.current;if(!el)return;const io=new IntersectionObserver(([e])=>setInView(e.isIntersecting),{threshold:0,rootMargin:'-20% 0px -20% 0px'});io.observe(el);return()=>io.disconnect();},[]);
  // Timer driven in JS so the bar and the step change always stay in sync.
  useEffect(()=>{
-  if(!inView||hold)return;
+  if(!inView||hold||matchMedia("(pointer: coarse), (hover: none), (prefers-reduced-motion: reduce)").matches)return;
   let raf=0,last=performance.now();
   const loop=(now:number)=>{
    if(!document.hidden) elapsed.current+=now-last;
