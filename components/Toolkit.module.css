@@ -1,16 +1,16 @@
 .section {
   position: relative;
-  padding-top: clamp(64px, 8vw, 112px);
-  padding-bottom: 20px;
+  padding-top: clamp(32px, 3.3vw, 48px);
+  padding-bottom: 16px;
   color: #f5f2ed;
   -webkit-mask-image: none !important;
   mask-image: none !important;
 }
 .section + :global(#proof) {
-  padding-top: clamp(32px, 3vw, 44px);
+  padding-top: clamp(32px, 2.8vw, 40px);
 }
 .heading {
-  margin-bottom: 40px;
+  margin: 0 0 28px;
   font-family: var(--sans);
   font-size: clamp(28px, 3.5vw, 44px);
   font-weight: 500;
@@ -61,8 +61,8 @@
   .cell:nth-child(25) { grid-column: 4 / span 2; }
 }
 @media (max-width: 600px) {
-  .section { padding-top: 60px; padding-bottom: 12px; }
-  .heading { margin-bottom: 28px; }
+  .section { padding-top: 24px; padding-bottom: 12px; }
+  .heading { margin-bottom: 24px; }
   .logos { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px 0; }
   .cell:nth-child(25) { grid-column: span 2; }
   .cell { min-height: 52px; }
