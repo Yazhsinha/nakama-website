@@ -998,7 +998,7 @@
   }
   .visibility-how .visibility-frame {
     position:relative; inset:auto; width:100%; height:auto;
-    transform:none; cursor:auto; user-select:auto; touch-action:pan-y;
+    transform:none; cursor:auto; user-select:auto; touch-action:auto;
   }
   .visibility-how .visibility-reset { display:none; }
   .visibility-how .visibility-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); overflow:visible; gap:18px; }
