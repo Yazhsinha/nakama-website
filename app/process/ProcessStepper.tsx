@@ -40,7 +40,7 @@ export function ProcessStepper(){
  const bars=useRef<(HTMLElement|null)[]>([]);
  const elapsed=useRef(0);
  const activeRef=useRef(0);
- activeRef.current=active;
+ useEffect(()=>{activeRef.current=active;},[active]);
 
  useEffect(()=>{const el=ref.current;if(!el)return;const io=new IntersectionObserver(([e])=>setInView(e.isIntersecting),{threshold:0,rootMargin:'-20% 0px -20% 0px'});io.observe(el);return()=>io.disconnect();},[]);
  // Timer driven in JS so the bar and the step change always stay in sync.
