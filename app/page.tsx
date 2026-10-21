@@ -17,8 +17,8 @@ export default function Home(){
    <FeaturesSection/>
    <PromptDirector/>
    <SequenceShowcase/>
-   <Toolkit/>
    <HomeProof/>
+   <Toolkit/>
    <HomeFaqLite/>
    <HomeContact/>
   </Shell>
