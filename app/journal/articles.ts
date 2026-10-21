@@ -5,6 +5,7 @@ import {howToRankInChatgptArticle} from './how-to-rank-in-chatgpt';
 import {peecAiAlternativesArticle} from './peec-ai-alternatives';
 import {bestGeoAgenciesIndiaArticle} from './best-geo-agencies-india';
 import {bestGeoAgenciesForSaasArticle} from './best-geo-agencies-for-saas';
+import {geoAuditArticle} from './geo-audit';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -23,6 +24,7 @@ export type Article={
  coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
+ geoAuditArticle,
  bestGeoAgenciesForSaasArticle,
  bestGeoAgenciesIndiaArticle,
  peecAiAlternativesArticle,
