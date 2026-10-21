@@ -41,7 +41,7 @@
   height: 32px;
   object-fit: contain;
   filter: grayscale(1);
-  opacity: .75;
+  opacity: .85;
   transition: filter .2s ease, opacity .2s ease;
 }
 .monochrome img { filter: brightness(0) invert(1); }
