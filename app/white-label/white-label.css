@@ -1,24 +1,106 @@
-.wl-yt{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--ip-line,rgba(255,255,255,.12));background:#0d0d14}
+/* Embeds */
+.wl-yt{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid var(--ip-line,rgba(255,255,255,.12));background:#0d0d14}
 .wl-yt button{all:unset;cursor:pointer;display:block;width:100%;height:100%;position:relative}
 .wl-yt img,.wl-yt iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
-.wl-yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:#f07c32;color:#1b1b30;box-shadow:0 0 0 10px rgba(240,124,50,.18);transition:transform .3s}
-.wl-yt button:hover .wl-yt-play{transform:translate(-50%,-50%) scale(1.08)}
-.wl-yt button:focus-visible{outline:2px solid #f07c32;outline-offset:-4px}
-.wl-yt-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}
-@media(max-width:900px){.wl-yt-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.wl-yt-steps{grid-template-columns:1fr}}
-.wl-videos{margin-top:30px}
-.wl-note{margin-top:22px;color:#c9c6d6;font-size:15px}
-.wl-h3{margin:36px 0 0;font:600 18px/1.3 var(--ip-font,sans-serif);color:var(--ip-ink,#f3f1ed)}
-.wl-video h3{margin-top:10px;font:600 16px/1.35 var(--ip-font,sans-serif);color:var(--ip-ink,#f3f1ed)}
-.wl-video .tag{display:inline-block;margin-top:14px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#f07c32}
-.wl-video p{margin-top:6px;font-size:15px;color:#c9c6d6}
-.white-label-page .ip-head+.wl-h3{margin-top:36px!important}
-.white-label-page .ip-head h2{text-wrap:balance}
-@media(max-width:900px){.wl-videos{row-gap:28px}}
+.wl-yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:#f07c32;color:#1b1b30;box-shadow:0 0 0 8px rgba(13,13,19,.45),0 8px 24px rgba(0,0,0,.5);transition:transform .3s,background .2s}
+.wl-yt button:hover .wl-yt-play{transform:translate(-50%,-50%) scale(1.08);background:#ff8c45}
+.wl-yt button:focus-visible{outline:3px solid #ffb27a;outline-offset:3px}
+@media(max-width:560px){.wl-yt-play{width:56px;height:56px}}
 .wl-yt-fallback{position:absolute;left:12px;bottom:12px;color:#f3f1ed;font-size:13px}
+
+/* 1. Section rhythm */
+.white-label-page #how,.white-label-page #proof,.white-label-page #process{padding:96px 0}
+.white-label-page #proof{background:rgba(255,255,255,.025);border-block:1px solid var(--ip-line)}
+@media(max-width:700px){.white-label-page #how,.white-label-page #proof,.white-label-page #process{padding:64px 0}}
+
+/* 2. Static section heads */
+.white-label-page .ip-head{position:static}
+.white-label-page .ip-head h2{text-wrap:balance}
+/* 13. */
+.white-label-page .ip-head p{text-wrap:pretty}
 .white-label-page .ip-svc p a,.white-label-page .ip-head p a{color:inherit;text-decoration:underline;text-underline-offset:3px}
-.white-label-page #services .ip-g4{display:flex;flex-wrap:wrap;justify-content:center}
-.white-label-page #services .ip-g4>*{flex:0 0 calc((100% - 60px)/4);min-width:0}
-@media(max-width:1080px){.white-label-page #services .ip-g4>*{flex-basis:calc((100% - 20px)/2)}}
-@media(max-width:700px){.white-label-page #services .ip-g4>*{flex-basis:100%}}
+
+/* 3. Step numbers */
+.white-label-page .ip-num{color:var(--ip-ember-2);font:700 13px/1 var(--ip-font);letter-spacing:.1em}
+
+/* 4. YouTube rail */
+.wl-yt-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+.wl-yt-steps .ip-card{padding:22px 18px;border-radius:18px}
+.wl-yt-steps h3{font-size:17px!important;line-height:1.25}
+.wl-yt-steps p{font-size:14.5px;line-height:1.55}
+.wl-yt-steps>:last-child{grid-column:1/-1}
+@media(min-width:1181px){.wl-yt-steps{grid-template-columns:repeat(7,minmax(0,1fr))}.wl-yt-steps>:last-child{grid-column:auto}}
+@media(max-width:699px){.wl-yt-steps{grid-template-columns:1fr;gap:12px}.wl-yt-steps .ip-card{padding:20px}}
+
+/* 5. Notes aside */
+.wl-notes{margin-top:24px;padding:20px 24px;border-left:2px solid var(--ip-ember);background:rgba(240,124,50,.06);border-radius:0 14px 14px 0;display:grid;gap:6px;max-width:72ch}
+#how .wl-notes{margin-top:28px}
+.wl-notes .wl-note{margin:0;font-size:16px;line-height:1.6;color:var(--ip-body)}
+
+/* 6. Video cards */
+.wl-videos{gap:28px;margin-top:48px}
+.wl-video{display:flex;flex-direction:column}
+.wl-video h3{font:700 19px/1.3 var(--ip-font);margin-top:8px;text-wrap:balance;color:var(--ip-ink,#f3f1ed)}
+.wl-video p{font-size:15.5px;line-height:1.6;color:var(--ip-mute);margin-top:8px}
+.wl-video .tag{display:inline-block;margin-top:18px;font:600 12px/1 var(--ip-font);letter-spacing:.12em;text-transform:uppercase;color:var(--ip-ember-2)}
+
+/* 8. Services grid: report card spans */
+.white-label-page #services .ip-g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.white-label-page #services .ip-g4>:last-child{grid-column:span 2}
+@media(max-width:1080px){.white-label-page #services .ip-g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.white-label-page #services .ip-g4{grid-template-columns:1fr}.white-label-page #services .ip-g4>:last-child{grid-column:auto}}
+
+/* 9. Hero CTA pair */
+.white-label-page .ip-hero .ip-actions{gap:12px}
+.white-label-page .ip-hero .ip-ghost{min-height:48px;padding:0 22px;border:1px solid var(--ip-line-2);border-radius:999px;font:600 15px/1 var(--ip-font);color:var(--ip-ink)}
+.white-label-page .ip-hero .ip-ghost:hover{border-color:#ffd2ad}
+@media(max-width:479px){.white-label-page .ip-hero .ip-actions{flex-direction:column;align-items:stretch}.white-label-page .ip-hero .ip-actions>*{justify-content:center;min-height:48px}.white-label-page .ip-hero .ip-btn{justify-content:space-between}}
+
+/* 10. Mobile header and skip link */
+.site-frame.white-label-page>.skip-link:not(:focus){top:-100px}
+.site-frame.white-label-page .site-nav.is-scrolled{background:rgba(13,13,19,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* 11. */
+@media(min-width:1080px){.white-label-page .ip-svc h3{min-height:2.4em}}
+/* 12. */
+.white-label-page .ip-svc-ico{border-radius:12px;width:44px;height:44px}
+.white-label-page .ip-svc-top{margin-bottom:20px}
+
+/* 14. Sub heading as eyebrow */
+.wl-h3{font:600 13px/1 var(--ip-font);letter-spacing:.12em;text-transform:uppercase;color:var(--ip-mute);margin:56px 0 0}
+.white-label-page .ip-head+.wl-h3{margin-top:56px!important}
+
+/* 15. Process connectors */
+.white-label-page #process .ip-card{position:relative;overflow:visible}
+.white-label-page #process .ip-card::after{content:"";position:absolute;top:34px;right:-21px;width:20px;height:1px;background:var(--ip-line-2)}
+.white-label-page #process .ip-card:last-child::after{display:none}
+@media(max-width:1080px){.white-label-page #process .ip-card::after{display:none}}
+
+/* 16. FAQ open state */
+.white-label-page .ip-faq-item[open]{border-color:rgba(240,124,50,.35)}
+
+/* 17. Final CTA */
+.white-label-page .ip-cta{align-items:end;padding-bottom:40px}
+.white-label-page .ip-cta-wrap{padding:56px 0 96px}
+@media(max-width:900px){.white-label-page .ip-cta-actions{margin-top:28px}}
+
+/* 18. Footer bottom row contrast (this page only) */
+.site-frame.white-label-page .footer-baseline,.site-frame.white-label-page .footer-baseline *{color:var(--ip-mute);font-size:12px}
+
+/* 19. Reduced motion */
+@media(prefers-reduced-motion:reduce){.white-label-page .reveal,.white-label-page .reveal-ready{opacity:1!important;transform:none!important;filter:none!important}}
+
+/* 20. Breadcrumb: Crumbs renders JSON-LD only, nothing visible, no rule needed. */
+
+/* Mid-page CTAs */
+.wl-cta-row{margin-top:40px;display:flex}
+
+/* Sticky mobile Book a call bar */
+.wl-sticky{display:none}
+@media(max-width:700px){
+ .wl-sticky{display:flex;justify-content:center;position:fixed;z-index:40;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));background:rgba(13,13,19,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--ip-line);transform:translateY(110%);transition:transform .3s;pointer-events:none}
+ .wl-sticky.is-on{transform:none;pointer-events:auto}
+ .wl-sticky .ip-btn{width:100%;max-width:420px;justify-content:space-between;height:50px}
+ .white-label-page main{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+}
+@media(max-width:700px) and (prefers-reduced-motion:reduce){.wl-sticky{transition:none}}

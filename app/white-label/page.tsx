@@ -5,6 +5,7 @@ import {Shell,Reveal} from '../site';
 import Link from 'next/link';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
 import {LiteYouTube} from './LiteYouTube';
+import {StickyBook} from './StickyBook';
 import './white-label.css';
 
 /*
@@ -58,12 +59,12 @@ const steps=[
 ] as const;
 
 const faq=[
- ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
  ['Who do my clients deal with?','You. You stay the point of contact, and work can be delivered unbranded under your name.'],
+ ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
  ['How is pricing set?','Pricing is custom and based on what each client needs. Share the requirements and we’ll send an offer.'],
+ ['Who is this for?','Agencies whose clients want to show up when buyers ask AI tools what to choose.'],
  ['Which channels do you cover?','YouTube, AEO and GEO, Reddit and Quora, content, digital PR, link building and publishing platforms like Medium, LinkedIn Pulse, Substack and DEV Community.'],
  ['How do you report results?','A monthly AI-visibility report showing where the brand appears in AI answers.'],
- ['Who is this for?','Agencies whose clients want to show up when buyers ask AI tools what to choose.'],
 ] as const;
 
 export default function WhiteLabel(){
@@ -81,25 +82,16 @@ export default function WhiteLabel(){
     <LinkBtn href="#youtube" ghost>See the YouTube service</LinkBtn>
    </IpHero>
 
-   <IpSection id="how">
-    <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead={<>We can run all of this white-label for your clients, alongside our <Link href="/services">other services</Link>. You sell it, and we do the work behind you.</>}/>
-    <div className="ip-g4">
-     {how.map(h=><Reveal className="ip-card ip-svc" key={h.t}>
-      <div className="ip-svc-top"><span className="ip-svc-ico"><h.icon size={21}/></span></div>
-      <h3>{h.t}</h3><p>{h.p}</p>
-     </Reveal>)}
-    </div>
-    <p className="wl-note">Terms are flexible. We shape them around how your agency already works.</p>
-   </IpSection>
-
    <IpSection id="youtube">
     <IpHead eyebrow="YouTube" title={<>Why add YouTube to a <em>GEO retainer?</em></>} lead={<>YouTube is among the sources <Link href="/journal/how-to-rank-in-google-ai-overviews">Google’s AI answers</Link> cite most often, though it varies by AI tool. Many agencies skip it because video takes real production time. That’s the part we take on.</>}/>
     <h3 className="wl-h3">What we handle, end to end</h3>
     <div className="wl-yt-steps">
      {yt.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
+    <div className="wl-notes">
     <p className="wl-note">Each video takes about 3 days from script to publish, and we can turn it around faster when you need it.</p>
     <p className="wl-note">Every video is built to get cited. Nobody can promise a citation, and we won’t.</p>
+    </div>
    </IpSection>
 
    <IpSection id="proof">
@@ -110,13 +102,27 @@ export default function WhiteLabel(){
       <span className="tag">{v.c}</span><h3>{v.t}</h3><p>{v.p}</p>
      </Reveal>)}
     </div>
+    <div className="wl-cta-row"><BookBtn>Book a call</BookBtn></div>
+   </IpSection>
+
+   <IpSection id="how">
+    <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead={<>We can run all of this white-label for your clients, alongside our <Link href="/services">other services</Link>. You sell it, and we do the work behind you.</>}/>
+    <div className="ip-g4">
+     {how.map(h=><Reveal className="ip-card ip-svc" key={h.t}>
+      <div className="ip-svc-top"><span className="ip-svc-ico"><h.icon size={20}/></span></div>
+      <h3>{h.t}</h3><p>{h.p}</p>
+     </Reveal>)}
+    </div>
+    <div className="wl-notes">
+    <p className="wl-note">Terms are flexible. We shape them around how your agency already works.</p>
+    </div>
    </IpSection>
 
    <IpSection id="services">
     <IpHead eyebrow="What else you can resell" title={<>What else can Nakama Growth run <em>under your brand?</em></>} lead="Packages are custom, built around each client’s target queries and needs."/>
     <div className="ip-g4">
      {services.map(s=><Reveal className="ip-card ip-svc" key={s.t}>
-      <div className="ip-svc-top"><span className="ip-svc-ico"><s.icon size={21}/></span></div>
+      <div className="ip-svc-top"><span className="ip-svc-ico"><s.icon size={20}/></span></div>
       <h3>{s.t}</h3><p>{s.p}</p>
      </Reveal>)}
     </div>
@@ -127,10 +133,12 @@ export default function WhiteLabel(){
     <div className="ip-g4">
      {steps.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
+    <div className="wl-cta-row"><BookBtn>Book a call</BookBtn></div>
    </IpSection>
 
    <IpFaq items={faq}/>
    <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer." actions={<BookBtn>Book a call</BookBtn>}/>
+   <StickyBook/>
   </Shell>
  );
 }
