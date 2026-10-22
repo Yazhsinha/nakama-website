@@ -14,7 +14,7 @@ export async function generateMetadata({params}:Props):Promise<Metadata>{const {
 
 export default async function Job({params}:Props){
  const {slug}=await params;const o=openings.find(x=>x.slug===slug);if(!o)notFound();
- const apply=o.apply||`mailto:hello@nakama.in?subject=${encodeURIComponent('Application: '+o.title)}`;
+ const apply=o.apply||`mailto:contact@nakama.in?subject=${encodeURIComponent('Application: '+o.title)}`;
  return <Shell className="shell-cinema ip-page">
   <IpAtmos tone="teal"/>
   <article className="ip-wrap doc">

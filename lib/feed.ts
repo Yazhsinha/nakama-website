@@ -18,7 +18,7 @@ export const corePages:{path:string;title:string;summary:string;priority:number;
  {path:'/resources',title:'Resources',summary:'Field notes on AI visibility and an index of client work.',priority:.7,freq:'weekly',src:['app/resources', 'app/journal', 'content/posts.json', 'content/case-studies.json']},
  {path:'/careers',title:'Careers',summary:'Open roles at Nakama.',priority:.5,freq:'weekly',src:['app/careers', 'content/careers.json']},
  ...authors.map(a=>({path:authorPath(a.slug),title:a.name,summary:articlesBy(a).length?`${jobTitleText(a)} of Nakama Growth, and author of the Nakama guides to AEO and GEO agencies.`:`${jobTitleText(a)} of Nakama Growth.`,priority:.5,freq:'monthly' as const,src:['app/authors','lib/authors.ts']})),
- {path:'/contact',title:'Contact',summary:'Book a call, request a quote or email hello@nakama.in.',priority:.6,freq:'yearly',src:['app/contact']},
+ {path:'/contact',title:'Contact',summary:'Book a call, request a quote or email contact@nakama.in.',priority:.6,freq:'yearly',src:['app/contact']},
  {path:'/privacy',title:'Privacy',summary:'Privacy policy.',priority:.2,freq:'yearly',src:['app/privacy']},
  {path:'/terms',title:'Terms',summary:'Terms of service.',priority:.2,freq:'yearly',src:['app/terms']},
 ];

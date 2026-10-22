@@ -4,7 +4,7 @@ export const SITE_URL=(process.env.NEXT_PUBLIC_SITE_URL||'https://www.nakama.in'
 export const SITE_NAME='Nakama Growth';
 export const SITE_TAGLINE='Be the brand they already know.';
 export const SITE_DESCRIPTION='Nakama gets brands named in AI answers. We earn the off-site sources ChatGPT, Perplexity, Gemini and Google AI Overviews rely on: Reddit, YouTube, LinkedIn, Quora, editorial and review sites.';
-export const CONTACT_EMAIL='hello@nakama.in';
+export const CONTACT_EMAIL='contact@nakama.in';
 export const abs=(path='/')=>`${SITE_URL}${path.startsWith('/')?path:`/${path}`}`;
 
 export const OG_IMAGE={url:'/opengraph-image.png',width:1200,height:630,alt:'Nakama Growth — Be the brand they already know.'};
