@@ -69,7 +69,7 @@ export function IpFaq({items,eyebrow='Questions',title=<>Straight <em>answers.</
  return <IpSection className="ip-faq">
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:items.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}).replace(/</g,'\\u003c')}}/>
   <div className="ip-faq-grid">
-   <IpHead eyebrow={eyebrow} title={title} lead={<>Something else on your mind? Write to <a href="mailto:hello@nakama.in">hello@nakama.in</a>.</>}/>
+   <IpHead eyebrow={eyebrow} title={title} lead={<>Something else on your mind? Write to <a href="mailto:contact@nakama.in">contact@nakama.in</a>.</>}/>
    <div className="ip-faq-list">
     {items.map(([q,a],i)=><details key={q} className="ip-faq-item" open={i===0}>
      <summary><span>{q}</span><i aria-hidden="true"/></summary>

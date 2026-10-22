@@ -3,7 +3,7 @@ import {useEffect, useRef, useState, type ReactNode} from "react";
 import {Check, Copy, Mail, X} from "lucide-react";
 import "./book-call.css";
 
-export const CONTACT_EMAIL = "hello@nakama.in";
+export const CONTACT_EMAIL = "contact@nakama.in";
 const CAL = "https://cal.com/snehil-srivastava-4jm7sq";
 const EVENT = "book-call";
 

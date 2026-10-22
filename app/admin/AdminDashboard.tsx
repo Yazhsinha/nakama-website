@@ -36,7 +36,7 @@ const KINDS:{id:Kind;label:string;single:string;icon:typeof FileText;titleKey:st
   {k:'type',label:'Type',type:'select',opts:['Full-time','Part-time','Internship','Contract'],half:true},
   {k:'summary',label:'Summary',type:'textarea',req:true,ph:'One or two sentences about the role.'},
   {k:'body',label:'Role details',type:'body',req:true},
-  {k:'apply',label:'Apply link (optional)',type:'text',ph:'https://… or leave blank to use hello@nakama.in',half:true},
+  {k:'apply',label:'Apply link (optional)',type:'text',ph:'https://… or leave blank to use contact@nakama.in',half:true},
   {k:'date',label:'Posted',type:'date',half:true},
  ]},
 ];
