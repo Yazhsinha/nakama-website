@@ -1,3 +1,4 @@
+import type React from 'react';
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
 import {PenLine,MessageCircle,Sparkles,FileText,Share2,Link2,ChartNoAxesCombined,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
@@ -6,6 +7,8 @@ import Link from 'next/link';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
 import {LiteYouTube} from './LiteYouTube';
 import {StickyBook} from './StickyBook';
+import {HeroGate,CtaGate} from './Gate';
+import {Spotlight} from './Spotlight';
 import './white-label.css';
 
 /*
@@ -78,6 +81,7 @@ export default function WhiteLabel(){
    <IpAtmos tone="ember"/><Crumbs trail={[{name:'Services',path:'/services'},{name:'White label',path:'/white-label'}]}/>
    <IpHero
     tone="ember"
+    aside={<HeroGate/>}
     eyebrow="White label for agencies"
     title="Add YouTube to your AI visibility retainers. "
     accent="Under your brand."
@@ -90,9 +94,12 @@ export default function WhiteLabel(){
    <IpSection id="youtube">
     <IpHead eyebrow="YouTube" title={<>Why add YouTube to a <em>GEO retainer?</em></>} lead={<>YouTube is among the sources <Link href="/journal/how-to-rank-in-google-ai-overviews">Google’s AI answers</Link> cite most often, though it varies by AI tool. Many agencies skip it because video takes real production time. That’s the part we take on.</>}/>
     <h3 className="wl-h3">What we handle, end to end</h3>
+    <Reveal className="wl-pipe">
+    <div className="wl-rail" aria-hidden="true"><span className="wl-rail-track"/><span className="wl-rail-fill"/>{yt.map(([t],i)=><span className="wl-rail-node" key={t} style={{'--i':i} as React.CSSProperties}/>)}</div>
     <div className="wl-yt-steps">
-     {yt.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
+     {yt.map(([t,p],i)=><Reveal className="ip-card" key={t} style={{'--i':i} as React.CSSProperties}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
+    </Reveal>
     <div className="wl-notes">
     <p className="wl-note">Each video takes about 3 days from script to publish, and we can turn it around faster when you need it.</p>
     <p className="wl-note">Every video is built to get cited. Nobody can promise a citation, and we won’t.</p>
@@ -113,7 +120,7 @@ export default function WhiteLabel(){
    <IpSection id="how">
     <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead={<>We can run all of this white-label for your clients, alongside our <Link href="/services">other services</Link>. You sell it, and we do the work behind you.</>}/>
     <div className="ip-g4">
-     {how.map(h=><Reveal className="ip-card ip-svc" key={h.t}>
+     {how.map(h=><Reveal className="ip-card ip-svc wl-spot" key={h.t}>
       <div className="ip-svc-top"><span className="ip-svc-ico"><h.icon size={20}/></span></div>
       <h3>{h.t}</h3><p>{h.p}</p>
      </Reveal>)}
@@ -127,7 +134,7 @@ export default function WhiteLabel(){
    <IpSection id="services">
     <IpHead eyebrow="What else you can resell" title={<>What else can Nakama Growth run <em>under your brand?</em></>} lead="Packages are custom, built around each client’s target queries and needs."/>
     <div className="ip-g4">
-     {services.map(s=><Reveal className="ip-card ip-svc" key={s.t}>
+     {services.map(s=><Reveal className="ip-card ip-svc wl-spot" key={s.t}>
       <div className="ip-svc-top"><span className="ip-svc-ico"><s.icon size={20}/></span></div>
       <h3>{s.t}</h3><p>{s.p}</p>
      </Reveal>)}
@@ -143,8 +150,9 @@ export default function WhiteLabel(){
    </IpSection>
 
    <IpFaq items={faq}/>
-   <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer." actions={<BookBtn>Book a call</BookBtn>}/>
+   <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer." actions={<><CtaGate/><BookBtn>Book a call</BookBtn></>}/>
    <StickyBook/>
+   <Spotlight/>
   </Shell>
  );
 }
