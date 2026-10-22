@@ -102,7 +102,7 @@ export default function WhiteLabel(){
    </IpSection>
 
    <IpSection id="proof">
-    <IpHead eyebrow="Proof" title={<>Who do we <em>work with?</em></>}/>
+    <IpHead eyebrow="Sample work" title={<>See what your <em>clients would get</em></>} lead="A few videos Nakama Growth has made, each built around a question buyers ask AI tools."/>
     <div className="ip-g3 wl-videos">
      {videos.map(v=><Reveal className="wl-video" key={v.id}>
       <LiteYouTube id={v.id} title={v.t}/>
