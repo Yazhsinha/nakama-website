@@ -2,6 +2,7 @@ import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
 import {Globe,PenLine,MessageCircle,Sparkles,FileText,Share2,Link2,ChartNoAxesCombined,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
 import {Shell,Reveal} from '../site';
+import Link from 'next/link';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
 import {LiteYouTube} from './LiteYouTube';
 import './white-label.css';
@@ -12,15 +13,15 @@ import './white-label.css';
  so it enters the sitemap, confirm final copy approval.
 */
 export const metadata:Metadata={
- ...pageMeta('/white-label',{title:'White-Label YouTube and AI Visibility for Agencies | Nakama Growth',description:'Nakama Growth creates YouTube videos end to end and runs AEO, GEO, Reddit, content, digital PR and link building white-label, under your agency brand.'}),
+ ...pageMeta('/white-label',{title:'White label GEO and YouTube services for agencies | Nakama Growth',description:'Nakama Growth creates YouTube videos end to end and runs AEO and GEO, Reddit, content, digital PR and link building white-label, under your agency’s brand.'}),
  robots:{index:false,follow:false},
 };
 
 const how=[
- {icon:Palette,t:'Your brand.',p:'Unbranded delivery is available, so work goes to your client under your name.'},
- {icon:EyeOff,t:'We stay in the background.',p:'You stay the client’s point of contact.'},
- {icon:Handshake,t:'Non-solicit.',p:'Available on request. We don’t approach or pitch your clients.'},
- {icon:Tag,t:'You set your price.',p:'You decide what to charge your clients.'},
+ {icon:Palette,t:'Your brand',p:'Unbranded delivery is available, so work goes to your client under your name.'},
+ {icon:EyeOff,t:'We stay in the background',p:'You stay the client’s point of contact.'},
+ {icon:Handshake,t:'Non-solicit',p:'Available on request. We don’t approach or pitch your clients.'},
+ {icon:Tag,t:'You set your price',p:'You decide what to charge your clients.'},
 ] as const;
 
 const yt=[
@@ -42,12 +43,12 @@ const videos=[
 const services=[
  {icon:Globe,t:'Independent editorial sites',p:'Our own sites, built to mention brands in context.'},
  {icon:PenLine,t:'Publishing platforms',p:'Articles on Medium, LinkedIn Pulse, Substack and DEV Community.'},
- {icon:MessageCircle,t:'Reddit and Quora',p:'Posts, comments and answers in the communities where buyers ask for advice, written to be useful and transparent.'},
+ {icon:MessageCircle,t:'Reddit and Quora',p:'Posts, comments and answers in the communities where buyers ask for advice, written to be genuinely useful.'},
  {icon:Sparkles,t:'AEO and GEO',p:'Pages and content shaped around the questions buyers ask AI tools.'},
- {icon:FileText,t:'Content',p:'Articles and guides that answer a buyer’s question early and stay current.'},
- {icon:Share2,t:'Digital PR',p:'Stories and pitches that get your client named on third-party sites buyers read.'},
+ {icon:FileText,t:'Content',p:'Articles and guides that answer a buyer’s question early.'},
+ {icon:Share2,t:'Digital PR',p:'Stories pitched to get your client named on third-party sites buyers read.'},
  {icon:Link2,t:'Link building',p:'Editorial links from relevant sites, placed in context.'},
- {icon:ChartNoAxesCombined,t:'Monthly AI-visibility report',p:'Where your client shows up in AI answers, and what changed since last month.'},
+ {icon:ChartNoAxesCombined,t:'Monthly AI-visibility report',p:<>Where your client shows up in AI answers. See how we approach a <Link href="/journal/geo-audit">GEO audit</Link>.</>},
 ] as const;
 
 const steps=[
@@ -59,11 +60,11 @@ const steps=[
 
 const faq=[
  ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
- ['Who do my clients deal with?','You. You stay the point of contact, and everything is delivered unbranded under your name.'],
+ ['Who do my clients deal with?','You. You stay the point of contact, and work can be delivered unbranded under your name.'],
  ['How is pricing set?','Pricing is custom and based on what each client needs. Share the requirements and we’ll send an offer.'],
  ['Which channels do you cover?','YouTube, AEO and GEO, Reddit and Quora, content, digital PR, link building, our own editorial sites, and publishing platforms like Medium, LinkedIn Pulse, Substack and DEV Community.'],
  ['How do you report results?','A monthly AI-visibility report showing where the brand appears in AI answers.'],
- ['Who is this for?','Agencies whose clients are tech, SaaS and AI companies that want to show up when buyers ask AI tools what to choose.'],
+ ['Who is this for?','Agencies whose clients want to show up when buyers ask AI tools what to choose.'],
 ] as const;
 
 export default function WhiteLabel(){
@@ -75,14 +76,14 @@ export default function WhiteLabel(){
     eyebrow="White label for agencies"
     title="Add YouTube to your AI visibility retainers. "
     accent="Under your brand."
-    lead="Nakama Growth creates YouTube videos end to end, from script to publish, and runs the rest of your AI visibility work white-label. Built to get your clients cited when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose."
+    lead="Nakama Growth creates YouTube videos end to end, from script to publish, and runs the rest of your AI visibility work white-label. Every piece is built to get cited when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose."
    >
     <BookBtn>Book a call</BookBtn>
     <LinkBtn href="#youtube" ghost>See the YouTube service</LinkBtn>
    </IpHero>
 
    <IpSection id="how">
-    <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead="We can run all of this white-label for your clients. You sell it, and we do the work behind you."/>
+    <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead={<>We can run all of this white-label for your clients, alongside our <Link href="/services">other services</Link>. You sell it, and we do the work behind you.</>}/>
     <div className="ip-g4">
      {how.map(h=><Reveal className="ip-card ip-svc" key={h.t}>
       <div className="ip-svc-top"><span className="ip-svc-ico"><h.icon size={21}/></span></div>
@@ -93,7 +94,7 @@ export default function WhiteLabel(){
    </IpSection>
 
    <IpSection id="youtube">
-    <IpHead eyebrow="YouTube" title={<>Why add YouTube to a <em>GEO retainer?</em></>} lead="YouTube is among the sources Google’s AI answers cite most often, though it varies by AI tool. Many agencies skip it because video takes real production time. That’s the part we take on."/>
+    <IpHead eyebrow="YouTube" title={<>Why add YouTube to a <em>GEO retainer?</em></>} lead={<>YouTube is among the sources <Link href="/journal/how-to-rank-in-google-ai-overviews">Google’s AI answers</Link> cite most often, though it varies by AI tool. Many agencies skip it because video takes real production time. That’s the part we take on.</>}/>
     <h3 className="wl-h3">What we handle, end to end</h3>
     <div className="wl-yt-steps">
      {yt.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
@@ -129,7 +130,7 @@ export default function WhiteLabel(){
    </IpSection>
 
    <IpFaq items={faq}/>
-   <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer."/>
+   <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer." actions={<BookBtn>Book a call</BookBtn>}/>
   </Shell>
  );
 }
