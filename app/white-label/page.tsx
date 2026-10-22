@@ -60,6 +60,11 @@ const steps=[
 
 const faq=[
  ['Who do my clients deal with?','You. You stay the point of contact, and work can be delivered unbranded under your name.'],
+ ['Will you sign an NDA?','Yes. We sign an NDA with every partner agency, and your clients only ever hear from you.'],
+ ['Are revisions included?','Yes. Revision rounds are included on videos and content.'],
+ ['What if a Reddit post is removed or a link drops?','We replace it.'],
+ ['Is there a minimum spend or contract length?','No. There is no minimum spend and no lock-in contract.'],
+ ['Can we start with YouTube only?','Yes. You can start with YouTube only and add other services later.'],
  ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
  ['How is pricing set?','Pricing is custom and based on what each client needs. Share the requirements and we’ll send an offer.'],
  ['Who is this for?','Agencies whose clients want to show up when buyers ask AI tools what to choose.'],
@@ -114,6 +119,7 @@ export default function WhiteLabel(){
      </Reveal>)}
     </div>
     <div className="wl-notes">
+    <p className="wl-note">We work with you on Slack and email. You share the deliverables and target queries, we deliver to you, and you take it to your client.</p>
     <p className="wl-note">Terms are flexible. We shape them around how your agency already works.</p>
     </div>
    </IpSection>
