@@ -18,3 +18,7 @@
 @media(max-width:900px){.wl-videos{row-gap:28px}}
 .wl-yt-fallback{position:absolute;left:12px;bottom:12px;color:#f3f1ed;font-size:13px}
 .white-label-page .ip-svc p a,.white-label-page .ip-head p a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.white-label-page #services .ip-g4{display:flex;flex-wrap:wrap;justify-content:center}
+.white-label-page #services .ip-g4>*{flex:0 0 calc((100% - 60px)/4);min-width:0}
+@media(max-width:1080px){.white-label-page #services .ip-g4>*{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:700px){.white-label-page #services .ip-g4>*{flex-basis:100%}}
