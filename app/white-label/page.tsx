@@ -1,61 +1,75 @@
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
-import {Play,Sparkles,MessageCircle,FileText,Share2,Link2,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
+import {Globe,PenLine,MessageCircle,Sparkles,FileText,Share2,Link2,ChartNoAxesCombined,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
 import {Shell,Reveal} from '../site';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
 import {LiteYouTube} from './LiteYouTube';
 import './white-label.css';
 
 /*
- PREVIEW ONLY. Copy marked [PH] is placeholder; final copy comes from Hibiku.
+ PREVIEW ONLY. Copy: Hibiku v3 draft (23 Oct), pending final approval.
  Launch checklist: remove `robots` below, add {path:'/white-label',...} to corePages in lib/feed.ts
- so it enters the sitemap, and replace every [PH] marker and proof slot.
+ so it enters the sitemap, re-capture the proof screenshots with a visible date, confirm client approval.
 */
 export const metadata:Metadata={
- ...pageMeta('/white-label',{title:'White-Label AEO, GEO & YouTube for Agencies | Nakama Growth',description:'[PH] White-label YouTube, AEO/GEO, Reddit, content, digital PR and link building that agencies resell under their own brand, delivered by Nakama Growth.'}),
+ ...pageMeta('/white-label',{title:'White-Label YouTube and AI Visibility for Agencies | Nakama Growth',description:'Nakama Growth creates YouTube videos end to end and runs AEO, GEO, Reddit, content, digital PR and link building white-label, under your agency brand.'}),
  robots:{index:false,follow:false},
 };
 
-const PH=()=> <span className="wl-ph">Placeholder</span>;
-
 const how=[
- {icon:Palette,t:'Your brand',p:'[PH] Every deliverable, report and touchpoint carries your agency name and look.'},
- {icon:EyeOff,t:'We stay invisible',p:'[PH] Your clients only ever deal with you. Nakama Growth works quietly behind your team.'},
- {icon:Handshake,t:'Non-solicit',p:'[PH] We never approach or accept your clients directly. Your roster stays yours.'},
- {icon:Tag,t:'You set the price',p:'[PH] You package and price the work however suits your agency and your margins.'},
+ {icon:Palette,t:'Your brand.',p:'Unbranded delivery is available, so work goes to your client under your name.'},
+ {icon:EyeOff,t:'We stay in the background.',p:'You stay the client’s point of contact.'},
+ {icon:Handshake,t:'Non-solicit.',p:'Available on request. We don’t approach or pitch your clients.'},
+ {icon:Tag,t:'You set your price.',p:'You decide what to charge your clients.'},
 ] as const;
 
 const yt=[
- ['Topic research','[PH] Topics pulled from the prompts buyers type into AI assistants.'],
- ['Script','[PH] Answer-first scripts written around those buyer questions.'],
- ['Shoot or animate','[PH] Filmed, presenter-led or animated, whichever suits the brand.'],
- ['Edit','[PH] Tight edits built for watch time and clarity.'],
- ['Thumbnails','[PH] Thumbnails designed to earn the click.'],
- ['Metadata for citation','[PH] Titles, descriptions, chapters and transcripts shaped so AI engines can cite the video.'],
- ['Repurposing','[PH] Cut into Shorts, Reels, TikTok and Facebook clips.'],
- ['Publishing','[PH] Uploaded and scheduled on the client channel under your brand.'],
+ ['Topic research from buyer prompts','We start from the questions your client’s buyers ask AI tools.'],
+ ['Scripts','Scripts that answer one buyer question clearly.'],
+ ['Shoot and edit','Filmed and edited by our team.'],
+ ['Thumbnails','Designed for each video.'],
+ ['Titles and descriptions','Written in the words buyers use.'],
+ ['Publishing','Published on the client’s channel.'],
+ ['Repurposing','Cut into Shorts, Reels, TikTok and Facebook clips.'],
+] as const;
+
+const videos=[
+ {id:'elKnpdCfQEo',t:'What Is AI RFP Software? How It Works and How to Choose (2026)',c:'Inventive AI',p:'A plain walkthrough of what AI RFP software does and how a team should pick one.'},
+ {id:'p3JPM1pEhIE',t:'How to Build an AI RFP Workflow: 7-Step RFP Process + 30-Day Pilot',c:'Inventive AI',p:'A step by step guide to setting up an AI-assisted RFP process and testing it on a small pilot.'},
+ {id:'QgVZs0fcTd8',t:'What Is the Best Local SEO Tool for Multi-Location Brands in 2026?',c:'Local SEO Checklist',p:'A buyer’s guide to choosing a local SEO tool when you manage many locations.'},
+] as const;
+
+const proof=[
+ {src:'/white-label/citation-003.webp',w:1400,h:898,c:'Our video for Inventive AI shown as a source in Google AI Overviews for the query “What Is AI RFP Software?”'},
+ {src:'/white-label/citation-009.webp',w:1400,h:968,c:'Our video for Inventive AI shown as a source in Google AI Overviews for the query “ai rfp software”'},
+ {src:'/white-label/citation-008.webp',w:1400,h:834,c:'Our video for Inventive AI shown in a Google AI Mode answer about RFP software tools'},
 ] as const;
 
 const services=[
- {icon:Sparkles,tag:'AEO / GEO',p:'[PH] Answer-gap research, citation-ready content and AI answer tracking, delivered under your brand.'},
- {icon:MessageCircle,tag:'Reddit',p:'[PH] Transparent, rule-following community participation in the subreddits buyers trust.'},
- {icon:FileText,tag:'Content',p:'[PH] Expert-led articles, comparisons and buyer guides.'},
- {icon:Share2,tag:'Digital PR',p:'[PH] Editorial placements and relationships with credible publishers.'},
- {icon:Link2,tag:'Link building',p:'[PH] Relevant, editorial links from sites that matter in the category.'},
+ {icon:Globe,t:'Independent editorial sites',p:'Our own sites, built to mention brands in context.'},
+ {icon:PenLine,t:'Publishing platforms',p:'Articles on Medium, LinkedIn Pulse, Substack and DEV Community.'},
+ {icon:MessageCircle,t:'Reddit and Quora',p:'Posts, comments and answers in the communities where buyers ask for advice, written to be useful and transparent.'},
+ {icon:Sparkles,t:'AEO and GEO',p:'Pages and content shaped around the questions buyers ask AI tools.'},
+ {icon:FileText,t:'Content',p:'Articles and guides that answer a buyer’s question early and stay current.'},
+ {icon:Share2,t:'Digital PR',p:'Stories and pitches that get your client named on third-party sites buyers read.'},
+ {icon:Link2,t:'Link building',p:'Editorial links from relevant sites, placed in context.'},
+ {icon:ChartNoAxesCombined,t:'Monthly AI-visibility report',p:'Where your client shows up in AI answers, and what changed since last month.'},
 ] as const;
 
 const steps=[
- ['Intro call','[PH] We learn about your agency, clients and the services you want to offer.'],
- ['Scope and pilot','[PH] We agree a first client and scope together.'],
- ['Delivery under your brand','[PH] Our team produces the work in your templates and voice.'],
- ['Review and report','[PH] You get white-label reports to share with your client.'],
+ ['Book a call','Tell us about the client and their market.'],
+ ['Share deliverables and target queries','Tell us what you need and which buyer questions matter.'],
+ ['Get a tailored offer','We reply with a package built around those queries.'],
+ ['We deliver, and you report','The work runs behind your brand, with a monthly AI-visibility report.'],
 ] as const;
 
 const faq=[
- ['[PH] Will my clients know Nakama Growth is involved?','[PH] Placeholder answer. Final copy from Hibiku.'],
- ['[PH] Can I resell only YouTube, or do I need every service?','[PH] Placeholder answer. Final copy from Hibiku.'],
- ['[PH] How do you handle client communication?','[PH] Placeholder answer. Final copy from Hibiku.'],
- ['[PH] What does the non-solicit cover?','[PH] Placeholder answer. Final copy from Hibiku.'],
+ ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
+ ['Who do my clients deal with?','You. You stay the point of contact, and everything is delivered unbranded under your name.'],
+ ['How is pricing set?','Pricing is custom and based on what each client needs. Share the requirements and we’ll send an offer.'],
+ ['Which channels do you cover?','YouTube, AEO and GEO, Reddit and Quora, content, digital PR, link building, our own editorial sites, and publishing platforms like Medium, LinkedIn Pulse, Substack and DEV Community.'],
+ ['How do you report results?','A monthly AI-visibility report showing where the brand appears in AI answers.'],
+ ['Who is this for?','Agencies whose clients are tech, SaaS and AI companies that want to show up when buyers ask AI tools what to choose.'],
 ] as const;
 
 export default function WhiteLabel(){
@@ -65,61 +79,70 @@ export default function WhiteLabel(){
    <IpHero
     tone="ember"
     eyebrow="White label for agencies"
-    title="[PH] Your brand on the work,"
-    accent="Nakama Growth behind it."
-    lead={<>[PH] YouTube, AEO/GEO, Reddit, content, digital PR and link building for agencies that want to offer AI visibility under their own name. <PH/></>}
+    title="Add YouTube to your AI visibility retainers. "
+    accent="Under your brand."
+    lead="Nakama Growth creates YouTube videos end to end, from script to publish, and runs the rest of your AI visibility work white-label. Built to get your clients cited when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose."
    >
     <BookBtn>Book a call</BookBtn>
     <LinkBtn href="#youtube" ghost>See the YouTube service</LinkBtn>
    </IpHero>
 
    <IpSection id="how">
-    <IpHead eyebrow="How white label works" title={<>[PH] Your client. Your name. <em>Our team.</em></>} lead={<>[PH] Four promises that hold for every partner. <PH/></>}/>
+    <IpHead eyebrow="How white label works" title={<>How does white-label work with <em>Nakama Growth?</em></>} lead="We can run all of this white-label for your clients. You sell it, and we do the work behind you."/>
     <div className="ip-g4">
      {how.map(h=><Reveal className="ip-card ip-svc" key={h.t}>
       <div className="ip-svc-top"><span className="ip-svc-ico"><h.icon size={21}/></span></div>
       <h3>{h.t}</h3><p>{h.p}</p>
      </Reveal>)}
     </div>
+    <p className="wl-note">Terms are flexible. We shape them around how your agency already works.</p>
    </IpSection>
 
    <IpSection id="youtube">
-    <IpHead eyebrow="Service 01 / YouTube and AI citations" title={<>[PH] Videos that AI engines <em>cite.</em></>} lead={<>[PH] End to end YouTube production, from buyer prompts to published video and short-form cuts, built to be cited in AI answers. <PH/></>}/>
+    <IpHead eyebrow="YouTube" title={<>Why add YouTube to a <em>GEO retainer?</em></>} lead="YouTube is among the sources Google’s AI answers cite most often, though it varies by AI tool. Many agencies skip it because video takes real production time. That’s the part we take on."/>
+    <h3 className="wl-h3">What we handle, end to end</h3>
     <div className="wl-yt-steps">
      {yt.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
-    <div className="ip-g2 wl-videos">
-     <Reveal><LiteYouTube id="QgVZs0fcTd8" title="Nakama Growth sample video 1"/></Reveal>
-     <Reveal><LiteYouTube id="NUtceYnpoAk" title="Nakama Growth sample video 2"/></Reveal>
-    </div>
+    <p className="wl-note">Every video is built to get cited. Nobody can promise a citation, and we won’t.</p>
    </IpSection>
 
    <IpSection id="proof">
-    <IpHead eyebrow="Citation proof" title={<>[PH] Where our videos <em>show up.</em></>} lead={<>[PH] Screenshots of AI answers citing videos we produced. <PH/></>}/>
-    <div className="ip-g3">
-     {[1,2,3,4,5,6].map(n=><Reveal className="wl-proof" key={n}><div><b>Proof screenshot {n}</b>Placeholder slot. Cropped citation image from Goku goes here.</div></Reveal>)}
+    <IpHead eyebrow="Proof" title={<>Who do we <em>work with?</em></>} lead="Nakama Growth works with Synup, Inventive AI, HubEngage and StarAgile."/>
+    <div className="ip-g3 wl-videos">
+     {videos.map(v=><Reveal className="wl-video" key={v.id}>
+      <LiteYouTube id={v.id} title={v.t}/>
+      <span className="tag">{v.c}</span><h3>{v.t}</h3><p>{v.p}</p>
+     </Reveal>)}
     </div>
+    <h3 className="wl-h3">Cited in AI answers</h3>
+    <div className="ip-g3">
+     {proof.map(s=><Reveal className="wl-shot" key={s.src}>
+      <figure><img src={s.src} alt={s.c} width={s.w} height={s.h} loading="lazy"/><figcaption>{s.c}</figcaption></figure>
+     </Reveal>)}
+    </div>
+    <p className="wl-note"><span className="wl-ph">Placeholder</span> [Re-capture each screenshot with the date visible, and confirm client approval, before launch.]</p>
    </IpSection>
 
    <IpSection id="services">
-    <IpHead eyebrow="Also white label" title={<>[PH] Everything else your clients <em>ask for.</em></>} lead={<>[PH] Add any of these alongside YouTube. <PH/></>}/>
-    <div className="ip-g3">
-     {services.map(s=><Reveal className="ip-card ip-svc" key={s.tag}>
+    <IpHead eyebrow="What else you can resell" title={<>What else can Nakama Growth run <em>under your brand?</em></>} lead="Packages are custom, built around each client’s target queries and needs."/>
+    <div className="ip-g4">
+     {services.map(s=><Reveal className="ip-card ip-svc" key={s.t}>
       <div className="ip-svc-top"><span className="ip-svc-ico"><s.icon size={21}/></span></div>
-      <h3>{s.tag}</h3><p>{s.p}</p>
+      <h3>{s.t}</h3><p>{s.p}</p>
      </Reveal>)}
     </div>
    </IpSection>
 
    <IpSection id="process">
-    <IpHead eyebrow="Process" title={<>[PH] From first call to <em>first delivery.</em></>} lead={<>[PH] How a partnership starts. <PH/></>}/>
+    <IpHead eyebrow="Process" title={<>How do we start <em>working together?</em></>}/>
     <div className="ip-g4">
      {steps.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
    </IpSection>
 
    <IpFaq items={faq}/>
-   <IpCta title={<>[PH] Ready to offer AI visibility<br/><em>under your brand?</em></>} text="[PH] Book a call and we will walk through how a white-label partnership with Nakama Growth would work for your agency."/>
+   <IpCta title={<>Give your clients video and AI visibility<br/><em>without building the team.</em></>} text="Share the deliverables and target queries you have in mind, and we’ll send a tailored offer."/>
   </Shell>
  );
 }
