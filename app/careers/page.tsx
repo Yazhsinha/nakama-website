@@ -35,7 +35,7 @@ export default function Careers(){
     <div className="je-copy">
      <h3>The team is full, for now.</h3>
      <p>We’re heads-down on client work and not hiring this month. New roles open as we grow, so check back soon. If you’re exceptional at writing, research or community work, we’d still like to hear from you.</p>
-     <a className="ip-ghost" href="mailto:hello@nakama.in?subject=Future%20roles%20at%20Nakama">Introduce yourself<ArrowUpRight size={15}/></a>
+     <a className="ip-ghost" href="mailto:contact@nakama.in?subject=Future%20roles%20at%20Nakama">Introduce yourself<ArrowUpRight size={15}/></a>
     </div>
    </Reveal>}
   </IpSection>
