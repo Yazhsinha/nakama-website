@@ -179,14 +179,15 @@
 .wl-yt img{transition:transform .32s var(--wl-ease-out)}
 .wl-yt-play{z-index:3}
 .wl-yt-play::after{content:"";position:absolute;inset:-18px;border-radius:50%;box-shadow:0 0 0 18px rgba(240,124,50,.15) inset;opacity:0}
-.wl-video .tag{position:absolute;top:12px;left:12px;margin:0;z-index:3;pointer-events:none;font:600 11px/1 var(--ip-font);letter-spacing:.12em;padding:6px 10px;border-radius:999px;background:rgba(13,13,19,.72);border:1px solid var(--ip-line-2);color:var(--ip-ember-2)}
+.wl-video .tag{position:absolute;top:22px;left:22px;margin:0;z-index:3;pointer-events:none;font:600 11px/1 var(--ip-font);letter-spacing:.12em;padding:6px 10px;border-radius:999px;background:rgba(13,13,19,.72);border:1px solid var(--ip-line-2);color:var(--ip-ember-2)}
 .white-label-page .wl-video h3{margin-top:16px!important}
 .wl-video:hover,.wl-video:focus-within{transform:translateY(-4px)}
 .wl-video:hover::before,.wl-video:focus-within::before,.wl-video:hover .wl-yt::before,.wl-video:focus-within .wl-yt::before{opacity:1}
 .wl-video:hover .wl-yt img,.wl-video:focus-within .wl-yt img{transform:scale(1.04)}
 .wl-video:hover .wl-yt-play,.wl-video:focus-within .wl-yt-play{transform:translate(-50%,-50%) scale(1.08)}
 .wl-video:hover .wl-yt-play::after,.wl-video:focus-within .wl-yt-play::after{animation:wl-halo .4s var(--wl-ease-out) both}
-.wl-yt button:focus-visible{outline:2px solid #ffb27a;outline-offset:3px}
+.wl-yt button:focus-visible{outline:3px solid #ffb27a;outline-offset:-3px}
+.wl-yt:has(button:focus-visible){box-shadow:0 0 0 3px #ffb27a}
 @keyframes wl-halo{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
 
 /* v2.5 Ember hairline seams + eyebrow dot */

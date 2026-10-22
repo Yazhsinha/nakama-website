@@ -63,7 +63,7 @@ const steps=[
 
 const faq=[
  ['Who do my clients deal with?','You. You stay the point of contact, and work can be delivered unbranded under your name.'],
- ['Will you sign an NDA?','Yes. We sign an NDA with every partner agency, and your clients only ever hear from you.'],
+ ['Will you sign an NDA?','Yes. We’re happy to sign an NDA, and your clients only hear from you.'],
  ['Are revisions included?','Yes. Revision rounds are included on videos and content.'],
  ['What if a Reddit post is removed or a link drops?','We replace it.'],
  ['Is there a minimum spend or contract length?','No. There is no minimum spend and no lock-in contract.'],
