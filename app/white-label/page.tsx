@@ -9,7 +9,7 @@ import './white-label.css';
 /*
  PREVIEW ONLY. Copy: Hibiku v3 draft (23 Oct), pending final approval.
  Launch checklist: remove `robots` below, add {path:'/white-label',...} to corePages in lib/feed.ts
- so it enters the sitemap, re-capture the proof screenshots with a visible date, confirm client approval.
+ so it enters the sitemap, confirm final copy approval.
 */
 export const metadata:Metadata={
  ...pageMeta('/white-label',{title:'White-Label YouTube and AI Visibility for Agencies | Nakama Growth',description:'Nakama Growth creates YouTube videos end to end and runs AEO, GEO, Reddit, content, digital PR and link building white-label, under your agency brand.'}),
@@ -37,12 +37,6 @@ const videos=[
  {id:'elKnpdCfQEo',t:'What Is AI RFP Software? How It Works and How to Choose (2026)',c:'Inventive AI',p:'A plain walkthrough of what AI RFP software does and how a team should pick one.'},
  {id:'p3JPM1pEhIE',t:'How to Build an AI RFP Workflow: 7-Step RFP Process + 30-Day Pilot',c:'Inventive AI',p:'A step by step guide to setting up an AI-assisted RFP process and testing it on a small pilot.'},
  {id:'QgVZs0fcTd8',t:'What Is the Best Local SEO Tool for Multi-Location Brands in 2026?',c:'Local SEO Checklist',p:'A buyer’s guide to choosing a local SEO tool when you manage many locations.'},
-] as const;
-
-const proof=[
- {src:'/white-label/citation-003.webp',w:1400,h:898,c:'Our video for Inventive AI shown as a source in Google AI Overviews for the query “What Is AI RFP Software?”'},
- {src:'/white-label/citation-009.webp',w:1400,h:968,c:'Our video for Inventive AI shown as a source in Google AI Overviews for the query “ai rfp software”'},
- {src:'/white-label/citation-008.webp',w:1400,h:834,c:'Our video for Inventive AI shown in a Google AI Mode answer about RFP software tools'},
 ] as const;
 
 const services=[
@@ -115,13 +109,6 @@ export default function WhiteLabel(){
       <span className="tag">{v.c}</span><h3>{v.t}</h3><p>{v.p}</p>
      </Reveal>)}
     </div>
-    <h3 className="wl-h3">Cited in AI answers</h3>
-    <div className="ip-g3">
-     {proof.map(s=><Reveal className="wl-shot" key={s.src}>
-      <figure><img src={s.src} alt={s.c} width={s.w} height={s.h} loading="lazy"/><figcaption>{s.c}</figcaption></figure>
-     </Reveal>)}
-    </div>
-    <p className="wl-note"><span className="wl-ph">Placeholder</span> [Re-capture each screenshot with the date visible, and confirm client approval, before launch.]</p>
    </IpSection>
 
    <IpSection id="services">
