@@ -99,6 +99,7 @@ export default function WhiteLabel(){
     <div className="wl-yt-steps">
      {yt.map(([t,p],i)=><Reveal className="ip-card" key={t}><span className="ip-num">{String(i+1).padStart(2,'0')}</span><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
+    <p className="wl-note">Each video takes about 3 days from script to publish, and we can turn it around faster when you need it.</p>
     <p className="wl-note">Every video is built to get cited. Nobody can promise a citation, and we won’t.</p>
    </IpSection>
 
