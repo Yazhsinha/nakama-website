@@ -34,9 +34,9 @@ const yt=[
 ] as const;
 
 const videos=[
- {id:'elKnpdCfQEo',t:'What Is AI RFP Software? How It Works and How to Choose (2026)',c:'Inventive AI',p:'A plain walkthrough of what AI RFP software does and how a team should pick one.'},
- {id:'_qmU2pb-0sc',t:'How to Use Claude for RFP Responses Without One Giant Prompt (2026)',c:'Sample video',p:'A practical guide to using Claude for RFP responses by breaking the work into smaller prompts instead of one giant one.'},
- {id:'QgVZs0fcTd8',t:'What Is the Best Local SEO Tool for Multi-Location Brands in 2026?',c:'Local SEO Checklist',p:'A buyer’s guide to choosing a local SEO tool when you manage many locations.'},
+ {id:'elKnpdCfQEo',t:'What Is AI RFP Software? How It Works and How to Choose (2026)',c:'AI RFP software',p:'A plain walkthrough of what AI RFP software does and how a team should pick one.'},
+ {id:'_qmU2pb-0sc',t:'How to Use Claude for RFP Responses Without One Giant Prompt (2026)',c:'RFP workflows',p:'A practical guide to using Claude for RFP responses by breaking the work into smaller prompts instead of one giant one.'},
+ {id:'QgVZs0fcTd8',t:'What Is the Best Local SEO Tool for Multi-Location Brands in 2026?',c:'Local SEO',p:'A buyer’s guide to choosing a local SEO tool when you manage many locations.'},
 ] as const;
 
 const services=[
@@ -102,7 +102,7 @@ export default function WhiteLabel(){
    </IpSection>
 
    <IpSection id="proof">
-    <IpHead eyebrow="Proof" title={<>Who do we <em>work with?</em></>} lead="Nakama Growth works with Synup, Inventive AI, HubEngage and StarAgile."/>
+    <IpHead eyebrow="Proof" title={<>Who do we <em>work with?</em></>}/>
     <div className="ip-g3 wl-videos">
      {videos.map(v=><Reveal className="wl-video" key={v.id}>
       <LiteYouTube id={v.id} title={v.t}/>
