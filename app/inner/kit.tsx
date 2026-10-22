@@ -80,7 +80,7 @@ export function IpFaq({items,eyebrow='Questions',title=<>Straight <em>answers.</
  </IpSection>;
 }
 
-export function IpCta({title=<>Let’s map where your brand<br/><em>should show up next.</em></>,text='Every engagement is shaped around your product, your buyers and your category. Tell us where you are, and we’ll come back with a plan and a quote.'}:{title?:ReactNode;text?:string}){
+export function IpCta({title=<>Let’s map where your brand<br/><em>should show up next.</em></>,text='Every engagement is shaped around your product, your buyers and your category. Tell us where you are, and we’ll come back with a plan and a quote.',actions}:{title?:ReactNode;text?:string;actions?:ReactNode}){
  return <section className="ip-section ip-cta-wrap"><div className="ip-wrap">
   <Reveal className="ip-cta">
    <div className="ip-cta-glow" aria-hidden="true"/>
@@ -90,8 +90,10 @@ export function IpCta({title=<>Let’s map where your brand<br/><em>should show 
     <p>{text}</p>
    </div>
    <div className="ip-cta-actions">
+    {actions??<>
     <LinkBtn href="/pricing#quote">Get your custom quote</LinkBtn>
     <BookBtn className="ip-btn ip-btn-glass">Book a call</BookBtn>
+    </>}
    </div>
   </Reveal>
  </div></section>;

@@ -1,0 +1,222 @@
+/* Embeds */
+.wl-yt{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid var(--ip-line,rgba(255,255,255,.12));background:#0d0d14}
+.wl-yt button{all:unset;cursor:pointer;display:block;width:100%;height:100%;position:relative}
+.wl-yt img,.wl-yt iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.wl-yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:#f07c32;color:#1b1b30;box-shadow:0 0 0 8px rgba(13,13,19,.45),0 8px 24px rgba(0,0,0,.5);transition:transform .3s,background .2s}
+.wl-yt button:hover .wl-yt-play{transform:translate(-50%,-50%) scale(1.08);background:#ff8c45}
+.wl-yt button:focus-visible{outline:3px solid #ffb27a;outline-offset:3px}
+@media(max-width:560px){.wl-yt-play{width:56px;height:56px}}
+.wl-yt-fallback{position:absolute;left:12px;bottom:12px;color:#f3f1ed;font-size:13px}
+
+/* 1. Section rhythm */
+.white-label-page #how,.white-label-page #proof,.white-label-page #process{padding:96px 0}
+.white-label-page #proof{background:rgba(255,255,255,.025);border-block:1px solid var(--ip-line)}
+@media(max-width:700px){.white-label-page #how,.white-label-page #proof,.white-label-page #process{padding:64px 0}}
+
+/* 2. Static section heads */
+.white-label-page .ip-head{position:static}
+.white-label-page .ip-head h2{text-wrap:balance}
+/* 13. */
+.white-label-page .ip-head p{text-wrap:pretty}
+.white-label-page .ip-svc p a,.white-label-page .ip-head p a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* 3. Step numbers */
+.white-label-page .ip-num{color:var(--ip-ember-2);font:700 13px/1 var(--ip-font);letter-spacing:.1em}
+
+/* 4. YouTube rail */
+.wl-yt-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:28px}
+.wl-yt-steps .ip-card{padding:22px 18px;border-radius:18px}
+.wl-yt-steps h3{font-size:17px!important;line-height:1.25}
+.wl-yt-steps p{font-size:14.5px;line-height:1.55}
+.wl-yt-steps>:last-child{grid-column:1/-1}
+@media(min-width:1181px){.wl-yt-steps{grid-template-columns:repeat(7,minmax(0,1fr))}.wl-yt-steps>:last-child{grid-column:auto}}
+@media(max-width:699px){.wl-yt-steps{grid-template-columns:1fr;gap:12px}.wl-yt-steps .ip-card{padding:20px}}
+
+/* 5. Notes aside */
+.wl-notes{margin-top:24px;padding:20px 24px;border-left:2px solid var(--ip-ember);background:rgba(240,124,50,.06);border-radius:0 14px 14px 0;display:grid;gap:6px;max-width:72ch}
+#how .wl-notes{margin-top:28px}
+.wl-notes .wl-note{margin:0;font-size:16px;line-height:1.6;color:var(--ip-body)}
+
+/* 6. Video cards */
+.wl-videos{gap:28px;margin-top:48px}
+.wl-video{display:flex;flex-direction:column}
+.wl-video h3{font:700 19px/1.3 var(--ip-font);margin-top:8px;text-wrap:balance;color:var(--ip-ink,#f3f1ed)}
+.wl-video p{font-size:15.5px;line-height:1.6;color:var(--ip-mute);margin-top:8px}
+.wl-video .tag{display:inline-block;margin-top:18px;font:600 12px/1 var(--ip-font);letter-spacing:.12em;text-transform:uppercase;color:var(--ip-ember-2)}
+
+/* 8. Services grid: report card spans */
+.white-label-page #services .ip-g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.white-label-page #services .ip-g4>:last-child{grid-column:span 2}
+@media(max-width:1080px){.white-label-page #services .ip-g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.white-label-page #services .ip-g4{grid-template-columns:1fr}.white-label-page #services .ip-g4>:last-child{grid-column:auto}}
+
+/* 9. Hero CTA pair */
+.white-label-page .ip-hero .ip-actions{gap:12px}
+.white-label-page .ip-hero .ip-ghost{min-height:48px;padding:0 22px;border:1px solid var(--ip-line-2);border-radius:999px;font:600 15px/1 var(--ip-font);color:var(--ip-ink)}
+.white-label-page .ip-hero .ip-ghost:hover{border-color:#ffd2ad}
+@media(max-width:479px){.white-label-page .ip-hero .ip-actions{flex-direction:column;align-items:stretch}.white-label-page .ip-hero .ip-actions>*{justify-content:center;min-height:48px}.white-label-page .ip-hero .ip-btn{justify-content:space-between}}
+
+/* 10. Mobile header and skip link */
+.site-frame.white-label-page>.skip-link:not(:focus){top:-100px}
+.site-frame.white-label-page .site-nav.is-scrolled{background:rgba(13,13,19,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* 11. */
+@media(min-width:1080px){.white-label-page .ip-svc h3{min-height:2.4em}}
+/* 12. */
+.white-label-page .ip-svc-ico{border-radius:12px;width:44px;height:44px}
+.white-label-page .ip-svc-top{margin-bottom:20px}
+
+/* 14. Sub heading as eyebrow */
+.wl-h3{font:600 13px/1 var(--ip-font);letter-spacing:.12em;text-transform:uppercase;color:var(--ip-mute);margin:56px 0 0}
+.white-label-page .ip-head+.wl-h3{margin-top:56px!important}
+
+/* 15. Process connectors */
+.white-label-page #process .ip-card{position:relative;overflow:visible}
+.white-label-page #process .ip-card::after{content:"";position:absolute;top:34px;right:-21px;width:20px;height:1px;background:var(--ip-line-2)}
+.white-label-page #process .ip-card:last-child::after{display:none}
+@media(max-width:1080px){.white-label-page #process .ip-card::after{display:none}}
+
+/* 16. FAQ open state */
+.white-label-page .ip-faq-item[open]{border-color:rgba(240,124,50,.35)}
+
+/* 17. Final CTA */
+.white-label-page .ip-cta{align-items:end;padding-bottom:40px}
+.white-label-page .ip-cta-wrap{padding:56px 0 96px}
+@media(max-width:900px){.white-label-page .ip-cta-actions{margin-top:28px}}
+
+/* 18. Footer bottom row contrast (this page only) */
+.site-frame.white-label-page .footer-baseline,.site-frame.white-label-page .footer-baseline *{color:var(--ip-mute);font-size:12px}
+
+/* 19. Reduced motion */
+@media(prefers-reduced-motion:reduce){.white-label-page .reveal,.white-label-page .reveal-ready{opacity:1!important;transform:none!important;filter:none!important}}
+
+/* 20. Breadcrumb: Crumbs renders JSON-LD only, nothing visible, no rule needed. */
+
+/* Mid-page CTAs */
+.wl-cta-row{margin-top:40px;display:flex}
+
+/* Sticky mobile Book a call bar */
+.wl-sticky{display:none}
+@media(max-width:700px){
+ .wl-sticky{display:flex;justify-content:center;position:fixed;z-index:40;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));background:rgba(13,13,19,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--ip-line);transform:translateY(110%);transition:transform .3s;pointer-events:none}
+ .wl-sticky.is-on{transform:none;pointer-events:auto}
+ .wl-sticky .ip-btn{width:100%;max-width:420px;justify-content:space-between;height:50px}
+ .white-label-page main{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+}
+@media(max-width:700px) and (prefers-reduced-motion:reduce){.wl-sticky{transition:none}}
+
+/* ===== v2 premium layer (Gohan v2). Transform and opacity only; reduced motion shows final frames. ===== */
+.white-label-page{--wl-ease-out:cubic-bezier(.22,1,.36,1);--wl-ease-io:cubic-bezier(.65,0,.35,1)}
+
+/* v2.1 Hero Gate ignition (IpHero aside slot) */
+.white-label-page .ip-hero.has-aside .ip-hero-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}
+.white-label-page .ip-hero-aside{align-self:start;justify-self:end;margin-top:clamp(60px,9vw,150px);pointer-events:none}
+.wl-hero-art{width:clamp(280px,34vw,460px);aspect-ratio:1/1}
+.wl-hero-art svg{display:block;width:100%;height:100%;overflow:visible}
+.wlg-r{transform-box:view-box;transform-origin:280px 560px;opacity:var(--o);animation:wlg-ring .9s var(--wl-ease-out) both}
+.wlg-r1{--o:.16;animation-delay:.6s}.wlg-r2{--o:.1;animation-delay:.75s}.wlg-r3{--o:.06;animation-delay:.9s}
+.wlg-gate{animation:wlg-fade .9s ease-out both}
+.wlg-glow{animation:wlg-glow 1.4s ease-in-out .6s both}
+.wlg-dot{transform-box:view-box;animation:wlg-rise 1.2s var(--wl-ease-out) .2s both}
+@keyframes wlg-rise{from{transform:translateY(160px);opacity:0}25%{opacity:1}to{transform:none;opacity:1}}
+@keyframes wlg-fade{from{opacity:.35}to{opacity:1}}
+@keyframes wlg-ring{from{transform:scale(.92);opacity:0}to{transform:none;opacity:var(--o)}}
+@keyframes wlg-glow{0%{opacity:0}60%{opacity:1}80%{opacity:.75}100%{opacity:1}}
+@media(max-width:900px){.white-label-page .ip-hero.has-aside .ip-hero-in{grid-template-columns:1fr;gap:0}.white-label-page .ip-hero-aside{justify-self:center;margin-top:0}.wl-hero-art{width:240px;margin:32px auto 0}}
+
+/* v2.2 YouTube pipeline rail */
+.wl-rail{display:none}
+@media(min-width:1181px){
+ .wl-rail{position:relative;height:22px;margin:28px 0 -8px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
+ .wl-rail-track,.wl-rail-fill{position:absolute;left:calc(100%/14);right:calc(100%/14);top:10px;height:2px;background:var(--ip-line-2)}
+ .wl-rail-fill{background:linear-gradient(90deg,var(--ip-ember),var(--ip-ember-2));transform-origin:left}
+ .wl-rail-node{position:relative;width:14px;height:14px;border-radius:50%;margin:4px auto 0;background:#2a2a35}
+ .wl-rail-node::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--ip-ember);box-shadow:0 0 0 6px rgba(240,124,50,.2)}
+ .wl-pipe.reveal-ready .wl-rail-fill{transform:scaleX(0);animation:wl-fill 2.45s linear both paused}
+ .wl-pipe.reveal-ready .wl-rail-node::after{animation:wl-node .42s var(--wl-ease-out) calc(var(--i)*350ms) both paused}
+}
+@media(max-width:1180px){
+ .wl-yt-steps{position:relative;padding-left:28px}
+ .wl-yt-steps::before,.wl-yt-steps::after{content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--ip-line-2)}
+ .wl-yt-steps::after{background:linear-gradient(180deg,var(--ip-ember),var(--ip-ember-2));transform-origin:top}
+ .wl-pipe.reveal-ready .wl-yt-steps::after{transform:scaleY(0);animation:wl-fill-y 2.45s linear both paused}
+}
+.wl-pipe.reveal-ready .ip-num{animation:wl-num .42s ease-out calc(var(--i)*350ms) both paused}
+.wl-pipe.reveal-in .wl-rail-fill,.wl-pipe.reveal-in .wl-rail-node::after,.wl-pipe.reveal-in .wl-yt-steps::after,.wl-pipe.reveal-in .ip-num{animation-play-state:running}
+@keyframes wl-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes wl-fill-y{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes wl-node{0%{transform:scale(0)}60%{transform:scale(1.5)}100%{transform:scale(1)}}
+@keyframes wl-num{from{opacity:.55}to{opacity:1}}
+
+/* v2.3 Closing CTA doorway */
+.white-label-page .ip-cta{position:relative;overflow:hidden}
+.white-label-page .ip-cta-copy,.white-label-page .ip-cta-actions .ip-btn{position:relative;z-index:1}
+.wl-cta-gate{position:absolute;right:clamp(24px,6vw,96px);bottom:0;width:clamp(200px,24vw,320px);aspect-ratio:343/374;pointer-events:none;z-index:0}
+.wl-cta-gate svg{display:block;width:100%;height:100%;overflow:visible}
+.wl-cta-glow{position:absolute;left:50%;top:45.86%;width:140px;height:140px;margin:-70px 0 0 -70px;border-radius:50%;background:radial-gradient(var(--ip-ember),transparent 70%);opacity:.5}
+.wlc-dot{transform-box:view-box}
+.white-label-page .ip-cta.reveal-ready .wlc-dot{animation:wl-seat .9s var(--wl-ease-out) both paused}
+.white-label-page .ip-cta.reveal-ready .wl-cta-glow{animation:wl-glow-in .6s ease-out .5s both paused}
+.white-label-page .ip-cta.reveal-ready .ip-cta-actions .ip-btn{animation:wl-settle .6s ease-out .3s both paused}
+.white-label-page .ip-cta.reveal-in .wlc-dot,.white-label-page .ip-cta.reveal-in .wl-cta-glow,.white-label-page .ip-cta.reveal-in .ip-cta-actions .ip-btn{animation-play-state:running}
+@keyframes wl-seat{from{transform:translateY(-110px);opacity:0}70%{transform:translateY(6px);opacity:1}to{transform:none;opacity:1}}
+@keyframes wl-glow-in{from{opacity:0}to{opacity:.5}}
+@keyframes wl-settle{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:759px){
+ .white-label-page .ip-cta-actions{position:relative}
+ .wl-cta-gate{right:auto;left:50%;bottom:-78px;width:180px;margin-left:-90px}
+ .white-label-page .ip-cta-actions{align-items:center}
+ .wl-cta-glow{opacity:.35}
+ @keyframes wl-glow-in{from{opacity:0}to{opacity:.35}}
+}
+
+/* v2.4 Richer video cards */
+.wl-video{position:relative;transition:transform .32s var(--wl-ease-out)}
+.wl-yt{border:0;box-shadow:0 0 0 1px var(--ip-line-2)}
+.wl-yt::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(13,13,19,.8));pointer-events:none;z-index:1}
+.wl-yt::before{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 0 1px rgba(255,178,122,.45);opacity:0;transition:opacity .32s var(--wl-ease-out);pointer-events:none;z-index:2}
+.wl-video::before{content:"";position:absolute;left:0;right:0;top:0;aspect-ratio:16/9;border-radius:18px;box-shadow:0 24px 48px -20px rgba(240,124,50,.45);opacity:0;transition:opacity .32s var(--wl-ease-out);pointer-events:none}
+.wl-yt img{transition:transform .32s var(--wl-ease-out)}
+.wl-yt-play{z-index:3}
+.wl-yt-play::after{content:"";position:absolute;inset:-18px;border-radius:50%;box-shadow:0 0 0 18px rgba(240,124,50,.15) inset;opacity:0}
+.wl-video .tag{position:absolute;top:22px;left:22px;margin:0;z-index:3;pointer-events:none;font:600 11px/1 var(--ip-font);letter-spacing:.12em;padding:6px 10px;border-radius:999px;background:rgba(13,13,19,.72);border:1px solid var(--ip-line-2);color:var(--ip-ember-2)}
+.white-label-page .wl-video h3{margin-top:16px!important}
+.wl-video:hover,.wl-video:focus-within{transform:translateY(-4px)}
+.wl-video:hover::before,.wl-video:focus-within::before,.wl-video:hover .wl-yt::before,.wl-video:focus-within .wl-yt::before{opacity:1}
+.wl-video:hover .wl-yt img,.wl-video:focus-within .wl-yt img{transform:scale(1.04)}
+.wl-video:hover .wl-yt-play,.wl-video:focus-within .wl-yt-play{transform:translate(-50%,-50%) scale(1.08)}
+.wl-video:hover .wl-yt-play::after,.wl-video:focus-within .wl-yt-play::after{animation:wl-halo .4s var(--wl-ease-out) both}
+.wl-yt button:focus-visible{outline:3px solid #ffb27a;outline-offset:-3px}
+.wl-yt:has(button:focus-visible){box-shadow:0 0 0 3px #ffb27a}
+@keyframes wl-halo{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* v2.5 Ember hairline seams + eyebrow dot */
+.white-label-page :is(#youtube,#proof,#how,#services,#process)::before{content:"";position:absolute;top:0;left:0;right:0;width:min(var(--ip-max,1200px),100% - 48px);height:1px;margin:0 auto;background:linear-gradient(90deg,transparent,rgba(240,124,50,.5) 50%,transparent);transform-origin:center;transition:transform .8s var(--wl-ease-out),opacity .8s var(--wl-ease-out)}
+.white-label-page :is(#youtube,#proof,#how,#services,#process):has(.ip-head.reveal-ready:not(.reveal-in))::before{transform:scaleX(.2);opacity:0}
+.white-label-page .ip-head.reveal-ready .ip-eyebrow i{animation:wl-pop .4s var(--wl-ease-out) .2s both paused}
+.white-label-page .ip-head.reveal-in .ip-eyebrow i{animation-play-state:running}
+@keyframes wl-pop{from{transform:scale(0)}to{transform:scale(1)}}
+
+/* v2.6 Micro-interactions */
+.white-label-page .ip-btn i,.white-label-page .ip-ghost svg{transition:transform .24s var(--wl-ease-out)}
+.white-label-page .ip-btn:is(:hover,:focus-visible) i{transform:translateX(3px)}
+.white-label-page .ip-ghost:is(:hover,:focus-visible) svg{transform:translateX(3px)}
+.white-label-page .ip-hero .ip-ghost{border-color:rgba(255,255,255,.14)}
+.white-label-page .ip-hero .ip-ghost:is(:hover,:focus-visible){border-color:rgba(255,178,122,.5)}
+.white-label-page :is(.ip-btn,.ip-ghost){transition:transform .12s,box-shadow .3s}
+.white-label-page :is(.ip-btn,.ip-ghost):active{transform:scale(.98)}
+.white-label-page .ip-card:hover{box-shadow:0 0 0 1px rgba(255,178,122,.25),inset 0 1px 0 rgba(255,255,255,.05)}
+.white-label-page .wl-spot{overflow:hidden}
+.white-label-page .wl-spot::before{content:"";position:absolute;left:-120px;top:-120px;width:240px;height:240px;border-radius:50%;background:radial-gradient(rgba(240,124,50,.1),transparent 70%);transform:translate(var(--mx,0px),var(--my,0px));opacity:0;transition:opacity .2s;pointer-events:none}
+.white-label-page .wl-spot:hover::before{opacity:1}
+.white-label-page .wl-spot>*{position:relative}
+@media(max-width:700px){.wl-sticky{transition:transform .32s var(--wl-ease-out)}.wl-sticky:not(.is-on){transform:translateY(100%)}}
+
+/* v2 reduced motion: final frames, no movement */
+@media(prefers-reduced-motion:reduce){
+ .white-label-page *,.white-label-page *::before,.white-label-page *::after{animation:none!important;transition:none!important}
+ .wl-video:hover,.wl-video:focus-within,.wl-video:hover .wl-yt img,.wl-video:focus-within .wl-yt img{transform:none}
+ .wl-video:hover .wl-yt-play,.wl-video:focus-within .wl-yt-play{transform:translate(-50%,-50%)}
+ .wl-video:hover .wl-yt-play::after,.wl-video:focus-within .wl-yt-play::after{opacity:1}
+ .white-label-page .ip-btn:is(:hover,:focus-visible) i,.white-label-page .ip-ghost:is(:hover,:focus-visible) svg,.white-label-page :is(.ip-btn,.ip-ghost):active,.white-label-page .ip-btn:hover{transform:none}
+}

@@ -80,7 +80,7 @@ export default function Services(){
      <div>
       <p>White-label AI visibility, content, video and reporting for agencies that want a specialist partner behind their name.</p>
       <ul>{['Your branding on every deliverable','Direct line between our team and yours','Capacity that scales with your roster'].map(i=><li key={i}><Check size={16}/>{i}</li>)}</ul>
-      <BookBtn>Talk partnerships</BookBtn>
+      <div className="ip-actions"><BookBtn>Talk partnerships</BookBtn><LinkBtn href="/white-label" ghost>See the white-label program</LinkBtn></div>
      </div>
     </Reveal>
    </IpSection>
