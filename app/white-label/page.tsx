@@ -35,7 +35,7 @@ const yt=[
 
 const videos=[
  {id:'elKnpdCfQEo',t:'What Is AI RFP Software? How It Works and How to Choose (2026)',c:'Inventive AI',p:'A plain walkthrough of what AI RFP software does and how a team should pick one.'},
- {id:'p3JPM1pEhIE',t:'How to Build an AI RFP Workflow: 7-Step RFP Process + 30-Day Pilot',c:'Inventive AI',p:'A step by step guide to setting up an AI-assisted RFP process and testing it on a small pilot.'},
+ {id:'_qmU2pb-0sc',t:'How to Use Claude for RFP Responses Without One Giant Prompt (2026)',c:'Sample video',p:'A practical guide to using Claude for RFP responses by breaking the work into smaller prompts instead of one giant one.'},
  {id:'QgVZs0fcTd8',t:'What Is the Best Local SEO Tool for Multi-Location Brands in 2026?',c:'Local SEO Checklist',p:'A buyer’s guide to choosing a local SEO tool when you manage many locations.'},
 ] as const;
 
