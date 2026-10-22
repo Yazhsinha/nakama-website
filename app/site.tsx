@@ -7,7 +7,7 @@ import {BookCallButton} from '@/components/booking/BookCall';
 import {Sheet,SheetTrigger,SheetContent,SheetTitle,SheetDescription,SheetClose} from '@/components/ui/sheet';
 export const BOOKING='https://app.cal.com/snehil-srivastava-4jm7sq';
 export const navigationLinks=[['Pricing','/pricing'],['Resources','/resources'],['About','/about']] as const;
-export const companyLinks=[['Services','/services','What we do, channel by channel'],['Work','/work','Where our clients show up'],['Process','/process','How an engagement runs'],['Careers','/careers','Join the team']] as const;
+export const companyLinks=[['Services','/services','What we do, channel by channel'],['White label','/white-label','Resell our work under your brand'],['Work','/work','Where our clients show up'],['Process','/process','How an engagement runs'],['Careers','/careers','Join the team']] as const;
 export function Logo({className=''}:{className?:string}){return <svg className={className} viewBox="0 0 64 64" aria-hidden="true"><path d="M9 57V30A23 23 0 0 1 55 30V57H42V30A10 10 0 0 0 22 30V57Z" fill="#f3f1ed"/><circle cx="32" cy="30" r="5.6" fill="#f07c32"/></svg>}
 export function Booking({children='Book a conversation',className=''}:{children?:ReactNode,className?:string}){return <BookCallButton className={`button ${className}`}>{children}<ArrowUpRight size={17}/></BookCallButton>}
 export function Header(){
