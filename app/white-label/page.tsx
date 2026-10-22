@@ -1,6 +1,6 @@
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
-import {Globe,PenLine,MessageCircle,Sparkles,FileText,Share2,Link2,ChartNoAxesCombined,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
+import {PenLine,MessageCircle,Sparkles,FileText,Share2,Link2,ChartNoAxesCombined,EyeOff,Handshake,Tag,Palette} from 'lucide-react';
 import {Shell,Reveal} from '../site';
 import Link from 'next/link';
 import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
@@ -41,7 +41,6 @@ const videos=[
 ] as const;
 
 const services=[
- {icon:Globe,t:'Independent editorial sites',p:'Our own sites, built to mention brands in context.'},
  {icon:PenLine,t:'Publishing platforms',p:'Articles on Medium, LinkedIn Pulse, Substack and DEV Community.'},
  {icon:MessageCircle,t:'Reddit and Quora',p:'Posts, comments and answers in the communities where buyers ask for advice, written to be genuinely useful.'},
  {icon:Sparkles,t:'AEO and GEO',p:'Pages and content shaped around the questions buyers ask AI tools.'},
@@ -62,7 +61,7 @@ const faq=[
  ['Can you guarantee AI citations?','No. We build the work to be easy for AI tools to mention and cite, but nobody controls what an AI answer includes.'],
  ['Who do my clients deal with?','You. You stay the point of contact, and work can be delivered unbranded under your name.'],
  ['How is pricing set?','Pricing is custom and based on what each client needs. Share the requirements and we’ll send an offer.'],
- ['Which channels do you cover?','YouTube, AEO and GEO, Reddit and Quora, content, digital PR, link building, our own editorial sites, and publishing platforms like Medium, LinkedIn Pulse, Substack and DEV Community.'],
+ ['Which channels do you cover?','YouTube, AEO and GEO, Reddit and Quora, content, digital PR, link building and publishing platforms like Medium, LinkedIn Pulse, Substack and DEV Community.'],
  ['How do you report results?','A monthly AI-visibility report showing where the brand appears in AI answers.'],
  ['Who is this for?','Agencies whose clients want to show up when buyers ask AI tools what to choose.'],
 ] as const;
