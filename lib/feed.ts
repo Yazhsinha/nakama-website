@@ -11,6 +11,7 @@ export const feedArticles=articles.map(a=>({...a,date:articleDate(a.slug)}));
 export const corePages:{path:string;title:string;summary:string;priority:number;freq:'weekly'|'monthly'|'yearly';src:string[]}[]=[
  {path:'/',title:'Home',summary:'What Nakama does: gets brands named in AI answers through earned, off-site sources.',priority:1,freq:'weekly',src:['app/page.tsx', 'app/HomeSections.tsx', 'app/ContentSections.tsx', 'app/proof-data.ts', 'app/hero-panels.ts', 'components']},
  {path:'/services',title:'Services',summary:'AEO, GEO, Reddit and community, content and editorial, YouTube and video, digital PR, plus measurement.',priority:.9,freq:'monthly',src:['app/services']},
+ {path:'/white-label',title:'White label',summary:'White label YouTube production plus AEO, GEO, Reddit and Quora, content, digital PR and link building for agencies, delivered under the agency brand.',priority:.8,freq:'monthly',src:['app/white-label']},
  {path:'/work',title:'Work',summary:'Documented client placements in Google AI Overviews, AI Mode, Perplexity, ChatGPT, YouTube and search, with queries you can run.',priority:.9,freq:'weekly',src:['app/work', 'app/proof-data.ts', 'content/case-studies.json']},
  {path:'/process',title:'Process',summary:'Understand, create, place, prove: the monthly cycle and working cadence.',priority:.8,freq:'monthly',src:['app/process']},
  {path:'/pricing',title:'Pricing',summary:'One all-inclusive Nakama plan, enterprise and custom pricing, and a quote form.',priority:.8,freq:'monthly',src:['app/pricing']},

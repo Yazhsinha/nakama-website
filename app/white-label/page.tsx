@@ -11,14 +11,8 @@ import {HeroGate,CtaGate} from './Gate';
 import {Spotlight} from './Spotlight';
 import './white-label.css';
 
-/*
- PREVIEW ONLY. Copy: Hibiku v3 draft (23 Oct), pending final approval.
- Launch checklist: remove `robots` below, add {path:'/white-label',...} to corePages in lib/feed.ts
- so it enters the sitemap, confirm final copy approval.
-*/
 export const metadata:Metadata={
  ...pageMeta('/white-label',{title:'White label GEO and YouTube services for agencies | Nakama Growth',description:'Nakama Growth creates YouTube videos end to end and runs AEO and GEO, Reddit, content, digital PR and link building white-label, under your agency’s brand.'}),
- robots:{index:false,follow:false},
 };
 
 const how=[
