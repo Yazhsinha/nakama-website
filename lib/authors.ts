@@ -41,6 +41,20 @@ export const authors:Author[]=[
    {label:'Instagram',url:'https://www.instagram.com/maazakthakya/'},
   ],
  },
+ {
+  slug:'sandeep-kumar',
+  name:'Sandeep Kumar',
+  jobTitle:'SEO and GEO Specialist',
+  metaTitle:'Sandeep Kumar, SEO and GEO Specialist | Nakama Growth',
+  metaDescription:'Sandeep Kumar is an SEO and GEO Specialist at Nakama Growth in Delhi, writing content built for Google search and AI answers.',
+  bio:[
+   'Sandeep Kumar is an SEO and GEO Specialist at Nakama Growth, based in Delhi, India. He joined the team in June 2026 and works on content strategy and web content writing for brands that want to show up in Google search and in AI answers from tools like ChatGPT, Perplexity and Google AI Overviews.',
+  ],
+  image:{src:'/authors/sandeep-kumar-nakama-seo-geo.webp',src800:'/authors/sandeep-kumar-nakama-seo-geo-800.webp',width:800,height:800,alt:'Sandeep, SEO and GEO Specialist at Nakama Growth'},
+  links:[
+   {label:'LinkedIn',url:'https://www.linkedin.com/in/marketingbysandeep/'},
+  ],
+ },
 ];
 
 /** Job title for running text, with "&" spelled out. */
