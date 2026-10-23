@@ -5,7 +5,7 @@ import type {Article} from './articles';
  * It feeds datePublished and dateModified in the schema, og/article published and modified times,
  * the RSS pubDate, the sitemap lastmod (via `date`) and the visible "Last updated ..." line.
  */
-const PUBLISHED_AT = '2026-10-23T18:00:00+05:30';
+const PUBLISHED_AT = '2026-10-23T18:20:08+05:30';
 const MODIFIED_AT = PUBLISHED_AT;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
