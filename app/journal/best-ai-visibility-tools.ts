@@ -19,7 +19,7 @@ const articleLd = {
    "@type": "Article",
    "@id": "https://www.nakama.in/journal/best-ai-visibility-tools#article",
    "headline": "Best AI visibility tools in 2026, compared for SaaS teams",
-   "description": "Compare 9 AI visibility tools for SaaS teams in 2026, including Peec AI, Profound, OtterlyAI, Semrush, Ahrefs Brand Radar, SE Visible and LLMrefs, with prices.",
+   "description": "Compare 9 AI visibility tools for SaaS teams in 2026, from Peec AI and Profound to Semrush and Ahrefs Brand Radar, with prices.",
    "datePublished": PUBLISHED_AT,
    "dateModified": MODIFIED_AT,
    "author": {
@@ -281,7 +281,7 @@ export const bestAiVisibilityToolsArticle: Article = {
  slug: 'best-ai-visibility-tools',
  category: 'Guide',
  title: "Best AI visibility tools in 2026, compared for SaaS teams",
- description: "Compare 9 AI visibility tools for SaaS teams in 2026, including Peec AI, Profound, OtterlyAI, Semrush, Ahrefs Brand Radar, SE Visible and LLMrefs, with prices.",
+ description: "Compare 9 AI visibility tools for SaaS teams in 2026, from Peec AI and Profound to Semrush and Ahrefs Brand Radar, with prices.",
  readTime: '10 min read',
  motif: 'guide',
  metaTitle: "Best AI visibility tools in 2026: 9 compared for SaaS",
