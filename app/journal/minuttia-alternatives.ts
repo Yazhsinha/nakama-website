@@ -8,7 +8,7 @@ import type {Article} from './articles';
  */
 export const PUBLISHED_AT = '2026-10-25T19:46:08+05:30';
 export const MINUTTIA_ALTERNATIVES_PUBLISHED_AT = PUBLISHED_AT;
-const MODIFIED_AT = '2026-10-25T20:00:07+05:30';
+const MODIFIED_AT = '2026-10-25T23:37:14+05:30';
 
 const dayOf = (iso: string) => iso.slice(0, 10);
 const articleLd = {
@@ -18,7 +18,7 @@ const articleLd = {
    "@type": "Article",
    "@id": "https://www.nakama.in/journal/minuttia-alternatives#article",
    "headline": "Minuttia alternatives (2026): 7 AEO agencies compared",
-   "description": "Comparing Minuttia alternatives for B2B SaaS buyers: how seven AEO agencies differ on AI visibility work, measurement, channels, and fit, so you can pick beyond the free AEO report.",
+   "description": "Minuttia alternatives compared: seven AEO agencies for B2B SaaS on AI visibility, measurement, channels and fit. Public claims checked Oct 2026.",
    "image": [
     "https://www.nakama.in/journal/minuttia-alternatives/minuttia-alternatives-hero.png",
     "https://www.nakama.in/journal/minuttia-alternatives/minuttia-alternatives-1x1.png",
@@ -67,7 +67,7 @@ const articleLd = {
    "@id": "https://www.nakama.in/journal/minuttia-alternatives#webpage",
    "url": "https://www.nakama.in/journal/minuttia-alternatives",
    "name": "Minuttia Alternatives (2026): 7 AEO Agencies Compared",
-   "description": "Comparing Minuttia alternatives for B2B SaaS buyers: how seven AEO agencies differ on AI visibility work, measurement, channels, and fit, so you can pick beyond the free AEO report.",
+   "description": "Minuttia alternatives compared: seven AEO agencies for B2B SaaS on AI visibility, measurement, channels and fit. Public claims checked Oct 2026.",
    "inLanguage": "en-US",
    "isPartOf": {
     "@id": "https://www.nakama.in/#website"
@@ -373,7 +373,7 @@ export const minuttiaAlternativesArticle: Article = {
  slug: 'minuttia-alternatives',
  category: 'AEO agencies',
  title: "Minuttia Alternatives (2026): 7 AEO Agencies Compared",
- description: "Comparing Minuttia alternatives for B2B SaaS buyers: how seven AEO agencies differ on AI visibility work, measurement, channels, and fit, so you can pick beyond the free AEO report.",
+ description: "Minuttia alternatives compared: seven AEO agencies for B2B SaaS on AI visibility, measurement, channels and fit. Public claims checked Oct 2026.",
  readTime: '14 min read',
  motif: 'guide',
  metaTitle: "Minuttia Alternatives (2026): 7 AEO Agencies Compared",
