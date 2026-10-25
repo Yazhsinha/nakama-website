@@ -8,7 +8,7 @@ import type {Article} from './articles';
  */
 export const PUBLISHED_AT = '2026-10-25T19:46:08+05:30';
 export const MINUTTIA_ALTERNATIVES_PUBLISHED_AT = PUBLISHED_AT;
-const MODIFIED_AT = PUBLISHED_AT;
+const MODIFIED_AT = '2026-10-25T20:00:07+05:30';
 
 const dayOf = (iso: string) => iso.slice(0, 10);
 const articleLd = {
@@ -360,6 +360,13 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <p>Some do. Minuttia has its own tracker, and Graphite and Daydream report inside their programs. Ask each agency which engines they track, how often, and whether citations are measured for ChatGPT and AI Overviews, not just Perplexity.</p>
 <h3 id="should-i-pick-an-agency-or-a-tracker-after-minuttias-free-report">Should I pick an agency or a tracker after Minuttia's free report?</h3>
 <p>Pick a tracker if you only need to monitor mentions and have a team to act on the data. Pick an agency if you need someone to change what AI engines say, through content, citations and PR. Many teams start with an audit to decide.</p>
+<h2 id="about-the-author">About the author</h2>
+<div class="author-box" id="yash-kumar">
+<img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async">
+<div class="author-box-text">
+<p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and GEO agency in India that helps B2B and SaaS brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama's work on earning mentions on the sources those tools read.</p>
+</div>
+</div>
 <p>Want to know where ChatGPT, Perplexity and AI Overviews mention your brand today? <a href="/pricing#quote">Book a GEO audit call with Nakama Growth</a>.</p>`;
 
 export const minuttiaAlternativesArticle: Article = {
