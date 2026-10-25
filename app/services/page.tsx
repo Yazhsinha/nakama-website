@@ -35,7 +35,7 @@ const flow=[
 ] as const;
 
 const faq=[
- ['What if a channel doesn’t suit us?','We only run channels that fit your buyers and where AI answers actually pull from. If a surface is a poor match for your niche, for example a directory or community your category barely shows up in, we skip it and put that effort into the channels that matter for you. YouTube stays in scope when it earns citations for your topics, which for most SaaS and AI buyers it often does.'],
+ ['What if a channel doesn’t suit us?','Then we skip that channel and put the effort into ones that fit. Usual skips are a placement surface with little buyer presence in your category, or a community whose norms block useful posting. We weigh citation value first: YouTube is often among the sources AI answers cite, so we drop it only when it clearly won’t help your topics.'],
  ['How is this different from SEO?','SEO focuses on your own site ranking in search. We focus on your brand being mentioned and cited everywhere buyers research, including AI answers, communities and video. The two work well together.'],
  ['Is community work transparent?','Always. We participate openly, follow each community’s rules and never post fake reviews or hidden endorsements.'],
  ['Which AI engines do you work toward?','ChatGPT, Perplexity, Gemini and Google AI Overviews. How often each engine cites a given source varies by tool and changes over time.'],
