@@ -14,7 +14,7 @@ const services=[
  {id:'aeo',eyebrow:'Answer engines',name:'AEO services',lead:'Be part of the answer.',who:'For B2B SaaS & AI',body:'We turn buyer questions into answer-first pages and FAQs that search and answer engines can retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first articles, comparisons and FAQs','Citation and visibility tracking']},
  {id:'reddit',name:'Reddit & community',lead:'Earn a place in the conversation.',body:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {id:'content',name:'Content & editorial',lead:'Make your expertise useful.',body:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
- {id:'youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
+ {id:'youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search, so AI answers can cite the work.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
  {id:'digital-pr',name:'Digital PR & links',lead:'Connect to credible sources.',body:'Relevant editorial placements and relationships that put your brand in front of the right audiences, and the right crawlers.',items:['Publisher and partner research','Editorial outreach and linkable assets','Placement and source-quality reporting']},
 ] as const;
 
@@ -35,7 +35,7 @@ const flow=[
 ] as const;
 
 const faq=[
- ['What if a channel doesn’t suit us?','Then we skip that channel and put the effort into ones that fit. Usual skips are a channel with no buyer presence in your category, or a community whose norms block useful posting. We weigh citation value first: YouTube is often cited by AI answers, so dropping it is uncommon and only when it clearly won’t help.'],
+ ['What if a channel doesn’t suit us?','We only run channels that fit your buyers and where AI answers actually pull from. If a surface is a poor match for your niche, for example a directory or community your category barely shows up in, we skip it and put that effort into the channels that matter for you. YouTube stays in scope when it earns citations for your topics, which for most SaaS and AI buyers it often does.'],
  ['How is this different from SEO?','SEO focuses on your own site ranking in search. We focus on your brand being mentioned and cited everywhere buyers research, including AI answers, communities and video. The two work well together.'],
  ['Is community work transparent?','Always. We participate openly, follow each community’s rules and never post fake reviews or hidden endorsements.'],
  ['Which AI engines do you work toward?','ChatGPT, Perplexity, Gemini and Google AI Overviews. How often each engine cites a given source varies by tool and changes over time.'],
