@@ -20,7 +20,7 @@ const services=[
 ] as const;
 
 const flow=[
- ['AI names your competitors, not you','We lead with the answer audit and GEO work, then go after the exact sources that keep naming them.'],
+ ['AI answers keep naming your competitors.','We lead with the answer audit and GEO work, then go after the exact sources that keep naming them.'],
  ['Your category is new and nobody searches for it yet','Editorial and video come first, explaining the problem in the words buyers use, before we chase comparisons.'],
  ['Reddit already has opinions about you','Community work starts with listening. We answer what is being asked, openly, before adding anything new.'],
 ] as const;
