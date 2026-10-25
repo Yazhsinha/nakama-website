@@ -3,14 +3,17 @@ import type {Article} from './articles';
 /**
  * PUBLISH TIME for this article. Set the real go-live time here at merge (ISO 8601 with +05:30).
  * It feeds datePublished and dateModified in the schema, og/article published and modified times,
- * the RSS pubDate, the sitemap lastmod (via `date`) and the visible updated line.
- * Update MODIFIED_AT together with the visible updated date on later edits.
+ * the RSS pubDate, the sitemap lastmod (via `date`) and the visible "Updated ..." line.
+ * Update MODIFIED_AT together with the visible "Updated" date on later edits.
  */
 export const PUBLISHED_AT = '2026-10-25T19:46:08+05:30';
 export const MINUTTIA_ALTERNATIVES_PUBLISHED_AT = PUBLISHED_AT;
-const MODIFIED_AT = '2026-10-25T23:37:14+05:30';
+const MODIFIED_AT = '2026-10-25T23:57:55+05:30';
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const dayOf = (iso: string) => iso.slice(0, 10);
+const shortDate = (iso: string) => `${Number(iso.slice(8, 10))} ${MONTHS[Number(iso.slice(5, 7)) - 1]} ${iso.slice(0, 4)}`;
+const modifiedDate = shortDate(MODIFIED_AT);
 const articleLd = {
  "@context": "https://schema.org",
  "@graph": [
@@ -250,7 +253,8 @@ export const minuttiaAlternativesJsonLd = [articleLd];
 
 const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol style="list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0 0 1.25rem;font-size:.9rem"><li><a href="https://www.nakama.in/">Home</a></li><li aria-hidden="true">/</li><li><a href="https://www.nakama.in/resources">Resources</a></li><li aria-hidden="true">/</li><li aria-current="page">Minuttia Alternatives (2026): 7 AEO Agencies Compared</li></ol></nav>
 <h1 id="minuttia-alternatives-2026-7-aeo-agencies-compared">Minuttia alternatives (2026): 7 AEO agencies compared</h1>
-<p style="text-transform:none;letter-spacing:0;font-size:15px;font-weight:500;color:#ceb89f">Updated 25 October 2026 · By Yash Kumar</p>
+<p>Updated ${modifiedDate}</p>
+<p>By <a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a>, Co-founder and CEO, Nakama Growth</p>
 <figure><img src="/journal/minuttia-alternatives/minuttia-alternatives-hero.png" alt="Minuttia alternatives 2026: seven AEO agencies compared on five weighted criteria" width="1600" height="900" fetchpriority="high" decoding="async"></figure>
 <p>Minuttia is a B2B SaaS AEO agency that also runs its own AI visibility tracker, a free AEO report and paid AI Overviews audits. Buyers look at alternatives to Minuttia when they want a different mix of AI-search execution, off-site citations, pilot size or measurement. We scored seven agencies and Minuttia on the same criteria. Prices and scopes change, so check each firm's site before you buy.</p>
 <p>Sorted by the scores below, the seven Minuttia alternatives are Daydream, Nakama Growth, Skale, Omniscient Digital, Breaking B2B, Graphite and Rock The Rankings.</p>
@@ -395,7 +399,8 @@ export const minuttiaAlternativesArticle: Article = {
   "heading": "Introduction",
   "paragraphs": [
    "Minuttia alternatives (2026): 7 AEO agencies compared",
-   "Updated 25 October 2026 · By Yash Kumar",
+   `Updated ${modifiedDate}`,
+   "By Yash Kumar, Co-founder and CEO, Nakama Growth",
    "Minuttia is a B2B SaaS AEO agency that also runs its own AI visibility tracker, a free AEO report and paid AI Overviews audits. Buyers look at alternatives to Minuttia when they want a different mix of AI-search execution, off-site citations, pilot size or measurement. We scored seven agencies and Minuttia on the same criteria. Prices and scopes change, so check each firm's site before you buy.",
    "Sorted by the scores below, the seven Minuttia alternatives are Daydream, Nakama Growth, Skale, Omniscient Digital, Breaking B2B, Graphite and Rock The Rankings."
   ]
