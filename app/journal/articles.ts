@@ -8,6 +8,7 @@ import {bestGeoAgenciesForSaasArticle} from './best-geo-agencies-for-saas';
 import {geoAuditArticle} from './geo-audit';
 import {bestAiVisibilityToolsArticle} from './best-ai-visibility-tools';
 import {howToRankInGoogleAiOverviewsArticle} from './how-to-rank-in-google-ai-overviews';
+import {answerEngineOptimizationArticle} from './answer-engine-optimization';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -26,6 +27,7 @@ export type Article={
  coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
+ answerEngineOptimizationArticle,
  bestAiVisibilityToolsArticle,
  howToRankInGoogleAiOverviewsArticle,
  geoAuditArticle,
