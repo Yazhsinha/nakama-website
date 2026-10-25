@@ -2,7 +2,7 @@ import {pageMeta,Crumbs,JsonLd,abs,SITE_URL} from '@/lib/seo';
 import type {Metadata} from 'next';
 import Link from 'next/link';
 import {Shell,Reveal} from '../site';
-import {IpAtmos,IpHero,IpHead,IpSection,BookBtn,LinkBtn,IpFaq,IpCta} from '../inner/kit';
+import {IpAtmos,IpHero,IpHead,IpSection,LinkBtn,IpFaq} from '../inner/kit';
 import {BookCallButton} from '@/components/booking/BookCall';
 import {SvcIcon} from './icons';
 import './services.css';
@@ -108,7 +108,29 @@ export default function Services(){
    </IpSection>
 
    <IpFaq items={faq}/>
-   <IpCta actions={<><LinkBtn href="/pricing#quote">Get a quote</LinkBtn><BookBtn className="ip-btn ip-btn-glass">Book a call</BookBtn></>}/>
+   <section className="svc-next-wrap" aria-label="Next step">
+    <div className="ip-wrap">
+     <div className="svc-next">
+      <div className="svc-next-copy">
+       <p className="svc-next-eye"><span className="svc-next-dot" aria-hidden="true"/>Next step</p>
+       <h2>Let’s map where your brand <em>should show up next.</em></h2>
+       <p className="svc-next-body">Every engagement is shaped around your product, your buyers and your category. Tell us where you are, and we’ll come back with a plan and a quote.</p>
+       <p className="svc-next-meta"><span aria-hidden="true"/>Nakama Growth</p>
+      </div>
+      <aside className="svc-next-rail" aria-label="Actions">
+       <svg className="svc-next-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M9 57V30A23 23 0 0 1 55 30V57H42V30A10 10 0 0 0 22 30V57Z" fill="#f3f1ed"/><circle cx="32" cy="30" r="5.6" fill="#f07c32"/></svg>
+       <div className="svc-next-rail-in">
+        <p className="svc-next-kicker"><span aria-hidden="true">●</span>Engage</p>
+        <p className="svc-next-note">Two ways in. Same team behind both.</p>
+        <div className="svc-next-actions">
+         <Link className="svc-next-btn svc-next-btn-primary" href="/pricing#quote">Get a quote</Link>
+         <BookCallButton className="svc-next-btn svc-next-btn-line">Book a call</BookCallButton>
+        </div>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </section>
   </Shell>
  );
 }
