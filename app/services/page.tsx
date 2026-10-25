@@ -35,7 +35,7 @@ const flow=[
 ] as const;
 
 const faq=[
- ['What if a channel doesn’t suit us?','Then we skip it. A niche B2B tool may not need YouTube, so that effort moves to the channels that do matter for you.'],
+ ['What if a channel doesn’t suit us?','Then we skip that channel and put the effort into ones that fit. Usual skips are a channel with no buyer presence in your category, or a community whose norms block useful posting. We weigh citation value first: YouTube is often cited by AI answers, so dropping it is uncommon and only when it clearly won’t help.'],
  ['How is this different from SEO?','SEO focuses on your own site ranking in search. We focus on your brand being mentioned and cited everywhere buyers research, including AI answers, communities and video. The two work well together.'],
  ['Is community work transparent?','Always. We participate openly, follow each community’s rules and never post fake reviews or hidden endorsements.'],
  ['Which AI engines do you work toward?','ChatGPT, Perplexity, Gemini and Google AI Overviews. How often each engine cites a given source varies by tool and changes over time.'],
