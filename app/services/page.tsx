@@ -51,7 +51,7 @@ export default function Services(){
    <IpHero
     tone="teal"
     eyebrow="Services"
-    title="AI visibility services"
+    title="AI visibility services "
     accent="for B2B SaaS."
     lead="One team across six services, aimed at the questions your buyers ask before they shortlist."
    >
