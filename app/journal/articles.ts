@@ -1,3 +1,4 @@
+import {minuttiaAlternativesArticle} from './minuttia-alternatives';
 import {geoAgenciesArticle} from './geo-agencies';
 import {aeoAgenciesArticle} from './aeo-agencies';
 import {aeoVsSeoVsGeoArticle} from './aeo-vs-seo-vs-geo';
@@ -27,6 +28,7 @@ export type Article={
  coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
+ minuttiaAlternativesArticle,
  answerEngineOptimizationArticle,
  bestAiVisibilityToolsArticle,
  howToRankInGoogleAiOverviewsArticle,
