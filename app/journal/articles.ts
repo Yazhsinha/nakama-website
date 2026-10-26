@@ -29,8 +29,8 @@ export type Article={
  canonical?:string,
  /** HTML lead rendered under the dek on section-based notes. */
  pointerHtml?:string,
- /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Decorative: the title beside it names the article, so the image has an empty alt. */
- coverImage?:{src:string,width:number,height:number},
+ /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Set `alt` when the image is informative. Without `alt` the image is decorative, because the title beside it names the article. */
+ coverImage?:{src:string,width:number,height:number,alt?:string},
 };
 export const articles:Article[]=[
  aiVisibilityReportTemplateArticle,

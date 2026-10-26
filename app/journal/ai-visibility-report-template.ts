@@ -22,7 +22,7 @@ const SLUG = 'ai-visibility-report-template';
 const PAGE = `https://www.nakama.in/journal/${SLUG}`;
 const SHEET = 'https://docs.google.com/spreadsheets/d/12sqj68KEaRwfRnJrMesqwX81mKwWwnLXDxnXA3erxYQ/copy';
 const TITLE = 'AI Visibility Report Template for SaaS Teams (Free Sheet)';
-const DESCRIPTION = 'Free AI visibility report template for SaaS: a Google Sheet for prompt sampling, citation logs and a monthly score across ChatGPT, Perplexity and AI Overviews.';
+const DESCRIPTION = 'Free AI visibility report template for SaaS: Google Sheet for prompts, citation logs and a monthly score across ChatGPT, Perplexity and AI Overviews.';
 const HERO_ALT = 'Free AI visibility report template Google Sheet for SaaS teams from Nakama Growth';
 
 const fig = (file: string, alt: string, width: number, height: number, eager = false) =>
