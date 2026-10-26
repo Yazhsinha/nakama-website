@@ -10,17 +10,7 @@ import './reddit.css';
 const TITLE = 'Reddit Marketing Agency for SaaS, Tech & AI - Nakama Growth';
 const DESCRIPTION = 'Reddit marketing agency for SaaS, tech and AI. Nakama Growth maps the subreddits your buyers use and joins their threads with helpful, rules-fit answers.';
 
-/** Soften preview only. robots noindex, nofollow until go-live. */
-const ROBOTS: Metadata['robots'] = {
- index: false,
- follow: false,
- googleBot: {index: false, follow: false},
-};
-
-export const metadata: Metadata = {
- ...pageMeta('/services/reddit', {title: TITLE, description: DESCRIPTION}),
- robots: ROBOTS,
-};
+export const metadata: Metadata = pageMeta('/services/reddit', {title: TITLE, description: DESCRIPTION});
 
 const LEAD = 'Nakama Growth is a Reddit marketing agency for SaaS, tech and AI teams. We find the subreddits where your buyers already compare tools, then join those threads with helpful answers inside each community\'s rules. Quora, Medium and other niche communities relevant to your brand and industry are in scope too. Start with a quote or a call.';
 
