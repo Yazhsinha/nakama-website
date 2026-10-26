@@ -384,7 +384,7 @@ export const minuttiaAlternativesArticle: Article = {
  date: dayOf(PUBLISHED_AT),
  publishedAt: PUBLISHED_AT,
  authorName: 'Yash Kumar',
- coverImage: {src: '/journal/minuttia-alternatives/minuttia-alternatives-hero.png', width: 1600, height: 900},
+ coverImage: {src: '/journal/minuttia-alternatives/minuttia-alternatives-hero.png', width: 1600, height: 900, alt: 'Minuttia alternatives for AEO agencies compared by Nakama Growth'},
  ogImage: {
   url: 'https://www.nakama.in/journal/minuttia-alternatives/minuttia-alternatives-og.png',
   width: 1200,
