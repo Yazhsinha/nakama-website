@@ -132,8 +132,10 @@ export default function GeoServices() {
     </div>
     <div className="geo-wrap">
      <nav className="geo-crumb" aria-label="Breadcrumb">
+      <Link href="/">Home</Link>
+      <span aria-hidden="true">›</span>
       <Link href="/services">Services</Link>
-      <span aria-hidden="true">→</span>
+      <span aria-hidden="true">›</span>
       <span aria-current="page">GEO services</span>
      </nav>
      <div className="geo-hero-copy">
