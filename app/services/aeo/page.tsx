@@ -228,7 +228,7 @@ export default function AeoServices() {
       </article>
       <article className="aeo-card">
        <span className="aeo-tag">GEO</span>
-       <p>Getting named in AI answers through sources off your site. <Link href="/services/geo">Generative engine optimization (GEO) services →</Link></p>
+       <p>Getting named in AI answers through sources off your site. <Link href="https://www.nakama.in/services/geo">Generative engine optimization (GEO) services →</Link></p>
       </article>
       <article className="aeo-card">
        <span className="aeo-tag">Generic AI SEO</span>
