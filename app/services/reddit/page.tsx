@@ -8,7 +8,7 @@ import {ModIcon, type ModIconName} from './icons';
 import './reddit.css';
 
 const TITLE = 'Reddit Marketing Agency for SaaS, Tech & AI - Nakama Growth';
-const DESCRIPTION = 'Reddit marketing agency for SaaS, tech and AI. Nakama Growth maps the subreddits your buyers use and joins their threads with helpful, disclosed answers.';
+const DESCRIPTION = 'Reddit marketing agency for SaaS, tech and AI. Nakama Growth maps the subreddits your buyers use and joins their threads with helpful, rules-fit answers.';
 
 /** Soften preview only. robots noindex, nofollow until go-live. */
 const ROBOTS: Metadata['robots'] = {
@@ -22,17 +22,15 @@ export const metadata: Metadata = {
  robots: ROBOTS,
 };
 
-const LEAD = 'Nakama Growth is a Reddit marketing agency for SaaS, tech and AI teams. We find the subreddits where your buyers already compare tools, then join those threads with helpful, disclosed answers inside each community\'s rules. Quora, Medium and other niche communities relevant to your brand and industry are in scope too. Start with a quote or a call.';
-
-const NOT_FOR = 'Not for Reddit Ads only, upvote asks, local businesses, hotels or ecommerce.';
+const LEAD = 'Nakama Growth is a Reddit marketing agency for SaaS, tech and AI teams. We find the subreddits where your buyers already compare tools, then join those threads with helpful answers inside each community\'s rules. Quora, Medium and other niche communities relevant to your brand and industry are in scope too. Start with a quote or a call.';
 
 const modules: {n: string; icon: ModIconName; title: string; body: string}[] = [
- {n: '01', icon: 'comment', title: 'Commenting', body: 'Disclosed, helpful comments in threads where your buyers already compare tools, written to each community\'s rules.'},
- {n: '02', icon: 'post', title: 'Posting', body: 'Disclosed posts that fit the subreddit, not drive-by promo. Useful threads first; brand mention inside the conversation.'},
+ {n: '01', icon: 'comment', title: 'Commenting', body: 'Helpful comments in threads where your buyers already compare tools, written to each community\'s rules.'},
+ {n: '02', icon: 'post', title: 'Posting', body: 'Posts that fit the subreddit, not drive-by promo. Useful threads first; brand mention inside the conversation.'},
  {n: '03', icon: 'create', title: 'Creating a subreddit', body: 'When your brand needs its own community, we help set up the subreddit, rules and starter structure.'},
  {n: '04', icon: 'manage', title: 'Managing a subreddit', body: 'Ongoing community ops for brand subreddits: rules, moderation support and keeping discussion useful.'},
  {n: '05', icon: 'account', title: 'Brand Reddit accounts', body: 'We manage brands\' official Reddit accounts: aged profiles with real history, clearly identified, never fake personas.'},
- {n: '06', icon: 'niche', title: 'Quora, Medium and niche', body: 'Same disclosed participation on Quora, Medium and other niche communities relevant to your brand and industry.'},
+ {n: '06', icon: 'niche', title: 'Quora, Medium and niche', body: 'Same rules-first participation on Quora, Medium and other niche communities relevant to your brand and industry.'},
 ];
 
 const beats: {n: string; title: string; body: ReactNode}[] = [
@@ -42,13 +40,13 @@ const beats: {n: string; title: string; body: ReactNode}[] = [
  {n: '04', title: 'Promo / non-promo mix', body: <>We keep a strict mix of promotional and non-promotional posts. Starting mix we use unless you set another: about <b>10 promotional to 5 non-promotional</b>. Edit this ratio per engagement; it is not a removal-rate promise.</>},
  {n: '05', title: 'Brand inside the conversation', body: 'Brand placement sits inside the conversation: natural, helpful answers, not a hard sell or "we\'re promoting a brand" energy.'},
  {n: '06', title: 'Read the rules first', body: 'Before we post, we read each subreddit\'s rules and posting norms.'},
- {n: '07', title: 'Several aged accounts', body: 'We run several aged, disclosed accounts with real history so the engagement isn\'t dependent on one or two profiles. Clearly identified; never fake personas or sockpuppets.'},
+ {n: '07', title: 'Several aged accounts', body: 'We run several aged accounts with real history so the engagement isn\'t dependent on one or two profiles. Clearly identified; never fake personas or sockpuppets.'},
 ];
 
 const steps = [
  {n: '01', title: 'Listen-first audit', body: 'We read the threads about your category, brand and competitors.'},
  {n: '02', title: 'Community map', body: 'We pick the communities that matter and note each one\'s rules.'},
- {n: '03', title: 'Disclosed participation', body: 'We answer openly, with your team reviewing anything technical.'},
+ {n: '03', title: 'Rules-first answers', body: 'We answer inside each community\'s rules, with your team reviewing anything technical.'},
  {n: '04', title: 'Monitor & report', body: 'We share threads answered and mention notes, then choose the next communities.'},
 ] as const;
 
@@ -60,12 +58,12 @@ const clients = [
 ] as const;
 
 const faq = [
- ['What does a Reddit marketing agency do for a SaaS, tech or AI company?', 'Our Reddit marketing services find where your buyers talk, read what they say about you, and join those threads with helpful, disclosed answers. Get a Reddit quote to see the scope.'],
- ['Will this get our accounts banned?', 'We can\'t promise any moderator\'s decision, but we work rules-first: we read each subreddit\'s rules, disclose who we are, and stay out where brand replies aren\'t welcome.'],
- ['Do you disclose who you work for, or buy upvotes?', 'Every answer we post is disclosed, and we never buy votes or use fake accounts. If a community doesn\'t allow brand replies, we listen and report instead.'],
+ ['What does a Reddit marketing agency do for a SaaS, tech or AI company?', 'Our Reddit marketing services find where your buyers talk, read what they say about you, and join those threads with helpful answers. Get a Reddit quote to see the scope.'],
+ ['Will this get our accounts banned?', 'We can\'t promise any moderator\'s decision, but we work rules-first: we read each subreddit\'s rules, stay clearly identified, and stay out where brand replies aren\'t welcome.'],
+ ['Do you buy upvotes or use fake accounts?', 'Never. We never buy votes or use fake accounts. If a community doesn\'t allow brand replies, we listen and report instead.'],
  ['Who posts: our brand or people?', 'Either your brand account or named team members, always clearly identified, following each community\'s rules. Never fake personas.'],
  ['Does Reddit help us show up in ChatGPT and other AI answers?', 'Sometimes. Some AI tools cite Reddit threads, and how much changes by engine and month. We can\'t guarantee any AI mention; we report threads answered, mention trends and what we see, engine by engine.'],
- ['Do you run Reddit Ads?', 'No. Our work is organic, disclosed participation. If you want paid Reddit Ads, a media-buying agency is the better fit.'],
+ ['Do you run Reddit Ads?', 'No. Our work is organic, rules-first participation. If you want paid Reddit Ads, a media-buying agency is the better fit.'],
  ['Do you cover Quora, Medium and other communities?', 'Reddit first. Quora and Medium where your category already has questions or posts, plus other niche communities relevant to your brand and industry. Not general social media.'],
  ['How does pricing work, and how do we start?', 'One custom quote based on your communities and scope. Get a Reddit quote or book a call, and we start by listening to the threads about you.'],
 ] as const;
@@ -90,7 +88,7 @@ const faqLd = {
 
 type Bar = {label: string; value: string; width: string; tone?: 'hot' | 'light'};
 
-const citeCards: {engine: string; big: string; bigHot?: boolean; who: ReactNode; bars: Bar[]; note?: string}[] = [
+const citeCards: {engine: string; big: string; bigHot?: boolean; who: ReactNode; bars: Bar[]}[] = [
  {
   engine: 'ChatGPT',
   big: '16.8%',
@@ -112,7 +110,6 @@ const citeCards: {engine: string; big: string; bigHot?: boolean; who: ReactNode;
    {label: '2. YouTube', value: '20.8%', width: '83.2%'},
    {label: '3. Wikipedia', value: '6.3%', width: '25.2%'},
   ],
-  note: 'Near tie · 0.8 pt gap',
  },
  {
   engine: 'Google AI Overviews',
@@ -124,7 +121,6 @@ const citeCards: {engine: string; big: string; bigHot?: boolean; who: ReactNode;
    {label: '3. Quora', value: '4.7%', width: '18.8%'},
    {label: '4. Wikipedia', value: '4.0%', width: '16.0%'},
   ],
-  note: 'YouTube leads · Reddit close #2',
  },
 ];
 
@@ -205,12 +201,11 @@ export default function RedditServices() {
         ))}
        </ul>
       </div>
-      <figure className="reddit-thread" aria-label="Illustrative community thread">
+      <figure className="reddit-thread" aria-label="Sample community thread">
        <div className="reddit-th">
         <span className="reddit-rtext">Reddit</span>
         <b>r/SaaS</b>
         <span>buyer thread</span>
-        <span className="reddit-ill">Illustrative</span>
        </div>
        <p className="reddit-q">Anyone moved off [Tool A]? Looking at alternatives for a 40-person team</p>
        <div className="reddit-c">
@@ -219,7 +214,7 @@ export default function RedditServices() {
        </div>
        <div className="reddit-c is-us">
         <span className="reddit-v"><i aria-hidden="true">▲</i> 9</span>
-        <div><span className="reddit-who2">u/yourbrand_team · disclosed</span>Fair point, I work there 🙂 Here is what changed since, plus where we are not the right fit.</div>
+        <div><span className="reddit-who2">u/yourbrand_team</span>Fair point, I work there 🙂 Here is what changed since, plus where we are not the right fit.</div>
        </div>
       </figure>
      </div>
@@ -240,16 +235,11 @@ export default function RedditServices() {
         <div className="reddit-bars">
          {card.bars.map(bar => <BarRow key={bar.label} {...bar} />)}
         </div>
-        <div className="reddit-cite-note">{card.note ?? '\u00a0'}</div>
        </article>
       ))}
      </div>
-     <p className="reddit-cite-cap">Independent AI-visibility studies consistently rank Reddit among the most-cited websites in AI answers. Ahrefs&apos; September 2026 data puts it at #1 in ChatGPT and Perplexity and #2 in Google AI Overviews.</p>
+     <p className="reddit-cite-cap">Independent AI-visibility studies rank Reddit among the most-cited websites in AI answers. Ahrefs&apos; September 2026 data puts it at #1 in ChatGPT and Perplexity and #2 in Google AI Overviews.</p>
      <p className="reddit-cite-src">Ahrefs Brand Radar · US · Sep 2026 · mention share among top sources</p>
-     <article className="reddit-card reddit-not">
-      <span className="reddit-tag">Not for</span>
-      <p>{NOT_FOR}</p>
-     </article>
     </div>
    </section>
 

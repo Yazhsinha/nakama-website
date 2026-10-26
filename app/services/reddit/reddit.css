@@ -211,7 +211,6 @@ main.reddit-page .reddit-hero h1 em{
 }
 .reddit-rtext{font-size:12px;font-weight:700;color:var(--reddit-ink);opacity:.72;letter-spacing:.02em}
 .reddit-th b{color:var(--reddit-ink);font-weight:600}
-.reddit-ill{margin-left:auto;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,241,237,.4)}
 .reddit-q{font-size:18px;font-weight:600;margin:16px 0 6px!important;color:var(--reddit-ink);text-align:left}
 .reddit-c{
  display:flex;gap:12px;padding:12px 0 0 14px;
@@ -263,11 +262,8 @@ main.reddit-page .is-hot{color:var(--reddit-em)}
 .reddit-bar-t div{height:100%;border-radius:9px;background:#4a4640}
 .reddit-bar-t div.is-hot{background:#f07c32}
 .reddit-bar-t div.is-light{background:#f3f1ed}
-.reddit-cite-note{margin-top:auto;padding-top:18px;font-size:12px;color:#7d7870;border-top:1px solid #24211e;min-height:1em}
 .reddit-cite-cap{color:#d8d4cd;font-size:18px;line-height:1.55;max-width:900px;margin-top:32px!important}
 .reddit-cite-src{color:#7d7870;font-size:13px;margin-top:12px!important;letter-spacing:.04em}
-.reddit-not{margin-top:28px;max-width:900px}
-.reddit-not p{margin-top:0!important}
 
 .reddit-card,.reddit-mod{
  background:linear-gradient(180deg,var(--reddit-s1),var(--reddit-s2));
@@ -480,7 +476,6 @@ main.reddit-page button.reddit-btn-ghost:hover{color:#fff}
  .reddit-mid-actions .reddit-btn{width:100%}
  .reddit-thread{margin-top:40px;padding:18px}
  .reddit-q{font-size:16px}
- .reddit-ill{margin-left:0}
 }
 @media (prefers-reduced-motion:reduce){
  .reddit-glow,.reddit-dot,.reddit-btn,.reddit-ar,.reddit-hero-logos img,.reddit-proof-logo img,main.reddit-page summary:after{
