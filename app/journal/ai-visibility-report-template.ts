@@ -6,9 +6,8 @@ import type {Article} from './articles';
  * the RSS pubDate, the sitemap lastmod (via `date`) and the visible "Updated ..." line.
  * Update MODIFIED_AT together with the visible "Updated" date on later edits.
  *
- * Preview Soften only. The sheet is still private, so the CTA stays on the edit/sharing URL
- * plus "File > Make a copy". Do not switch the only path to /copy until Anyone with the link
- * is set to Viewer.
+ * Preview only. Do not merge to main. The sheet is shared as anyone with the link, reader,
+ * so the CTA is the /copy URL. Clicking it makes a copy in the reader's Drive.
  */
 export const PUBLISHED_AT = '2026-10-26T17:10:00+05:30';
 export const AI_VISIBILITY_REPORT_TEMPLATE_PUBLISHED_AT = PUBLISHED_AT;
@@ -21,7 +20,7 @@ const modifiedDate = shortDate(MODIFIED_AT);
 
 const SLUG = 'ai-visibility-report-template';
 const PAGE = `https://www.nakama.in/journal/${SLUG}`;
-const SHEET = 'https://docs.google.com/spreadsheets/d/12sqj68KEaRwfRnJrMesqwX81mKwWwnLXDxnXA3erxYQ/edit?usp=sharing';
+const SHEET = 'https://docs.google.com/spreadsheets/d/12sqj68KEaRwfRnJrMesqwX81mKwWwnLXDxnXA3erxYQ/copy';
 const TITLE = 'AI Visibility Report Template for SaaS Teams (Free Sheet)';
 const DESCRIPTION = 'Free AI visibility report template for SaaS: a Google Sheet for prompt sampling, citation logs and a monthly score across ChatGPT, Perplexity and AI Overviews.';
 const HERO_ALT = 'Free AI visibility report template Google Sheet for SaaS teams from Nakama Growth';
@@ -215,7 +214,7 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <p>By <a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a>, Co-founder and CEO, Nakama Growth</p>
 <p>An AI visibility report template is a fixed structure for checking, every month, whether ChatGPT, Perplexity and Google AI Overviews name your SaaS brand for the questions your buyers ask. This free Google Sheet from Nakama Growth gives you a prompt library, a run log, a citation tracker, a monthly score and a decision log.</p>
 <p><strong><a href="${SHEET}">Copy the free template (Google Sheet)</a></strong></p>
-<p>Open the link, then choose <strong>File &gt; Make a copy</strong> to save your own version to Drive. You do not need to request access.</p>
+<p>Click the link to make your own copy in Drive. You do not need to request access.</p>
 ${fig('aiviz-template-hero', HERO_ALT, 1600, 900, true)}
 <h2 id="whats-inside-the-template">What's inside the template</h2>
 <p>The sheet has six tabs. Each one does one job, and they are designed to be filled in order.</p>
@@ -337,7 +336,7 @@ export const aiVisibilityReportTemplateArticle: Article = {
     'By Yash Kumar, Co-founder and CEO, Nakama Growth',
     'An AI visibility report template is a fixed structure for checking, every month, whether ChatGPT, Perplexity and Google AI Overviews name your SaaS brand for the questions your buyers ask. This free Google Sheet from Nakama Growth gives you a prompt library, a run log, a citation tracker, a monthly score and a decision log.',
     'Copy the free template (Google Sheet)',
-    'Open the link, then choose File > Make a copy to save your own version to Drive. You do not need to request access.',
+    'Click the link to make your own copy in Drive. You do not need to request access.',
    ],
   },
   {
