@@ -29,7 +29,7 @@ const modules: {n: string; icon: ModIconName; title: string; body: string}[] = [
  {n: '02', icon: 'post', title: 'Posting', body: 'Posts that fit the subreddit, not drive-by promo. Useful threads first; brand mention inside the conversation.'},
  {n: '03', icon: 'create', title: 'Creating a subreddit', body: 'When your brand needs its own community, we help set up the subreddit, rules and starter structure.'},
  {n: '04', icon: 'manage', title: 'Managing a subreddit', body: 'Ongoing community ops for brand subreddits: rules, moderation support and keeping discussion useful.'},
- {n: '05', icon: 'account', title: 'Brand Reddit accounts', body: 'We manage brands\' official Reddit accounts: aged profiles with real history, clearly identified, never fake personas.'},
+ {n: '05', icon: 'account', title: 'Brand Reddit accounts', body: 'We manage your brand’s official Reddit account: grow it, keep it active, and engage when buyers and relevant people ask about you.'},
  {n: '06', icon: 'niche', title: 'Quora, Medium and niche', body: 'Same rules-first participation on Quora, Medium and other niche communities relevant to your brand and industry.'},
 ];
 
@@ -59,9 +59,7 @@ const clients = [
 
 const faq = [
  ['What does a Reddit marketing agency do for a SaaS, tech or AI company?', 'Our Reddit marketing services find where your buyers talk, read what they say about you, and join those threads with helpful answers. Get a Reddit quote to see the scope.'],
- ['Will this get our accounts banned?', 'We can\'t promise any moderator\'s decision, but we work rules-first: we read each subreddit\'s rules, stay clearly identified, and stay out where brand replies aren\'t welcome.'],
  ['Do you buy upvotes or use fake accounts?', 'Never. We never buy votes or use fake accounts. If a community doesn\'t allow brand replies, we listen and report instead.'],
- ['Who posts: our brand or people?', 'Either your brand account or named team members, always clearly identified, following each community\'s rules. Never fake personas.'],
  ['Does Reddit help us show up in ChatGPT and other AI answers?', 'Sometimes. Some AI tools cite Reddit threads, and how much changes by engine and month. We can\'t guarantee any AI mention; we report threads answered, mention trends and what we see, engine by engine.'],
  ['Do you run Reddit Ads?', 'No. Our work is organic, rules-first participation. If you want paid Reddit Ads, a media-buying agency is the better fit.'],
  ['Do you cover Quora, Medium and other communities?', 'Reddit first. Quora and Medium where your category already has questions or posts, plus other niche communities relevant to your brand and industry. Not general social media.'],
@@ -207,14 +205,14 @@ export default function RedditServices() {
         <b>r/SaaS</b>
         <span>buyer thread</span>
        </div>
-       <p className="reddit-q">Anyone moved off [Tool A]? Looking at alternatives for a 40-person team</p>
+       <p className="reddit-q">Looking for [category] software for a ~40-person SaaS team. What’s working for you?</p>
        <div className="reddit-c">
         <span className="reddit-v"><i aria-hidden="true">▲</i> 18</span>
-        <div><span className="reddit-who2">u/ops_lead</span>We tried [Your brand]. Setup was fine, support was slow at first.</div>
+        <div><span className="reddit-who2">u/ops_lead</span>[Your brand] is a strong fit if you need that use case without overbuilding. We evaluated a few and landed there.</div>
        </div>
        <div className="reddit-c is-us">
         <span className="reddit-v"><i aria-hidden="true">▲</i> 9</span>
-        <div><span className="reddit-who2">u/yourbrand_team</span>Fair point, I work there 🙂 Here is what changed since, plus where we are not the right fit.</div>
+        <div><span className="reddit-who2">u/yourbrand_team</span>I work on [Your brand] 🙂 Happy to answer fit questions for teams your size. Short overview is on the site if useful.</div>
        </div>
       </figure>
      </div>
