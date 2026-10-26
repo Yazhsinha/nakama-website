@@ -10,13 +10,15 @@ import './services.css';
 export const metadata:Metadata=pageMeta('/services',{title:'GEO, AEO & AI Visibility Services - Nakama Growth',description:'GEO, AEO, Reddit and community, content, YouTube and digital PR, run by one team and included in one plan to get you named in AI answers.'});
 
 const services=[
- {id:'geo',eyebrow:'Generative engines',name:'GEO services',lead:'Build a brand AI understands.',who:'For B2B SaaS & AI',body:'We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',items:['Buyer prompt map and competitor audits','Product and category context AI can reuse','Source strategy across communities, editorial and review sites']},
+ {id:'geo',href:'/services/geo',eyebrow:'Generative engines',name:'GEO services',lead:'Build a brand AI understands.',who:'For B2B SaaS & AI',body:'We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',items:['Buyer prompt map and competitor audits','Product and category context AI can reuse','Source strategy across communities, editorial and review sites']},
  {id:'aeo',eyebrow:'Answer engines',name:'AEO services',lead:'Be part of the answer.',who:'For B2B SaaS & AI',body:'We turn buyer questions into answer-first pages and FAQs that search and answer engines can retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first articles, comparisons and FAQs','Citation and visibility tracking']},
  {id:'reddit',name:'Reddit & community',lead:'Earn a place in the conversation.',body:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {id:'content',name:'Content & editorial',lead:'Make your expertise useful.',body:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
  {id:'youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search, so AI answers can cite the work.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
  {id:'digital-pr',name:'Digital PR & links',lead:'Connect to credible sources.',body:'Relevant editorial placements and relationships that put your brand in front of the right audiences, and the right crawlers.',items:['Publisher and partner research','Editorial outreach and linkable assets','Placement and source-quality reporting']},
 ] as const;
+
+const serviceUrl=(s:(typeof services)[number])=>abs('href' in s?s.href:`/services#${s.id}`);
 
 const serviceListLd={
  '@context':'https://schema.org',
@@ -25,7 +27,7 @@ const serviceListLd={
  name:'Nakama Growth plan',
  itemListOrder:'https://schema.org/ItemListOrderAscending',
  numberOfItems:services.length,
- itemListElement:services.map((s,i)=>({'@type':'ListItem',position:i+1,item:{'@type':'Service','@id':abs(`/services#${s.id}`),name:s.name,description:s.body,url:abs(`/services#${s.id}`),provider:{'@id':`${SITE_URL}/#organization`}}})),
+ itemListElement:services.map((s,i)=>({'@type':'ListItem',position:i+1,item:{'@type':'Service','@id':serviceUrl(s),name:s.name,description:s.body,url:serviceUrl(s),provider:{'@id':`${SITE_URL}/#organization`}}})),
 };
 
 const flow=[
@@ -68,7 +70,7 @@ export default function Services(){
        {'eyebrow' in s&&<span className="ip-svc-eyebrow">{s.eyebrow}</span>}
       </div>
       <div className="ip-svc-head">
-       <h3>{s.name}</h3>
+       <h3>{'href' in s?<Link href={s.href} className="ip-svc-cardlink">{s.name}</Link>:s.name}</h3>
        <p className="ip-svc-lead">{s.lead}</p>
        {'who' in s&&<p className="ip-svc-for">{s.who}</p>}
       </div>

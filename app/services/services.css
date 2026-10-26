@@ -59,6 +59,16 @@ main.services-page .ip-svc h3{
  letter-spacing:-.01em;
  color:#f3f1ed;
 }
+main.services-page a.ip-svc-cardlink{
+ color:inherit;
+ text-decoration:none;
+}
+main.services-page a.ip-svc-cardlink::after{
+ content:"";
+ position:absolute;
+ inset:0;
+ z-index:1;
+}
 main.services-page .ip-svc p{
  flex:none;
  margin-top:0!important;

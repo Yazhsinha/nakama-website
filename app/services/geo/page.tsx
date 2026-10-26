@@ -8,8 +8,9 @@ import './geo.css';
 
 const TITLE = 'Generative Engine Optimization (GEO) Services for B2B SaaS - Nakama Growth';
 const DESCRIPTION = 'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.';
+const META_DESCRIPTION = 'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors and build sources ChatGPT, Perplexity and AI Overviews cite.';
 
-export const metadata: Metadata = pageMeta('/services/geo', {title: TITLE, description: DESCRIPTION});
+export const metadata: Metadata = pageMeta('/services/geo', {title: TITLE, description: META_DESCRIPTION});
 
 const pains = [
  {
