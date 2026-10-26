@@ -6,8 +6,8 @@ import {BookCallButton} from '@/components/booking/BookCall';
 import {ModIcon, type ModIconName} from './icons';
 import './aeo.css';
 
-const TITLE = 'AEO Agency for B2B SaaS & AI - Nakama Growth';
-const DESCRIPTION = 'AEO agency for B2B SaaS and AI. Nakama Growth maps the questions your buyers ask and builds answer-first pages, FAQs and site structure that answer them.';
+const TITLE = 'AEO Agency for SaaS, Tech & AI - Nakama Growth';
+const DESCRIPTION = 'AEO agency for SaaS, tech and AI. Nakama Growth maps the questions your buyers ask and builds answer-first pages, FAQs and site structure that answer them.';
 
 export const metadata: Metadata = pageMeta('/services/aeo', {title: TITLE, description: DESCRIPTION});
 
@@ -35,7 +35,7 @@ const clients = [
 ] as const;
 
 const faq = [
- ['What does an answer engine optimization agency do for a B2B SaaS company?', 'Our AEO services find the questions your buyers ask and make your site answer them clearly, starting with pricing, integrations and comparisons. Get an AEO quote to see the scope for your site.'],
+ ['What does an answer engine optimization agency do for a SaaS, tech or AI company?', 'Our AEO services find the questions your buyers ask and make your site answer them clearly, starting with pricing, integrations and comparisons. Get an AEO quote to see the scope for your site.'],
  ['Which pages do you work on first?', 'Usually the pages closest to a buying decision: pricing, integrations, comparisons and use cases. The answer map sets the order.'],
  ['Do you write new content or fix existing pages?', 'Both. Most engagements start by fixing pages you already have, then add pages only where a real buyer question has no answer.'],
  ['How is AEO different from GEO?', 'AEO works on your own site so it answers buyer questions directly. GEO works off your site so AI tools name your brand. Many teams start with one; the router above shows the split.'],
@@ -54,7 +54,7 @@ const serviceLd = {
  description: DESCRIPTION,
  url: abs('/services/aeo'),
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth', url: SITE_URL},
- audience: {'@type': 'Audience', audienceType: 'B2B SaaS, AI and software teams'},
+ audience: {'@type': 'Audience', audienceType: 'SaaS, tech and AI'},
 };
 
 const faqLd = {
@@ -110,9 +110,9 @@ export default function AeoServices() {
       <span aria-current="page">AEO services</span>
      </nav>
      <div className="aeo-hero-copy">
-      <p className="aeo-who"><span className="aeo-dot" aria-hidden="true" />For B2B SaaS, AI &amp; software teams</p>
-      <h1>AEO agency for B2B SaaS <em>and AI companies.</em></h1>
-      <p className="aeo-lead">Nakama Growth is an AEO agency for B2B SaaS and AI companies. We find the questions your buyers ask, then rewrite and build the pages on your site that answer them first: pricing, integrations, comparisons and use cases. Start with a quote or a call.</p>
+      <p className="aeo-who"><span className="aeo-dot" aria-hidden="true" />For SaaS, tech &amp; AI teams</p>
+      <h1>AEO agency for SaaS, tech <em>and AI companies.</em></h1>
+      <p className="aeo-lead">Nakama Growth is an AEO agency for SaaS, tech and AI companies. We find the questions your buyers ask, then rewrite and build the pages on your site that answer them first: pricing, integrations, comparisons and use cases. Start with a quote or a call.</p>
       <div className="aeo-ctas">
        <QuoteLink className="aeo-btn aeo-btn-primary" />
        <BookLink className="aeo-btn aeo-btn-ghost" />
@@ -137,7 +137,7 @@ export default function AeoServices() {
      <div className="aeo-fit">
       <article className="aeo-card">
        <span className="aeo-tag">For</span>
-       <p>B2B SaaS, AI and software teams whose site should answer the questions buyers ask before they book a demo.</p>
+       <p>SaaS, tech and AI teams whose site should answer the questions buyers ask before they book a demo.</p>
       </article>
       <article className="aeo-card is-out">
        <span className="aeo-tag">Not for</span>
@@ -200,7 +200,7 @@ export default function AeoServices() {
    <section className="aeo-s">
     <div className="aeo-wrap">
      <p className="aeo-idx">04 · Proof</p>
-     <h2>B2B teams that work with Nakama Growth</h2>
+     <h2>SaaS, tech and AI teams that work with Nakama Growth</h2>
      <ul className="aeo-proof">
       {clients.map(c => (
        <li className="aeo-proof-cell" key={c.name}>
