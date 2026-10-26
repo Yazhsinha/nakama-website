@@ -6,9 +6,9 @@ import {BookCallButton} from '@/components/booking/BookCall';
 import {ModIcon, type ModIconName} from './icons';
 import './geo.css';
 
-const TITLE = 'Generative Engine Optimization (GEO) Services for B2B SaaS - Nakama Growth';
-const DESCRIPTION = 'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.';
-const META_DESCRIPTION = 'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors and build sources ChatGPT, Perplexity and AI Overviews cite.';
+const TITLE = 'Generative Engine Optimization Services for SaaS, Tech & AI - Nakama Growth';
+const DESCRIPTION = 'Generative engine optimization services for SaaS, tech and AI. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.';
+const META_DESCRIPTION = 'Generative engine optimization services for SaaS, tech and AI. We audit where AI names competitors and build sources ChatGPT, Perplexity and AI Overviews cite.';
 
 export const metadata: Metadata = pageMeta('/services/geo', {title: TITLE, description: META_DESCRIPTION});
 
@@ -65,11 +65,11 @@ const clients = [
 
 const faq = [
  ['How is GEO different from SEO?', 'GEO aims at being named and cited in generative answers, not only ranking blue links. Many teams need both. For scope on your category, get a GEO quote.'],
- ['What does a GEO agency do for SaaS?', 'A generative engine optimization agency maps the prompts your buyers ask AI, audits where competitors get named, then builds product context and third-party sources so ChatGPT, Perplexity, Gemini and Google AI Overviews can cite you. That is the Nakama Growth GEO engagement for B2B SaaS and AI teams. Get a GEO quote for scope on your category.'],
+ ['What does a GEO agency do for SaaS?', 'A generative engine optimization agency maps the prompts your buyers ask AI, audits where competitors get named, then builds product context and third-party sources so ChatGPT, Perplexity, Gemini and Google AI Overviews can cite you. That is the Nakama Growth GEO engagement for SaaS, tech and AI teams. Get a GEO quote for scope on your category.'],
  ['Which AI engines do you cover?', 'ChatGPT, Perplexity, Gemini and Google AI Overviews. How often each cites a given source varies by tool and changes over time. We don’t promise a citation count.'],
  ['How long until we see citations?', 'It depends on your category, current sources and the engines buyers use. We start with an audit and set order from that; we don’t promise a fixed date. Get a GEO quote for what the first stretch would include.'],
  ['How do you measure GEO?', 'Citation and visibility tracking against the prompts that matter for your category, reported inside the Nakama Growth plan. Details on a quote or call.'],
- ['Do you work with non-SaaS brands?', 'This page is for B2B SaaS, AI and software. If you’re outside that, say so on a call and we’ll tell you honestly if we’re a fit.'],
+ ['Do you work with non-SaaS brands?', 'This page is for SaaS, tech and AI companies. If you’re outside that, say so on a call and we’ll tell you honestly if we’re a fit.'],
  ['GEO vs AEO: which do I need?', 'If buyers already ask AI about your category and competitors get named, start with GEO. If you need answer-first pages and FAQs on your own site for specific questions, lean on AEO. Many teams use both. We’ll map the order on a quote or call.'],
  ['How does pricing work?', 'Custom scope under the Nakama Growth plan. Details and the quote form live on pricing. Get a GEO quote and we’ll price the modules that fit.'],
 ] as const;
@@ -83,7 +83,7 @@ const serviceLd = {
  description: DESCRIPTION,
  url: abs('/services/geo'),
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth', url: SITE_URL},
- audience: {'@type': 'Audience', audienceType: 'B2B SaaS, AI and software teams'},
+ audience: {'@type': 'Audience', audienceType: 'SaaS, tech and AI'},
 };
 
 const faqLd = {
@@ -137,9 +137,9 @@ export default function GeoServices() {
       <span aria-current="page">GEO services</span>
      </nav>
      <div className="geo-hero-copy">
-      <p className="geo-who"><span className="geo-dot" aria-hidden="true" />For B2B SaaS, AI &amp; software teams</p>
+      <p className="geo-who"><span className="geo-dot" aria-hidden="true" />For SaaS, tech &amp; AI teams</p>
       <p className="geo-eyebrow">Build a brand AI understands.</p>
-      <h1>Generative engine optimization services <em>for B2B SaaS.</em></h1>
+      <h1>Generative engine optimization services <em>for SaaS, tech and AI.</em></h1>
       <p className="geo-lead">Our generative engine optimization services audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.</p>
       <div className="geo-ctas">
        <QuoteLink className="geo-btn geo-btn-primary" />
@@ -182,7 +182,7 @@ export default function GeoServices() {
      <div>
       <p className="geo-idx">02 · What GEO is</p>
       <h2>Generative engine optimization, plainly.</h2>
-      <p className="geo-body">As a generative engine optimization agency for B2B SaaS, Nakama Growth makes your brand easy for generative engines to find, trust and cite, through product context and the third-party sources those answers already lean on.</p>
+      <p className="geo-body">As a generative engine optimization agency for SaaS, tech and AI, Nakama Growth makes your brand easy for generative engines to find, trust and cite, through product context and the third-party sources those answers already lean on.</p>
       <p className="geo-router">Need answer-first pages on your own site? That’s AEO. Many teams use both. <Link href="/journal/aeo-vs-seo-vs-geo">AEO vs SEO vs GEO →</Link></p>
      </div>
      <ol className="geo-flow">

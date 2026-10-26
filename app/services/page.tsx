@@ -10,8 +10,8 @@ import './services.css';
 export const metadata:Metadata=pageMeta('/services',{title:'GEO, AEO & AI Visibility Services - Nakama Growth',description:'GEO, AEO, Reddit and community, content, YouTube and digital PR, run by one team and included in one plan to get you named in AI answers.'});
 
 const services=[
- {id:'geo',href:'/services/geo',eyebrow:'Generative engines',name:'GEO services',lead:'Build a brand AI understands.',who:'For B2B SaaS & AI',body:'We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',items:['Buyer prompt map and competitor audits','Product and category context AI can reuse','Source strategy across communities, editorial and review sites']},
- {id:'aeo',eyebrow:'Answer engines',name:'AEO services',lead:'Be part of the answer.',who:'For B2B SaaS & AI',body:'We turn buyer questions into answer-first pages and FAQs that search and answer engines can retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first articles, comparisons and FAQs','Citation and visibility tracking']},
+ {id:'geo',href:'/services/geo',eyebrow:'Generative engines',name:'GEO services',lead:'Build a brand AI understands.',who:'For SaaS, tech & AI teams',body:'We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',items:['Buyer prompt map and competitor audits','Product and category context AI can reuse','Source strategy across communities, editorial and review sites']},
+ {id:'aeo',eyebrow:'Answer engines',name:'AEO services',lead:'Be part of the answer.',who:'For SaaS, tech & AI teams',body:'We turn buyer questions into answer-first pages and FAQs that search and answer engines can retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first articles, comparisons and FAQs','Citation and visibility tracking']},
  {id:'reddit',name:'Reddit & community',lead:'Earn a place in the conversation.',body:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {id:'content',name:'Content & editorial',lead:'Make your expertise useful.',body:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
  {id:'youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search, so AI answers can cite the work.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
@@ -54,7 +54,7 @@ export default function Services(){
     tone="teal"
     eyebrow="Services"
     title="AI visibility services "
-    accent="for B2B SaaS."
+    accent="for SaaS, tech and AI."
     lead="One team across six services, aimed at the questions your buyers ask before they shortlist."
    >
     <LinkBtn href="/pricing#quote">Get a quote</LinkBtn>
