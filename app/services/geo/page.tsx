@@ -6,8 +6,8 @@ import {BookCallButton} from '@/components/booking/BookCall';
 import {ModIcon, type ModIconName} from './icons';
 import './geo.css';
 
-const TITLE = 'Generative Engine Optimization (GEO) Agency for B2B SaaS - Nakama Growth';
-const DESCRIPTION = 'Nakama Growth audits where AI names your competitors, then builds the product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite. For B2B SaaS and AI.';
+const TITLE = 'Generative Engine Optimization (GEO) Services for B2B SaaS - Nakama Growth';
+const DESCRIPTION = 'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.';
 
 export const metadata: Metadata = pageMeta('/services/geo', {title: TITLE, description: DESCRIPTION});
 
@@ -139,7 +139,7 @@ export default function GeoServices() {
       <p className="geo-who"><span className="geo-dot" aria-hidden="true" />For B2B SaaS, AI &amp; software teams</p>
       <p className="geo-eyebrow">Build a brand AI understands.</p>
       <h1>Generative engine optimization services <em>for B2B SaaS.</em></h1>
-      <p className="geo-lead">We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.</p>
+      <p className="geo-lead">Our generative engine optimization services audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.</p>
       <div className="geo-ctas">
        <QuoteLink className="geo-btn geo-btn-primary" />
        <BookLink className="geo-btn geo-btn-ghost" />
