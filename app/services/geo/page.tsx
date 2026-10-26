@@ -8,7 +8,7 @@ import './geo.css';
 
 const TITLE = 'Generative Engine Optimization Services for SaaS, Tech & AI - Nakama Growth';
 const DESCRIPTION = 'Generative engine optimization services for SaaS, tech and AI. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.';
-const META_DESCRIPTION = 'Generative engine optimization services for SaaS, tech and AI. We audit where AI names competitors and build sources ChatGPT, Perplexity and AI Overviews cite.';
+const META_DESCRIPTION = 'Generative engine optimization services for SaaS, tech and AI. We audit AI competitor mentions and build sources ChatGPT, Perplexity and AI Overviews cite.';
 
 export const metadata: Metadata = pageMeta('/services/geo', {title: TITLE, description: META_DESCRIPTION});
 
@@ -132,8 +132,10 @@ export default function GeoServices() {
     </div>
     <div className="geo-wrap">
      <nav className="geo-crumb" aria-label="Breadcrumb">
+      <Link href="/">Home</Link>
+      <span aria-hidden="true">›</span>
       <Link href="/services">Services</Link>
-      <span aria-hidden="true">→</span>
+      <span aria-hidden="true">›</span>
       <span aria-current="page">GEO services</span>
      </nav>
      <div className="geo-hero-copy">
