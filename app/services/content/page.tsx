@@ -7,7 +7,7 @@ import {ModIcon, type ModIconName} from './icons';
 import './content.css';
 
 const TITLE = 'Answer-First Content Writing for SaaS, Tech & AI - Nakama Growth';
-const DESCRIPTION = 'Listicles, comparisons and answer-first articles for SaaS, tech and AI brands. Written by Nakama Growth, owned by you, published wherever you want.';
+const DESCRIPTION = 'Answer-first content for AI search: listicles and comparisons for SaaS, tech & AI. AEO content writing you own and publish.';
 const CANONICAL = 'https://www.nakama.in/services/content';
 
 /** Soften preview only. noindex, follow until go-live. Not indexable. */
@@ -27,10 +27,7 @@ export const metadata: Metadata = {
 
 const H1A = 'Answer-first content';
 const H1B = 'for SaaS, tech and AI.';
-const DAL = 'Nakama Growth writes listicles, comparisons and answer-first articles for SaaS, tech and AI teams. You own every file and publish anywhere: your site, a partner blog, Medium or LinkedIn. These are formats AI answers already pull from for best-of and X vs Y questions. Researched, fact-checked and refreshed on schedule.';
-const OWN = 'Yours to publish on your site, a partner blog, Medium, LinkedIn, anywhere.';
-const FOR = 'B2B SaaS, tech and AI teams';
-const NOT_FOR = ['Local or SMB', 'DTC', 'Hotels', 'Bulk AI-spun content', 'Paid placements', 'Guarantee seekers'] as const;
+const DAL = 'Nakama Growth writes answer-first content for AI search: listicles, comparisons and articles for SaaS, tech and AI teams. You own every file. These are formats AI answers already pull from for best-of and X vs Y questions. Researched, fact-checked and refreshed on schedule.';
 
 const formats: {n: string; icon: ModIconName; title: string; body: string}[] = [
  {n: '01', icon: 'listicle', title: 'Best-of listicle', body: 'Ranked best-[category] pieces with clear criteria and a fair take on each option.'},
@@ -89,8 +86,8 @@ const faq = [
  ['Who owns the content?', 'You do. Every piece, draft and file is yours to edit, publish and republish.'],
  ['Where can we publish it?', 'Anywhere you choose: your site, a partner blog, Medium, LinkedIn or a guest post you arrange.'],
  ['Is it AI-written?', 'No. Writers use research tools, but every piece is drafted, edited and fact-checked by people.'],
- ['How is this different from GEO or AEO?', 'This is the writing. GEO and AEO are wider programs; content from this page can feed either one.'],
- ['How is this different from a content marketing agency?', 'We write fewer, answer-first formats built for buyer questions, with claim checks and refreshes. Not a full content calendar.'],
+ ['How is this different from GEO or AEO?', 'This is the writing, also called AEO content writing when peers label the same work that way. GEO and AEO are wider programs; pieces from this page can feed either one.'],
+ ['How is this different from a content marketing agency?', 'We write fewer answer-first formats for buyer questions, with claim checks and refreshes. Not a full calendar, and not an AI content writing agency shipping bulk posts.'],
  ['How do we start?', 'Get a content quote or book a call. We start with the buyer questions your category already asks.'],
 ] as const;
 
@@ -110,7 +107,7 @@ const serviceLd = {
  description: DESCRIPTION,
  url: CANONICAL,
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth', url: SITE_URL},
- audience: {'@type': 'Audience', audienceType: FOR},
+ audience: {'@type': 'Audience', audienceType: 'SaaS, tech and AI'},
 };
 
 const faqLd = {
@@ -169,12 +166,6 @@ export default function ContentServices() {
       <p className="content-who"><span className="content-dot" aria-hidden="true" />Content &amp; editorial</p>
       <h1>{H1A} <em>{H1B}</em></h1>
       <p className="content-lead">{DAL}</p>
-      <p className="content-for"><b>For:</b> {FOR}</p>
-      <p className="content-notfor">
-       <b>Not for:</b>
-       {NOT_FOR.map(item => <span key={item}>{item}</span>)}
-      </p>
-      <p className="content-own"><i aria-hidden="true">●</i> {OWN}</p>
       <div className="content-ctas">
        <QuoteLink className="content-btn content-btn-primary" />
        <BookLink className="content-btn content-btn-ghost" />

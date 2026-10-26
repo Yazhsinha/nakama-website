@@ -486,14 +486,6 @@ main.content-page button.content-btn-ghost:hover{color:#fff}
 
 /* Content page: Gohan visual v1.1 sections on the service-page system. */
 .content-hero{padding-bottom:72px}
-.content-hero .content-ctas{margin-top:28px}
-.content-for{margin:22px 0 0!important;font-size:15px;color:var(--content-mut)}
-.content-for b{color:var(--content-ink);font-weight:600;margin-right:4px}
-.content-notfor{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;align-items:center;margin:14px 0 0!important;font-size:14px;color:var(--content-mut)}
-.content-notfor b{color:var(--content-ink);font-weight:600;margin-right:4px}
-.content-notfor span{border:1px solid var(--content-hl2);border-radius:99px;padding:4px 12px;color:var(--content-mut)}
-.content-own{margin:18px 0 0!important;color:var(--content-ink);font-size:15px}
-.content-own i{color:var(--content-em);font-style:normal;margin-right:6px}
 .content-proof-s{padding-top:28px;padding-bottom:88px}
 .content-proof-s .content-proof{margin-top:8px}
 .content-mods{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
@@ -538,7 +530,6 @@ main.content-page h2{max-width:16em}
 @media (max-width:700px){
  .content-mods,.content-meas,.content-routes,.content-receive,.content-receive ul,.content-anat{grid-template-columns:1fr}
  .content-steps{grid-template-columns:1fr 1fr}
- .content-notfor{justify-content:flex-start}
  .content-hero-copy{text-align:center}
  .content-doc{padding:20px 18px}
 }
