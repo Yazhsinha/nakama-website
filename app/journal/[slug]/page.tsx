@@ -8,8 +8,12 @@ import {articles} from '../all';
 import {Shell} from '../../site';
 import {IpAtmos} from '../../inner/kit';
 type Props={params:Promise<{slug:string}>};
-/** Next indexable note. Preview articles (`noindex`) are skipped so they do not become another page's keep-reading card. */
+/** Next indexable note. Preview articles (`noindex`) are skipped so they do not become another page's keep-reading card. An explicit `nextSlug` still shows that one card, including on a noindex preview. */
 function nextPublished(list:typeof articles,current:(typeof articles)[number]){
+ if(current.nextSlug){
+  const picked=list.find(item=>item.slug===current.nextSlug&&item.slug!==current.slug);
+  if(picked&&!picked.noindex)return picked;
+ }
  if(current.noindex)return null;
  const start=list.indexOf(current);
  for(let step=1;step<=list.length;step++){

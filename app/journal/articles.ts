@@ -32,6 +32,8 @@ export type Article={
  pointerHtml?:string,
  /** Preview gate. noindex,follow, and omitted from the sitemap, llms files, RSS and the author index. */
  noindex?:boolean,
+ /** When set, the Keep reading card links to this slug instead of the next indexable note. A noindex preview can still show that one card. */
+ nextSlug?:string,
  /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Decorative: the title beside it names the article, so the image has an empty alt. */
  coverImage?:{src:string,width:number,height:number},
 };
