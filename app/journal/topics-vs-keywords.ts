@@ -1,10 +1,9 @@
 import type {Article} from './articles';
 
 /**
- * PREVIEW ONLY. Do not merge to main. Do not flip robots to index.
- * `noindex` keeps this URL out of the sitemap, llms.txt, llms-full.txt and RSS.
- * The page metadata is noindex,follow. Remove `noindex` only at go-live,
- * and set the real publish timestamp in the same change.
+ * PUBLISH TIME for this article. ISO 8601 with +05:30.
+ * It feeds datePublished and dateModified in the schema, og/article times,
+ * the RSS pubDate, the sitemap lastmod (via `date`) and the visible "Updated ..." line.
  *
  * Visible date line is "Updated 27 Oct 2026" (short month), from PUBLISHED_AT.
  * metaTitle matches the H1 so the journal fallback does not append an em dash.
@@ -439,9 +438,7 @@ export const topicsVsKeywordsArticle: Article = {
  date: dayOf(PUBLISHED_AT),
  publishedAt: PUBLISHED_AT,
  authorName: 'Yash Kumar',
- /** Preview gate. Excluded from sitemap, llms, RSS and the author index. */
- noindex: true,
- /** Soften preview is noindex, so the automatic next note is hidden. This still shows one Keep reading card. */
+ /** Keep reading stays on this sibling. */
  nextSlug: 'aeo-vs-seo-vs-geo',
  coverImage: {src: '/journal/topics-vs-keywords/topics-vs-keywords-cover.png', width: 1920, height: 1080},
  ogImage: {
