@@ -207,7 +207,7 @@ export default function GeoServices() {
        <article className={m.feat ? 'geo-mod is-feat' : 'geo-mod'} key={m.n}>
         <span className="geo-mod-n">{m.n}</span>
         <div className="geo-ic"><ModIcon name={m.icon} /></div>
-        <h3>{m.title}</h3>
+        <h3>{m.n === '05' ? <Link href="/services/youtube">{m.title}</Link> : m.title}</h3>
         <p>{m.body}</p>
        </article>
       ))}
