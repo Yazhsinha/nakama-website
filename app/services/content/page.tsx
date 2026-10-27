@@ -10,17 +10,9 @@ const TITLE = 'Answer-First Content Writing for SaaS, Tech & AI - Nakama Growth'
 const DESCRIPTION = 'Answer-first content for AI search: listicles and comparisons for SaaS, tech & AI. AEO content writing you own and publish.';
 const CANONICAL = 'https://www.nakama.in/services/content';
 
-/** Soften preview only. noindex, follow until go-live. Not indexable. */
-const ROBOTS: Metadata['robots'] = {
- index: false,
- follow: true,
- googleBot: {index: false, follow: true},
-};
-
 const baseMeta = pageMeta('/services/content', {title: TITLE, description: DESCRIPTION});
 export const metadata: Metadata = {
  ...baseMeta,
- robots: ROBOTS,
  alternates: {...baseMeta.alternates, canonical: CANONICAL},
  openGraph: {...baseMeta.openGraph, url: CANONICAL},
 };
