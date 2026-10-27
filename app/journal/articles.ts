@@ -10,6 +10,8 @@ import {geoAuditArticle} from './geo-audit';
 import {bestAiVisibilityToolsArticle} from './best-ai-visibility-tools';
 import {howToRankInGoogleAiOverviewsArticle} from './how-to-rank-in-google-ai-overviews';
 import {answerEngineOptimizationArticle} from './answer-engine-optimization';
+import {aiVisibilityReportTemplateArticle} from './ai-visibility-report-template';
+import {topicsVsKeywordsArticle} from './topics-vs-keywords';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -24,11 +26,21 @@ export type Article={
  jsonLd?:object,
  /** When set, the note renders this HTML instead of the paragraph sections. */
  bodyHtml?:string,
+ /** When set, canonical and Open Graph URL use this path. The note still returns 200. */
+ canonical?:string,
+ /** HTML lead rendered under the dek on section-based notes. */
+ pointerHtml?:string,
+ /** Preview gate. noindex,follow, and omitted from the sitemap, llms files, RSS and the author index. */
+ noindex?:boolean,
+ /** When set, the Keep reading card links to this slug instead of the next indexable note. A noindex preview can still show that one card. */
+ nextSlug?:string,
  /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Decorative: the title beside it names the article, so the image has an empty alt. */
- coverImage?:{src:string,width:number,height:number},
+ coverImage?:{src:string,width:number,height:number,alt?:string},
 };
 export const articles:Article[]=[
+ aiVisibilityReportTemplateArticle,
  minuttiaAlternativesArticle,
+ topicsVsKeywordsArticle,
  answerEngineOptimizationArticle,
  bestAiVisibilityToolsArticle,
  howToRankInGoogleAiOverviewsArticle,
@@ -52,7 +64,7 @@ export const articles:Article[]=[
  {heading:'Use video to show what words leave out.',paragraphs:['Some ideas become clearer when someone can see the steps. Turn a workflow into a demonstration, use an example to explain a comparison, or let an expert walk through a decision. The script should have its own beginning and resolution.','A video is not an article read aloud. It needs a sequence that helps the viewer understand what is happening, why it matters and what to pay attention to. Shorter adaptations can focus on one complete point from that sequence.']},
  {heading:'Build a small, connected set.',paragraphs:['Keep the original asset and its adaptations in a shared record. Note the audience, the format, the publication location and the question each version answers. This makes the work easier to review and gives the next round of content a stronger starting point.','The result should feel like a coherent body of work: the same expertise, expressed thoughtfully for different moments of discovery.']}
  ]},
- {slug:'what-a-useful-visibility-report-shows',category:'Measurement',title:'What a useful visibility report actually shows.',description:'Evidence, context and a considered next step: a reporting framework for earned presence in AI answers, search results, communities and video.',readTime:'3 min read',motif:'measurement',sections:[
+ {slug:'what-a-useful-visibility-report-shows',category:'Measurement',title:'What a useful visibility report actually shows.',description:'Evidence, context and a considered next step: a reporting framework for earned presence in AI answers, search results, communities and video.',readTime:'3 min read',motif:'measurement',canonical:'/journal/ai-visibility-report-template',pointerHtml:'<p>The free AI visibility report template lives at <a href="/journal/ai-visibility-report-template">AI Visibility Report Template for SaaS Teams (Free Sheet)</a>.</p>',sections:[
  {heading:'Separate the work from the observation.',paragraphs:['A published article, a recorded mention and a change in visibility are different things. We keep them distinct so a report can explain what was done and what was observed without implying that every movement has a single cause.','Start with a simple record of the work: what was created, where it was published and which question or audience need it was intended to serve. That gives the rest of the report a useful reference point.']},
  {heading:'Keep the context with the evidence.',paragraphs:['For a search or AI observation, record the query, platform and observation date, together with a source URL or screenshot where available. For a relevant mention, preserve the surrounding conversation. A count without context is difficult to interpret and even harder to act on.','Describe observations with the limits of the record in view. A single observation is a snapshot. A repeated observation may deserve more attention, but the report should still explain how it was collected.']},
  {heading:'Make room for what is missing.',paragraphs:['A report is more valuable when it shows gaps as well as examples of presence. Which important questions still lack a useful answer? Which explanations need an expert review? Where does the product remain difficult to understand?','These are working questions for the next cycle. They connect measurement with editorial judgment and keep the discussion focused on improving the body of work.']},

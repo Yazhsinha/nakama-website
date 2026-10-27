@@ -8,16 +8,21 @@ main.services-page .ip-svc.ip-card{
  box-shadow:none;
  scroll-margin-top:120px;
 }
+/* Shared rows keep the bullet divider on one line across each card row. */
+main.services-page .ip-g3{
+ column-gap:20px;
+ row-gap:20px;
+}
 main.services-page .ip-svc{
- display:flex;
- flex-direction:column;
- min-height:100%;
+ display:grid;
+ grid-template-rows:subgrid;
+ grid-row:span 4;
 }
 main.services-page .ip-svc-top{
  display:flex;
  align-items:center;
  justify-content:space-between;
- margin-bottom:24px;
+ margin-bottom:0;
 }
 main.services-page .ip-svc-ico{
  width:48px;
@@ -54,6 +59,16 @@ main.services-page .ip-svc h3{
  letter-spacing:-.01em;
  color:#f3f1ed;
 }
+main.services-page a.ip-svc-cardlink{
+ color:inherit;
+ text-decoration:none;
+}
+main.services-page a.ip-svc-cardlink::after{
+ content:"";
+ position:absolute;
+ inset:0;
+ z-index:1;
+}
 main.services-page .ip-svc p{
  flex:none;
  margin-top:0!important;
@@ -89,13 +104,13 @@ main.services-page .ip-svc-for::before{
  flex:none;
 }
 main.services-page .ip-svc-body{
- margin-top:20px;
- display:flex;
- flex-direction:column;
- flex:1;
+ display:grid;
+ grid-template-rows:subgrid;
+ grid-row:span 2;
+ margin-top:0;
 }
 main.services-page .ip-svc-body p{
- margin:0 0 20px!important;
+ margin:0!important;
  font-size:15px;
  font-weight:400;
  line-height:1.6;
@@ -103,7 +118,9 @@ main.services-page .ip-svc-body p{
 }
 main.services-page .ip-svc ul{
  list-style:none;
- margin:auto 0 0;
+ margin:0;
+ align-self:start;
+ width:100%;
  padding:18px 0 0;
  border-top:1px solid rgba(243,241,237,.09);
  display:grid;
@@ -199,4 +216,221 @@ main.services-page .ip-svc-btn-line:hover{
   align-items:flex-start;
   padding:24px 22px;
  }
+}
+
+/* NEXT STEP v5. Services only, so shared IpCta pages stay as they are. */
+main.services-page .svc-next-wrap{padding:56px 0 110px}
+main.services-page .svc-next{
+ position:relative;
+ overflow:hidden;
+ display:grid;
+ grid-template-columns:minmax(0,1.35fr) 340px;
+ min-height:360px;
+ border-radius:28px 28px 18px 18px;
+ background:
+  radial-gradient(920px 480px at 8% 110%, rgba(240,124,50,.16), transparent 58%),
+  radial-gradient(600px 360px at 100% 0%, rgba(70,60,110,.16), transparent 50%),
+  linear-gradient(165deg, #1a171c 0%, #100e12 48%, #0e0c10 100%);
+ box-shadow:
+  inset 0 1px 0 rgba(243,241,237,.08),
+  inset 0 0 0 1px rgba(243,241,237,.08),
+  0 40px 90px rgba(0,0,0,.5);
+}
+main.services-page .svc-next-copy{
+ position:relative;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding:68px 56px 60px 68px;
+}
+main.services-page .svc-next-copy:before{
+ content:"";
+ position:absolute;
+ left:0;
+ top:56px;
+ bottom:56px;
+ width:2px;
+ border-radius:2px;
+ background:linear-gradient(180deg,#f07c32 0%, rgba(240,124,50,.15) 100%);
+}
+main.services-page .svc-next-eye{
+ display:inline-flex;
+ align-items:center;
+ gap:10px;
+ margin:0 0 26px!important;
+ font:700 11px/1 var(--ip-font);
+ letter-spacing:.2em;
+ text-transform:uppercase;
+ color:rgba(243,241,237,.42);
+}
+main.services-page .svc-next-dot{
+ width:7px;
+ height:7px;
+ border-radius:50%;
+ background:#f07c32;
+ box-shadow:0 0 0 3px rgba(240,124,50,.14);
+}
+main.services-page .svc-next h2{
+ margin:0!important;
+ max-width:12ch;
+ font-size:52px;
+ line-height:1.04;
+ font-weight:700;
+ letter-spacing:-.04em;
+ text-wrap:balance;
+ color:#f3f1ed;
+}
+main.services-page .svc-next h2 em{
+ font-style:normal;
+ background:none;
+ -webkit-background-clip:border-box;
+ background-clip:border-box;
+ color:#f07c32;
+ -webkit-text-fill-color:#f07c32;
+}
+main.services-page .svc-next-body{
+ margin:22px 0 0!important;
+ max-width:38ch;
+ font:500 16.5px/1.58 var(--ip-font);
+ color:rgba(243,241,237,.58);
+}
+main.services-page .svc-next-meta{
+ display:flex;
+ align-items:center;
+ gap:14px;
+ margin:32px 0 0!important;
+ font:650 11px/1 var(--ip-font);
+ letter-spacing:.08em;
+ text-transform:uppercase;
+ color:rgba(243,241,237,.3);
+}
+main.services-page .svc-next-meta span{
+ width:28px;
+ height:1px;
+ background:rgba(243,241,237,.2);
+}
+main.services-page .svc-next-rail{
+ position:relative;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding:48px 36px;
+ border-left:1px solid rgba(243,241,237,.1);
+ background:
+  linear-gradient(180deg, rgba(243,241,237,.045), rgba(243,241,237,.015)),
+  rgba(0,0,0,.22);
+}
+main.services-page .svc-next-rail:before{
+ content:"";
+ position:absolute;
+ inset:24px;
+ border-radius:18px 18px 12px 12px;
+ border:1px solid rgba(243,241,237,.1);
+ background:rgba(243,241,237,.025);
+ pointer-events:none;
+}
+main.services-page .svc-next-mark{
+ position:absolute;
+ right:8px;
+ bottom:10px;
+ width:88px;
+ height:auto;
+ opacity:.07;
+ pointer-events:none;
+ z-index:0;
+}
+main.services-page .svc-next-rail-in{
+ position:relative;
+ z-index:1;
+ display:flex;
+ flex-direction:column;
+ gap:22px;
+}
+main.services-page .svc-next-kicker{
+ margin:0!important;
+ font:700 11px/1 var(--ip-font);
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ color:rgba(243,241,237,.4);
+}
+main.services-page .svc-next-kicker span{
+ color:#f07c32;
+ margin-right:8px;
+}
+main.services-page .svc-next-note{
+ margin:0!important;
+ max-width:18ch;
+ font:600 15px/1.4 var(--ip-font);
+ letter-spacing:-.015em;
+ color:rgba(243,241,237,.72);
+}
+main.services-page .svc-next-actions{
+ display:flex;
+ flex-direction:column;
+ gap:10px;
+}
+main.services-page .svc-next-btn{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:100%;
+ height:52px;
+ padding:0 16px;
+ border-radius:14px 14px 10px 10px;
+ font:700 14px/1 var(--ip-font);
+ letter-spacing:-.01em;
+ text-decoration:none;
+ cursor:pointer;
+}
+main.services-page .svc-next-btn-primary{
+ background:#f07c32;
+ color:#17110c;
+ border:0;
+ box-shadow:0 10px 28px rgba(240,124,50,.22);
+}
+main.services-page .svc-next-btn-primary:hover{
+ background:#f38948;
+ color:#17110c;
+}
+main.services-page .svc-next-btn-line{
+ background:rgba(243,241,237,.03);
+ color:#f3f1ed;
+ border:1px solid rgba(243,241,237,.26);
+ box-shadow:none;
+}
+main.services-page .svc-next-btn-line:hover{
+ border-color:rgba(243,241,237,.45);
+ color:#fff;
+ background:rgba(243,241,237,.06);
+}
+@media (max-width:900px){
+ main.services-page .svc-next-wrap{padding:40px 0 72px}
+ main.services-page .svc-next{
+  grid-template-columns:1fr;
+  min-height:0;
+  border-radius:22px 22px 14px 14px;
+  background:
+   radial-gradient(380px 240px at 10% 0%, rgba(240,124,50,.14), transparent 60%),
+   linear-gradient(165deg,#1a171c,#0e0c10);
+  box-shadow:inset 0 0 0 1px rgba(243,241,237,.08), 0 28px 60px rgba(0,0,0,.45);
+ }
+ main.services-page .svc-next-copy{padding:36px 24px 28px 28px}
+ main.services-page .svc-next-copy:before{top:32px;bottom:32px;background:linear-gradient(180deg,#f07c32,rgba(240,124,50,.2))}
+ main.services-page .svc-next-eye{margin-bottom:18px!important}
+ main.services-page .svc-next h2{max-width:none;font-size:32px;letter-spacing:-.035em}
+ main.services-page .svc-next-body{margin-top:16px!important;font-size:15px;line-height:1.55}
+ main.services-page .svc-next-meta{margin-top:22px!important;gap:12px}
+ main.services-page .svc-next-meta span{width:22px}
+ main.services-page .svc-next-rail{
+  border-left:0;
+  border-top:1px solid rgba(243,241,237,.1);
+  padding:28px 22px 32px;
+  background:rgba(0,0,0,.25);
+ }
+ main.services-page .svc-next-rail:before,
+ main.services-page .svc-next-mark{display:none}
+ main.services-page .svc-next-rail-in{gap:0}
+ main.services-page .svc-next-kicker{margin-bottom:10px!important}
+ main.services-page .svc-next-note{max-width:none;margin-bottom:18px!important}
+ main.services-page .svc-next-btn{height:50px}
 }

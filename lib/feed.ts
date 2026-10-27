@@ -6,11 +6,16 @@ import {authors,authorPath,articlesBy,jobTitleText} from '@/lib/authors';
 export const LIBRARY_DATE='2026-09-28';
 
 export function articleDate(slug:string){return posts.find(p=>p.slug===slug)?.date||articles.find(a=>a.slug===slug)?.date||LIBRARY_DATE;}
-export const feedArticles=articles.map(a=>({...a,date:articleDate(a.slug)}));
+/** Preview notes (`noindex`) stay on their URL only. They are left out of the sitemap, llms files and RSS. */
+export const feedArticles=articles.filter(a=>!a.noindex).map(a=>({...a,date:articleDate(a.slug)}));
 
 export const corePages:{path:string;title:string;summary:string;priority:number;freq:'weekly'|'monthly'|'yearly';src:string[]}[]=[
  {path:'/',title:'Home',summary:'What Nakama does: gets brands named in AI answers through earned, off-site sources.',priority:1,freq:'weekly',src:['app/page.tsx', 'app/HomeSections.tsx', 'app/ContentSections.tsx', 'app/proof-data.ts', 'app/hero-panels.ts', 'components']},
  {path:'/services',title:'Services',summary:'AEO, GEO, Reddit and community, content and editorial, YouTube and video, digital PR, plus measurement.',priority:.9,freq:'monthly',src:['app/services']},
+ {path:'/services/geo',title:'GEO services',summary:'Generative engine optimization services for B2B SaaS. We audit where AI names your competitors, then build product context and sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',priority:.8,freq:'monthly',src:['app/services/geo']},
+ {path:'/services/aeo',title:'AEO services',summary:'AEO agency for SaaS, tech and AI. Nakama Growth maps the questions your buyers ask and builds answer-first pages, FAQs and site structure that answer them.',priority:.8,freq:'monthly',src:['app/services/aeo']},
+ {path:'/services/reddit',title:'Reddit marketing services',summary:'Reddit marketing agency for SaaS, tech and AI. Nakama Growth maps the subreddits your buyers use and joins their threads with helpful, rules-fit answers.',priority:.8,freq:'monthly',src:['app/services/reddit']},
+ {path:'/services/content',title:'Content & editorial',summary:'Answer-first content for AI search: listicles and comparisons for SaaS, tech & AI. AEO content writing you own and publish.',priority:.8,freq:'monthly',src:['app/services/content']},
  {path:'/white-label',title:'White label',summary:'White label YouTube production plus AEO, GEO, Reddit and Quora, content, digital PR and link building for agencies, delivered under the agency brand.',priority:.8,freq:'monthly',src:['app/white-label']},
  {path:'/work',title:'Work',summary:'Documented client placements in Google AI Overviews, AI Mode, Perplexity, ChatGPT, YouTube and search, with queries you can run.',priority:.9,freq:'weekly',src:['app/work', 'app/proof-data.ts', 'content/case-studies.json']},
  {path:'/process',title:'Process',summary:'Understand, create, place, prove: the monthly cycle and working cadence.',priority:.8,freq:'monthly',src:['app/process']},

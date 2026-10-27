@@ -3162,6 +3162,7 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 .ip-article-page .article-rich h2#contents+ul a{display:block;padding:13px 0;text-decoration:none;color:#f6f3ee}
 .ip-article-page .article-rich h2#contents+ul a:hover{color:#f2c7a4}
 .ip-article-page .article-rich figure{margin:28px 0 8px}
+.ip-article-page .article-rich picture{display:block}
 .ip-article-page .article-rich img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
 .ip-article-page .article-rich figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:#8e8a84}
 .ip-article-page .article-rich blockquote{margin:28px 0;padding:22px 24px;border-left:3px solid #f07c32;border-radius:0 16px 16px 0;background:rgba(240,124,50,.08)}
@@ -3182,6 +3183,26 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 .ip-article-page .article-rich h2#where-does-your-brand-stand-in-ai-answers-today{margin-top:64px;padding-top:36px;border-top:1px solid rgba(255,255,255,.12)}
 .pricing-page .pr-aeo-note{margin:0 0 18px;font-size:15px;color:#c9c8cf}
 .pricing-page .pr-aeo-note a{color:#f2c7a4;text-decoration:underline;text-underline-offset:3px}
+/* Gohan TOC. Prefixed so these beat .article-rich link underlines and list margins. */
+.ip-article-page .article-rich .toc{--toc-ink:#f6f3ee;--toc-text:#d9d7dc;--toc-muted:#9a9690;--toc-ember:#f07c32;
+ margin:32px 0 8px;padding:24px 28px;background:rgb(246 243 238/.04);border:1px solid rgb(246 243 238/.11);border-radius:16px}
+.ip-article-page .article-rich .toc-head{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 14px;
+ font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--toc-muted);line-height:1.4}
+.ip-article-page .article-rich .toc-head span{letter-spacing:.04em;text-transform:none;font-weight:500}
+.ip-article-page .article-rich .toc ol{list-style:none;margin:0;padding:0;counter-reset:toc}
+.ip-article-page .article-rich .toc li{counter-increment:toc;margin:0;font-size:15.5px;line-height:1.45;break-inside:avoid}
+.ip-article-page .article-rich .toc a{position:relative;display:flex;gap:14px;padding:9px 10px 9px 12px;border-radius:8px;
+ color:var(--toc-text);text-decoration:none;transition:color .15s,background-color .15s}
+.ip-article-page .article-rich .toc a::before{content:counter(toc,decimal-leading-zero);flex:none;min-width:2ch;
+ font-family:Manrope,ui-sans-serif,system-ui,sans-serif;font-size:12.5px;line-height:1.85;font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;color:var(--toc-muted);transition:color .15s}
+.ip-article-page .article-rich .toc a::after{content:"";position:absolute;left:0;top:8px;bottom:8px;width:2px;border-radius:2px;background:var(--toc-ember);opacity:0;transition:opacity .15s}
+.ip-article-page .article-rich .toc a:hover,.ip-article-page .article-rich .toc a:focus-visible,.ip-article-page .article-rich .toc li.is-hover a{color:var(--toc-ink);background:rgb(246 243 238/.04)}
+.ip-article-page .article-rich .toc a:hover::before,.ip-article-page .article-rich .toc a:focus-visible::before,.ip-article-page .article-rich .toc li.is-hover a::before{color:var(--toc-ember)}
+.ip-article-page .article-rich .toc a:hover::after,.ip-article-page .article-rich .toc a:focus-visible::after,.ip-article-page .article-rich .toc li.is-hover a::after{opacity:1}
+.ip-article-page .article-rich .toc a:focus-visible{outline:2px solid var(--toc-ember);outline-offset:2px}
+@media (min-width:960px){.ip-article-page .article-rich .toc ol{columns:2;column-gap:32px}}
+@media (max-width:640px){.ip-article-page .article-rich .toc{padding:20px;margin-top:24px}.ip-article-page .article-rich .toc a{padding:8px 8px 8px 10px}}
+@media (prefers-reduced-motion:reduce){.ip-article-page .article-rich .toc *{transition:none}}
 .ip-article-page .article-rich .author-box{margin-top:16px;padding:22px 24px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.03);display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:start;scroll-margin-top:120px}
 .ip-article-page .article-rich .author-box img{width:96px;height:96px;border-radius:50%;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
 .ip-article-page .article-rich .author-box-text p:first-child{margin-top:0}
