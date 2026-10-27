@@ -2,7 +2,7 @@ import {articles} from '@/app/journal/all';
 import {abs} from '@/lib/seo';
 
 /** Author profiles. Add a profile here and its page appears at /authors/<slug>, in the sitemap and in llms.txt.
- *  An article is listed on its author's page when its `authorName` matches `name`, so new guides show up on their own. */
+ *  An article is listed on its author's page when its `authorName` matches `name` and it is not a preview (`noindex`). */
 export type Author={
  slug:string,name:string,jobTitle:string,
  /** Bio paragraphs shown on the page. The first is also the schema description. */
@@ -63,4 +63,5 @@ export const authorPath=(slug:string)=>`/authors/${slug}`;
 export const authorUrl=(slug:string)=>abs(authorPath(slug));
 export const authorId=(slug:string)=>`${authorUrl(slug)}#person`;
 export const getAuthor=(slug:string)=>authors.find(a=>a.slug===slug);
-export const articlesBy=(a:Author)=>articles.filter(x=>x.authorName===a.name);
+/** Preview notes (`noindex`) stay off the author page so they are not listed in llms.txt either. */
+export const articlesBy=(a:Author)=>articles.filter(x=>x.authorName===a.name&&!x.noindex);
