@@ -6,7 +6,8 @@ import {authors,authorPath,articlesBy,jobTitleText} from '@/lib/authors';
 export const LIBRARY_DATE='2026-09-28';
 
 export function articleDate(slug:string){return posts.find(p=>p.slug===slug)?.date||articles.find(a=>a.slug===slug)?.date||LIBRARY_DATE;}
-export const feedArticles=articles.map(a=>({...a,date:articleDate(a.slug)}));
+/** Preview notes (`noindex`) stay on their URL only. They are left out of the sitemap, llms files and RSS. */
+export const feedArticles=articles.filter(a=>!a.noindex).map(a=>({...a,date:articleDate(a.slug)}));
 
 export const corePages:{path:string;title:string;summary:string;priority:number;freq:'weekly'|'monthly'|'yearly';src:string[]}[]=[
  {path:'/',title:'Home',summary:'What Nakama does: gets brands named in AI answers through earned, off-site sources.',priority:1,freq:'weekly',src:['app/page.tsx', 'app/HomeSections.tsx', 'app/ContentSections.tsx', 'app/proof-data.ts', 'app/hero-panels.ts', 'components']},

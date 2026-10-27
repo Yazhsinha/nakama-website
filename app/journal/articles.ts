@@ -11,6 +11,7 @@ import {bestAiVisibilityToolsArticle} from './best-ai-visibility-tools';
 import {howToRankInGoogleAiOverviewsArticle} from './how-to-rank-in-google-ai-overviews';
 import {answerEngineOptimizationArticle} from './answer-engine-optimization';
 import {aiVisibilityReportTemplateArticle} from './ai-visibility-report-template';
+import {topicsVsKeywordsArticle} from './topics-vs-keywords';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -29,12 +30,15 @@ export type Article={
  canonical?:string,
  /** HTML lead rendered under the dek on section-based notes. */
  pointerHtml?:string,
- /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Set `alt` when the image is informative. Without `alt` the image is decorative, because the title beside it names the article. */
- coverImage?:{src:string,width:number,height:number,alt?:string},
+ /** Preview gate. noindex,follow, and omitted from the sitemap, llms files, RSS and the author index. */
+ noindex?:boolean,
+ /** Optional. When set, this article's cover shows on the "Keep reading" card of the article that links to it. Decorative: the title beside it names the article, so the image has an empty alt. */
+ coverImage?:{src:string,width:number,height:number},
 };
 export const articles:Article[]=[
  aiVisibilityReportTemplateArticle,
  minuttiaAlternativesArticle,
+ topicsVsKeywordsArticle,
  answerEngineOptimizationArticle,
  bestAiVisibilityToolsArticle,
  howToRankInGoogleAiOverviewsArticle,

@@ -3162,6 +3162,7 @@ html{overflow-x:clip;scroll-padding-top:110px}body{font-family:var(--sans);font-
 .ip-article-page .article-rich h2#contents+ul a{display:block;padding:13px 0;text-decoration:none;color:#f6f3ee}
 .ip-article-page .article-rich h2#contents+ul a:hover{color:#f2c7a4}
 .ip-article-page .article-rich figure{margin:28px 0 8px}
+.ip-article-page .article-rich picture{display:block}
 .ip-article-page .article-rich img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
 .ip-article-page .article-rich figcaption{margin-top:10px;font-size:13px;line-height:1.5;color:#8e8a84}
 .ip-article-page .article-rich blockquote{margin:28px 0;padding:22px 24px;border-left:3px solid #f07c32;border-radius:0 16px 16px 0;background:rgba(240,124,50,.08)}
