@@ -84,10 +84,10 @@ const faq = [
 ] as const;
 
 const clients = [
- {name: 'Synup', src: '/geo/synup.svg', hero: 22, proof: 30, word: false},
- {name: 'Inventive AI', src: '/geo/inventive.png', hero: 20, proof: 28, word: false},
- {name: 'HubEngage', src: '/geo/hubengage.png', hero: 22, proof: 30, word: true},
- {name: 'StarAgile', src: '/geo/staragile.png', hero: 27, proof: 38, word: false},
+ {name: 'Synup', src: '/geo/synup.svg', proof: 30, word: false},
+ {name: 'Inventive AI', src: '/geo/inventive.png', proof: 28, word: false},
+ {name: 'HubEngage', src: '/geo/hubengage.png', proof: 30, word: true},
+ {name: 'StarAgile', src: '/geo/staragile.png', proof: 38, word: false},
 ] as const;
 
 const serviceLd = {
@@ -161,15 +161,6 @@ export default function ContentServices() {
       <div className="content-ctas">
        <QuoteLink className="content-btn content-btn-primary" />
        <BookLink className="content-btn content-btn-ghost" />
-      </div>
-      <div className="content-logos">
-       <ul className="content-hero-logos">
-        {clients.map(c => (
-         <li key={c.name}>
-          <LogoMark name={c.name} src={c.src} height={c.hero} word={c.word} wordClass="content-word" />
-         </li>
-        ))}
-       </ul>
       </div>
      </div>
     </div>
