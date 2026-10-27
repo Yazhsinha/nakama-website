@@ -1,18 +1,12 @@
 import {pageMeta,Crumbs} from '@/lib/seo';
 import type {Metadata} from 'next';
 import Link from 'next/link';
-import {ArrowUpRight,BookOpen,FolderKanban} from 'lucide-react';
+import {ArrowUpRight} from 'lucide-react';
 import {Shell} from '../site';
 import {IpAtmos,IpHero,IpHead,IpSection,IpCta} from '../inner/kit';
-import {proofClients} from '../proof-data';
 import {articles} from '../journal/all';
-import {CaseCards} from '../work/CaseCards';
-import {caseStudies} from '@/lib/content';
 
-export const metadata:Metadata=pageMeta('/resources',{title:'Resources & Field Notes on AI Search — Nakama Growth',description:'Field notes on how ChatGPT, Perplexity, Gemini and Google AI Overviews decide what to recommend, plus an index of documented Nakama client work.'});
-
-const LOGO:Record<string,string>={'Synup':'/clients/color/synup.svg','Inventive AI':'/clients/color/inventive.png','HubEngage':'/clients/color/hubengage.png','StarAgile':'/clients/color/staragile.png','BacklinkOS':'/clients/color/backlinkos.png','SERPsGrowth':'/clients/color/serps.png','Inbound Blogging':'/clients/color/inbound.png'};
-const SECTOR:Record<string,string>={'Synup':'Local listings software','Inventive AI':'AI RFP software','HubEngage':'Internal communications','StarAgile':'Professional certification','BacklinkOS':'Backlink management','SERPsGrowth':'Digital PR & links','Inbound Blogging':'SaaS SEO'};
+export const metadata:Metadata=pageMeta('/resources',{title:'Resources & Field Notes on AI Search — Nakama Growth',description:'Practical field notes and articles on SEO, AI visibility, answer engines, and how brands earn recommendations across AI search.'});
 
 const ART=[
  {bg:'radial-gradient(120% 120% at 0% 0%,#3a2a6b,transparent 60%),radial-gradient(120% 120% at 100% 100%,#7a3a1c,transparent 55%),#14131b',dots:['#f07c32','#9aa6ff','#7fd1c3']},
@@ -35,7 +29,6 @@ function Art({i}:{i:number}){
 }
 
 export default function Resources(){
- const [feature,...rest]=proofClients;
  const [lead,...more]=articles;
  return (
   <Shell className="resources-page shell-cinema ip-page">
@@ -44,38 +37,9 @@ export default function Resources(){
     tone="teal"
     eyebrow="Resources"
     title="Notes from the field."
-    accent="And the work behind them."
-    lead="Practical reads on how AI decides what to recommend, plus an index of the clients we have done it for."
-   >
-    <nav className="ip-tabs" aria-label="Resource types">
-     <a href="#case-studies"><FolderKanban size={16}/>Case studies<small>{proofClients.length+caseStudies.length}</small></a>
-     <a href="#articles"><BookOpen size={16}/>Articles<small>{articles.length}</small></a>
-    </nav>
-   </IpHero>
-
-   <IpSection id="case-studies">
-    <IpHead eyebrow="Case studies" title={<>Seven brands, <em>one method.</em></>} lead="Open a client to see its queries and placements."/>
-    {caseStudies.length?<div className="cs-wrap"><CaseCards items={[...caseStudies].sort((a,b)=>b.date.localeCompare(a.date))}/></div>:null}
-    <div className="ip-g3">
-      <Link href={`/work?client=${encodeURIComponent(feature.name)}`} className="ip-card ip-case feature">
-       <div className="ip-case-main">
-        <div className="ip-case-top"><span className="ip-case-logo"><img src={LOGO[feature.name]} alt=""/></span><div><b>{feature.name}</b><small>{SECTOR[feature.name]}</small></div></div>
-        <p>{feature.description}</p>
-        <div className="ip-case-go">See the placements<ArrowUpRight size={17}/></div>
-       </div>
-       <div className="ip-case-side">
-        {feature.entries.slice(0,3).map(e=><div key={e.query}><small>{e.platform}</small><strong>{e.query}</strong></div>)}
-       </div>
-      </Link>
-     {rest.map(c=>
-      <Link key={c.name} href={`/work?client=${encodeURIComponent(c.name)}`} className="ip-card ip-case">
-       <div className="ip-case-top"><span className="ip-case-logo"><img src={LOGO[c.name]} alt=""/></span><div><b>{c.name}</b><small>{SECTOR[c.name]}</small></div></div>
-       <p>{c.description}</p>
-       <div className="ip-case-q">{[...new Set(c.entries.map(e=>e.query))].slice(0,2).map(q=><span key={q}>{q}</span>)}</div>
-       <div className="ip-case-go">See the placements<ArrowUpRight size={17}/></div>
-      </Link>)}
-    </div>
-   </IpSection>
+    accent="Ideas you can use."
+    lead="Practical reads on SEO, AI visibility, and how brands earn recommendations in search."
+   />
 
    <IpSection id="articles">
     <IpHead eyebrow="Articles" title={<>Field notes on <em>earned visibility.</em></>} lead="Short reads on buyer questions, distribution and measurement."/>
@@ -85,7 +49,7 @@ export default function Resources(){
     </div>
    </IpSection>
 
-   <IpCta title={<>Want to be the <em>next case study?</em></>}/>
+   <IpCta title={<>Want more <em>visibility?</em></>}/>
   </Shell>
  );
 }
