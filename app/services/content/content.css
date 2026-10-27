@@ -170,30 +170,16 @@ main.content-page .content-hero h1 em{
 .content-btn:active{transform:translateY(0)}
 .content-ar{transition:transform .25s}
 
-.content-logos{
- margin:36px auto 0;
- padding-top:22px;
- border-top:1px solid var(--content-hl);
- max-width:760px;
-}
-.content-hero-logos{
- display:flex;flex-wrap:wrap;justify-content:center;align-items:center;
- gap:14px 40px;margin:0;padding:0;list-style:none;
-}
-.content-hero-logos li{display:flex;align-items:center;gap:7px}
-.content-hero-logos img,
 .content-proof-logo img{
  width:auto;max-width:100%;
  opacity:.55;filter:grayscale(1);
  transition:opacity .3s,transform .3s;
 }
-.content-hero-logos li:hover img,
 .content-proof-cell:hover img{opacity:.9;transform:translateY(-1px)}
 .content-word{
  font-weight:700;font-size:15px;letter-spacing:-.02em;
  color:var(--content-ink);opacity:.55;transition:opacity .3s;
 }
-.content-hero-logos li:hover .content-word,
 .content-proof-cell:hover .content-word{opacity:1}
 .content-word-lg{font-size:20px}
 
@@ -461,7 +447,6 @@ main.content-page button.content-btn-ghost:hover{color:#fff}
  .content-glow{width:560px;height:520px}
  .content-s{padding:80px 0}
  .content-mods,.content-steps,.content-beats{grid-template-columns:1fr;gap:16px}
- .content-hero-logos{gap:16px 26px}
  .content-proof{grid-template-columns:1fr 1fr}
  .content-proof-cell{height:136px}
  .content-proof-cell:nth-child(odd){border-left:0}
@@ -478,10 +463,10 @@ main.content-page button.content-btn-ghost:hover{color:#fff}
  .content-q{font-size:16px}
 }
 @media (prefers-reduced-motion:reduce){
- .content-glow,.content-dot,.content-btn,.content-ar,.content-hero-logos img,.content-proof-logo img,main.content-page summary:after{
+ .content-glow,.content-dot,.content-btn,.content-ar,.content-proof-logo img,main.content-page summary:after{
   animation:none!important;transition:none!important;
  }
- .content-btn:hover,.content-hero-logos li:hover img,.content-proof-cell:hover img{transform:none}
+ .content-btn:hover,.content-proof-cell:hover img{transform:none}
 }
 
 /* Content page: Gohan visual v1.1 sections on the service-page system. */
