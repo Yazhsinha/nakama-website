@@ -360,7 +360,7 @@ export function YouTubeStage() {
    <footer className="foot">
     <img src={`${ASSET}/gate-mark.png`} alt="" width={28} height={28} />
     <span>Nakama Growth</span>
-    <span className="v">Soften twin v7.7.1</span>
+    <span className="v">Soften twin v7.8.1</span>
    </footer>
   </div>
  );

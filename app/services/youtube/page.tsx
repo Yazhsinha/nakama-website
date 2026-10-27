@@ -5,7 +5,7 @@ import {YouTubeStage} from './stage';
 import {FAQ, META, SLUG, TITLE} from './copy';
 import './youtube.css';
 
-/** Soften twin v7.7.1, prod. Robots stay index,follow from the root layout. */
+/** Soften twin v7.8.1, prod. Robots stay index,follow from the root layout. */
 export const metadata: Metadata = pageMeta(SLUG, {title: TITLE, description: META});
 
 const serviceLd = {
