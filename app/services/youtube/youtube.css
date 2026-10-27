@@ -1,6 +1,6 @@
-/* /services/youtube Soften twin v7.7.1, scoped under main.yt-page .y7.
+/* /services/youtube Soften twin v7.8.1, scoped under main.yt-page .y7.
    Hero field stays the v7.6 cascade: linear 160deg #0d0d0d → #000000, seat opacity .12.
-   v7.7.1 tail (band spacing, face scrim, crumb, kit band button) is appended at the end.
+   v7.7.1 tail (band spacing, face scrim, crumb, kit band button) stays. v7.8.1 centers the Samples play control.
    Site Manrope (400–700) stands in for the twin face. Lockup stays in the site header. */
 
 main.yt-page .y7{--ink:#0a090b;--cream:#f3f1ed;--ember:#f07c32;--mute:rgba(243,241,237,.68);--line:rgba(243,241,237,.12);--ease:cubic-bezier(.2,.7,.1,1)}main.yt-page .y7, main.yt-page .y7 *{box-sizing:border-box;margin:0;padding:0}html:has(main.yt-page){scroll-behavior:smooth}main.yt-page .y7{background:var(--ink);color:var(--cream);font:400 17px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}main.yt-page .y7 a{color:inherit;text-decoration:none}main.yt-page .y7 ul,main.yt-page .y7 ol{list-style:none}main.yt-page .y7 :focus-visible{outline:2px solid var(--ember);outline-offset:3px}/* preloader · Kizami MOTION-PACK v3.0 */main.yt-page .y7{--ease-out:cubic-bezier(.22,1,.36,1);--ease-back:cubic-bezier(.34,1.56,.64,1)}main.yt-page .y7 .roll{position:fixed;inset:0;background:var(--ink);display:grid;place-items:center;z-index:100;animation:roll-out 250ms var(--ease-out) 1250ms forwards}main.yt-page .y7 .roll__stack{display:flex;flex-direction:column;align-items:center}main.yt-page .y7 .roll__archw{position:relative;width:213px}main.yt-page .y7 .roll__arch{display:block;width:100%;animation:arch-in 460ms var(--ease-out) 160ms both}main.yt-page .y7 .roll__ember{position:absolute;left:49.7%;top:45.9%;width:24.1%;aspect-ratio:1;border-radius:50%;background:var(--ember);translate:-50% -50%;animation:ember-drop 380ms var(--ease-back) 620ms both,ember-glow 280ms ease-in-out 940ms}main.yt-page .y7 .pre-tc{margin-top:48px;font:700 15px/1 ui-monospace,Menlo,monospace;letter-spacing:.12em;color:rgba(243,241,237,.72);font-variant-numeric:tabular-nums;animation:cut-on 120ms linear both}main.yt-page .y7 .roll__label{margin-top:14px;font:700 12px/1 Manrope;letter-spacing:.3em;opacity:0;color:var(--ember);animation:cut-on 1ms 1000ms forwards}@keyframes arch-in{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}@keyframes ember-drop{from{transform:translateY(-60vh)}to{transform:translateY(0)}}@keyframes ember-glow{50%{box-shadow:0 0 48px 12px rgb(240 124 50/.35)}}@keyframes cut-on{from{opacity:0}to{opacity:1}}@keyframes roll-out{to{opacity:0;visibility:hidden}}main.yt-page .y7.done .roll{pointer-events:none}@media (max-width:640px){main.yt-page .y7 .roll__archw{width:140px}}/* nav */main.yt-page .y7 .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:40px;padding:18px 56px;background:linear-gradient(var(--ink) 30%,transparent)}main.yt-page .y7 .lock img{height:34px;display:block}main.yt-page .y7 .nav nav{display:flex;gap:30px;margin-left:auto;font-size:14px;font-weight:500;color:var(--mute)}main.yt-page .y7 .nav nav a:hover{color:var(--cream)}main.yt-page .y7 .btn{display:inline-flex;align-items:center;height:54px;padding:0 28px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .25s var(--ease),background .25s,box-shadow .25s}main.yt-page .y7 .btn.sm{height:42px;padding:0 20px;font-size:14px}main.yt-page .y7 .ember{background:var(--ember);color:var(--ink)}main.yt-page .y7 .ember:hover{transform:translateY(-2px);box-shadow:0 10px 40px -8px rgba(240,124,50,.6)}main.yt-page .y7 .ghost{border:1px solid rgba(243,241,237,.3)}main.yt-page .y7 .ghost:hover{border-color:var(--cream);background:rgba(243,241,237,.06)}/* chapter rail */main.yt-page .y7 .rail{position:fixed;left:22px;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:12px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}main.yt-page .y7 .rail-bar{position:absolute;left:3px;top:4px;bottom:4px;width:1px;background:var(--line)}main.yt-page .y7 .rail-bar i{display:block;width:1px;height:0;background:var(--ember)}main.yt-page .y7 .rail a{display:flex;align-items:center;gap:12px;color:rgba(243,241,237,.55)}main.yt-page .y7 .rail a b{width:7px;height:7px;border-radius:50%;background:#2a2829;position:relative}main.yt-page .y7 .rail a span{opacity:0;transform:translateX(-6px);transition:.3s}main.yt-page .y7 .rail:hover a span,main.yt-page .y7 .rail a.on span{opacity:1;transform:none}main.yt-page .y7 .rail a.on{color:var(--cream)}main.yt-page .y7 .rail a.on b{background:var(--ember)}/* hero */main.yt-page .y7 .hero{position:relative;min-height:min(100vh,1000px);overflow:hidden;display:flex;align-items:center}main.yt-page .y7 .atmo,main.yt-page .y7 .atmo i{position:absolute;inset:0;pointer-events:none}main.yt-page .y7 .atmo .key{background:radial-gradient(42% 52% at 74% 46%,rgba(240,124,50,.42),rgba(240,124,50,.12) 45%,transparent 72%)}main.yt-page .y7 .atmo .cool{background:radial-gradient(40% 60% at 14% 40%,rgba(170,186,210,.10),transparent 70%)}main.yt-page .y7 .atmo .arch{left:50%;top:6%;width:1500px;height:1500px;inset:auto;transform:translateX(-30%);border-radius:50%;
@@ -78,3 +78,32 @@ main.yt-page .y7 .band h2 .br-d{display:none}
 @media (min-width:900px){main.yt-page .y7 .band h2 .br-d{display:inline}}
 /* Next delta: keep the small-screen band tighter than the desktop 200px kit. */
 @media (max-width:700px){main.yt-page .y7 .band{padding:96px 20px}}
+
+/* ===== Soften twin v7.8.1 · Samples play dead-center (Yash t577u) ===== */
+main.yt-page .y7 .poster .wl-yt-play{
+  left:50%;top:50%;
+  width:64px;height:64px;
+  margin:0;
+  box-sizing:border-box;
+  transform:translate(-50%,-50%);
+  background:rgba(10,9,11,.7);
+  border:1px solid rgba(243,241,237,.35);
+  transition:transform .25s var(--ease),border-color .25s var(--ease);
+}
+main.yt-page .y7 .poster .wl-yt-play::after{
+  left:25px;top:20px;
+  border-left:17px solid var(--cream);
+  border-top:11px solid transparent;
+  border-bottom:11px solid transparent;
+}
+main.yt-page .y7 .poster:hover .wl-yt-play,
+main.yt-page .y7 .poster .wl-yt button:hover .wl-yt-play{
+  background:rgba(10,9,11,.7); /* NO ember fill */
+  border-width:2px;
+  border-color:var(--ember);
+  transform:translate(-50%,-50%) scale(1.06);
+}
+main.yt-page .y7 .poster:hover .wl-yt-play::after,
+main.yt-page .y7 .poster .wl-yt button:hover .wl-yt-play::after{
+  left:24px;top:19px;
+}
