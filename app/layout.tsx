@@ -23,7 +23,7 @@ export const metadata: Metadata = {
  twitter: {card: "summary_large_image", title: "Nakama Growth — Be the brand they already know.", description: SITE_DESCRIPTION},
  icons: {icon: [{url: "/brand/nakama-favicon.svg", type: "image/svg+xml"}, {url: "/brand/icon-48.png", sizes: "48x48", type: "image/png"}, {url: "/brand/icon-96.png", sizes: "96x96", type: "image/png"}, {url: "/brand/icon-192.png", sizes: "192x192", type: "image/png"}], apple: [{url: "/brand/apple-touch-icon-180.png", sizes: "180x180"}]},
  robots: {index: true, follow: true, googleBot: {index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1}},
- verification: {google: "JMhvuB4Jbw7O0z011S4vD2yakTWoNid99_KNrOmIoGA"},
+ verification: {google: "JMhvuB4Jbw7O0z011S4vD2yakTWoNid99_KNrOmIoGA", other: {"msvalidate.01": "989E14619BFCCB974BD0571A01C36655"}},
  formatDetection: {telephone: false, email: false, address: false},
 };
 export const viewport: Viewport = {width: "device-width", initialScale: 1, viewportFit: "cover", themeColor: "#0c0b0d", colorScheme: "dark"};
