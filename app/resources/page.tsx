@@ -29,7 +29,8 @@ function Art({i}:{i:number}){
 }
 
 export default function Resources(){
- const [lead,...more]=articles;
+ // Preview notes stay on their URL. noindex keeps them off this index the same way the sitemap and llms files omit them.
+ const [lead,...more]=articles.filter(a=>!a.noindex);
  return (
   <Shell className="resources-page shell-cinema ip-page">
    <IpAtmos tone="teal"/><Crumbs trail={[{name:'Resources',path:'/resources'}]}/>
