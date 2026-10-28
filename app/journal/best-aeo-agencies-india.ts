@@ -441,7 +441,8 @@ export const bestAeoAgenciesIndiaArticle: Article = {
  description: "Compare the 9 best AEO agencies in India for 2026 on pricing, proof, contract terms and a weakness each. Sites checked 28 Oct 2026.",
  readTime: "18 min read",
  motif: 'guide',
- metaTitle: "Best AEO Agencies in India (2026)",
+ /** Document title only. The on-page H1 stays the shorter title. */
+ metaTitle: "Best AEO Agencies in India (2026) | Pricing & Proof",
  date: dayOf(PUBLISHED_AT),
  publishedAt: PUBLISHED_AT,
  authorName: 'Yash Kumar',
