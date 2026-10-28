@@ -417,8 +417,7 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <h2 id="where-does-your-brand-stand-in-ai-answers-today">Where does your brand stand in AI answers today?</h2>
 <p>The right AI SEO agency shows you, with queries you can run, where your brand appears today and what it will take to get named. Nakama Growth checks a few of your buyers' prompts before the call, then gives a clear next step: an audit, a proposal or a plain "not a fit." <a href="https://www.nakama.in/pricing">Book a 15-minute call</a>.</p>
 <h2 id="about-the-author">About the author</h2>
-<div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AI visibility agency that helps SaaS, AI and software brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama Growth's work on earning mentions on the sources those tools read.</p></div></div>
-<p>Sources checked 28 October 2026: breakingb2b.com/pricing; nakama.in/pricing, /work, /services; discoveredlabs.com/pricing; madx.digital/pricing; maximuslabs.ai/pricing; minuttia.com/best-ai-seo-agencies; beomniscient.com/aeo-agency; nogood.io; victorious.com; Pew Research Center (2025); Aggarwal et al., GEO (KDD 2024); Google Search Central AI features guidance; OpenAI crawler docs.</p>`;
+<div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AI visibility agency that helps SaaS, AI and software brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama Growth's work on earning mentions on the sources those tools read.</p></div></div>`;
 
 export const bestAiSeoAgenciesArticle: Article = {
  slug: 'best-ai-seo-agencies',
@@ -801,8 +800,7 @@ export const bestAiSeoAgenciesArticle: Article = {
  {
   "heading": "About the author",
   "paragraphs": [
-   "Yash Kumar is Co-founder and CEO of Nakama Growth, an AI visibility agency that helps SaaS, AI and software brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama Growth's work on earning mentions on the sources those tools read.",
-   "Sources checked 28 October 2026: breakingb2b.com/pricing; nakama.in/pricing, /work, /services; discoveredlabs.com/pricing; madx.digital/pricing; maximuslabs.ai/pricing; minuttia.com/best-ai-seo-agencies; beomniscient.com/aeo-agency; nogood.io; victorious.com; Pew Research Center (2025); Aggarwal et al., GEO (KDD 2024); Google Search Central AI features guidance; OpenAI crawler docs."
+   "Yash Kumar is Co-founder and CEO of Nakama Growth, an AI visibility agency that helps SaaS, AI and software brands get named when buyers ask ChatGPT, Perplexity, Gemini and Google AI Overviews what to choose. He leads Nakama Growth's work on earning mentions on the sources those tools read."
   ]
  }
 ],
