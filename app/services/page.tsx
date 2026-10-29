@@ -15,10 +15,10 @@ const services=[
  {id:'reddit',href:'/services/reddit',name:'Reddit & community',lead:'Earn a place in the conversation.',body:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {id:'content',href:'/services/content',name:'Content & editorial',lead:'Make your expertise useful.',body:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
  {id:'youtube',href:'/services/youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search, so AI answers can cite the work.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
- {id:'digital-pr',name:'Digital PR & links',lead:'Connect to credible sources.',body:'Relevant editorial placements and relationships that put your brand in front of the right audiences, and the right crawlers.',items:['Publisher and partner research','Editorial outreach and linkable assets','Placement and source-quality reporting']},
+ {id:'digital-pr',href:'/services/digital-pr',name:'Digital PR & links',lead:'Connect to credible sources.',body:'Relevant editorial placements and relationships that put your brand in front of the right audiences, and the right crawlers.',items:['Publisher and partner research','Editorial outreach and linkable assets','Placement and source-quality reporting']},
 ] as const;
 
-const serviceUrl=(s:(typeof services)[number])=>abs('href' in s?s.href:`/services#${s.id}`);
+const serviceUrl=(s:(typeof services)[number])=>abs(s.href);
 
 const serviceListLd={
  '@context':'https://schema.org',
@@ -70,7 +70,7 @@ export default function Services(){
        {'eyebrow' in s&&<span className="ip-svc-eyebrow">{s.eyebrow}</span>}
       </div>
       <div className="ip-svc-head">
-       <h3>{'href' in s?<Link href={s.href} className="ip-svc-cardlink">{s.name}</Link>:s.name}</h3>
+       <h3><Link href={s.href} className="ip-svc-cardlink">{s.name}</Link></h3>
        <p className="ip-svc-lead">{s.lead}</p>
        {'who' in s&&<p className="ip-svc-for">{s.who}</p>}
       </div>
