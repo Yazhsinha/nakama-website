@@ -1,6 +1,7 @@
 import {articles} from '@/app/journal/all';
 import {posts,caseStudies,openings} from '@/lib/content';
 import {authors,authorPath,articlesBy,jobTitleText} from '@/lib/authors';
+import {META as DPR_META, PREVIEW as DPR_PREVIEW, SLUG as DPR_SLUG} from '@/app/services/digital-pr/copy';
 
 /** The original article library shipped on 28 Sep 2026; admin posts carry their own date. */
 export const LIBRARY_DATE='2026-09-28';
@@ -17,6 +18,7 @@ export const corePages:{path:string;title:string;summary:string;priority:number;
  {path:'/services/reddit',title:'Reddit marketing services',summary:'Reddit marketing agency for SaaS, tech and AI. Nakama Growth maps the subreddits your buyers use and joins their threads with helpful, rules-fit answers.',priority:.8,freq:'monthly',src:['app/services/reddit']},
  {path:'/services/content',title:'Content & editorial',summary:'Answer-first content for AI search: listicles and comparisons for SaaS, tech & AI. AEO content writing you own and publish.',priority:.8,freq:'monthly',src:['app/services/content']},
  {path:'/services/youtube',title:'YouTube Marketing',summary:'Nakama Growth runs YouTube end to end for SaaS, tech and AI brands: script, shoot, edit, publish. Long-form, chaptered videos built to be easy to cite.',priority:.8,freq:'monthly',src:['app/services/youtube']},
+ ...(DPR_PREVIEW?[]:[{path:DPR_SLUG,title:'Digital PR services',summary:DPR_META,priority:.8,freq:'monthly' as const,src:['app/services/digital-pr']}]),
  {path:'/white-label',title:'White label',summary:'White label YouTube production plus AEO, GEO, Reddit and Quora, content, digital PR and link building for agencies, delivered under the agency brand.',priority:.8,freq:'monthly',src:['app/white-label']},
  {path:'/work',title:'Work',summary:'Documented client placements in Google AI Overviews, AI Mode, Perplexity, ChatGPT, YouTube and search, with queries you can run.',priority:.9,freq:'weekly',src:['app/work', 'app/proof-data.ts', 'content/case-studies.json']},
  {path:'/process',title:'Process',summary:'Understand, create, place, prove: the monthly cycle and working cadence.',priority:.8,freq:'monthly',src:['app/process']},
