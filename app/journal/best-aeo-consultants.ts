@@ -313,21 +313,24 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <p>An AEO consultant (answer engine optimization consultant) is a senior individual who diagnoses why AI answer engines do or do not mention and cite your brand, then gives your team a prioritised plan. An agency usually does the execution as well.</p>
 <p>Published independent rates in this guide start at £450 a day for hands-on work, $500 for a diagnostic report, and from $4,000 a month for a retainer.</p>
 <p><strong>How we picked:</strong> we checked each person's own website between 20 and 29 Oct 2026, plus at least one independent source during research (not every source is linked in the entry). We kept only people with a public consulting, advisory or fractional offer. Founders who lead a firm are moved to a separate box and labelled &quot;Firm principal&quot;.</p>
+<p>Nakama Growth is an AEO agency; we are not ranked as an independent consultant in this list.</p>
 <nav class="toc" aria-labelledby="toc-h"><p class="toc-head" id="toc-h">On this page <span>14 sections</span></p><ol><li><a href="#quick-answer-who-are-the-best-aeo-consultants-in-2026">Quick answer: who are the best AEO consultants in 2026?</a></li><li><a href="#what-is-an-aeo-consultant">What is an AEO consultant?</a></li><li><a href="#how-do-the-best-aeo-consultants-compare">How do the best AEO consultants compare?</a></li><li><a href="#how-did-we-pick-these-aeo-consultants">How did we pick these AEO consultants?</a></li><li><a href="#the-7-best-independent-aeo-consultants-in-2026">The 7 best independent AEO consultants in 2026</a></li><li><a href="#what-does-an-aeo-consultant-actually-do">What does an AEO consultant actually do?</a></li><li><a href="#aeo-consultant-vs-agency-which-should-you-hire">AEO consultant vs agency: which should you hire?</a></li><li><a href="#when-does-a-firm-beat-an-independent-consultant">When does a firm beat an independent consultant?</a></li><li><a href="#how-much-do-aeo-consultants-cost-in-2026">How much do AEO consultants cost in 2026?</a></li><li><a href="#which-aeo-consultant-is-best-for-your-situation">Which AEO consultant is best for your situation?</a></li><li><a href="#how-do-you-vet-an-aeo-consultant">How do you vet an AEO consultant?</a></li><li><a href="#what-are-the-red-flags-when-hiring-an-aeo-consultant">What are the red flags when hiring an AEO consultant?</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li><li><a href="#final-take">Final take</a></li></ol></nav>
 <h2 id="what-is-an-aeo-consultant">What is an AEO consultant?</h2>
 <p>An AEO (answer engine optimization) consultant is a specialist who helps a brand get mentioned, recommended and cited in AI-generated answers from ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews. They audit how engines describe you, find the sources those engines trust, and turn that into a roadmap your team or agency can ship.</p>
 <p>The key difference from an agency is ownership. A consultant owns the diagnosis and the plan. Your team usually owns the doing.</p>
 <p>Some consultants also call this work GEO (generative engine optimization), LLM SEO or AI search optimization, so you will see the same person described as a GEO consultant, a generative engine optimization consultant, an LLM SEO consultant or an AI visibility consultant. For buyers, the labels describe the same goal: being part of the answer.</p>
 <h2 id="how-do-the-best-aeo-consultants-compare">How do the best AEO consultants compare?</h2>
+<p>The seven best AEO consultants compare most clearly on specialty, engagement type and pricing transparency. Kevin Indig and Lily Ray suit advisory and trust work, Aleyda Solís suits international brands, and Gaetano DiNardi suits B2B SaaS. Taylor Scher, Jason Burns and Marie Haynes publish rates; the other four quote per scope after a scoping call.</p>
 <figure><picture><source srcset="/journal/best-aeo-consultants/best-aeo-consultants-compare.webp" type="image/webp"><img src="/journal/best-aeo-consultants/best-aeo-consultants-compare.png" alt="Table of 7 independent AEO consultants with best fit, engagement type and price band, from their own websites on 29 October 2026" width="1920" height="1080" loading="lazy" decoding="async"></picture></figure>
 <div class="article-table"><table><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Best for</th><th scope="col">Engagement</th><th scope="col">Notable proof</th><th scope="col">Price band</th></tr></thead><tbody><tr><td>Kevin Indig</td><td>Independent</td><td>Growth-stage B2B, SaaS and AI companies</td><td>Advisory, 6 to 12 months</td><td>Client testimonials from Ramp and Nextdoor on his advisory page</td><td>Not public</td></tr><tr><td>Aleyda Solís (Orainti)</td><td>Independent (boutique consultancy)</td><td>International, multilingual, ecommerce and SaaS</td><td>Audits, ongoing advice, training</td><td>Founded Orainti in 2014; runs LearningAIsearch.com</td><td>Not public</td></tr><tr><td>Lily Ray (Algorythmic)</td><td>Independent (also VP at Amsive)</td><td>E-E-A-T, trust, AI search quality</td><td>Selective 1:1 projects, hourly, training</td><td>Runs Algorythmic alongside her VP role at Amsive</td><td>Not public</td></tr><tr><td>Gaetano DiNardi (Marketing Advice)</td><td>Independent</td><td>B2B SaaS at $10M+ ARR</td><td>Hands-on, month to month (waitlist)</td><td>Clients include Cognism and Aura</td><td>Not public</td></tr><tr><td>Taylor Scher</td><td>Independent</td><td>B2B SaaS wanting pipeline-first SEO and AEO</td><td>Monthly, cancel anytime</td><td>Public SaaS case studies on his site</td><td>From $4,000/month; top tier from $10,000/month (published)</td></tr><tr><td>Jason Burns</td><td>Independent</td><td>UK and EU teams wanting hands-on senior help</td><td>Day rate, project blocks, retainer</td><td>Founded SEO Moves; past work with 3M, BlackRock, Unilever, E.ON</td><td>£450/day; retainers from £1,800/month (published)</td></tr><tr><td>Marie Haynes</td><td>Independent</td><td>Google AI Overviews, AI Mode, agentic search</td><td>Site reviews, strategy reports, coaching</td><td>Author of SEO in the Gemini Era</td><td>Diagnostic reports $500; 1:1 consulting $5,000+ (published)</td></tr></tbody></table></div>
 <h2 id="how-did-we-pick-these-aeo-consultants">How did we pick these AEO consultants?</h2>
-<p>We scored every candidate on one Required gate plus five weighted criteria. Each one maps to a question a buyer actually asks before hiring.</p>
+<p>We picked these AEO consultants with one Required gate, a live public consulting offer, plus five weighted criteria: published AI search work, named proof, hands-on access, pricing transparency and fit for tech buyers. Each criterion maps to a question a buyer actually asks before hiring a consultant.</p>
 <figure><picture><source srcset="/journal/best-aeo-consultants/best-aeo-consultants-criteria.webp" type="image/webp"><img src="/journal/best-aeo-consultants/best-aeo-consultants-criteria.png" alt="How we picked them: a required public consulting offer, then five weighted criteria: published AI search work 30%, named proof 25%, hands-on access 20%, pricing transparency 15%, fit for tech, SaaS and AI buyers 10%" width="1920" height="1080" loading="lazy" decoding="async"></picture></figure>
 <div class="article-table"><table><thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">What we looked for</th></tr></thead><tbody><tr><td>Public consulting offer</td><td>Required</td><td>A live page that sells consulting, advisory or fractional work</td></tr><tr><td>Published AI search work</td><td>30%</td><td>Original research, frameworks or talks on AI answers, not just classic SEO</td></tr><tr><td>Named proof</td><td>25%</td><td>Named clients, testimonials or public case studies</td></tr><tr><td>Hands-on access</td><td>20%</td><td>You work with the named person, not a junior team</td></tr><tr><td>Pricing transparency</td><td>15%</td><td>Published rates or clear engagement shape</td></tr><tr><td>Fit for tech, SaaS and AI buyers</td><td>10%</td><td>Evidence of software or AI company work</td></tr></tbody></table></div>
 <p>We dropped anyone we could not verify on their own site plus one independent source. We also moved firm founders out of the independent list, even when they are excellent, so the word &quot;independent&quot; stays honest.</p>
 <p>Limits: we did not hire these consultants. Prices change, and anything we could not confirm on the seller's own site is marked &quot;not public&quot; or left out.</p>
 <h2 id="the-7-best-independent-aeo-consultants-in-2026">The 7 best independent AEO consultants in 2026</h2>
+<p>Each AEO consultant below passed the public-offer gate and is listed with best fit, proof we could verify on 29 October 2026, and pricing where published.</p>
 <h3 id="1-kevin-indig-best-for-growth-stage-b2b-and-ai-companies">1. Kevin Indig: best for growth-stage B2B and AI companies</h3>
 <p>Kevin Indig is an independent organic growth advisor who writes a weekly research newsletter on search and AI visibility.</p>
 <p>His SEO/AEO advisory covers AI visibility strategy, technical accessibility, content systems, authority building through first-party research, and measurement across search and AI visibility.</p>
@@ -441,7 +444,7 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <h3 id="how-long-until-we-see-results">How long until we see results?</h3>
 <p>Technical and on-page fixes can show up within weeks for engines that browse the live web. Off-site authority work usually takes three to six months. Results vary by category and competition.</p>
 <h2 id="final-take">Final take</h2>
-<p>The best AEO consultant for you is the one whose specialty matches your bottleneck. Pick an independent consultant for senior diagnosis and a clear plan. Pick a firm when you need the plan shipped every month.</p>
+<p>The best AEO consultant for you is the one whose specialty matches your bottleneck, whether that is trust signals, international reach, B2B SaaS pipeline or Google AI Overviews. Pick an independent consultant for senior diagnosis and a clear plan your team can ship. Pick a firm when you need the plan shipped every month. Either way, check named proof and published pricing first.</p>
 <p>Start with the comparison table, shortlist two names, and run the 10 vetting questions on a call. If you would rather have a team handle execution, compare firms in our <a href="https://www.nakama.in/journal/best-aeo-agencies">best AEO agencies</a> guide or see <a href="https://www.nakama.in/services/aeo">how Nakama Growth approaches AEO</a>.</p>
 <p>Want a baseline first? <a href="https://www.nakama.in/contact">Ask for a free AI visibility check</a> and we will show you which prompts mention your brand today.</p>
 <h2 id="about-the-author">About the author</h2>
@@ -487,7 +490,8 @@ export const bestAeoConsultantsArticle: Article = {
   "The best AEO consultants in 2026 are Kevin Indig (growth-stage B2B and AI companies), Aleyda Solís (international, ecommerce and SaaS), Lily Ray (trust, E-E-A-T and AI search quality), Gaetano DiNardi (B2B SaaS demand capture), Taylor Scher (transparent SaaS retainers), Jason Burns (hands-on UK day-rate work) and Marie Haynes (Google AI Overviews and agentic search diagnostics).",
   "An AEO consultant (answer engine optimization consultant) is a senior individual who diagnoses why AI answer engines do or do not mention and cite your brand, then gives your team a prioritised plan. An agency usually does the execution as well.",
   "Published independent rates in this guide start at £450 a day for hands-on work, $500 for a diagnostic report, and from $4,000 a month for a retainer.",
-  "How we picked: we checked each person's own website between 20 and 29 Oct 2026, plus at least one independent source during research (not every source is linked in the entry). We kept only people with a public consulting, advisory or fractional offer. Founders who lead a firm are moved to a separate box and labelled \"Firm principal\"."
+  "How we picked: we checked each person's own website between 20 and 29 Oct 2026, plus at least one independent source during research (not every source is linked in the entry). We kept only people with a public consulting, advisory or fractional offer. Founders who lead a firm are moved to a separate box and labelled \"Firm principal\".",
+  "Nakama Growth is an AEO agency; we are not ranked as an independent consultant in this list."
  ]
 },
  {
@@ -501,6 +505,7 @@ export const bestAeoConsultantsArticle: Article = {
  {
  "heading": "How do the best AEO consultants compare?",
  "paragraphs": [
+  "The seven best AEO consultants compare most clearly on specialty, engagement type and pricing transparency. Kevin Indig and Lily Ray suit advisory and trust work, Aleyda Solís suits international brands, and Gaetano DiNardi suits B2B SaaS. Taylor Scher, Jason Burns and Marie Haynes publish rates; the other four quote per scope after a scoping call.",
   "Name | Type | Best for | Engagement | Notable proof | Price band",
   "Kevin Indig | Independent | Growth-stage B2B, SaaS and AI companies | Advisory, 6 to 12 months | Client testimonials from Ramp and Nextdoor on his advisory page | Not public",
   "Aleyda Solís (Orainti) | Independent (boutique consultancy) | International, multilingual, ecommerce and SaaS | Audits, ongoing advice, training | Founded Orainti in 2014; runs LearningAIsearch.com | Not public",
@@ -514,7 +519,7 @@ export const bestAeoConsultantsArticle: Article = {
  {
  "heading": "How did we pick these AEO consultants?",
  "paragraphs": [
-  "We scored every candidate on one Required gate plus five weighted criteria. Each one maps to a question a buyer actually asks before hiring.",
+  "We picked these AEO consultants with one Required gate, a live public consulting offer, plus five weighted criteria: published AI search work, named proof, hands-on access, pricing transparency and fit for tech buyers. Each criterion maps to a question a buyer actually asks before hiring a consultant.",
   "Criterion | Weight | What we looked for",
   "Public consulting offer | Required | A live page that sells consulting, advisory or fractional work",
   "Published AI search work | 30% | Original research, frameworks or talks on AI answers, not just classic SEO",
@@ -528,7 +533,9 @@ export const bestAeoConsultantsArticle: Article = {
 },
  {
  "heading": "The 7 best independent AEO consultants in 2026",
- "paragraphs": []
+ "paragraphs": [
+  "Each AEO consultant below passed the public-offer gate and is listed with best fit, proof we could verify on 29 October 2026, and pricing where published."
+ ]
 },
  {
  "heading": "1. Kevin Indig: best for growth-stage B2B and AI companies",
@@ -783,7 +790,7 @@ export const bestAeoConsultantsArticle: Article = {
  {
  "heading": "Final take",
  "paragraphs": [
-  "The best AEO consultant for you is the one whose specialty matches your bottleneck. Pick an independent consultant for senior diagnosis and a clear plan. Pick a firm when you need the plan shipped every month.",
+  "The best AEO consultant for you is the one whose specialty matches your bottleneck, whether that is trust signals, international reach, B2B SaaS pipeline or Google AI Overviews. Pick an independent consultant for senior diagnosis and a clear plan your team can ship. Pick a firm when you need the plan shipped every month. Either way, check named proof and published pricing first.",
   "Start with the comparison table, shortlist two names, and run the 10 vetting questions on a call. If you would rather have a team handle execution, compare firms in our best AEO agencies guide or see how Nakama Growth approaches AEO.",
   "Want a baseline first? Ask for a free AI visibility check and we will show you which prompts mention your brand today."
  ]
