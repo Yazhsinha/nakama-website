@@ -9,7 +9,7 @@ export const PREVIEW = false;
 
 export const SLUG = '/services/digital-pr';
 export const TITLE = 'Digital PR Services for SaaS, Tech and AI - Nakama Growth';
-export const META = 'Digital PR services for SaaS, tech and AI. Nakama Growth earns editorial placements and in-body links on sites you approve, with a live URL report each month.';
+export const META = 'Digital PR services for SaaS, tech and AI. Nakama Growth earns editorial placements and in-body links on sites you approve, with a live URL report monthly.';
 export const KW_PRIMARY = 'digital pr services';
 export const KW_SECONDARY = ['digital pr agency', 'digital pr link building'] as const;
 export const EYEBROW = 'Digital PR services';
