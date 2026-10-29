@@ -21,7 +21,7 @@ const shortDate = (iso: string) => `${Number(iso.slice(8, 10))} ${MONTHS[Number(
 const modifiedDate = shortDate(MODIFIED_AT);
 
 const TITLE = 'Best AEO Consultants (2026): Independent Consultants Compared';
-const DESCRIPTION = 'Compare the best AEO consultants of 2026 on specialty, public pricing and proof, and learn when an independent consultant beats an agency and how to vet one.';
+const DESCRIPTION = 'Compare the best AEO consultants of 2026 on specialty, public pricing and proof. See when a consultant beats an agency.';
 const CANONICAL = 'https://www.nakama.in/journal/best-aeo-consultants';
 const COVER_ALT = 'Best AEO Consultants (2026): independent consultants compared on public offer, named proof and published prices, by Nakama Growth';
 const OG_ALT = 'Best AEO Consultants (2026), Nakama Growth Journal';
@@ -444,7 +444,6 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <p>The best AEO consultant for you is the one whose specialty matches your bottleneck. Pick an independent consultant for senior diagnosis and a clear plan. Pick a firm when you need the plan shipped every month.</p>
 <p>Start with the comparison table, shortlist two names, and run the 10 vetting questions on a call. If you would rather have a team handle execution, compare firms in our <a href="https://www.nakama.in/journal/best-aeo-agencies">best AEO agencies</a> guide or see <a href="https://www.nakama.in/services/aeo">how Nakama Growth approaches AEO</a>.</p>
 <p>Want a baseline first? <a href="https://www.nakama.in/contact">Ask for a free AI visibility check</a> and we will show you which prompts mention your brand today.</p>
-<p><em>Related reading: <a href="https://www.nakama.in/journal/best-ai-visibility-tools">best AI visibility tools</a>.</em></p>
 <h2 id="about-the-author">About the author</h2>
 <div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.</p></div></div>`;
 
@@ -786,8 +785,7 @@ export const bestAeoConsultantsArticle: Article = {
  "paragraphs": [
   "The best AEO consultant for you is the one whose specialty matches your bottleneck. Pick an independent consultant for senior diagnosis and a clear plan. Pick a firm when you need the plan shipped every month.",
   "Start with the comparison table, shortlist two names, and run the 10 vetting questions on a call. If you would rather have a team handle execution, compare firms in our best AEO agencies guide or see how Nakama Growth approaches AEO.",
-  "Want a baseline first? Ask for a free AI visibility check and we will show you which prompts mention your brand today.",
-  "Related reading: best AI visibility tools."
+  "Want a baseline first? Ask for a free AI visibility check and we will show you which prompts mention your brand today."
  ]
 },
  {
