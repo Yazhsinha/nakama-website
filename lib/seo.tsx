@@ -35,7 +35,14 @@ export const organizationLd={
  sameAs:['https://www.linkedin.com/company/nakama-growth/','https://www.instagram.com/nakama.growth/'],
  email:CONTACT_EMAIL,
  description:SITE_DESCRIPTION,
-hasOfferCatalog:{'@type':'OfferCatalog',name:'Nakama Growth plan',itemListElement:['Generative engine optimization (GEO)','Answer engine optimization (AEO)','Reddit and community marketing','Content marketing','YouTube marketing','Digital PR'].map(name=>({'@type':'Offer',itemOffered:{'@type':'Service',name,provider:{'@id':`${SITE_URL}/#organization`}}}))},
+hasOfferCatalog:{'@type':'OfferCatalog',name:'Nakama Growth plan',itemListElement:[
+  {name:'Generative engine optimization (GEO)',slug:'/services/geo'},
+  {name:'Answer engine optimization (AEO)',slug:'/services/aeo'},
+  {name:'Reddit and community marketing',slug:'/services/reddit'},
+  {name:'Content marketing',slug:'/services/content'},
+  {name:'YouTube marketing',slug:'/services/youtube'},
+  {name:'Digital PR',slug:'/services/digital-pr'},
+ ].map(({name,slug})=>({'@type':'Offer',itemOffered:{'@type':'Service','@id':abs(`${slug}#service`),name,url:abs(slug),provider:{'@id':`${SITE_URL}/#organization`}}}))},
  knowsAbout:['Answer engine optimization','Generative engine optimization','AI search visibility','Reddit marketing','YouTube marketing','Digital PR','Content marketing'],
 };
 export const websiteLd={

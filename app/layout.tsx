@@ -33,5 +33,5 @@ const GA_MEASUREMENT_ID = "G-MD6X61CECS";
 const gaEnabled = process.env.VERCEL_ENV === "production";
 const gaInit = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${GA_MEASUREMENT_ID}");`;
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
- return <html lang="en" data-theme="dark" style={{overflowX:"clip"}}><head>{mixpanelToken && <Script id="mixpanel-init" strategy="beforeInteractive">{mixpanelBootstrap}</Script>}</head><body><JsonLd data={[organizationLd,websiteLd]}/><SiteTheme>{children}</SiteTheme><BookCallModal/>{gaEnabled && <><Script id="ga4-src" src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="afterInteractive"/><Script id="ga4-init" strategy="afterInteractive">{gaInit}</Script></>}</body></html>;
+ return <html lang="en" data-theme="dark" style={{overflowX:"clip"}}><head>{mixpanelToken && <Script id="mixpanel-init" strategy="lazyOnload">{mixpanelBootstrap}</Script>}</head><body><JsonLd data={[organizationLd,websiteLd]}/><SiteTheme>{children}</SiteTheme><BookCallModal/>{gaEnabled && <><Script id="ga4-src" src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} strategy="lazyOnload"/><Script id="ga4-init" strategy="lazyOnload">{gaInit}</Script></>}</body></html>;
 }

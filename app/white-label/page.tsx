@@ -43,7 +43,7 @@ const services=[
  {icon:MessageCircle,t:'Reddit and Quora',p:'Posts, comments and answers in the communities where buyers ask for advice, written to be genuinely useful.'},
  {icon:Sparkles,t:'AEO and GEO',p:'Pages and content shaped around the questions buyers ask AI tools.'},
  {icon:FileText,t:'Content',p:'Articles and guides that answer a buyer’s question early.'},
- {icon:Share2,t:'Digital PR',p:'Stories pitched to get your client named on third-party sites buyers read.'},
+ {icon:Share2,t:'Digital PR',p:<>Stories pitched to get your client named on third-party sites buyers read. See our <Link href="/services/digital-pr">Digital PR services</Link>.</>},
  {icon:Link2,t:'Link building',p:'Editorial links from relevant sites, placed in context.'},
  {icon:ChartNoAxesCombined,t:'Monthly AI-visibility report',p:<>Where your client shows up in AI answers. See how we approach a <Link href="/journal/geo-audit">GEO audit</Link>.</>},
 ] as const;

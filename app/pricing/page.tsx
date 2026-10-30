@@ -16,7 +16,7 @@ const features=[
  ['Community participation','Reddit, Quora and forums, always disclosed'],
  ['YouTube and video','scripts, edits and short-form'],
  ['Medium, Substack and LinkedIn','placements where your buyers read'],
- ['Digital PR and listicles','outreach to the sources AI engines cite'],
+ ['Digital PR and listicles',<>outreach to the sources AI engines cite. Learn more about our <Link href="/services/digital-pr">Digital PR services</Link>.</>],
  ['Review site presence','G2 and category review pages kept current'],
  ['A dedicated strategist','one owner for your account, every month'],
  ['Your review before anything goes live','nothing publishes without your sign-off'],

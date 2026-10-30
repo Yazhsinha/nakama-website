@@ -33,8 +33,19 @@ const serviceLd = {
  serviceType: ROLE,
  description: META,
  url: abs(SLUG),
+ image: abs('/opengraph-image.png'),
+ mainEntityOfPage: abs(SLUG),
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth', url: SITE_URL},
  audience: {'@type': 'Audience', audienceType: 'SaaS, tech and AI companies'},
+};
+const webPageLd = {
+ '@context': 'https://schema.org',
+ '@type': 'WebPage',
+ '@id': abs(`${SLUG}#webpage`),
+ url: abs(SLUG),
+ name: TITLE,
+ isPartOf: {'@id': `${SITE_URL}/#website`},
+ mainEntity: {'@id': abs(`${SLUG}#service`)},
 };
 
 const faqLd = {
@@ -76,7 +87,7 @@ export default function DigitalPrServices() {
  return (
   <Shell className="dpr-page shell-cinema">
    <Crumbs trail={[{name: 'Services', path: '/services'}, {name: ROLE, path: SLUG}]} />
-   <JsonLd data={[serviceLd, faqLd]} />
+   <JsonLd data={[serviceLd, webPageLd, faqLd]} />
    <div className="dpr">
     <div className="herow">
      <div className="atmo" aria-hidden="true">
@@ -84,7 +95,7 @@ export default function DigitalPrServices() {
       <div className="bay" />
       <div className="arch" />
       {/* eslint-disable-next-line @next/next/no-img-element -- brand mark, fixed size, decorative */}
-      <img className="gmk" src="/brand/nakama-icon-dark.svg" alt="" />
+      <img className="gmk" src="/brand/nakama-icon-dark.svg" alt="" width={120} height={120} />
       <div className="vig" />
      </div>
      <div className="w">
@@ -147,20 +158,20 @@ export default function DigitalPrServices() {
        <table className="cmp">
         <thead>
          <tr>
-          <th scope="col" />
+          <th scope="col"><span className="vh">Compare</span></th>
           {CMP_COLS.map(col => <th scope="col" key={col}>{col}</th>)}
          </tr>
         </thead>
         <tbody>
          {CMP_ROWS.map(([label, left, right]) => (
           <tr key={label}>
-           <td>{label}</td>
+           <th scope="row">{label}</th>
            <td>{left}</td>
            <td>{right}</td>
           </tr>
          ))}
          <tr className="sh">
-          <td>{CMP_SHARED[0]}</td>
+          <th scope="row">{CMP_SHARED[0]}</th>
           <td colSpan={2}>{CMP_SHARED[1]}</td>
          </tr>
         </tbody>
@@ -196,11 +207,11 @@ export default function DigitalPrServices() {
          <span>{PROSPECT_LABEL}</span>
          <span className="gm">
           {/* eslint-disable-next-line @next/next/no-img-element -- brand mark inside the illustrative card */}
-          <img src="/brand/nakama-icon-dark.svg" alt="" height={22} />
+          <img src="/brand/nakama-icon-dark.svg" alt="" width={22} height={22} />
           {PROSPECT_GATE}
          </span>
         </div>
-        <h3>{PROSPECT_HOST}</h3>
+        <p className="phost">{PROSPECT_HOST}</p>
         <p className="meta">{PROSPECT_META}</p>
         <dl>
          {PROSPECT_ROWS.map(([term, detail]) => (
@@ -268,7 +279,7 @@ export default function DigitalPrServices() {
 
     <div className="w">
      <section className="final noborder" id={C_HREF.slice(1)}>
-      <h2>{CTA_H2}</h2>
+      <p className="cta-h">{CTA_H2}</p>
       <p className="lead">{CTA_SUB}</p>
       <Ctas />
       <p className="wl">{WL}</p>

@@ -72,7 +72,7 @@ export function BookCallModal() {
       <div className="bc-sheet">
         <aside className="bc-side">
           <span className="bc-eyebrow">Book a call</span>
-          <h2 id="bc-title">Let’s map where your brand<span> shows up next.</span></h2>
+          <p id="bc-title" className="bc-title">Let’s map where your brand<span> shows up next.</span></p>
           <div className="bc-len" role="radiogroup" aria-label="Call length">
             {(["30min", "15min"] as const).map(v => (
               <button key={v} type="button" role="radio" aria-checked={len === v} onClick={() => {if (v !== len) {setLen(v); setLoaded(false);}}}>

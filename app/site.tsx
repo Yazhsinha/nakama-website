@@ -22,7 +22,7 @@ export function Header(){
   },[]);
   return <header className={`site-nav${scrolled?' is-scrolled':''}`}>
     <Link className="brand" href="/" aria-label="Nakama Growth home"><img className="nakama-gate-lockup" src="/brand/nakama-lockup-dark.svg" alt="Nakama" width="220" height="50"/></Link>
-    <nav className="desktop-nav" aria-label="Main navigation"><div className={`nav-drop${companyLinks.some(([,h])=>path.startsWith(h))?' is-current':''}`}><button type="button" className="nav-drop-btn" aria-haspopup="true">Company<ChevronDown size={14}/></button><div className="nav-drop-panel"><div className="nav-drop-inner">{companyLinks.map(([label,href,sub])=><Link key={href} href={href} aria-current={path.startsWith(href)?'page':undefined}><b>{label}</b><small>{sub}</small></Link>)}</div></div></div>{navigationLinks.map(([label,href])=><Link key={href} href={href} aria-current={path===href||path.startsWith(href+'/')?'page':undefined}>{label}</Link>)}</nav>
+    <nav className="desktop-nav" aria-label="Main navigation"><div className={`nav-drop${companyLinks.some(([,h])=>path.startsWith(h))?' is-current':''}`}><button type="button" className="nav-drop-btn" aria-haspopup="true">Company<ChevronDown size={14}/></button><div className="nav-drop-panel"><div className="nav-drop-inner">{companyLinks.map(([label,href,sub])=><Link key={href} href={href} aria-current={path.startsWith(href)?'page':undefined}><b>{label}</b><small>{sub}</small></Link>)}</div></div></div><div className={`nav-drop${path.startsWith('/services')?' is-current':''}`}><button type="button" className="nav-drop-btn" aria-haspopup="true">Services<ChevronDown size={14}/></button><div className="nav-drop-panel"><div className="nav-drop-inner">{serviceLinks.map(([label,href])=><Link key={href} href={href} aria-current={path===href||path.startsWith(href+'/')?'page':undefined}><b>{label}</b></Link>)}</div></div></div>{navigationLinks.map(([label,href])=><Link key={href} href={href} aria-current={path===href||path.startsWith(href+'/')?'page':undefined}>{label}</Link>)}</nav>
     <div className="nav-actions">
       <Link className="nav-contact" href="/contact">Contact us<ArrowUpRight size={16}/></Link>
       <Sheet open={open} onOpenChange={setOpen}>
@@ -60,8 +60,10 @@ export function NextChapter({title='Let’s build your next chapter.',text='A sh
     </Reveal>
   );
 }
+export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
 const FOOT_COLS:[string,[string,string][]][]=[
  ['Company',[['About','/about'],['Services','/services'],['Work','/work'],['Process','/process'],['Careers','/careers']]],
+ ['Services',serviceLinks.map(([l,h])=>[l,h])],
  ['Resources',[['Articles','/resources#articles'],['Case studies','/resources#case-studies'],['Pricing','/pricing'],['Get a quote','/pricing#quote']]],
  ['Contact',[['Contact us','/contact'],['contact@nakama.in','mailto:contact@nakama.in']]],
  ['Legal',[['Privacy','/privacy'],['Terms','/terms']]],
@@ -70,7 +72,7 @@ const LI_PATH="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853
 export function Footer(){return <footer className="site-footer nk-foot">
  <div className="nkf-top page-width">
   <div className="nkf-brand">
-   <Link href="/" className="nkf-logo" aria-label="Nakama home"><img src="/brand/nakama-lockup-dark.svg" alt="Nakama"/></Link>
+   <Link href="/" className="nkf-logo" aria-label="Nakama home"><img src="/brand/nakama-lockup-dark.svg" alt="Nakama" width="220" height="50"/></Link>
    <p>Earned visibility across AI answers, search and the communities buyers already trust.</p>
    <div className="nkf-cta">
     <BookCallButton className="nkf-btn">Book a call<ArrowUpRight size={16}/></BookCallButton>
