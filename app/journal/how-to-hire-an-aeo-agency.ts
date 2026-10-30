@@ -5,8 +5,7 @@ import type {Article} from './articles';
  * It feeds datePublished and dateModified in the schema, og/article times,
  * the RSS pubDate, the sitemap lastmod (via `date`) and the visible "Updated ..." line.
  *
- * SOFTEN HOLD: PREVIEW must stay true until Yash Soften-checks and signs go-live.
- * Do not set PREVIEW to false in this ship.
+ * GO-LIVE TODO: set PREVIEW to false.
  * That one flag flips robots to index,follow and adds this note to the sitemap,
  * llms.txt, llms-full.txt, RSS and the author index.
  * While PREVIEW is true the page stays noindex,follow and off those surfaces.
@@ -14,7 +13,7 @@ import type {Article} from './articles';
 export const HOW_TO_HIRE_AN_AEO_AGENCY_PUBLISHED_AT = '2026-10-31T09:00:00+05:30';
 export const PUBLISHED_AT = HOW_TO_HIRE_AN_AEO_AGENCY_PUBLISHED_AT;
 const MODIFIED_AT = PUBLISHED_AT;
-const PREVIEW = true;
+const PREVIEW = false;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const dayOf = (iso: string) => iso.slice(0, 10);
@@ -135,10 +134,10 @@ const articleLd = {
 export const howToHireAnAeoAgencyJsonLd = articleLd;
 
 const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol style="list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0 0 1.25rem;font-size:.9rem"><li><a href="https://www.nakama.in/">Home</a></li><li aria-hidden="true">/</li><li><a href="https://www.nakama.in/resources">Resources</a></li><li aria-hidden="true">/</li><li aria-current="page">${TITLE}</li></ol></nav>
-<figure><img src="/journal/how-to-hire-an-aeo-agency/how-to-hire-aeo-agency-cover.webp" alt="${COVER_ALT}" width="1920" height="1080" fetchpriority="high" decoding="async"></figure>
 <h1 id="how-to-hire-an-aeo-agency-costs-questions-and-red-flags">${H1}</h1>
 <p>Updated ${modifiedDate}</p>
 <p>By <a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a>, Co-founder and CEO, Nakama Growth</p>
+<figure><picture><source srcset="/journal/how-to-hire-an-aeo-agency/how-to-hire-aeo-agency-cover.webp" type="image/webp"><img src="/journal/how-to-hire-an-aeo-agency/how-to-hire-aeo-agency-cover.png" alt="${COVER_ALT}" width="1920" height="1080" fetchpriority="high" decoding="async"></picture></figure>
 <p>Hiring an AEO agency means paying a team to get your brand named and cited in AI answers from ChatGPT, Perplexity, Google AI Overviews and similar engines. This guide walks through the full hire process: when to hire, a step-by-step timeline, 12 questions with good and weak answers, proof checks, cost drivers and red flags.</p>
 <p>This is a process guide, not a shortlist. If you only want ranked agencies, read the <a href="https://www.nakama.in/journal/best-aeo-agencies">list of the best AEO agencies</a>.</p>
 <h2 id="what-you-are-actually-buying">What you are actually buying</h2>
@@ -246,7 +245,7 @@ export const howToHireAnAeoAgencyArticle: Article = {
  date: dayOf(PUBLISHED_AT),
  publishedAt: PUBLISHED_AT,
  authorName: 'Yash Kumar',
- /** SOFTEN HOLD: PREVIEW is the only switch. true => noindex,follow and off sitemap, llms, RSS and the author index. Do not set false until Yash Soften-checks go-live. */
+ /** GO-LIVE TODO: PREVIEW is the only switch. false => index,follow plus sitemap, llms and RSS. */
  noindex: PREVIEW,
  /** Keep reading stays on the AEO agencies guide. A noindex preview can still show that one card. */
  nextSlug: 'best-aeo-agencies',
