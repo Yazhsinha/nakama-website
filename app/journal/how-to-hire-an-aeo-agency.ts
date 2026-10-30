@@ -13,7 +13,7 @@ import type {Article} from './articles';
 export const HOW_TO_HIRE_AN_AEO_AGENCY_PUBLISHED_AT = '2026-10-31T09:00:00+05:30';
 export const PUBLISHED_AT = HOW_TO_HIRE_AN_AEO_AGENCY_PUBLISHED_AT;
 const MODIFIED_AT = PUBLISHED_AT;
-const PREVIEW = false;
+const PREVIEW = true;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const dayOf = (iso: string) => iso.slice(0, 10);
@@ -103,6 +103,17 @@ const articleLd = {
    "width": 1200,
    "height": 630,
    "caption": OG_ALT
+  },
+  {
+   "@type": "Person",
+   "@id": "https://www.nakama.in/authors/yash-kumar#person",
+   "name": "Yash Kumar",
+   "jobTitle": "Co-founder and CEO",
+   "url": "https://www.nakama.in/authors/yash-kumar",
+   "description": "Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.",
+   "worksFor": {
+    "@id": "https://www.nakama.in/#organization"
+   }
   },
   {
    "@type": "BreadcrumbList",
@@ -232,7 +243,8 @@ const bodyHtml = `<nav aria-label="Breadcrumb" class="article-breadcrumb"><ol st
 <p>Expect the first month to be research and setup. Judge movement on your agreed prompts over a quarter, per engine.</p>
 <h3 id="can-an-aeo-agency-guarantee-chatgpt-citations">Can an AEO agency guarantee ChatGPT citations?</h3>
 <p>No. AI answers vary between runs and users. Treat any guarantee as a red flag.</p>
-`;
+<h2 id="about-the-author">About the author</h2>
+<div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.</p></div></div>`;
 
 export const howToHireAnAeoAgencyArticle: Article = {
  slug: 'how-to-hire-an-aeo-agency',
@@ -387,6 +399,12 @@ export const howToHireAnAeoAgencyArticle: Article = {
     'How long does it take to hire an AEO agency? About three to five weeks if you run baseline prompts, discovery calls, proof checks and contract review properly.',
     'How soon should I expect results? Expect the first month to be research and setup. Judge movement on your agreed prompts over a quarter, per engine.',
     'Can an AEO agency guarantee ChatGPT citations? No. AI answers vary between runs and users. Treat any guarantee as a red flag.',
+   ],
+  },
+  {
+   heading: 'About the author',
+   paragraphs: [
+    'Yash Kumar is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.',
    ],
   },
  ],
