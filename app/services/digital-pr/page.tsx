@@ -37,6 +37,7 @@ const serviceLd = {
  mainEntityOfPage: abs(SLUG),
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth', url: SITE_URL},
  audience: {'@type': 'Audience', audienceType: 'SaaS, tech and AI companies'},
+ areaServed: {'@type': 'Place', name: 'Worldwide'},
 };
 const webPageLd = {
  '@context': 'https://schema.org',
