@@ -15,6 +15,7 @@ import {topicsVsKeywordsArticle} from './topics-vs-keywords';
 import {bestAiSeoAgenciesArticle} from './best-ai-seo-agencies';
 import {bestAeoAgenciesIndiaArticle} from './best-aeo-agencies-india';
 import {bestAeoConsultantsArticle} from './best-aeo-consultants';
+import {howToHireAnAeoAgencyArticle} from './how-to-hire-an-aeo-agency';
 export type Article={
  slug:string,category:string,title:string,description:string,readTime:string,motif:string,
  sections:{heading:string,paragraphs:string[]}[],
@@ -41,6 +42,7 @@ export type Article={
  coverImage?:{src:string,width:number,height:number,alt?:string},
 };
 export const articles:Article[]=[
+ howToHireAnAeoAgencyArticle,
  bestAeoConsultantsArticle,
  bestAeoAgenciesIndiaArticle,
  bestAiSeoAgenciesArticle,
