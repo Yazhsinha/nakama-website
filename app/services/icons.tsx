@@ -1,5 +1,5 @@
 /** Gohan service marks. Stroke follows currentColor; the Ember dot is baked in. */
-export function SvcIcon({name}: {name: 'geo' | 'aeo' | 'reddit' | 'content' | 'youtube' | 'digital-pr'}) {
+export function SvcIcon({name}: {name: 'geo' | 'aeo' | 'reddit' | 'content' | 'youtube' | 'digital-pr' | 'ai-visibility-audit'}) {
  switch (name) {
   case 'geo':
    return (
@@ -43,6 +43,14 @@ export function SvcIcon({name}: {name: 'geo' | 'aeo' | 'reddit' | 'content' | 'y
      <path d="M10.25 8.4v5.2l4.4-2.6z"/>
      <path d="M8.5 20.5h7"/>
      <circle cx="17.5" cy="7.4" r="1.1" fill="#f07c32" stroke="none"/>
+    </svg>
+   );
+  case 'ai-visibility-audit':
+   return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+     <rect x="4.5" y="3.25" width="15" height="17.5" rx="2.25"/>
+     <path d="M8 8h8M8 11.5h8M8 15h4.5"/>
+     <circle cx="16.2" cy="16.4" r="1.35" fill="#f07c32" stroke="none"/>
     </svg>
    );
   case 'digital-pr':

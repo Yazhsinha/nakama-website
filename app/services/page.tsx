@@ -7,11 +7,12 @@ import {BookCallButton} from '@/components/booking/BookCall';
 import {SvcIcon} from './icons';
 import './services.css';
 
-export const metadata:Metadata=pageMeta('/services',{title:'GEO, AEO & AI Visibility Services - Nakama Growth',description:'GEO, AEO, Reddit and community, content, YouTube and digital PR, run by one team and included in one plan to get you named in AI answers.'});
+export const metadata:Metadata=pageMeta('/services',{title:'GEO, AEO & AI Visibility Services - Nakama Growth',description:'GEO, AEO, an AI visibility audit, Reddit and community, content, YouTube and digital PR, run by one team to get you named in AI answers.'});
 
 const services=[
  {id:'geo',href:'/services/geo',eyebrow:'Generative engines',name:'GEO services',lead:'Build a brand AI understands.',who:'For SaaS, tech & AI teams',body:'We audit where AI names your competitors, then build the product context and third-party sources ChatGPT, Perplexity, Gemini and Google AI Overviews cite.',items:['Buyer prompt map and competitor audits','Product and category context AI can reuse','Source strategy across communities, editorial and review sites']},
  {id:'aeo',href:'/services/aeo',eyebrow:'Answer engines',name:'AEO services',lead:'Be part of the answer.',who:'For SaaS, tech & AI teams',body:'We turn buyer questions into answer-first pages and FAQs that search and answer engines can retrieve and quote.',items:['Buyer-question and answer-gap research','Answer-first articles, comparisons and FAQs','Citation and visibility tracking']},
+ {id:'ai-visibility-audit',href:'/services/ai-visibility-audit',eyebrow:'Diagnosis',name:'AI Visibility Audit',lead:'See what AI answers say.',who:'For SaaS, tech & AI teams',body:'A free sample and a paid audit on one page. Nakama Growth reports each engine on its own: mentioned, recommended and cited, with no blended score.',items:['Free sample: 1 to 3 prompts, 2 engines, 3 runs','Paid audit: dated runs and average position per engine','Roadmap, walkthrough and a re-test date'],quoteHref:'/pricing#quote'},
  {id:'reddit',href:'/services/reddit',name:'Reddit & community',lead:'Earn a place in the conversation.',body:'Useful, transparent participation in the communities your buyers trust, always within each community’s rules.',items:['Subreddit and conversation research','Helpful, disclosed answers and threads','Mention monitoring across Reddit, Quora and Discord']},
  {id:'content',href:'/services/content',name:'Content & editorial',lead:'Make your expertise useful.',body:'Original articles, comparisons and buyer guides that turn product knowledge into content people, and AI engines, rely on.',items:['Expert-led articles on Medium, Substack and LinkedIn','Comparison pages and buyer guides','Research, fact-checking and refreshes']},
  {id:'youtube',href:'/services/youtube',name:'YouTube & video',lead:'Questions, answered on camera.',body:'From idea to published video: explainers, walkthroughs and honest comparisons built around what buyers search, so AI answers can cite the work.',items:['YouTube strategy, research and scripting','Editing, short-form cuts and thumbnails','Titles, chapters and publishing']},
@@ -55,14 +56,14 @@ export default function Services(){
     eyebrow="Services"
     title="AI visibility services "
     accent="for SaaS, tech and AI."
-    lead="One team across six services, aimed at the questions your buyers ask before they shortlist."
+    lead="One team across seven services, aimed at the questions your buyers ask before they shortlist."
    >
     <LinkBtn href="/pricing#quote">Get a quote</LinkBtn>
     <LinkBtn href="#services" ghost>Explore services</LinkBtn>
    </IpHero>
 
    <IpSection id="services">
-    <IpHead eyebrow="What we do" title={<>Six services. One goal.<br/><em>Get named when buyers ask AI.</em></>} lead="All six come with the Nakama Growth plan. We weight them toward the channels your category actually leans on."/>
+    <IpHead eyebrow="What we do" title={<>Seven services. One goal.<br/><em>Get named when buyers ask AI.</em></>} lead="Six channel services come with the Nakama Growth plan. The AI Visibility Audit is booked on its own."/>
     <div className="ip-g3">
      {services.map(s=><Reveal className="ip-card ip-svc" key={s.id} id={s.id}>
       <div className="ip-svc-top">
@@ -76,12 +77,12 @@ export default function Services(){
       </div>
       <div className="ip-svc-body">
        <p>{s.body}</p>
-       <ul>{s.items.map(i=><li key={i}>{i}</li>)}</ul>
+       <ul>{s.items.map(i=><li key={i}>{i}</li>)}{'quoteHref' in s&&<li className="ip-svc-quote"><Link href={s.quoteHref}>Get a quote</Link></li>}</ul>
       </div>
      </Reveal>)}
     </div>
     <div className="ip-svc-band">
-     <p>Not sure where to start?<span>Every partner gets all six. We pick the order with you.</span></p>
+     <p>Not sure where to start?<span>Every partner gets the six channel services. We pick the order with you.</span></p>
      <div className="ip-svc-band-actions">
       <Link className="ip-svc-btn ip-svc-btn-solid" href="/pricing#quote">Get a quote</Link>
       <BookCallButton className="ip-svc-btn ip-svc-btn-line">Book a call</BookCallButton>
@@ -90,7 +91,7 @@ export default function Services(){
    </IpSection>
 
    <IpSection>
-    <IpHead eyebrow="Starting points" title={<>Where the effort <em>goes first.</em></>} lead="Every partner gets all six. What changes is the order."/>
+    <IpHead eyebrow="Starting points" title={<>Where the effort <em>goes first.</em></>} lead="Every partner gets the six channel services. What changes is the order."/>
     <div className="ip-flow">
      {flow.map(([t,p])=><Reveal className="ip-card" key={t}><h3>{t}</h3><p>{p}</p></Reveal>)}
     </div>
