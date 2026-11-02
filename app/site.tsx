@@ -60,7 +60,7 @@ export function NextChapter({title='Let’s build your next chapter.',text='A sh
     </Reveal>
   );
 }
-export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
+export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['AI Visibility Audit','/services/ai-visibility-audit'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
 const FOOT_COLS:[string,[string,string][]][]=[
  ['Company',[['About','/about'],['Services','/services'],['Work','/work'],['Process','/process'],['Careers','/careers']]],
  ['Services',serviceLinks.map(([l,h])=>[l,h])],
