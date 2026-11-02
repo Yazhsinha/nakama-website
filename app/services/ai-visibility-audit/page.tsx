@@ -8,12 +8,12 @@ import {
  FIT_NO_ITEMS, FIT_YES, FIT_YES_ITEMS, FIXES, FREE_CTA, H1, KW_PRIMARY, LEAD, META, METRICS, MID,
  METRICS_H2, METRICS_LEAD, PAIN_H2, PAINS, PREVIEW, PRICE_H2, PRICE_ITEMS, PRICE_NAME, PRICE_ON,
  PROCESS_H2, Q_HREF, QUOTE, RELATED, REPORT_EXAMPLE, REPORT_H2, REPORT_NOTE, REPORT_RUNS,
- REPORT_TAG, RETAINER_H3, RETAINER_P, ROLE, SAMPLE_BODY, SAMPLE_EYE, SAMPLE_H2, SEE_PRICING,
+ REPORT_TAG, RETAINER_H3, RETAINER_P, ROLE, SAMPLE_BODY, SAMPLE_EYE, SAMPLE_H2, SAMPLE_SCOPE, SEE_PRICING,
  SEND, SLUG, SOURCES, STEPS, THANKS, THANKS_K, THANKS_NEXT, TITLE, VIZ,
 } from './copy';
 import './ai-visibility-audit.css';
 
-/** Visual twin V3.0.1. PREVIEW true keeps robots noindex,follow and off the sitemap. */
+/** Visual twin V3.0.1, live. PREVIEW false keeps robots index,follow and lists the URL. */
 const robots: Metadata['robots'] = PREVIEW
  ? {index: false, follow: true, googleBot: {index: false, follow: true}}
  : {index: true, follow: true, googleBot: {index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1}};
@@ -35,6 +35,12 @@ const serviceLd = {
  provider: {'@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'Nakama Growth'},
 };
 
+const faqLd = {
+ '@context': 'https://schema.org',
+ '@type': 'FAQPage',
+ mainEntity: FAQ.map(([name, text]) => ({'@type': 'Question', name, acceptedAnswer: {'@type': 'Answer', text}})),
+};
+
 function Bar({size}: {size?: 's' | 'l'}) {
  return <span className={size === 's' ? 'rd rs' : size === 'l' ? 'rd rl' : 'rd'} aria-hidden="true" />;
 }
@@ -47,7 +53,7 @@ export default function AiVisibilityAuditPage() {
  return (
   <Shell className="aia-page shell-cinema">
    <Crumbs trail={[{name: 'Services', path: '/services'}, {name: ROLE, path: SLUG}]} />
-   <JsonLd data={serviceLd} />
+   <JsonLd data={[serviceLd, faqLd]} />
    <div className="aia">
     <div className="grain" aria-hidden="true" />
     <section className="hero">
@@ -306,6 +312,7 @@ export default function AiVisibilityAuditPage() {
         <div><b>2</b><span>engines</span></div>
         <div><b>3</b><span>runs each</span></div>
        </div>
+       <p className="body">{SAMPLE_SCOPE}</p>
        <p className="body">{SAMPLE_BODY}</p>
        <div className="ty">
         <b>{THANKS_K}</b>

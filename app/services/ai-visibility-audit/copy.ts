@@ -1,10 +1,10 @@
 /**
  * /services/ai-visibility-audit. Hibiku LOCKED v1, with Gohan V2.0 quiet-HOLD edits.
  * Visual source of truth: ai-vis-audit-visual-desktop.html (V2.0).
- * PREVIEW true: robots noindex,follow. This URL stays off corePages, the sitemap and llms.
+ * PREVIEW false: index,follow, and the URL is listed with the other live services.
  */
 
-export const PREVIEW = true;
+export const PREVIEW = false;
 
 export const SLUG = '/services/ai-visibility-audit';
 export const TITLE = 'AI Visibility Audit for SaaS - Nakama Growth';
@@ -19,7 +19,7 @@ export const LEAD = 'Nakama Growth\'s AI visibility audit runs your real buyer p
 export const BOOK = 'Book a call';
 export const FREE_CTA = 'Get a free sample';
 export const SEE_PRICING = 'See pricing';
-export const ENG_LINE = 'Major AI answer engines, each reported separately.';
+export const ENG_LINE = 'Engines agreed for your audit, each reported separately.';
 
 export const DEF_H2 = 'What is an AI visibility audit?';
 export const DEF_P = 'An AI visibility audit is a repeated test of how AI engines answer the questions your buyers ask. For each prompt, it records whether your brand is mentioned, recommended or cited as a source, which competitors appear instead, which sites the engines pull from, and what they get wrong about you.';
@@ -81,19 +81,20 @@ export const FIXES = [
 export const CMP_H2 = 'Free sample vs full audit';
 export const CMP = [
  ['Prompts', '1 to 3 prompts (yours + up to 2 we write)', 'Agreed buyer prompt set'],
- ['Engines', '2 engines, reported separately', 'Major AI answer engines, each reported separately'],
+ ['Engines', '2 engines, reported separately', 'Engines agreed for your audit, each reported separately'],
  ['Competitors', 'Up to 3 you name', 'Named rivals + new names that recur'],
  ['Runs', '3 runs each, per engine, dated', 'At least 7 dated runs per prompt per engine'],
  ['Source map', 'Top gaps only', 'Full citation source map'],
- ['Average position', '—', 'Yes, per engine'],
- ['Accuracy check', '—', 'Yes, per engine'],
- ['Roadmap', '—', 'Prioritised fixes + re-test date'],
- ['Walkthrough call', '—', 'Yes'],
+ ['Average position', 'Not included', 'Yes, per engine'],
+ ['Accuracy check', 'Not included', 'Yes, per engine'],
+ ['Roadmap', 'Not included', 'Prioritized fixes + re-test date'],
+ ['Walkthrough call', 'Not included', 'Yes'],
  ['Delivery', 'Emailed, not instant', 'Report + call'],
 ] as const;
 
 export const SAMPLE_EYE = 'Free sample';
 export const SAMPLE_H2 = 'Get a free AI visibility sample';
+export const SAMPLE_SCOPE = 'Scope: 1 to 3 prompts × 2 engines × 3 runs each, per engine. No score, no %.';
 export const SAMPLE_BODY = 'Emailed, not instant. A person runs your prompts and checks each answer before we send it. No score, no average position.';
 export const SEND = 'Send my free sample';
 export const THANKS_K = 'After you send it';
@@ -129,7 +130,7 @@ export const PRICE_ITEMS = [
  'Competitor share + citation source map',
  'Accuracy + crawler access check',
  'Average position per engine',
- 'Prioritised roadmap + walkthrough call',
+ 'Prioritized roadmap + walkthrough call',
 ] as const;
 export const RETAINER_H3 = 'Audit plus fixes';
 export const RETAINER_P = 'Want us to fix what the audit finds? We run GEO and AEO work after the audit and re-test the same prompts.';
