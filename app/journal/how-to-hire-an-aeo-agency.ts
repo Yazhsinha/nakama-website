@@ -261,7 +261,7 @@ export const howToHireAnAeoAgencyArticle: Article = {
  noindex: PREVIEW,
  /** Keep reading stays on the AEO agencies guide. A noindex preview can still show that one card. */
  nextSlug: 'best-aeo-agencies',
- coverImage: {src: '/journal/how-to-hire-an-aeo-agency/how-to-hire-aeo-agency-cover.webp', width: 1920, height: 1080},
+ coverImage: {src: '/journal/how-to-hire-an-aeo-agency/how-to-hire-aeo-agency-cover.webp', width: 1920, height: 1080, alt: COVER_ALT},
  ogImage: {
   url: OG_URL,
   width: 1200,
