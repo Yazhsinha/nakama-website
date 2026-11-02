@@ -36,6 +36,18 @@ export const PAINS = [
 
 export const METRICS_H2 = 'What the audit checks';
 export const METRICS_LEAD = 'Mentioned, recommended and cited are counted separately. Never merged. No percentages, scores or grades.';
+export const MID = 'We show where you stand today, what is likely driving it, and what to fix.';
+/** Example run marks for the first three metric cards. 1 = lit. */
+export const VIZ = [
+ ['1101101', '1111011'],
+ ['0100101', '1101001'],
+ ['0100010', '0001000'],
+] as const;
+export const ANNS = [
+ ['t', 'Mentioned, recommended and cited are counted separately. Never merged.', 'Engines reported separately. No blended cross-engine number.'],
+ ['s', 'Citation source map', 'Which third-party sites the engines pull from for your category.'],
+ ['f', 'Walkthrough + roadmap, re-test date', 'A call to walk the findings, a ranked fix list and a date to run it again.'],
+] as const;
 export const METRICS = [
  ['Mentioned', 'Whether your brand is named anywhere in the answer.', 'Find the buyer prompts where you are absent and start there.'],
  ['Recommended', 'Whether the engine suggests you as an option to choose.', 'Tighten the pages and proof that explain who you are best for.'],
