@@ -1,164 +1,146 @@
 /**
- * /services/ai-visibility-audit strings. Wireframe V1.0.3 (HTML is source of truth).
- * Hibiku slots stay visible placeholders. HOLD chips stay visible.
- * PREVIEW true: robots noindex,follow. Do not add this URL to corePages or the sitemap.
+ * /services/ai-visibility-audit. Hibiku LOCKED v1, with Gohan V2.0 quiet-HOLD edits.
+ * Visual source of truth: ai-vis-audit-visual-desktop.html (V2.0).
+ * PREVIEW true: robots noindex,follow. This URL stays off corePages, the sitemap and llms.
  */
 
 export const PREVIEW = true;
 
 export const SLUG = '/services/ai-visibility-audit';
-export const TITLE = 'AI Visibility Audit for SaaS | Nakama Growth';
-export const META = 'AI visibility audit for SaaS. Nakama Growth checks mentions, recommendations and citations per engine, with a free sample and a paid audit.';
+export const TITLE = 'AI Visibility Audit for SaaS - Nakama Growth';
+export const META = 'An AI visibility audit for SaaS. Nakama Growth runs your buyer prompts across AI engines and shows where you are mentioned, recommended, cited, or missing.';
 export const KW_PRIMARY = 'ai visibility audit';
 export const ROLE = 'AI Visibility Audit';
 export const H1 = 'AI Visibility Audit for SaaS';
 export const Q_HREF = '/pricing#quote';
 
-export const EYEBROW = '[Eyebrow · Hibiku]';
-export const HERO_LEAD = '[Answer-first lead 40–60w · Hibiku: what Nakama Growth\'s audit diagnoses across AI engines, who it is for, and the two ways to start. Placeholder length runs to roughly this many words so hierarchy reads true.]';
-export const BOOK = '[Book a call · Hibiku]';
-export const FREE_CTA = '[Get a free sample · Hibiku]';
+export const EYEBROW = 'AI visibility audit';
+export const LEAD = 'Nakama Growth\'s AI visibility audit runs your real buyer prompts through AI engines, repeats each run, and records where your brand is mentioned, recommended or cited next to named rivals. You get dated evidence, the sources engines trust and a fix list. Start with a free sample or book the full audit.';
+export const BOOK = 'Book a call';
+export const FREE_CTA = 'Get a free sample';
 export const SEE_PRICING = 'See pricing';
-export const SEND = '[Send my free sample · Hibiku]';
-export const QUOTE = '[Get a quote] → /pricing#quote';
-
-export const ENGINE_HOLD = '[engine count HOLD · Inyou]';
-export const ENGINES = ['ChatGPT', 'Google AI Overviews & AI Mode', 'Gemini', 'Claude', 'Perplexity', 'Copilot'] as const;
-export const ENGINE_LINE = ENGINES.join(' · ');
-
-export const SEO_TITLE = '[Title · Hibiku] … | Nakama Growth';
-export const SEO_META = '[Meta 150–160 ch · Hibiku]';
-export const SEO_UPDATED = '[visible date slot]';
+export const ENG_LINE = 'Major AI answer engines, each reported separately.';
 
 export const DEF_H2 = 'What is an AI visibility audit?';
-export const DEF_P = '[Definition 40–60w · Hibiku · answer-first, citation-ready. A plain card, no art. Placeholder runs to realistic length so the passage reads as one quotable block.]';
+export const DEF_P = 'An AI visibility audit is a repeated test of how AI engines answer the questions your buyers ask. For each prompt, it records whether your brand is mentioned, recommended or cited as a source, which competitors appear instead, which sites the engines pull from, and what they get wrong about you.';
 
-export const PAIN_H2 = '[Pain H2 · Hibiku]';
+export const PAIN_H2 = 'Signs your SaaS brand is missing from AI answers';
 export const PAINS = [
- ['[Pain 1 · Hibiku]', 'Rival named in AI answers, you are not'],
- ['[Pain 2 · Hibiku]', 'Wrong facts about your pricing or features'],
- ['[Pain 3 · Hibiku]', 'Cited sources you are missing from'],
- ['[Pain 4 · Hibiku]', 'Crawlers blocked or JS-only pages'],
- ['[Pain 5 · Hibiku]', 'No prompt baseline to re-test against'],
- ['[Pain 6 · Hibiku]', 'Tool export, no roadmap'],
+ 'A rival gets named in AI answers and you do not',
+ 'AI engines get your pricing or features wrong',
+ 'Engines cite review and list sites you are not on',
+ 'AI crawlers are blocked or your key pages need JavaScript to load',
+ 'You have no prompt baseline to re-test against',
+ 'You have a tool export but no plan for what to fix',
 ] as const;
-export const STAT_HOLD = 'STAT HOLD · source + date';
 
-export const METRICS_H2 = '[What the audit checks · H2 · Hibiku]';
-export const METRICS_HOLD = 'final six · Inyou';
-export const METRICS_LEAD = 'No percentages, scores or grades.';
+export const METRICS_H2 = 'What the audit checks';
+export const METRICS_LEAD = 'Mentioned, recommended and cited are counted separately. Never merged. No percentages, scores or grades.';
 export const METRICS = [
- ['Mentioned', 'Is the brand named in the answer [Hibiku]'],
- ['Recommended', 'Is it suggested as an option [Hibiku]'],
- ['Cited', 'Is your page linked as a source [Hibiku]'],
- ['Competitor share', 'Which rivals appear on the same prompts [Hibiku]'],
- ['Citation source map', 'Which third-party domains engines pull from [Hibiku]'],
- ['Accuracy & crawler access', 'What engines get wrong; can their bots read you [Hibiku]'],
+ ['Mentioned', 'Whether your brand is named anywhere in the answer.', 'Find the buyer prompts where you are absent and start there.'],
+ ['Recommended', 'Whether the engine suggests you as an option to choose.', 'Tighten the pages and proof that explain who you are best for.'],
+ ['Cited', 'Whether one of your pages is linked as a source.', 'Make the cited-worthy pages clear, current and easy to quote.'],
+ ['Competitor share', 'Which rivals show up on the same prompts, and how often across runs.', 'Learn which competitor positions you need to answer.'],
+ ['Citation source map', 'Which third-party sites the engines pull from for your category.', 'Pick the review, list and media sites worth earning a place on.'],
+ ['Accuracy & crawler access', 'What engines get wrong about you, and whether their bots can read your site.', 'Correct the facts at the source and unblock the pages that matter.'],
 ] as const;
-export const METRIC_DO = '[one line · Hibiku]';
 
-export const REPORT_H2 = '[What the report looks like · H2 · Hibiku]';
+export const REPORT_H2 = 'What the report looks like';
 export const REPORT_TAG = 'Sample, redacted';
-export const REPORT_EXAMPLE = 'Example data · 1–3 prompts × 2 engines × 3 runs';
+export const REPORT_EXAMPLE = 'Example data · 1 to 3 prompts × 2 engines × 3 runs';
 export const REPORT_RUNS = [
- ['Engine A', '2 of 3 runs', '1 of 3 runs', '1 of 3 runs'],
- ['Engine B', '3 of 3 runs', '2 of 3 runs', '0 of 3 runs'],
+ ['Engine A', '14–16 Oct', '2', '1', '1'],
+ ['Engine B', '14–16 Oct', '3', '2', '0'],
 ] as const;
 export const REPORT_NOTE = 'Engines reported separately. No blended cross-engine number.';
-export const REPORT_QUOTE = 'Brand redacted · engine + date shown';
-export const SOURCES = ['Review sites', 'Community threads', 'Video', 'Directories', 'Listicles'] as const;
-export const FIXES = ['[Fix 1 · owned page]', '[Fix 2 · third-party target]', '[Fix 3 · accuracy correction]'] as const;
+export const SOURCES = [
+ ['Review sites', true],
+ ['Community threads', false],
+ ['Video', false],
+ ['Directories', true],
+ ['Listicles', false],
+] as const;
+export const FIXES = [
+ ['Owned page', 'Answer the pricing question in the first lines of'],
+ ['Third-party target', 'Earn a listing on'],
+ ['Accuracy correction', 'Fix the outdated plan name engines repeat'],
+] as const;
 
-export const CMP_H2 = '[Free sample vs full audit · H2 · Hibiku]';
-export const CMP_PAID_HEAD = 'Paid AI Visibility Audit';
+export const CMP_H2 = 'Free sample vs full audit';
+export const CMP = [
+ ['Prompts', '1 to 3 prompts (yours + up to 2 we write)', 'Agreed buyer prompt set'],
+ ['Engines', '2 engines, reported separately', 'Major AI answer engines, each reported separately'],
+ ['Competitors', 'Up to 3 you name', 'Named rivals + new names that recur'],
+ ['Runs', '3 runs each, per engine, dated', 'At least 7 dated runs per prompt per engine'],
+ ['Source map', 'Top gaps only', 'Full citation source map'],
+ ['Average position', '—', 'Yes, per engine'],
+ ['Accuracy check', '—', 'Yes, per engine'],
+ ['Roadmap', '—', 'Prioritised fixes + re-test date'],
+ ['Walkthrough call', '—', 'Yes'],
+ ['Delivery', 'Emailed, not instant', 'Report + call'],
+] as const;
 
-export type CmpRow = {
- label: string;
- free: string;
- paid: string;
- freeHold?: string;
- paidHold?: string;
-};
+export const SAMPLE_EYE = 'Free sample';
+export const SAMPLE_H2 = 'Get a free AI visibility sample';
+export const SAMPLE_BODY = 'Emailed, not instant. A person runs your prompts and checks each answer before we send it. No score, no average position.';
+export const SEND = 'Send my free sample';
+export const THANKS_K = 'After you send it';
+export const THANKS = 'Thanks. We will run your prompts and email your sample once every run is checked.';
+export const THANKS_NEXT = 'Want the full audit?';
 
-export const CMP: readonly CmpRow[] = [
- {label: 'Prompts', free: '1 to 3 prompts (yours + up to 2 we write)', paid: 'Agreed buyer prompt set', paidHold: 'SCOPE HOLD · Yash'},
- {label: 'Engines', free: '2 engines, reported separately', freeHold: 'engine names HOLD · ChatGPT not promised', paid: `Each engine reported separately: ${ENGINE_LINE}`, paidHold: ENGINE_HOLD},
- {label: 'Competitors', free: 'Up to 3 you name', paid: 'Named rivals + new names that recur', paidHold: 'SCOPE HOLD · Yash'},
- {label: 'Runs', free: '3 runs each, per engine, dated', paid: 'At least 7 dated runs per prompt per engine', paidHold: 'SCOPE HOLD · Yash'},
- {label: 'Source map', free: 'Top gaps only', paid: 'Full citation source map'},
- {label: 'Average position', free: '—', paid: 'Yes, per engine'},
- {label: 'Accuracy check', free: '—', paid: 'Yes, per engine'},
- {label: 'Roadmap', free: '—', paid: 'Prioritised fixes + re-test date'},
- {label: 'Walkthrough call', free: '—', paid: 'Yes'},
- {label: 'Delivery', free: 'Emailed, not instant', freeHold: 'SLA HOLD · ops', paid: 'Report + call', paidHold: 'SLA HOLD · ops'},
-];
-
-export const SAMPLE_H2 = '[Free sample H2 · Hibiku]';
-export const SAMPLE_SCOPE = 'Scope: 1 to 3 prompts × 2 engines × 3 runs each, per engine. No score, no %.';
-export const SAMPLE_CHATGPT_HOLD = 'ChatGPT HOLD';
-export const SAMPLE_EMAIL = '[Emailed, not instant · Hibiku]';
-export const SAMPLE_SLA = 'SLA HOLD';
-export const THANKS_LABEL = 'Thank-you state (inset)';
-export const THANKS_LINE = '[Thanks line · Hibiku]';
-
-export const PROCESS_H2 = '[How the audit runs · H2 · Hibiku]';
+export const PROCESS_H2 = 'How the audit runs';
 export const STEPS = [
- 'Agree prompts and rivals',
- 'Run and sample',
- 'Diagnose',
- 'Walkthrough + roadmap, re-test date',
-] as const;
-export const STEP_LINE = '[one line · Hibiku]';
-export const SLA_OPS = 'SLA HOLD · ops';
-
-export const FIT_YES_H3 = 'Good fit';
-export const FIT_YES = [
- '[SaaS / tech / AI marketing lead · Hibiku]',
- '[line 2 · Hibiku]',
- '[line 3 · Hibiku]',
-] as const;
-export const FIT_NO_H3 = 'Not a fit';
-export const FIT_NO = [
- '[wants a guaranteed rank or instant score · Hibiku]',
- '[line 2 · Hibiku]',
- '[line 3 · Hibiku]',
+ ['Agree prompts and rivals', 'We agree the buyer prompts and named competitors with you before any runs.'],
+ ['Run and sample', 'Each prompt runs at least 7 times per engine, with every run dated.'],
+ ['Diagnose', 'We map mentions, recommendations, citations, sources and errors, engine by engine.'],
+ ['Walkthrough + roadmap, re-test date', 'A call to walk the findings, a ranked fix list and a date to run it again.'],
 ] as const;
 
-export const PRICE_H2 = '[Pricing H2 · Hibiku]';
-export const PRICE_HOLD = '[PRICE HOLD · Yash]';
+export const FIT_YES = 'Good fit';
+export const FIT_YES_ITEMS = [
+ 'SaaS, tech and AI marketing leads who need to see how AI engines describe them',
+ 'Teams with buyer prompts and named competitors they already track',
+ 'Teams ready to act on fixes, in-house or with Nakama Growth',
+] as const;
+export const FIT_NO = 'Not a fit';
+export const FIT_NO_ITEMS = [
+ 'Anyone who wants a guaranteed rank or an instant score',
+ 'Buyers looking for a single blended visibility number',
+ 'Local, hotel and ecommerce stores outside SaaS',
+] as const;
+
+export const PRICE_H2 = 'AI visibility audit pricing';
 export const PRICE_NAME = 'AI Visibility Audit';
+export const PRICE_ON = 'Pricing on a call';
 export const PRICE_ITEMS = [
- {text: 'Per-engine dated runs', hold: 'SCOPE HOLD'},
- {text: 'Competitor share + citation source map'},
- {text: 'Accuracy + crawler access check'},
- {text: 'Average position per engine'},
- {text: 'Prioritised roadmap + walkthrough call'},
+ 'Per-engine dated runs',
+ 'Competitor share + citation source map',
+ 'Accuracy + crawler access check',
+ 'Average position per engine',
+ 'Prioritised roadmap + walkthrough call',
 ] as const;
 export const RETAINER_H3 = 'Audit plus fixes';
-export const RETAINER_P = '[Retainer line · Hibiku] GEO / AEO work after the audit.';
+export const RETAINER_P = 'Want us to fix what the audit finds? We run GEO and AEO work after the audit and re-test the same prompts.';
+export const QUOTE = 'Get a quote';
 
-export const CASE_HOLD = '[CASE HOLD · needs written client approval]';
-export const PROOF_HOLD = '[PROOF HOLD · real logos pending Yash]';
-
-export const FAQ_H2 = '[AI visibility audit questions · Hibiku]';
-export const FAQ_LEAD_BEFORE = 'FAQPage-ready. 10 slots. Engine answers use ';
+export const FAQ_H2 = 'AI visibility audit questions';
 export const FAQ = [
- '[FAQ Q1 · Hibiku] Do you guarantee we get cited or recommended? [no guarantee]',
- '[FAQ Q2 · Hibiku] Why do AI answers vary, and how do you repeat runs?',
- '[FAQ Q3 · Hibiku] What is the difference between a mention and a citation?',
- '[FAQ Q4 · Hibiku] How is this different from a free AI visibility grader?',
- '[FAQ Q5 · Hibiku] What do you need from us?',
- '[FAQ Q6 · Hibiku] What happens after the audit?',
- `[FAQ Q7 · Hibiku] Which engines do you check? [paid: ${ENGINE_LINE} · ${ENGINE_HOLD}; free: 2 engines, names HOLD]`,
- '[FAQ Q8 · Hibiku] Is the free sample really free? [1–3 prompts × 2 engines × 3 runs · emailed]',
- '[FAQ Q9 · Hibiku] How long does the audit take?',
- '[FAQ Q10 · Hibiku] How does pricing work?',
+ ['Do you guarantee we get cited or recommended?', 'No. Nobody controls what AI engines say. We show where you stand today, what is likely driving it, and what to fix. Then we re-test the same prompts so you can see what changed.'],
+ ['Why do AI answers vary, and how do you repeat runs?', 'AI engines can give different answers to the same prompt from one run to the next. In the paid audit we run each prompt at least 7 times per engine and date every run, so you see a pattern instead of one lucky or unlucky answer.'],
+ ['What is the difference between a mention and a citation?', 'A mention is your brand named in the answer. A recommendation is the engine suggesting you as an option. A citation is your page linked as a source. We count all three separately because one can happen without the others.'],
+ ['How is this different from a free AI visibility grader?', 'Most graders run a prompt once and return a single score. We repeat runs, report each engine on its own, show the exact answers and sources, and hand you a ranked fix list with a walkthrough call.'],
+ ['What do you need from us?', 'Your site, the buyer prompts you care about, and the competitors you want to compare against. If you are unsure about prompts, we draft a set with you before any runs.'],
+ ['What happens after the audit?', 'You get the report, a walkthrough call and a prioritized roadmap with a re-test date. You can run the fixes yourself or ask Nakama Growth to handle the GEO and AEO work.'],
+ ['Which engines do you check?', 'The paid audit covers the engines agreed for your audit, each reported separately. The free sample uses 2 engines.'],
+ ['Is the free sample really free?', 'Yes. You get 1 to 3 prompts across 2 engines, with 3 runs each per engine, emailed to you. It is a sample, not a full measurement, so it has no score and no average position.'],
+ ['How long does the audit take?', 'It depends on how many prompts and engines are in scope. We confirm the timeline when we agree the prompt set.'],
+ ['How does pricing work?', 'Pricing depends on the number of prompts, engines and competitors in scope. Book a call and we will quote the audit, or the audit plus fixes, for your site.'],
 ] as const;
 
-export const CTA_H2 = '[Final CTA H2 · Hibiku]';
-export const CTA_LINE = '[1 line · Hibiku]';
+export const CTA_H2 = 'See how AI engines answer your buyers';
+export const CTA_P = 'Book the full audit, or start with a free sample emailed to you.';
 export const RELATED = [
- ['/services/geo', '/services/geo'],
- ['/services/aeo', '/services/aeo'],
- ['/journal/geo-audit', '/journal/geo-audit'],
+ ['GEO services', '/services/geo'],
+ ['AEO services', '/services/aeo'],
+ ['GEO audit guide', '/journal/geo-audit'],
 ] as const;
