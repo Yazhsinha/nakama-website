@@ -287,7 +287,6 @@ ${faqHtml}
 <li>Forty Questions, <a href="https://fortyquestions.io/geo-pricing">GEO pricing</a> (read 5 October 2026)</li>
 <li>WebFX, <a href="https://www.webfx.com/blog/ai/generative-engine-optimization-cost/">Generative engine optimization cost</a> (read 2 November 2026)</li>
 <li>Citant.ai, <a href="https://citant.ai/blog/how-much-does-geo-cost/">How much does GEO cost?</a> (prices checked 1 November 2026)</li>
-<li>Nakama Growth, <a href="https://www.nakama.in/journal/best-aeo-agencies-india">Best AEO agencies in India</a> (prices read 28 October 2026)</li>
 </ul>
 <h2 id="about-the-author">About the author</h2>
 <div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.</p></div></div>`;
@@ -478,7 +477,6 @@ export const geoAeoPricingArticle: Article = {
     'Forty Questions, GEO pricing (read 5 October 2026) https://fortyquestions.io/geo-pricing',
     'WebFX, Generative engine optimization cost (read 2 November 2026) https://www.webfx.com/blog/ai/generative-engine-optimization-cost/',
     'Citant.ai, How much does GEO cost? (prices checked 1 November 2026) https://citant.ai/blog/how-much-does-geo-cost/',
-    'Nakama Growth, Best AEO agencies in India (prices read 28 October 2026) https://www.nakama.in/journal/best-aeo-agencies-india',
    ],
   },
   {
