@@ -279,15 +279,6 @@ ${figure('geo-aeo-pricing-90-day', TIMELINE_ALT, 1600, 700)}
 <p><strong><a href="https://www.nakama.in/pricing#quote">Get your quote</a></strong>: tell us about your brand and you get a written proposal with scope, timeline and price within two business days.</p>
 <h2 id="faq">FAQ</h2>
 ${faqHtml}
-<h2 id="sources">Sources</h2>
-<p>Prices move often. Each figure above was read on the source page on the date shown.</p>
-<ul>
-<li>John Lawson, <a href="https://johnlawson.dev/geo-agency-service-cost/">What does a GEO agency cost?</a> (checked August 2026)</li>
-<li>First Page Sage, <a href="https://firstpagesage.com/seo-blog/geo-aeo-pricing-statistics/">GEO and AEO pricing statistics</a> (data July to October 2026)</li>
-<li>Forty Questions, <a href="https://fortyquestions.io/geo-pricing">GEO pricing</a> (read 5 October 2026)</li>
-<li>WebFX, <a href="https://www.webfx.com/blog/ai/generative-engine-optimization-cost/">Generative engine optimization cost</a> (read 2 November 2026)</li>
-<li>Citant.ai, <a href="https://citant.ai/blog/how-much-does-geo-cost/">How much does GEO cost?</a> (prices checked 1 November 2026)</li>
-</ul>
 <h2 id="about-the-author">About the author</h2>
 <div class="author-box" id="yash-kumar"><img src="/authors/yash-kumar-nakama-ceo.webp" srcset="/authors/yash-kumar-nakama-ceo.webp 400w, /authors/yash-kumar-nakama-ceo-800.webp 800w" sizes="96px" alt="Yash Kumar, Co-founder and CEO of Nakama Growth" width="96" height="96" loading="lazy" decoding="async"><div class="author-box-text"><p><a href="https://www.nakama.in/authors/yash-kumar" rel="author">Yash Kumar</a> is Co-founder and CEO of Nakama Growth, an AEO and AI visibility agency for SaaS, software and AI companies. He tracks how ChatGPT, Gemini, Perplexity and Google AI Overviews answer buyer prompts and publishes the results.</p></div></div>`;
 
@@ -467,17 +458,6 @@ export const geoAeoPricingArticle: Article = {
   {
    heading: 'FAQ',
    paragraphs: FAQS.map(({q, a}) => `${q} ${a}`),
-  },
-  {
-   heading: 'Sources',
-   paragraphs: [
-    'Prices move often. Each figure above was read on the source page on the date shown.',
-    'John Lawson, What does a GEO agency cost? (checked August 2026) https://johnlawson.dev/geo-agency-service-cost/',
-    'First Page Sage, GEO and AEO pricing statistics (data July to October 2026) https://firstpagesage.com/seo-blog/geo-aeo-pricing-statistics/',
-    'Forty Questions, GEO pricing (read 5 October 2026) https://fortyquestions.io/geo-pricing',
-    'WebFX, Generative engine optimization cost (read 2 November 2026) https://www.webfx.com/blog/ai/generative-engine-optimization-cost/',
-    'Citant.ai, How much does GEO cost? (prices checked 1 November 2026) https://citant.ai/blog/how-much-does-geo-cost/',
-   ],
   },
   {
    heading: 'About the author',
