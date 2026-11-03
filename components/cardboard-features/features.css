@@ -47,6 +47,7 @@
  .cardboard-features .features-pin{
   min-height:0;
   padding-top:0;
+  align-items:flex-start;
  }
  .cardboard-features .features-layout{
   align-items:start;
@@ -67,8 +68,8 @@
   margin-top:clamp(56px,11vh,104px);
  }
  .cardboard-features .features-choice{
-  padding-top:clamp(21px,3.5vh,28px);
-  padding-bottom:clamp(21px,3.5vh,28px);
+  padding-top:clamp(22px,4.2vh,34px);
+  padding-bottom:clamp(22px,4.2vh,34px);
  }
  .cardboard-features .features-choice > span{
   font-size:clamp(19px,1.25vw,22px);
@@ -79,7 +80,7 @@
   line-height:1.5;
  }
  .cardboard-features .features-desktop{
-  width:min(100%,calc((100svh - 45px)*1.31));
+  width:min(100%,calc((100svh - 45px)*1.33));
   max-width:100%;
   justify-self:start;
   align-self:start;
