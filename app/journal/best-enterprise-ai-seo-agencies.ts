@@ -9,14 +9,12 @@ import type {Article} from './articles';
  * That one flag flips robots to index,follow and adds this note to the sitemap,
  * llms.txt, llms-full.txt, RSS and the author index.
  * While PREVIEW is true the page stays noindex,follow and off those surfaces.
- *
- * PREVIEW ONLY. Do not publish until the parent H2 bridge on
- * /journal/best-ai-seo-agencies ships in the same release and Yash says GO.
+ * Yash GO: PREVIEW is false, in the same release as the parent H2 bridge.
  */
 export const BEST_ENTERPRISE_AI_SEO_AGENCIES_PUBLISHED_AT = '2026-11-03T09:00:00+05:30';
 const PUBLISHED_AT = BEST_ENTERPRISE_AI_SEO_AGENCIES_PUBLISHED_AT;
 const MODIFIED_AT = PUBLISHED_AT;
-const PREVIEW = true;
+const PREVIEW = false;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const dayOf = (iso: string) => iso.slice(0, 10);
@@ -219,7 +217,6 @@ ${figure(`${SLUG}-cover`, COVER_ALT, 1920, 1080, true)}
 <li>Two describe delivery across regions or business units in plain terms. Brainlabs runs <a href="https://www.brainlabsdigital.com/about-us/">regional hubs on five continents</a>. iPullRank sells an <a href="https://ipullrank.com/ai-search">Elite tier for organizations with multiple lines of business and global businesses</a>.</li>
 <li>Three name a client next to an AI-answer metric: Graphite (Webflow), NoGood (SteelSeries) and Siege Media (Zendesk, Zapier). Only Graphite and NoGood put a date or period on it.</li>
 <li>Two publish a price figure on their own site: iPullRank and First Page Sage. For market ranges, see our guide to <a href="/journal/geo-aeo-pricing">what GEO and AEO agencies cost</a>.</li>
-<li>Agency lists are self-interested. Searchmaxxed counted that <a href="https://www.searchmaxxed.com/research/best-ai-seo-agencies-for-enterprise">seven of the eight page-one agency lists it read put the publisher first</a>. Check every claim here against the agency's own page.</li>
 </ul>
 <h2 id="which-are-the-best-enterprise-ai-seo-agencies-in-2026">Which are the best enterprise AI SEO agencies in 2026?</h2>
 <p>The nine best enterprise AI SEO agencies for tech and AI brands, by our checks on 3 November 2026, are Nakama Growth, Brainlabs, iPullRank, Graphite, NoGood, Siege Media, Seer Interactive, Directive and First Page Sage. The table shows each one's best fit, enterprise signals, how it measures AI answers and its main weakness.</p>
