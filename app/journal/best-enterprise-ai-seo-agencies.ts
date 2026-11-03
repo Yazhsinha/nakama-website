@@ -429,6 +429,8 @@ export const bestEnterpriseAiSeoAgenciesArticle: Article = {
  authorName: 'Snehil Srivastava',
  /** GO-LIVE TODO: PREVIEW is the only switch. false => index,follow plus sitemap, llms and RSS. */
  noindex: PREVIEW,
+ /** Keep reading stays on the parent list. A noindex preview can still show that one card. */
+ nextSlug: 'best-ai-seo-agencies',
  coverImage: {src: `/journal/${SLUG}/${SLUG}-cover.webp`, width: 1920, height: 1080, alt: COVER_ALT},
  ogImage: {
   url: OG_URL,
