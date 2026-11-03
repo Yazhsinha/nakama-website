@@ -62,7 +62,7 @@ export const authors:Author[]=[
   metaTitle:'Asmit Choudhary, AI & GEO Strategist | Nakama Growth',
   metaDescription:'Asmit Choudhary is an AI and GEO Strategist at Nakama Growth in India. Read his guides on AEO, GEO and AI visibility.',
   bio:[
-   'Asmit Choudhary is an AI and GEO Strategist at Nakama Growth, based in India. He owns brand strategy end to end, shaping how a brand looks and sounds from the core and making every piece across AEO, GEO, Reddit and SEO clear, consistent and ready for AI answers from tools like ChatGPT, Perplexity and Google AI Overviews.',
+   'Asmit Choudhary is an AI and GEO Strategist at Nakama Growth, based in India. He owns brand strategy end to end, shaping how a brand looks and sounds from the core and making every piece across AEO, GEO, Reddit and SEO clear, consistent and ready for AI answers from tools like ChatGPT, Perplexity and Google AI Overviews. He completed his studies at IIT Roorkee.',
   ],
   image:{src:'/authors/asmit-choudhary-nakama-ai-geo.webp',src800:'/authors/asmit-choudhary-nakama-ai-geo-800.webp',width:800,height:800,alt:'Asmit Choudhary, AI & GEO Strategist at Nakama Growth'},
   links:[
