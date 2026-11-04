@@ -105,8 +105,6 @@ export const CLIENT_LOGOS=[
  ['HubEngage','/clients/white/hubengage.png'],
  ['StarAgile','/clients/white/staragile.png'],
  ['BacklinkOS','/clients/white/backlinkos.png'],
- ['SERPsGrowth','/clients/white/serps.png'],
- ['Inbound Blogging','/clients/white/inbound.png'],
 ] as const;
 
 export function LogoRow({label='Trusted by growth teams at'}:{label?:string}){

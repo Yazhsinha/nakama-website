@@ -445,7 +445,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <ul>
 <li>Nakama works off-site, in the places that shape the answer: Reddit, Quora and forums, YouTube, Medium, Substack and LinkedIn, digital PR and listicles, and G2 and category review pages.</li>
 <li>It tracks visibility across ChatGPT, Perplexity, Gemini and Google AI Overviews, and every engagement starts with a buyer prompt map and a competitor and source audit.</li>
-<li>Proof you can check. The <a href="https://www.nakama.in/work">Work page</a> lists seven clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.</li>
+<li>Proof you can check. The <a href="https://www.nakama.in/work">Work page</a> lists five clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.</li>
 <li>Every community post is disclosed. No fake reviews and no hidden endorsements.</li>
 <li>One plan with everything included: strategy, editorial content, community, YouTube and video, digital PR and listicles, review site presence, a dedicated strategist and a monthly evidence report. Nothing publishes without your sign-off.</li>
 <li>A clear rhythm: weekly async updates, a fortnightly working session, a monthly evidence review and a quarterly strategy reset.</li>
@@ -769,7 +769,7 @@ export const geoAgenciesArticle: Article = {
    "What stands out",
    "Nakama works off-site, in the places that shape the answer: Reddit, Quora and forums, YouTube, Medium, Substack and LinkedIn, digital PR and listicles, and G2 and category review pages.",
    "It tracks visibility across ChatGPT, Perplexity, Gemini and Google AI Overviews, and every engagement starts with a buyer prompt map and a competitor and source audit.",
-   "Proof you can check. The Work page lists seven clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.",
+   "Proof you can check. The Work page lists five clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.",
    "Every community post is disclosed. No fake reviews and no hidden endorsements.",
    "One plan with everything included: strategy, editorial content, community, YouTube and video, digital PR and listicles, review site presence, a dedicated strategist and a monthly evidence report. Nothing publishes without your sign-off.",
    "A clear rhythm: weekly async updates, a fortnightly working session, a monthly evidence review and a quarterly strategy reset.",
