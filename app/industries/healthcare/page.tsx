@@ -13,9 +13,11 @@ import {
 } from './copy';
 import './healthcare.css';
 
+const page = pageMeta(SLUG, {title: TITLE, description: META});
 export const metadata: Metadata = {
- ...pageMeta(SLUG, {title: TITLE, description: META}),
+ ...page,
  robots: {index: false, follow: false, googleBot: {index: false, follow: false}},
+ openGraph: {...page.openGraph, locale: 'en_US'},
 };
 
 const serviceLd = {
@@ -88,14 +90,6 @@ function Heart() {
 }
 
 export default function HealthcareIndustry() {
- const logoGroups: {key: string; items: typeof PROOF_LOGOS[number][]}[] = [];
- for (const logo of PROOF_LOGOS) {
-  const key = 'group' in logo ? logo.group : logo.name;
-  const last = logoGroups[logoGroups.length - 1];
-  if (last && last.key === key) last.items.push(logo);
-  else logoGroups.push({key, items: [logo]});
- }
-
  return (
   <Shell className="hc-page shell-cinema">
    <Crumbs trail={[{name: 'Healthcare', path: SLUG}]} />
@@ -142,12 +136,11 @@ export default function HealthcareIndustry() {
      <div className="hc-w">
       <p className="hc-cap" id="hc-proof-label">{PROOF_LABEL}</p>
       <ul className="hc-lr">
-       {logoGroups.map(group => (
-        <li key={group.key}>
-         {group.items.map(logo => (
-          // eslint-disable-next-line @next/next/no-img-element -- existing client marks, fixed height
-          <img key={logo.name} src={logo.src} alt={logo.name} className={logo.ink ? 'is-ink' : undefined} />
-         ))}
+       {PROOF_LOGOS.map(logo => (
+        <li key={logo.name} className={logo.word ? 'is-word' : undefined}>
+         {/* eslint-disable-next-line @next/next/no-img-element -- existing client marks, fixed size */}
+         <img src={logo.src} alt={logo.word ? logo.name : ''} width={logo.w} height={logo.h} loading="lazy" decoding="async" />
+         {logo.word ? null : <span>{logo.name}</span>}
         </li>
        ))}
       </ul>

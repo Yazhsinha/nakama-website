@@ -1,5 +1,5 @@
 /**
- * /industries/healthcare · Hibiku LOCKED v1.1.3 strings (Soften-patch).
+ * /industries/healthcare · Hibiku LOCKED v1.1.4 strings (Soften-patch).
  * Do not paraphrase. Ops HOLD notes from the lock file are not rendered.
  * Diagram labels marked twin chrome come from the Soften V1.1.2 visual, not new claims.
  * Preview only: this route stays noindex and off sitemap / llms / nav until a ship GO.
@@ -20,13 +20,13 @@ export const CTA_SECONDARY = 'AI visibility audit';
 export const CTA_SECONDARY_HREF = '/services/ai-visibility-audit';
 
 export const PROOF_LABEL = 'Brands we have grown in AI search';
-/** Logos only. No captions. HubEngage (TOW) is one strip group. */
+/** White marks from public/clients/white. Synup is a wordmark; the others are a symbol plus a visible name. */
 export const PROOF_LOGOS = [
- {name: 'Synup', src: '/services/youtube/logos/synup.svg', ink: false},
- {name: 'Inventive AI', src: '/services/youtube/logos/inventive.png', ink: false},
- {name: 'HubEngage', src: '/services/youtube/logos/hubengage.png', ink: true, group: 'HubEngage (TOW)'},
- {name: 'TOW', src: '/services/youtube/logos/tow.png', ink: true, group: 'HubEngage (TOW)'},
- {name: 'Win More RFP', src: '/services/youtube/logos/winmore-rfp.png', ink: true},
+ {name: 'Synup', src: '/clients/white/synup.svg', w: 557, h: 151, word: true},
+ {name: 'Inventive AI', src: '/clients/white/inventive.png', w: 158, h: 157, word: false},
+ {name: 'HubEngage', src: '/clients/white/hubengage.png', w: 160, h: 160, word: false},
+ {name: 'StarAgile', src: '/clients/white/staragile.png', w: 250, h: 150, word: false},
+ {name: 'BacklinkOS', src: '/clients/white/backlinkos.png', w: 84, h: 79, word: false},
 ] as const;
 
 export const H2_DEF = 'What is GEO for healthcare?';
@@ -111,8 +111,7 @@ export const COMPLY: readonly {n: string; title: string; body: string}[] = [
  {n: '2', title: 'Claim rules', body: 'We agree a claim list with you: what can be said, what needs a source, what is off limits.'},
  {n: '3', title: 'Named reviewer', body: 'A clinician or medical reviewer from your side approves each health claim before publishing.'},
  {n: '4', title: 'Reviewer bylines', body: 'Pages show author and reviewer names with a last reviewed date.'},
- {n: '5', title: 'Disclosure', body: 'Sponsored or partner placements are labeled as such.'},
- {n: '6', title: 'Market rules', body: 'Claim and disclosure checks follow the rules of each market you publish in.'},
+ {n: '5', title: 'Market rules', body: 'Claim and disclosure checks follow the rules of each market you publish in.'},
 ];
 
 export const H2_PROMPTS = 'Healthcare prompts we track';
