@@ -13,12 +13,7 @@ import {
 } from './copy';
 import './healthcare.css';
 
-const page = pageMeta(SLUG, {title: TITLE, description: META});
-export const metadata: Metadata = {
- ...page,
- robots: {index: false, follow: false, googleBot: {index: false, follow: false}},
- openGraph: {...page.openGraph, locale: 'en_US'},
-};
+export const metadata: Metadata = pageMeta(SLUG, {title: TITLE, description: META});
 
 const serviceLd = {
  '@context': 'https://schema.org',
@@ -111,7 +106,7 @@ export default function HealthcareIndustry() {
         <Ctas />
        </div>
        <div className="hc-panel">
-        <p className="hc-pl"><span>Buyer prompt</span><span>Sample</span></p>
+        <p className="hc-pl"><span>Buyer prompt</span></p>
         <div className="hc-prompt"><span className="hc-chev" aria-hidden="true">›</span>{HERO_PROMPT}</div>
         <div className="hc-answer">
          <span className="hc-pulse" aria-hidden="true" />
@@ -220,7 +215,7 @@ export default function HealthcareIndustry() {
        <p className="hc-pr hc-pr-block">{HOSP_PROMPT}</p>
       </div>
       <div className="hc-way">
-       <div className="hc-wh"><span className="hc-cap">Department + location</span><span className="hc-cap is-quiet">Sample</span></div>
+       <div className="hc-wh"><span className="hc-cap">Department + location</span></div>
        <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{HOSP_QUERY}</div>
        {HOSP_ROWS.map(row => (
         <div className={row.on ? 'hc-wr is-on' : 'hc-wr'} key={row.title}>
@@ -299,7 +294,7 @@ export default function HealthcareIndustry() {
        </ul>
       </div>
       <div className="hc-way hc-states">
-       <div className="hc-wh"><span className="hc-cap">Prompt → engine → state</span><span className="hc-cap is-quiet">Sample</span></div>
+       <div className="hc-wh"><span className="hc-cap">Prompt → engine → state</span></div>
        <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{STATE_PROMPT}</div>
        {PROMPT_STATES.map(row => (
         <div className="hc-state" key={row.engine}>
