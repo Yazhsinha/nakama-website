@@ -62,7 +62,7 @@ export function NextChapter({title='Let’s build your next chapter.',text='A sh
 }
 export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['AI Visibility Audit','/services/ai-visibility-audit'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
 const FOOT_COLS:[string,[string,string][]][]=[
- ['Company',[['About','/about'],['Services','/services'],['Work','/work'],['Process','/process'],['Careers','/careers']]],
+ ['Company',[['About','/about'],['Services','/services'],['Healthcare','/industries/healthcare'],['Work','/work'],['Process','/process'],['Careers','/careers']]],
  ['Services',serviceLinks.map(([l,h])=>[l,h])],
  ['Resources',[['Articles','/resources#articles'],['Case studies','/resources#case-studies'],['Pricing','/pricing'],['Get a quote','/pricing#quote']]],
  ['Contact',[['Contact us','/contact'],['contact@nakama.in','mailto:contact@nakama.in']]],
