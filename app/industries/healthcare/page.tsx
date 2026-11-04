@@ -4,12 +4,12 @@ import {pageMeta, Crumbs, JsonLd, abs, SITE_URL} from '@/lib/seo';
 import {Shell} from '../../site';
 import {
  COMPLY, CTA_PRIMARY, CTA_PRIMARY_HREF, CTA_SECONDARY, CTA_SECONDARY_HREF, DAL_COMPLY, DAL_DEF,
- DAL_FRAME, DAL_HOSP, DAL_NINETY, DAL_PROOF, DAL_PROMPTS, DAL_SVC, DAL_WHO, DAL_WHY, DEF_ENTITY,
+ DAL_FRAME, DAL_HOSP, DAL_NINETY, DAL_PROMPTS, DAL_SVC, DAL_WHO, DAL_WHY, DEF_ENTITY,
  DEF_FLOW, EYEBROW, FAQ, FIN_LEAD, FIT_NO, FIT_NO_H, FIT_YES, FIT_YES_H, H1, H2_COMPLY, H2_DEF,
- H2_FAQ, H2_FIN, H2_FIT, H2_FRAME, H2_HOSP, H2_NINETY, H2_PROOF, H2_PROMPTS, H2_SVC, H2_WHO, H2_WHY,
- H3_HEALTHTECH, H3_SOURCES, HEALTHTECH_BRIDGE, HOSP_BRIDGE, HOSP_PROMPT, HOSP_ROWS, LEAD, MEASURES,
- META, PHASES, PROMPT_STATES, PROMPTS, PROOF_HOLDS, PROOF_LABEL, PROOF_LOGOS, RELATED_FUTURE,
- RELATED_LIVE, SEGMENTS, SERVICES, SLUG, SOURCES, STEPS, TITLE, WHY_SHORT,
+ H2_FAQ, H2_FIN, H2_FIT, H2_FRAME, H2_HOSP, H2_NINETY, H2_PROMPTS, H2_SVC, H2_WHO, H2_WHY,
+ H3_HEALTHTECH, H3_SOURCES, HEALTHTECH_BRIDGE, HERO_PROMPT, HOSP_BRIDGE, HOSP_PROMPT, HOSP_QUERY, HOSP_ROWS, LEAD, MEASURES,
+ META, PHASES, PROMPT_STATES, PROMPTS, PROOF_LABEL, PROOF_LOGOS,
+ RELATED_LIVE, SEGMENTS, SERVICES, SLUG, SOURCES, STATE_PROMPT, STEPS, TITLE, WHY_SHORT,
 } from './copy';
 import './healthcare.css';
 
@@ -32,20 +32,37 @@ const serviceLd = {
   audienceType: 'Healthcare brands, including clinics, healthtech, hospitals and wellness companies',
  },
  areaServed: [
-  {'@type': 'Country', name: 'India'},
   {'@type': 'Country', name: 'United States'},
+  {'@type': 'Country', name: 'United Kingdom'},
+  {'@type': 'AdministrativeArea', name: 'European Union'},
+  {'@type': 'Place', name: 'Middle East'},
+  {'@type': 'Place', name: 'APAC'},
+  {'@type': 'Country', name: 'India'},
  ],
 };
 
 const faqLd = {
  '@context': 'https://schema.org',
  '@type': 'FAQPage',
- mainEntity: FAQ.map(({q, a, note}) => ({
+ mainEntity: FAQ.map(({q, a}) => ({
   '@type': 'Question',
   name: q,
-  acceptedAnswer: {'@type': 'Answer', text: note ? `${a} ${note}` : a},
+  acceptedAnswer: {'@type': 'Answer', text: a},
  })),
 };
+
+function FaqBody({a, href, linkLabel}: {a: string; href?: string; linkLabel?: string}) {
+ if (!href || !linkLabel) return a;
+ const at = a.indexOf(linkLabel);
+ if (at < 0) return a;
+ return (
+  <>
+   {a.slice(0, at)}
+   <Link href={href}>{linkLabel}</Link>
+   {a.slice(at + linkLabel.length)}
+  </>
+ );
+}
 
 function Ctas({id}: {id?: string}) {
  return (
@@ -101,7 +118,7 @@ export default function HealthcareIndustry() {
        </div>
        <div className="hc-panel">
         <p className="hc-pl"><span>Buyer prompt</span><span>Illustrative</span></p>
-        <div className="hc-prompt"><span className="hc-chev" aria-hidden="true">›</span>Best physiotherapy clinic near Indiranagar for a sports injury</div>
+        <div className="hc-prompt"><span className="hc-chev" aria-hidden="true">›</span>{HERO_PROMPT}</div>
         <div className="hc-answer">
          <span className="hc-pulse" aria-hidden="true" />
          <div className="hc-rev"><b>Claims reviewed</b></div>
@@ -211,7 +228,7 @@ export default function HealthcareIndustry() {
       </div>
       <div className="hc-way">
        <div className="hc-wh"><span className="hc-cap">Department + location</span><span className="hc-cap is-quiet">Illustrative</span></div>
-       <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>Which hospital in Pune has the best cardiac surgery department?</div>
+       <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{HOSP_QUERY}</div>
        {HOSP_ROWS.map(row => (
         <div className={row.on ? 'hc-wr is-on' : 'hc-wr'} key={row.title}>
          <span className="hc-ar" aria-hidden="true">→</span>
@@ -270,10 +287,7 @@ export default function HealthcareIndustry() {
          <span className="hc-bx">{step.n}</span>
          <div>
           <h3>{step.title}</h3>
-          <p>
-           {step.body}
-           {step.hold ? <><br /><span className="hc-hold">{step.hold}</span></> : null}
-          </p>
+          <p>{step.body}</p>
          </div>
         </div>
        ))}
@@ -293,7 +307,7 @@ export default function HealthcareIndustry() {
       </div>
       <div className="hc-way hc-states">
        <div className="hc-wh"><span className="hc-cap">Prompt → engine → state</span><span className="hc-cap is-quiet">Illustrative</span></div>
-       <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>Which hospitals offer robotic knee replacement near me?</div>
+       <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{STATE_PROMPT}</div>
        {PROMPT_STATES.map(row => (
         <div className="hc-state" key={row.engine}>
          <span>Example brand</span>
@@ -305,22 +319,9 @@ export default function HealthcareIndustry() {
      </div>
     </section>
 
-    <section className="hc-sec" aria-labelledby="hc-results">
+    <section className="hc-sec" aria-labelledby="hc-ninety">
      <div className="hc-w">
-      <Label>10 · Proof</Label>
-      <h2 id="hc-results">{H2_PROOF}</h2>
-      <p className="hc-ans">{DAL_PROOF}</p>
-      <div className="hc-g3">
-       {PROOF_HOLDS.map((hold, i) => (
-        <div className="hc-ph" key={`${hold}-${i}`}>{hold}</div>
-       ))}
-      </div>
-     </div>
-    </section>
-
-    <section className="hc-sec hc-alt" aria-labelledby="hc-ninety">
-     <div className="hc-w">
-      <Label>11 · First 90 days</Label>
+      <Label>10 · First 90 days</Label>
       <h2 id="hc-ninety">{H2_NINETY}</h2>
       <p className="hc-ans">{DAL_NINETY}</p>
       <div className="hc-g3">
@@ -338,9 +339,9 @@ export default function HealthcareIndustry() {
      </div>
     </section>
 
-    <section className="hc-sec" aria-labelledby="hc-fit">
+    <section className="hc-sec hc-alt" aria-labelledby="hc-fit">
      <div className="hc-w">
-      <Label>12 · Fit</Label>
+      <Label>11 · Fit</Label>
       <h2 id="hc-fit">{H2_FIT}</h2>
       <div className="hc-split hc-fit">
        <div className="hc-card hc-good">
@@ -355,18 +356,15 @@ export default function HealthcareIndustry() {
      </div>
     </section>
 
-    <section className="hc-sec hc-alt" aria-labelledby="hc-faq">
+    <section className="hc-sec" aria-labelledby="hc-faq">
      <div className="hc-w">
-      <Label>13 · FAQ</Label>
+      <Label>12 · FAQ</Label>
       <h2 id="hc-faq">{H2_FAQ}</h2>
       <div className="hc-faq">
        {FAQ.map(item => (
         <article className="hc-fq" key={item.q}>
          <h3>{item.q}</h3>
-         <p>
-          {item.a}
-          {item.note ? <> <span className="hc-hold">{item.note}</span></> : null}
-         </p>
+         <p><FaqBody a={item.a} href={item.href} linkLabel={item.linkLabel} /></p>
         </article>
        ))}
       </div>
@@ -378,7 +376,7 @@ export default function HealthcareIndustry() {
       <div className="hc-fin">
        <div className="hc-vap hc-vap-fin" aria-hidden="true" />
        <div className="hc-fin-copy">
-        <Label>14 · Next step</Label>
+        <Label>13 · Next step</Label>
         <h2 id="hc-fin">{H2_FIN}</h2>
         <p className="hc-lead hc-lead-fin">{FIN_LEAD}</p>
        </div>
@@ -386,9 +384,6 @@ export default function HealthcareIndustry() {
       </div>
       <div className="hc-rel">
        {RELATED_LIVE.map(link => <Link key={link.href} href={link.href}>{link.label}</Link>)}
-       {RELATED_FUTURE.map(item => (
-        <span key={item.label}>{item.label} <span className="hc-hold">{item.note}</span></span>
-       ))}
       </div>
      </div>
     </section>

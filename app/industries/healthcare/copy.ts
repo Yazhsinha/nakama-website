@@ -1,13 +1,14 @@
 /**
- * /industries/healthcare · Hibiku LOCKED v1 strings.
- * Do not paraphrase. Bracket notes in the lock file are holds, not body copy.
- * Diagram labels marked twin chrome come from the Soften V1.1.1 visual, not new claims.
+ * /industries/healthcare · Hibiku LOCKED v1.1.2 strings (Soften-patch).
+ * Do not paraphrase. Ops HOLD notes from the lock file are not rendered.
+ * Diagram labels marked twin chrome come from the Soften V1.1.2 visual, not new claims.
  * Preview only: this route stays noindex and off sitemap / llms / nav until a ship GO.
+ * Ship queue: SHIP-FLIP.md.
  */
 
 export const SLUG = '/industries/healthcare';
 export const TITLE = 'Healthcare GEO Agency | AI Visibility for Health Brands | Nakama Growth';
-export const META = 'Nakama Growth helps clinics, hospitals, healthtech and wellness brands get named, cited and recommended in AI answers through GEO and AEO.';
+export const META = 'Healthcare GEO agency helping clinics, hospitals, healthtech and wellness brands get named, cited and recommended in AI answers. Nakama Growth.';
 
 export const EYEBROW = 'Healthcare';
 export const H1 = 'GEO Agency for Healthcare Brands';
@@ -30,7 +31,7 @@ export const PROOF_LOGOS = [
 
 export const H2_DEF = 'What is GEO for healthcare?';
 export const DAL_DEF = 'GEO for healthcare is the work of making a health brand easy for AI answer engines to name, cite and recommend on buyer and patient research prompts. It covers source of truth pages, claim review, off site citations and ongoing prompt checks across ChatGPT, Perplexity and Google AI Overviews, without promising patient volume.';
-export const DEF_ENTITY = 'A healthcare GEO agency does this work for health brands, from the first audit to monthly prompt tracking.';
+export const DEF_ENTITY = 'A healthcare GEO agency does this work for health brands, from the first audit to monthly prompt tracking. Buyers searching for a geo agency for healthcare get the same program: prompt mapping, claim review and measured AI mentions.';
 
 /** Twin chrome for the §03 pathway. Ember only on the named answer. */
 export const DEF_FLOW = [
@@ -58,7 +59,7 @@ export const DAL_WHO = 'Nakama Growth can work with health brands whose buyers r
 
 export const SEGMENTS: readonly [string, string, string][] = [
  ['Wellness and D2C health', 'Products people compare before they buy', '"Which magnesium supplement brands are third party tested?"'],
- ['Clinics and provider groups', 'Local and service answers that must be accurate', '"Best physiotherapy clinic near Indiranagar for a sports injury"'],
+ ['Clinics and provider groups', 'Local and service answers that must be accurate', '"Best physiotherapy clinic near downtown Austin for a sports injury"'],
  ['Healthtech and digital health', 'Category and comparison answers', '"Best remote patient monitoring platforms for small practices"'],
  ['Pharma and medtech (B2B)', 'Vendor shortlists from procurement and clinical teams', '"Top contract research organizations for early phase oncology trials"'],
 ];
@@ -68,7 +69,10 @@ export const HEALTHTECH_BRIDGE = 'If you are looking for a healthtech SEO agency
 
 export const H2_HOSP = 'GEO for hospitals and health systems';
 export const DAL_HOSP = 'Hospitals need AI answers to get the basics right: which departments they run, which locations offer what, and how to book. Nakama Growth audits hospital prompts, fixes the pages and listings engines pull from, and tracks whether answers name the right hospital for each service line. Clinical claims go through your reviewers first.';
-export const HOSP_PROMPT = 'Example prompt: "Which hospital in Pune has the best cardiac surgery department?"';
+export const HERO_PROMPT = 'Best physiotherapy clinic near downtown Austin for a sports injury';
+export const HOSP_QUERY = 'Which hospital in Boston has the best cardiac surgery department?';
+export const HOSP_PROMPT = 'Example prompt: "Which hospital in Boston has the best cardiac surgery department?"';
+export const STATE_PROMPT = 'Which hospitals in Dubai offer robotic knee replacement near me?';
 export const HOSP_BRIDGE = 'Looking for a hospital SEO agency? We cover the AI answer side: department and location prompts, and whether engines name the right hospital for each service line.';
 
 /** Twin chrome. Illustrative wayfinding, not a client result. */
@@ -102,25 +106,25 @@ export const SERVICES: readonly [string, string, string][] = [
 export const H2_COMPLY = 'How we handle healthcare compliance';
 export const DAL_COMPLY = 'Nakama Growth treats compliance as a process, not a certificate. We do not hold or claim a HIPAA certification. Instead, we keep patient data out of our work, route every health claim to your reviewer, and disclose who wrote and reviewed each page. Your legal and clinical teams keep final sign off.';
 
-export const COMPLY: readonly {n: string; title: string; body: string; hold?: string}[] = [
+export const COMPLY: readonly {n: string; title: string; body: string}[] = [
  {n: '1', title: 'No PHI', body: 'No patient health information in tracking, prompt logs, briefs or reports.'},
  {n: '2', title: 'Claim rules', body: 'We agree a claim list with you: what can be said, what needs a source, what is off limits.'},
  {n: '3', title: 'Named reviewer', body: 'A clinician or medical reviewer from your side approves each health claim before publishing.'},
  {n: '4', title: 'Reviewer bylines', body: 'Pages show author and reviewer names with a last reviewed date.'},
  {n: '5', title: 'Disclosure', body: 'Sponsored or partner placements are labeled as such.'},
- {n: '6', title: 'Market rules', body: 'Claim and disclosure checks follow the rules of each market you publish in.', hold: 'LEGAL REVIEW HOLD · client counsel'},
+ {n: '6', title: 'Market rules', body: 'Claim and disclosure checks follow the rules of each market you publish in.'},
 ];
 
 export const H2_PROMPTS = 'Healthcare prompts we track';
 export const DAL_PROMPTS = 'We track the questions your buyers actually type into AI tools. Each prompt is run repeatedly across engines, and results are logged with dates. The examples below show the kind of prompts we start from. They are illustrations, not results or promises of placement.';
 
 export const PROMPTS = [
- '"Best fertility clinic in Mumbai for IVF with high success rates"',
+ '"Best fertility clinic in London for IVF with high success rates"',
  '"Which telehealth apps accept insurance for therapy?"',
- '"Best dermatology clinic in Bangalore for acne scars"',
+ '"Best dermatology clinic in New York for acne scars"',
  '"Top EHR systems for a small multispecialty clinic"',
  '"Is [brand] safe for daily use during pregnancy?"',
- '"Which hospitals offer robotic knee replacement near me?"',
+ '"Which hospitals in Dubai offer robotic knee replacement near me?"',
 ] as const;
 
 /** Twin chrome. Illustrative states, not measured results. */
@@ -128,15 +132,6 @@ export const PROMPT_STATES = [
  {engine: 'ChatGPT', state: 'Mentioned', hot: false},
  {engine: 'Perplexity', state: 'Cited', hot: false},
  {engine: 'Google AI Overviews', state: 'Recommended', hot: true},
-] as const;
-
-export const H2_PROOF = 'Results from brands we have grown in AI search';
-export const DAL_PROOF = 'Our proof comes from brands we have grown in AI search, across categories. We share named results only when a client approves them and the capture is dated. Healthcare case studies will appear here once they meet that bar. Cards stay empty until then: no invented healthcare metrics, and no turning a single referral into a case. Ask on a call for current examples.';
-
-export const PROOF_HOLDS = [
- 'PROOF HOLD · approved, dated client result',
- 'PROOF HOLD · approved, dated client result',
- 'PROOF HOLD · healthcare case study, when available',
 ] as const;
 
 export const H2_NINETY = 'Your first 90 days with Nakama Growth';
@@ -168,11 +163,14 @@ export const FIT_NO = [
 
 export const H2_FAQ = 'FAQ about hiring a healthcare GEO agency';
 
-export const FAQ: readonly {q: string; a: string; note?: string}[] = [
+export const PRICING_HREF = '/journal/geo-aeo-pricing';
+
+export const FAQ: readonly {q: string; a: string; href?: string; linkLabel?: string}[] = [
  {
   q: 'How much does a healthcare GEO agency engagement cost?',
-  a: 'Pricing depends on prompt scope, engines covered and how much claim review your team needs. Book a call for a quote on your category; we do not publish a single flat fee on this page. For how we think about GEO and AEO pricing, see /journal/geo-aeo-pricing',
-  note: 'HOLD · link when live',
+  a: 'Pricing depends on prompt scope, engines covered and how much claim review your team needs. Book a call for a quote on your category; we do not publish a single flat fee on this page. For how we think about GEO and AEO pricing, see our GEO and AEO pricing guide.',
+  href: PRICING_HREF,
+  linkLabel: 'our GEO and AEO pricing guide',
  },
  {
   q: 'How long before we see movement in AI answers?',
@@ -188,15 +186,15 @@ export const FAQ: readonly {q: string; a: string; note?: string}[] = [
  },
  {
   q: 'How is GEO different from a healthcare SEO firm?',
-  a: 'A healthcare SEO firm focuses on rankings and clicks. GEO and AEO focus on whether AI answers name, cite or recommend you on the same buyer questions. If you compared healthcare SEO firms or medical industry SEO services, classic rankings still matter; this page is about what AI answers say about you.',
+  a: 'A healthcare SEO firm focuses on rankings and clicks. GEO and AEO focus on whether AI answers name, cite or recommend you on the same buyer questions. If you compared healthcare SEO firms, medical industry SEO services, or the best seo agency for healthcare, classic rankings still matter; this page is about what AI answers say about you.',
  },
  {
   q: 'Which AI engines do you cover?',
   a: 'Typical coverage includes ChatGPT, Perplexity and Google AI Overviews, with Gemini or Claude added when your buyers use them. Scope is set per engagement, not as a fixed public list.',
  },
  {
-  q: 'Do you work with teams in India and the US?',
-  a: 'Yes. Nakama Growth can work with healthcare and healthtech brands that sell in India, the US, or both, and we match claim and disclosure rules to the markets you publish in.',
+  q: 'Which markets do you work in?',
+  a: 'Nakama Growth can work with healthcare and healthtech brands that publish for buyers in the US, UK and EU, the Middle East, APAC, and India. We match claim and disclosure rules to the markets you publish in.',
  },
  {
   q: 'Is this a fit for clinics and for healthtech?',
@@ -204,7 +202,7 @@ export const FAQ: readonly {q: string; a: string; note?: string}[] = [
  },
  {
   q: 'Who are the best GEO agencies for healthcare brands?',
-  a: 'There is no single public ranking every health brand should trust. Look for a healthcare GEO agency that maps your buyer prompts, runs claim review before publish, and measures mentions, citations and recommendations separately. Nakama Growth does that work for health brands that sell in India, the US, or both.',
+  a: 'There is no single public ranking every health brand should trust. Look for a healthcare GEO agency that maps your buyer prompts, runs claim review before publish, and measures mentions, citations and recommendations separately. Nakama Growth does that work for health brands that publish across the US, UK and EU, the Middle East, APAC, and India.',
  },
 ];
 
@@ -215,10 +213,5 @@ export const RELATED_LIVE = [
  {href: '/services/geo', label: '/services/geo'},
  {href: '/services/aeo', label: '/services/aeo'},
  {href: '/services/ai-visibility-audit', label: '/services/ai-visibility-audit'},
-] as const;
-
-/** Paths that are not live. Rendered as labels, never as links. */
-export const RELATED_FUTURE = [
- {label: '/journal/best-geo-agencies-for-healthcare', note: 'FUTURE'},
- {label: '/journal/geo-aeo-pricing', note: 'HOLD'},
+ {href: PRICING_HREF, label: PRICING_HREF},
 ] as const;
