@@ -139,7 +139,7 @@ export default function HealthcareIndustry() {
        {PROOF_LOGOS.map(logo => (
         <li key={logo.name} className={logo.word ? 'is-word' : undefined}>
          {/* eslint-disable-next-line @next/next/no-img-element -- existing client marks, fixed size */}
-         <img src={logo.src} alt={logo.word ? logo.name : ''} width={logo.w} height={logo.h} loading="lazy" decoding="async" />
+         <img src={logo.src} alt={logo.name} width={logo.w} height={logo.h} loading="lazy" decoding="async" />
          {logo.word ? null : <span>{logo.name}</span>}
         </li>
        ))}
