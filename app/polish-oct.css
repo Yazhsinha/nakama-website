@@ -352,3 +352,4 @@ button.btn,button.contact-flare-cta,button.button{font:inherit;border:0;cursor:p
 .answer-hero.answer-hero{--strip:62px;--peek:28px;height:calc(100svh + var(--strip) - var(--peek))!important;min-height:740px!important}
 .answer-hero.answer-hero .clients{margin:auto 0 0!important;padding:16px 0 20px!important;height:var(--strip)!important;min-height:0!important;box-sizing:border-box}
 }
+.nkf-col>span.nkf-sub{margin-top:36px}
