@@ -361,11 +361,11 @@ export default function HealthcareIndustry() {
       <Label>12 · FAQ</Label>
       <h2 id="hc-faq">{H2_FAQ}</h2>
       <div className="hc-faq">
-       {FAQ.map(item => (
-        <article className="hc-fq" key={item.q}>
-         <h3>{item.q}</h3>
+       {FAQ.map((item, i) => (
+        <details className="hc-fq" key={item.q} open={i === 0}>
+         <summary><h3>{item.q}</h3></summary>
          <p><FaqBody a={item.a} href={item.href} linkLabel={item.linkLabel} /></p>
-        </article>
+        </details>
        ))}
       </div>
      </div>

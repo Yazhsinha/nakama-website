@@ -36,7 +36,7 @@ main.hc-page .hc :is(h1,h2,h3,h4,p,a,li,span,em,b,small,div){
   font-family:Manrope,system-ui,sans-serif;
 }
 main.hc-page .hc a{color:inherit;text-decoration:none}
-main.hc-page .hc :is(a,button):focus-visible{outline:2px solid var(--em);outline-offset:3px}
+main.hc-page .hc :is(a,button,summary):focus-visible{outline:2px solid var(--em);outline-offset:3px}
 main.hc-page .hc ul{list-style:none;margin:0;padding:0}
 main.hc-page .hc .hc-w{max-width:1248px;margin:0 auto;padding:0 32px;position:relative}
 
@@ -328,9 +328,19 @@ main.hc-page .hc .hc-bad li{color:var(--mut)}
 main.hc-page .hc .hc-faq{margin-top:48px;max-width:900px}
 main.hc-page .hc .hc-fq{border-top:1px solid var(--hl);padding:26px 0}
 main.hc-page .hc .hc-fq:last-child{border-bottom:1px solid var(--hl)}
-main.hc-page .hc .hc-fq h3{font-size:19px;margin:0;max-width:40ch}
+main.hc-page .hc .hc-fq summary{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
+  cursor:pointer;list-style:none;color:inherit;
+}
+main.hc-page .hc .hc-fq summary::-webkit-details-marker{display:none}
+main.hc-page .hc .hc-fq summary::marker{content:""}
+main.hc-page .hc .hc-fq summary:after{
+  content:"+";color:var(--sg);font-size:26px;font-weight:400;line-height:1;flex:none;
+}
+main.hc-page .hc .hc-fq[open] summary:after{content:"−"}
+main.hc-page .hc .hc-fq h3{font-size:19px;margin:0;max-width:40ch;font-weight:700}
 main.hc-page .hc .hc-fq p{
-  display:block;margin:14px 0 0;font-size:15.5px;line-height:1.7;color:var(--mut);max-width:72ch;
+  margin:14px 0 0;font-size:15.5px;line-height:1.7;color:var(--mut);max-width:72ch;
 }
 
 main.hc-page .hc .hc-fin{
