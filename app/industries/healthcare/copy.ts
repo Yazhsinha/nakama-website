@@ -1,5 +1,5 @@
 /**
- * /industries/healthcare · Hibiku LOCKED v1.1.2 strings (Soften-patch).
+ * /industries/healthcare · Hibiku LOCKED v1.1.3 strings (Soften-patch).
  * Do not paraphrase. Ops HOLD notes from the lock file are not rendered.
  * Diagram labels marked twin chrome come from the Soften V1.1.2 visual, not new claims.
  * Preview only: this route stays noindex and off sitemap / llms / nav until a ship GO.
@@ -210,8 +210,8 @@ export const H2_FIN = 'See how AI answers describe your health brand';
 export const FIN_LEAD = 'Book a call and we will walk through your prompts, engines and claim review needs.';
 
 export const RELATED_LIVE = [
- {href: '/services/geo', label: '/services/geo'},
- {href: '/services/aeo', label: '/services/aeo'},
- {href: '/services/ai-visibility-audit', label: '/services/ai-visibility-audit'},
- {href: PRICING_HREF, label: PRICING_HREF},
+ {href: '/services/geo', label: 'GEO services'},
+ {href: '/services/aeo', label: 'AEO services'},
+ {href: '/services/ai-visibility-audit', label: 'AI visibility audit'},
+ {href: PRICING_HREF, label: 'GEO and AEO pricing guide'},
 ] as const;
