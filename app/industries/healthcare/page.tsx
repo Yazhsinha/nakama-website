@@ -111,13 +111,13 @@ export default function HealthcareIndustry() {
         <Ctas />
        </div>
        <div className="hc-panel">
-        <p className="hc-pl"><span>Buyer prompt</span><span>Illustrative</span></p>
+        <p className="hc-pl"><span>Buyer prompt</span><span>Sample</span></p>
         <div className="hc-prompt"><span className="hc-chev" aria-hidden="true">›</span>{HERO_PROMPT}</div>
         <div className="hc-answer">
          <span className="hc-pulse" aria-hidden="true" />
          <div className="hc-rev"><b>Claims reviewed</b></div>
          <p className="hc-pl"><span>AI answer</span><span>Named</span></p>
-         <div className="hc-nm"><Heart />Example Clinic</div>
+         <div className="hc-nm"><Heart />Your brand</div>
          <div className="hc-line" />
          <div className="hc-line hc-line-sh" />
          <div className="hc-line hc-line-xs" />
@@ -220,7 +220,7 @@ export default function HealthcareIndustry() {
        <p className="hc-pr hc-pr-block">{HOSP_PROMPT}</p>
       </div>
       <div className="hc-way">
-       <div className="hc-wh"><span className="hc-cap">Department + location</span><span className="hc-cap is-quiet">Illustrative</span></div>
+       <div className="hc-wh"><span className="hc-cap">Department + location</span><span className="hc-cap is-quiet">Sample</span></div>
        <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{HOSP_QUERY}</div>
        {HOSP_ROWS.map(row => (
         <div className={row.on ? 'hc-wr is-on' : 'hc-wr'} key={row.title}>
@@ -299,11 +299,11 @@ export default function HealthcareIndustry() {
        </ul>
       </div>
       <div className="hc-way hc-states">
-       <div className="hc-wh"><span className="hc-cap">Prompt → engine → state</span><span className="hc-cap is-quiet">Illustrative</span></div>
+       <div className="hc-wh"><span className="hc-cap">Prompt → engine → state</span><span className="hc-cap is-quiet">Sample</span></div>
        <div className="hc-wq"><span className="hc-chev" aria-hidden="true">›</span>{STATE_PROMPT}</div>
        {PROMPT_STATES.map(row => (
         <div className="hc-state" key={row.engine}>
-         <span>Example brand</span>
+         <span>Your brand</span>
          <span className="hc-eng">{row.engine}</span>
          <span className={row.hot ? 'hc-tag is-hot' : 'hc-tag'}>{row.state}</span>
         </div>

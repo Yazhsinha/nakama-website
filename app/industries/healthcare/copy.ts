@@ -1,5 +1,5 @@
 /**
- * /industries/healthcare · Hibiku LOCKED v1.1.4 strings (Soften-patch).
+ * /industries/healthcare · Hibiku LOCKED v1.1.5 strings (Soften-patch).
  * Do not paraphrase. Ops HOLD notes from the lock file are not rendered.
  * Diagram labels marked twin chrome come from the Soften V1.1.2 visual, not new claims.
  * Preview only: this route stays noindex and off sitemap / llms / nav until a ship GO.
