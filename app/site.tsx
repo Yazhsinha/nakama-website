@@ -60,14 +60,14 @@ export function NextChapter({title='Let’s build your next chapter.',text='A sh
     </Reveal>
   );
 }
-export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
+export const serviceLinks=[['GEO services','/services/geo'],['AEO services','/services/aeo'],['AI Visibility Audit','/services/ai-visibility-audit'],['Reddit & community','/services/reddit'],['Content & editorial','/services/content'],['YouTube Marketing','/services/youtube'],['Digital PR services','/services/digital-pr']] as const;
 const FOOT_COLS:[string,[string,string][]][]=[
  ['Company',[['About','/about'],['Services','/services'],['Work','/work'],['Process','/process'],['Careers','/careers']]],
  ['Services',serviceLinks.map(([l,h])=>[l,h])],
  ['Resources',[['Articles','/resources#articles'],['Case studies','/resources#case-studies'],['Pricing','/pricing'],['Get a quote','/pricing#quote']]],
  ['Contact',[['Contact us','/contact'],['contact@nakama.in','mailto:contact@nakama.in']]],
- ['Legal',[['Privacy','/privacy'],['Terms','/terms']]],
 ];
+const LEGAL_LINKS:[string,string][]=[['Privacy','/privacy'],['Terms','/terms']];
 const LI_PATH="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z";
 export function Footer(){return <footer className="site-footer nk-foot">
  <div className="nkf-top page-width">
@@ -82,7 +82,7 @@ export function Footer(){return <footer className="site-footer nk-foot">
     </div>
    </div>
   </div>
-  <div className="nkf-cols">{FOOT_COLS.map(([label,links])=><div key={label} className="nkf-col"><span>{label}</span><nav aria-label={label}>{links.map(([t,h])=>h.startsWith('mailto:')?<a key={h} href={h}>{t}</a>:<Link key={h} href={h}>{t}</Link>)}</nav></div>)}</div>
+  <div className="nkf-cols">{FOOT_COLS.map(([label,links])=><div key={label} className="nkf-col"><span>{label}</span><nav aria-label={label}>{links.map(([t,h])=>h.startsWith('mailto:')?<a key={h} href={h}>{t}</a>:<Link key={h} href={h}>{t}</Link>)}</nav>{label==='Contact'?<><span className="nkf-sub">Legal</span><nav aria-label="Legal">{LEGAL_LINKS.map(([t,h])=><Link key={h} href={h}>{t}</Link>)}</nav></>:null}</div>)}</div>
  </div>
  <div className="nkf-base page-width"><span>© {new Date().getFullYear()} Nakama Growth. Made in India.</span><span className="nkf-tag">na · ka · ma / in it together</span><a href="#top" className="nkf-top-link">Back to top<ArrowUpRight size={14}/></a></div>
  <div className="footer-wordmark footer-wordmark-bold fw-morph" tabIndex={0} role="img" aria-label="Nakama, in it together"><span className="fw-word" aria-hidden="true">{"nakama".split("").map((c,i)=><b key={i} style={{"--i":i} as CSSProperties}>{c}</b>)}</span><span className="fw-mark" aria-hidden="true"><svg viewBox="0 0 64 64"><defs><linearGradient id="fwg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#b9d2c6"/><stop offset=".5" stopColor="#d6d6e6"/><stop offset="1" stopColor="#e2b48e"/></linearGradient></defs><path d="M9 57V30A23 23 0 0 1 55 30V57H42V30A10 10 0 0 0 22 30V57Z" fill="url(#fwg)"/><circle cx="32" cy="30" r="5.6" fill="#f07c32"/></svg></span></div></footer>}

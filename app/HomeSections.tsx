@@ -9,12 +9,10 @@ import {proofClients} from './proof-data';
 import {engineMarks,sourceMarks} from './hero-marks';
 
 const clients=[
- {name:'SERPsGrowth',src:'serps.jpeg'},
  {name:'Inventive AI',src:'inventive.jpeg'},
  {name:'StarAgile',src:'staragile.png'},
  {name:'HubEngage',src:'hubengage.jpeg'},
  {name:'BacklinkOS',src:'backlinkos.jpeg'},
- {name:'Inbound Blogging',src:'inbound.jpeg'},
  {name:'Brandenburg',src:'brandenburg.png'},
 ];
 
@@ -297,8 +295,6 @@ const clientMarks:Record<string,{src:string;color:string}>={
  'HubEngage':{src:'/clients/hubengage.jpeg',color:'#c8db18'},
  'StarAgile':{src:'/clients/staragile.png',color:'#fb753d'},
  'BacklinkOS':{src:'/clients/backlinkos.jpeg',color:'#878bff'},
- 'SERPsGrowth':{src:'/clients/serps.jpeg',color:'#caff29'},
- 'Inbound Blogging':{src:'/clients/inbound.jpeg',color:'#5fbce1'},
 };
 
 const sourceLogo=(platform:string)=>{

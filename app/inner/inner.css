@@ -474,7 +474,7 @@ textarea.ip-input{height:auto;min-height:104px;resize:none;padding:14px 16px}
 .wb{display:grid;gap:28px}
 .wb-tabs-scroll{overflow-x:auto;scrollbar-width:none;margin:0 -4px;padding:4px}
 .wb-tabs-scroll::-webkit-scrollbar{display:none}
-.wb-tabs{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;padding:6px;border-radius:20px;border:1px solid var(--ip-line);background:rgba(255,255,255,.025);min-width:900px}
+.wb-tabs{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;padding:6px;border-radius:20px;border:1px solid var(--ip-line);background:rgba(255,255,255,.025);min-width:680px}
 .wb-pill{position:absolute;top:6px;bottom:6px;left:0;border-radius:14px;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.04));box-shadow:inset 0 0 0 1px rgba(255,190,140,.35),0 10px 30px -12px rgba(240,124,50,.5);transition:transform .5s cubic-bezier(.2,.8,.2,1),width .5s cubic-bezier(.2,.8,.2,1)}
 .wb-tabs button{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 10px;border:0;border-radius:14px;background:transparent;cursor:pointer;font:600 14px/1 var(--ip-font);color:var(--ip-mute);transition:color .3s}
 .wb-tabs button img{width:22px;height:22px;object-fit:contain;border-radius:5px;background:#fff;padding:2px;filter:grayscale(1) opacity(.6);transition:filter .4s}
@@ -702,3 +702,4 @@ textarea.ip-input{height:auto;min-height:104px;resize:none;padding:14px 16px}
 /* /privacy and /terms put "legal-page" on the site frame, which pulled in the old boxed legal-card styles (border, radius, side padding, bottom margin, 140px top margin) and squeezed the whole footer into a narrow glass box. Neutralise them on the frame; the .ip-legal section owns the layout. */
 .site-frame.legal-page.ip-page{max-width:none!important;width:100%!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
 .site-frame.legal-page.ip-page :is(header,footer) a{text-decoration:none!important}
+.wb-tabs button img[src*="synup"]{width:56px;height:22px}
