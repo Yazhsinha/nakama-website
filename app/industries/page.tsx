@@ -4,17 +4,11 @@ import {pageMeta, Crumbs, JsonLd, abs, SITE_URL} from '@/lib/seo';
 import {Shell} from '../site';
 import './industries.css';
 
-/**
- * PREVIEW ONLY — Soften CLEAR V2.5 industries hub.
- * Prod HOLD until Yash ships. Do not add this URL to corePages, the sitemap,
- * llms.txt, or the live nav/footer in this change.
- * Ship flip later: set PREVIEW false (index,follow), then add /industries to
- * corePages and one sitewide crawl path.
- */
-const PREVIEW = true;
+/** Live industries hub. Yash ship GO, V2.6.1. Indexable, in the sitemap and nav. */
+const PREVIEW = false;
 
 const SLUG = '/industries';
-const TITLE = 'Industries We Serve | Nakama Growth';
+const TITLE = 'Industries We Serve: GEO & AI Visibility by Sector | Nakama';
 const META = 'Industry pages for GEO and AI visibility at Nakama Growth. Healthcare is live; SaaS, tech and AI run through our services.';
 const LEAD = 'AI answers each industry differently. We build visibility around the sources and prompts that matter in yours.';
 const ENTITY = 'Nakama Growth helps brands get named, cited and recommended in ChatGPT, Perplexity, Gemini and Google AI Overviews, with industry pages where the rules change most.';
