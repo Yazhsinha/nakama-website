@@ -135,10 +135,10 @@ main.ih-page .ih-hero h1{
 .ih-entity{
  font-size:17px;
  max-width:40em;
- margin-top:14px;
  line-height:1.55;
  color:#9493a0;
 }
+main.ih-page .ih-entity{margin-top:16px}
 
 .ih-ctas{
  display:flex;
@@ -367,8 +367,8 @@ main.ih-page .ih-why h2{
  margin-top:16px;
  color:#ecebe7;
 }
-.ih-why-lead{
- margin-top:14px;
+main.ih-page .ih-why-lead{
+ margin-top:16px;
  font-size:17px;
  line-height:1.45;
  color:var(--ih-body);
@@ -419,7 +419,7 @@ main.ih-page .ip-head h2{
  letter-spacing:-.03em;
  margin-top:18px!important;
  color:#f6f3ee;
- max-width:16ch;
+ max-width:none;
 }
 main.ih-page .ip-head p{
  color:#9493a0;
@@ -495,7 +495,7 @@ main.ih-page .ip-svc-band{
  justify-content:space-between;
  align-items:center;
  gap:24px 32px;
- margin:28px 0 72px;
+ margin:48px 0 72px;
  padding:28px 32px;
 }
 main.ih-page .ip-svc-band > p{
@@ -556,7 +556,8 @@ main.ih-page .ip-svc-btn-line:focus-visible{outline:2px solid #ffd2ad;outline-of
  .ih-crumb{margin:16px 0 16px}
  main.ih-page .ih-hero h1{font-size:42px;margin:14px 0 14px;white-space:normal}
  .ih-lead{font-size:15px;line-height:1.45;letter-spacing:-.02em}
- .ih-entity{font-size:14.5px;margin-top:10px;line-height:1.5}
+ .ih-entity{font-size:14.5px;line-height:1.5}
+ main.ih-page .ih-entity{margin-top:12px}
  .ih-ctas{margin:22px 0 76px;gap:18px}
  .ih-btn{height:50px}
  .ih-arr{width:34px;height:34px}
@@ -576,7 +577,7 @@ main.ih-page .ip-svc-btn-line:focus-visible{outline:2px solid #ffd2ad;outline-of
  .ih-n2{font-size:84px;top:-64px}
  .ih-why{padding:28px 22px;margin-bottom:56px}
  main.ih-page .ih-why h2{font-size:27px}
- .ih-why-lead{font-size:15.5px}
+ main.ih-page .ih-why-lead{margin-top:16px;font-size:15.5px}
  .ih-why-tr{grid-template-columns:1fr;gap:8px;padding:18px 0}
  .ih-why-th{display:none}
  .ih-why-td[data-col]::before{
@@ -595,7 +596,7 @@ main.ih-page .ip-svc-btn-line:focus-visible{outline:2px solid #ffd2ad;outline-of
  main.ih-page .ip-head h2{font-size:28px;max-width:none}
  main.ih-page .ip-faq-item summary{padding:18px 18px;font-size:16px;gap:14px}
  main.ih-page .ip-faq-item p{padding:0 18px 18px;font-size:15px}
- main.ih-page .ip-svc-band{flex-direction:column;align-items:flex-start;padding:24px 22px;margin:20px 0 56px}
+ main.ih-page .ip-svc-band{flex-direction:column;align-items:flex-start;padding:24px 22px;margin:48px 0 56px}
  .ih-atmos i{filter:blur(60px)}
 }
 

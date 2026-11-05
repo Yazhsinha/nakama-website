@@ -23,17 +23,17 @@ const WHY_LEAD = 'The method stays the same in every industry. What changes is w
 const WHY_ROWS = [
  ['Prompts', 'Patients and buyers ask about safety, location, reviews and who to trust.', 'Buyers ask for comparisons, alternatives, integrations and pricing.'],
  ['Sources', 'Medical publishers, review and directory sites, and reviewed brand pages.', 'Docs, review platforms, comparison articles and community threads.'],
- ['Claim risk', 'High. Health claims need a named reviewer before they publish.', 'Moderate. Claims need current docs, pricing and dated sources.'],
+ ['Claim risk', 'High. Health claims need clinical review before they publish.', 'Moderate. Claims need current docs, pricing and dated sources.'],
 ] as const;
 
 const FAQ: {q: string; text: string}[] = [
  {
   q: 'Why does GEO change by industry?',
-  text: 'The method is the same. The inputs are not. Buyers ask different questions, engines trust different sources, and the bar for a safe claim moves with the stakes. A health claim needs a reviewer; a software comparison needs current docs and pricing. We set those rules per industry before anything publishes.',
+  text: 'GEO is one method, but each industry changes what goes into it. A clinic needs reviewed health pages and trusted directory listings. A software company needs current docs and honest comparisons. We map those inputs for your category first, then build the plan around them.',
  },
  {
   q: 'Which industries does Nakama Growth work with today?',
-  text: 'Healthcare has its own page, covering clinics, hospitals, healthtech and wellness brands. SaaS, tech and AI companies work through our GEO and AEO services, which were built for them. Other categories can still start with a prompt and source check before any commitment.',
+  text: 'Healthcare has its own page, covering clinics, hospitals, healthtech and wellness brands. SaaS, tech and AI companies work through our GEO and AEO services, which cover how those buyers ask and which sources engines cite. Other categories can still start with a prompt and source check before any commitment.',
  },
  {
   q: 'Should I start with an industry page or a service page?',
@@ -45,7 +45,7 @@ const FAQ: {q: string; text: string}[] = [
  },
  {
   q: 'How do you measure AI visibility for an industry?',
-  text: 'We build a prompt set in your buyers\' words, run it on dated checks across engines, and log the results. Mentions, citations and recommendations are reported separately for each engine, never merged into one score. The prompt set and source map change by industry; the reporting rules do not.',
+  text: 'We run a prompt set in your buyers\' words on dated checks. Each check lists the prompts, the engine, the date and how many runs, because answers vary run to run. Mentions, citations and recommendations are reported separately for each engine. We do not roll them into a single visibility score. Prompts change by industry; reporting rules do not.',
  },
 ];
 
@@ -136,7 +136,7 @@ export default function IndustriesHub() {
        <Heart />
        <p className="ih-lab">Industry</p>
        <h2 id="ih-healthcare">Healthcare</h2>
-       <p>AI answers in healthcare are held to YMYL standards, so assistants cite reviewed, accountable sources over marketing claims.</p>
+       <p>AI answers in healthcare are held to a higher trust bar, so assistants cite reviewed, accountable sources over marketing claims.</p>
       </div>
       <Link className="ih-go" href="/industries/healthcare">View healthcare →</Link>
      </article>
@@ -213,7 +213,7 @@ function faqAnswer(q: string) {
     <Link href="/services/geo">GEO</Link>
     {' and '}
     <Link href="/services/aeo">AEO</Link>
-    {' services, which were built for them. Other categories can still start with a prompt and source check before any commitment.'}
+    {' services, which cover how those buyers ask and which sources engines cite. Other categories can still start with a prompt and source check before any commitment.'}
    </>
   );
  }
