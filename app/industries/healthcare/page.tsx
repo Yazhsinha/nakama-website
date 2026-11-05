@@ -87,15 +87,17 @@ function Heart() {
 export default function HealthcareIndustry() {
  return (
   <Shell className="hc-page shell-cinema">
-   <Crumbs trail={[{name: 'Healthcare', path: SLUG}]} />
+   <Crumbs trail={[{name: 'Industries', path: '/industries'}, {name: 'Healthcare', path: SLUG}]} />
    <JsonLd data={[serviceLd, faqLd]} />
    <div className="hc">
     <section className="hc-hero">
      <div className="hc-vap" aria-hidden="true" />
      <div className="hc-w">
       <nav className="hc-crumb" aria-label="Breadcrumb">
-       <span>Industries</span>
-       <span aria-hidden="true"> / </span>
+       <Link href="/">Home</Link>
+       <span aria-hidden="true"> › </span>
+       <Link href="/industries">Industries</Link>
+       <span aria-hidden="true"> › </span>
        <b>Healthcare</b>
       </nav>
       <div className="hc-hg">
