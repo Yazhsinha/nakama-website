@@ -22,7 +22,7 @@ const G=<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 
 const mono=(d:string,fill:string)=><svg viewBox="0 0 24 24" aria-hidden="true"><path fill={fill} d={d}/></svg>;
 export const engineMarks:Record<string,ReactNode>={
  google:G,
- chatgpt:mono(P.openai,'#ffffff'),
+ chatgpt:<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#0d0d0d"/><path fill="#ffffff" transform="translate(4.2 4.2) scale(.65)" d={P.openai}/></svg>,
  perplexity:mono(P.perplexity,'#20B8CD'),
  gemini:<svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="hero-gem-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#4796E3"/><stop offset=".55" stopColor="#9177C7"/><stop offset="1" stopColor="#CA6673"/></linearGradient></defs><path fill="url(#hero-gem-g)" d={P.googlegemini}/></svg>,
 };

@@ -5,8 +5,8 @@ import type {ReactNode} from 'react';
 import {engineMarks,sourceMarks} from '../hero-marks';
 import {proofClients} from '../proof-data';
 
-const LOGO:Record<string,string>={'Synup':'/clients/color/synup.svg','Inventive AI':'/clients/color/inventive.png','HubEngage':'/clients/color/hubengage.png','StarAgile':'/clients/color/staragile.png','BacklinkOS':'/clients/color/backlinkos.png','SERPsGrowth':'/clients/color/serps.png','Inbound Blogging':'/clients/color/inbound.png'};
-const SECTOR:Record<string,string>={'Synup':'Local listings software','Inventive AI':'AI RFP software','HubEngage':'Internal communications','StarAgile':'Professional certification','BacklinkOS':'Backlink management','SERPsGrowth':'Digital PR & links','Inbound Blogging':'SaaS SEO'};
+const LOGO:Record<string,string>={'Synup':'/clients/color/synup.svg','Inventive AI':'/clients/color/inventive.png','HubEngage':'/clients/color/hubengage.png','StarAgile':'/clients/color/staragile.png','BacklinkOS':'/clients/color/backlinkos.png'};
+const SECTOR:Record<string,string>={'Synup':'Local listings software','Inventive AI':'AI RFP software','HubEngage':'Internal communications','StarAgile':'Professional certification','BacklinkOS':'Backlink management'};
 
 function engineOf(platform:string):{k:string;l:ReactNode}{
  const p=platform.toLowerCase();

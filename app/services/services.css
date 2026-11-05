@@ -134,6 +134,17 @@ main.services-page .ip-svc li{
  line-height:1.5;
  color:rgba(243,241,237,.8);
 }
+main.services-page .ip-svc li.ip-svc-quote{
+ padding-left:0;
+ margin-top:10px;
+}
+main.services-page .ip-svc li.ip-svc-quote::before{display:none}
+main.services-page .ip-svc li.ip-svc-quote a{
+ color:#f3f1ed;
+ font-weight:600;
+ text-decoration:underline;
+ text-underline-offset:3px;
+}
 main.services-page .ip-svc li::before{
  content:"";
  position:absolute;

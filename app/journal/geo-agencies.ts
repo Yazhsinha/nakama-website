@@ -58,7 +58,7 @@ export const geoAgenciesJsonLd = {
    "@type": "ItemList",
    "@id": "https://www.nakama.in/journal/best-generative-engine-optimization-agencies#list",
    "name": "Best Generative Engine Optimization Agencies in 2026",
-   "numberOfItems": 9,
+   "numberOfItems": 10,
    "itemListOrder": "https://schema.org/ItemListOrderAscending",
    "itemListElement": [
     {
@@ -80,13 +80,22 @@ export const geoAgenciesJsonLd = {
      "position": 2,
      "item": {
       "@type": "Organization",
+      "name": "Nine Peaks Media",
+      "url": "https://ninepeaks.io/"
+     }
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "item": {
+      "@type": "Organization",
       "name": "Percepture",
       "url": "https://percepture.com"
      }
     },
     {
      "@type": "ListItem",
-     "position": 3,
+     "position": 4,
      "item": {
       "@type": "Organization",
       "name": "First Page Sage",
@@ -95,7 +104,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 4,
+     "position": 5,
      "item": {
       "@type": "Organization",
       "name": "iPullRank",
@@ -104,7 +113,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 5,
+     "position": 6,
      "item": {
       "@type": "Organization",
       "name": "Siege Media",
@@ -113,7 +122,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 6,
+     "position": 7,
      "item": {
       "@type": "Organization",
       "name": "NoGood",
@@ -122,7 +131,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 7,
+     "position": 8,
      "item": {
       "@type": "Organization",
       "name": "Minuttia",
@@ -131,7 +140,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 8,
+     "position": 9,
      "item": {
       "@type": "Organization",
       "name": "Omniscient Digital",
@@ -140,7 +149,7 @@ export const geoAgenciesJsonLd = {
     },
     {
      "@type": "ListItem",
-     "position": 9,
+     "position": 10,
      "item": {
       "@type": "Organization",
       "name": "Thrive Internet Marketing Agency",
@@ -250,9 +259,9 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <p><strong>Last updated October 2026</strong></p>
 <p>By Yash Kumar, Co-founder and CEO, Nakama Growth</p>
 <figure><img src="/journal/best-generative-engine-optimization-agencies/best-generative-engine-optimization-agencies-cover.webp" alt="Best generative engine optimization agencies in 2026 compared" width="1920" height="1080" fetchpriority="high" decoding="async"></figure>
-<p>Choosing a generative engine optimization agency is harder than choosing an SEO agency, because almost every agency now claims GEO. This guide compares nine GEO agencies and generative engine optimization companies on the same five criteria, with every claim linked to the agency's own website or confirmed by the agency directly. If you are hiring in India, see our comparison of the <a href="https://www.nakama.in/journal/best-geo-agencies-india">best GEO agencies in India</a>.</p>
+<p>Choosing a generative engine optimization agency is harder than choosing an SEO agency, because almost every agency now claims GEO. This guide compares ten GEO agencies and generative engine optimization companies on the same five criteria, with every claim linked to the agency's own website or confirmed by the agency directly. If you are hiring in India, see our comparison of the <a href="https://www.nakama.in/journal/best-geo-agencies-india">best GEO agencies in India</a>.</p>
 <h2 id="short-answer">Short answer</h2>
-<p>The best generative engine optimization agency depends on where you need to show up. Nakama is our pick for brands that need to be named in ChatGPT, Perplexity, Gemini and Google AI Overviews through off-site sources like Reddit, YouTube and review sites. Percepture suits teams that want published package pricing. iPullRank fits enterprise teams with complex, technical search programs.</p>
+<p>The best generative engine optimization agency depends on where you need to show up. Nakama is our pick for brands that need to be named in ChatGPT, Perplexity, Gemini and Google AI Overviews through off-site sources like Reddit, YouTube and review sites. Nine Peaks Media fits B2B SaaS, software, IT, and technology companies looking to grow organic traffic and AI search visibility. Percepture suits teams that want published package pricing. iPullRank fits enterprise teams with complex, technical search programs.</p>
 <blockquote>
 <p>Curious how AI tools describe your brand today? <a href="https://www.nakama.in/contact">Book a call with Nakama</a> and we will look at a few of your buyers' questions together.</p>
 </blockquote>
@@ -269,7 +278,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <li><a href="#geo-vs-seo-what-a-geo-agency-does">GEO vs SEO: what a GEO agency does</a></li>
 <li><a href="#how-we-evaluated-these-geo-agencies">How we evaluated these GEO agencies</a></li>
 <li><a href="#comparison-table-the-best-geo-agencies-at-a-glance">Comparison table: the best GEO agencies at a glance</a></li>
-<li><a href="#the-9-best-generative-engine-optimization-agencies-in-2026">The 9 best generative engine optimization agencies in 2026</a></li>
+<li><a href="#the-10-best-generative-engine-optimization-agencies-in-2026">The 10 best generative engine optimization agencies in 2026</a></li>
 <li><a href="#how-to-choose-a-generative-engine-optimization-agency">How to choose a generative engine optimization agency</a></li>
 <li><a href="#red-flags-when-hiring-a-geo-agency">Red flags when hiring a GEO agency</a></li>
 <li><a href="#frequently-asked-questions-about-geo-agencies">Frequently asked questions about GEO agencies</a></li>
@@ -333,7 +342,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 </ol>
 <p>We did not use review platform scores or paid directories, and no agency paid to be included.</p>
 <h2 id="comparison-table-the-best-geo-agencies-at-a-glance">Comparison table: the best GEO agencies at a glance</h2>
-<figure><img src="/journal/best-generative-engine-optimization-agencies/best-generative-engine-optimization-agencies-comparison-table.webp" alt="Comparison table of 9 GEO agencies by best fit, HQ and public pricing, with Nakama ranked first." width="1600" height="1100" loading="lazy" decoding="async"><figcaption>The 9 GEO agencies at a glance. Pricing and HQ from each agency's own site or the agency directly, October 2026.</figcaption></figure>
+<figure><img src="/journal/best-generative-engine-optimization-agencies/best-generative-engine-optimization-agencies-comparison-table.webp" alt="Comparison table of 10 GEO agencies by best fit, HQ and public pricing, with Nakama ranked first." width="1600" height="1200" loading="lazy" decoding="async"><figcaption>The 10 GEO agencies at a glance. Pricing and HQ from each agency's own site or the agency directly, October 2026.</figcaption></figure>
 <div class="article-table"><table>
 <thead>
 <tr>
@@ -356,6 +365,14 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 </tr>
 <tr>
 <td>2</td>
+<td>Nine Peaks Media</td>
+<td>B2B SaaS, software, IT, and technology companies looking to grow organic traffic and AI search visibility</td>
+<td>Global, Remote</td>
+<td>$3,500–$10,000/month</td>
+<td>Combines B2B AI SEO, content marketing, link building, and AI visibility optimization</td>
+</tr>
+<tr>
+<td>3</td>
 <td>Percepture</td>
 <td>Teams that want fixed package pricing</td>
 <td>New York, NY</td>
@@ -363,7 +380,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Published GEO packages plus digital PR</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>First Page Sage</td>
 <td>Teams that want to read the research first</td>
 <td>SF Bay Area (per its contact page)</td>
@@ -371,7 +388,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Large library of GEO and AI ranking guides</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>iPullRank</td>
 <td>Enterprise and Fortune 500 search programs</td>
 <td>Not stated on pages we checked</td>
@@ -379,7 +396,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Technical depth and relevance engineering</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>Siege Media</td>
 <td>Content and digital PR led GEO</td>
 <td>Remote (US addresses)</td>
@@ -387,7 +404,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Research reports and publisher relationships</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>NoGood</td>
 <td>Growth teams wanting AEO plus performance marketing</td>
 <td>New York (Soho)</td>
@@ -395,7 +412,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Award-recognized AEO practice</td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>Minuttia</td>
 <td>Established B2B SaaS brands</td>
 <td>Not stated on pages we checked</td>
@@ -403,7 +420,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>Long client tenure and AI search research</td>
 </tr>
 <tr>
-<td>8</td>
+<td>9</td>
 <td>Omniscient Digital</td>
 <td>B2B software companies</td>
 <td>Austin, Boston, Chicago, New York, San Francisco</td>
@@ -411,7 +428,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <td>SEO, AI search and content for B2B</td>
 </tr>
 <tr>
-<td>9</td>
+<td>10</td>
 <td>Thrive</td>
 <td>Businesses wanting full-service marketing with GEO</td>
 <td>Arlington, TX</td>
@@ -420,7 +437,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 </tr>
 </tbody>
 </table></div>
-<h2 id="the-9-best-generative-engine-optimization-agencies-in-2026">The 9 best generative engine optimization agencies in 2026</h2>
+<h2 id="the-10-best-generative-engine-optimization-agencies-in-2026">The 10 best generative engine optimization agencies in 2026</h2>
 <h3 id="1-nakama">1. Nakama</h3>
 <h4 id="best-for">Best for</h4>
 <p>SaaS and software companies, and brands in researched or competitive categories, that need to be named when buyers ask AI tools what to pick.</p>
@@ -428,7 +445,7 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <ul>
 <li>Nakama works off-site, in the places that shape the answer: Reddit, Quora and forums, YouTube, Medium, Substack and LinkedIn, digital PR and listicles, and G2 and category review pages.</li>
 <li>It tracks visibility across ChatGPT, Perplexity, Gemini and Google AI Overviews, and every engagement starts with a buyer prompt map and a competitor and source audit.</li>
-<li>Proof you can check. The <a href="https://www.nakama.in/work">Work page</a> lists seven clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.</li>
+<li>Proof you can check. The <a href="https://www.nakama.in/work">Work page</a> lists five clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.</li>
 <li>Every community post is disclosed. No fake reviews and no hidden endorsements.</li>
 <li>One plan with everything included: strategy, editorial content, community, YouTube and video, digital PR and listicles, review site presence, a dedicated strategist and a monthly evidence report. Nothing publishes without your sign-off.</li>
 <li>A clear rhythm: weekly async updates, a fortnightly working session, a monthly evidence review and a quarterly strategy reset.</li>
@@ -439,106 +456,125 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <p>No price is published. One all-inclusive plan with no tiers or add-ons, priced by custom quote. A written proposal arrives within two business days of a 15-minute pricing call. Minimum commitment is three months.</p>
 <h4 id="hq">HQ</h4>
 <p>Delhi, India.</p>
-<h3 id="2-percepture">2. Percepture</h3>
+<h3 id="2-nine-peaks-media">2. Nine Peaks Media</h3>
 <h4 id="best-for_1">Best for</h4>
-<p>Teams that want GEO with published package pricing and a digital PR arm.</p>
+<p>B2B SaaS, software, IT, cybersecurity, and technology companies that want to improve their Google rankings, attract qualified organic traffic, generate leads, and get their brands mentioned in AI-generated answers.</p>
 <h4 id="what-stands-out_1">What stands out</h4>
+<ul>
+<li>Nine Peaks Media combines traditional SEO with AI search optimization. Its services cover keyword research, technical SEO, content strategy, link building, and AI visibility.</li>
+<li>Its <a href="https://ninepeaks.io/" rel="noopener" target="_blank">AI SEO and AI Visibility Growth Program</a> helps businesses improve their presence across ChatGPT, Perplexity, Gemini, Claude, Google AI Overviews, and other AI-powered search platforms.</li>
+<li>Its AI visibility process follows five main areas: prompt-based query analysis, AI crawlability and indexing audits, on-site optimization, AI-focused content strategy, and citation and authority building.</li>
+<li>The agency also works on third-party sources that influence AI-generated answers, including editorial content, listicles, directories, Reddit, and review platforms.</li>
+<li>Published case studies include a cybersecurity company that increased AI and organic traffic by 167% and marketing-qualified leads by 111%. Other examples include a global IoT company reporting 99% traffic growth and 611% more MQLs.</li>
+<li>Nine Peaks has operated since 2009, and reports helping more than 60 SaaS, software, and technology companies improve search rankings and generate leads.</li>
+<li>Its team operates remotely, with members working from around the world, and serves clients internationally.</li>
+</ul>
+<h4 id="limitation_1">Limitation</h4>
+<p>Nine Peaks Media is not exclusively a GEO or AEO agency. Its core business also covers traditional B2B SEO, content marketing, and link building. Companies looking for a provider focused entirely on off-site GEO, community engagement, or Reddit placements may want to consider a more specialized agency. Its published case studies provide reported business results, but they do not all include independently verified AI citation experiments or complete testing methodologies.</p>
+<h4 id="pricing_1">Pricing</h4>
+<p>Most clients invest between $3,500 and $10,000 per month for AI visibility optimization. Pricing depends on the campaign scope, number of content assets, citation placements, and analysis required. The agency indicates a typical engagement period of 6 to 18 months, with an initial two-month onboarding commitment followed by a flexible rolling engagement.</p>
+<h4 id="hq_1">HQ</h4>
+<p>Global, Remote. Nine Peaks Media has a distributed team with members working from different parts of the world and serves clients internationally.</p>
+<h3 id="3-percepture">3. Percepture</h3>
+<h4 id="best-for_2">Best for</h4>
+<p>Teams that want GEO with published package pricing and a digital PR arm.</p>
+<h4 id="what-stands-out_2">What stands out</h4>
 <ul>
 <li>Four public GEO packages with stated starting prices.</li>
 <li>Combines enterprise SEO experience with digital PR, schema work and AI visibility tracking across ChatGPT, Grok, Perplexity, Gemini and Google AI Overviews.</li>
 <li>Covers entity and knowledge graph work, including Wikipedia and Wikidata presence.</li>
 <li>Cites an unnamed client with a 3000% rise in AI mentions in three months, with no client name or date given.</li>
 </ul>
-<h4 id="limitation_1">Limitation</h4>
+<h4 id="limitation_2">Limitation</h4>
 <p>Its headline GEO result is anonymous, undated and described on the same page as both a tech client and a telecom company. The page also gives two different tool lists, SEMrush and Google Search Console in one place and BrandLight, Profound and custom dashboards in its FAQ, so ask exactly how prompts are tracked.</p>
-<h4 id="pricing_1">Pricing</h4>
+<h4 id="pricing_2">Pricing</h4>
 <p>Launch from $3,500/mo, Growth from $6,000/mo, Authority from $8,500/mo, Enterprise from $10k+/mo.</p>
-<h4 id="hq_1">HQ</h4>
+<h4 id="hq_2">HQ</h4>
 <p>104 W. 40th Street, New York, NY.</p>
-<h3 id="3-first-page-sage">3. First Page Sage</h3>
-<h4 id="best-for_2">Best for</h4>
+<h3 id="4-first-page-sage">4. First Page Sage</h3>
+<h4 id="best-for_3">Best for</h4>
 <p>Teams that want to study an agency's thinking before hiring it.</p>
-<h4 id="what-stands-out_2">What stands out</h4>
+<h4 id="what-stands-out_3">What stands out</h4>
 <ul>
 <li>Publishes a deep set of GEO guides, including ChatGPT, SearchGPT and Perplexity optimization guides and a GEO cost breakdown.</li>
 <li>Its GEO service covers content creation, list and database outreach, and online reputation monitoring, including social sentiment.</li>
 <li>Over 15 years of experience, and calls itself a pioneer in both SEO and GEO.</li>
 <li>Runs industry-specific SEO and GEO pages for B2B SaaS, fintech, healthcare, cybersecurity and more.</li>
 </ul>
-<h4 id="limitation_2">Limitation</h4>
+<h4 id="limitation_3">Limitation</h4>
 <p>Its GEO case studies are anonymized and undated, and pricing is not published.</p>
-<h4 id="pricing_2">Pricing</h4>
+<h4 id="pricing_3">Pricing</h4>
 <p>Not published. Its GEO cost breakdown is an industry survey of other companies' prices.</p>
-<h4 id="hq_2">HQ</h4>
+<h4 id="hq_3">HQ</h4>
 <p>SF Bay Area, per its contact page; no address given.</p>
-<h3 id="4-ipullrank">4. iPullRank</h3>
-<h4 id="best-for_3">Best for</h4>
+<h3 id="5-ipullrank">5. iPullRank</h3>
+<h4 id="best-for_4">Best for</h4>
 <p>Enterprise brands and category leaders with multiple lines of business.</p>
-<h4 id="what-stands-out_3">What stands out</h4>
+<h4 id="what-stands-out_4">What stands out</h4>
 <ul>
 <li>Founded by Mike King, a Search Engine Land Marketer of the Year.</li>
 <li>Known for "Relevance Engineering" and publishes an AI Search Manual.</li>
 <li>GEO work is offered in stages, with an elite stage for Fortune 500s that covers cross-platform visibility measurement, content engineering, digital PR and executive reporting tied to revenue.</li>
 <li>Says it has delivered $5B+ in organic search results for clients (self-reported).</li>
 </ul>
-<h4 id="limitation_3">Limitation</h4>
+<h4 id="limitation_4">Limitation</h4>
 <p>Its case studies are labeled by industry instead of client name, and it says case studies in AI search are "still a work in progress". No pricing is published. The program is built for large, complex organizations and may be more than a smaller brand needs.</p>
-<h4 id="pricing_3">Pricing</h4>
+<h4 id="pricing_4">Pricing</h4>
 <p>Not published.</p>
-<h4 id="hq_3">HQ</h4>
+<h4 id="hq_4">HQ</h4>
 <p>Not stated on the pages we checked.</p>
-<h3 id="5-siege-media">5. Siege Media</h3>
-<h4 id="best-for_4">Best for</h4>
+<h3 id="6-siege-media">6. Siege Media</h3>
+<h4 id="best-for_5">Best for</h4>
 <p>Brands that want GEO driven by content, original research and digital PR.</p>
-<h4 id="what-stands-out_4">What stands out</h4>
+<h4 id="what-stands-out_5">What stands out</h4>
 <ul>
 <li>Builds research reports and digital PR aimed at the publisher pages AI models cite, and says it has spent 13 years building publisher relationships.</li>
 <li>Every engagement ships with an attribution stack, including LLM share of voice in your category.</li>
 <li>Its Mentimeter case study reports 124K ChatGPT sessions.</li>
 <li>Runs SEO, GEO, digital PR, affiliate and community teams under one roof, and offers Reddit marketing.</li>
 </ul>
-<h4 id="limitation_4">Limitation</h4>
+<h4 id="limitation_5">Limitation</h4>
 <p>It is built for compounding programs, and its own GEO page says it is not a fit if you need results measured in weeks. Pricing is not published.</p>
-<h4 id="pricing_4">Pricing</h4>
+<h4 id="pricing_5">Pricing</h4>
 <p>Not published.</p>
-<h4 id="hq_4">HQ</h4>
+<h4 id="hq_5">HQ</h4>
 <p>A 100% remote team, with addresses listed in Austin, New York, Chicago and San Francisco.</p>
-<h3 id="6-nogood">6. NoGood</h3>
-<h4 id="best-for_5">Best for</h4>
+<h3 id="7-nogood">7. NoGood</h3>
+<h4 id="best-for_6">Best for</h4>
 <p>Growth-stage brands that want AEO alongside paid and organic performance marketing.</p>
-<h4 id="what-stands-out_5">What stands out</h4>
+<h4 id="what-stands-out_6">What stands out</h4>
 <ul>
 <li>Positions itself as an answer engine optimization agency for ChatGPT, Gemini, Claude and the wider AI search ecosystem.</li>
 <li>Combines proprietary AI technology with AI search engineers and AEO strategists.</li>
 <li>Lists awards for its AEO work from The Shorty Awards, The Drum and The Webby Awards.</li>
 <li>Says its AEO program for SteelSeries drove a 23x increase in AI search traffic and 27x growth in conversions from AI platforms year over year (no date given).</li>
 </ul>
-<h4 id="limitation_5">Limitation</h4>
+<h4 id="limitation_6">Limitation</h4>
 <p>It is priced at the premium end, and it tracks AI visibility with Goodie AI, a third-party tool. It is also a broad growth agency covering paid growth, organic social, creative, digital PR and CRO, so AEO is one practice among several.</p>
-<h4 id="pricing_5">Pricing</h4>
+<h4 id="pricing_6">Pricing</h4>
 <p>Monthly retainers, with an average retainer above $20,000/month.</p>
-<h4 id="hq_5">HQ</h4>
+<h4 id="hq_6">HQ</h4>
 <p>New York City (Soho), with hubs in Miami and Dubai.</p>
-<h3 id="7-minuttia">7. Minuttia</h3>
-<h4 id="best-for_6">Best for</h4>
+<h3 id="8-minuttia">8. Minuttia</h3>
+<h4 id="best-for_7">Best for</h4>
 <p>Established B2B SaaS brands.</p>
-<h4 id="what-stands-out_6">What stands out</h4>
+<h4 id="what-stands-out_7">What stands out</h4>
 <ul>
 <li>Positions its GEO service specifically for B2B SaaS.</li>
 <li>Reports a 93% average client retention rate (as of September 2025) and 17+ months average client tenure.</li>
 <li>Publishes AI search research, including a data study of 24,067 prompts across five AI search platforms and a State of AEO report.</li>
 <li>Runs an AEO course.</li>
 </ul>
-<h4 id="limitation_6">Limitation</h4>
+<h4 id="limitation_7">Limitation</h4>
 <p>It is built for established brands, so early-stage startups may not be a fit. Pricing is not published.</p>
-<h4 id="pricing_6">Pricing</h4>
+<h4 id="pricing_7">Pricing</h4>
 <p>Not published.</p>
-<h4 id="hq_6">HQ</h4>
+<h4 id="hq_7">HQ</h4>
 <p>Not stated on the pages we checked.</p>
-<h3 id="8-omniscient-digital">8. Omniscient Digital</h3>
-<h4 id="best-for_7">Best for</h4>
+<h3 id="9-omniscient-digital">9. Omniscient Digital</h3>
+<h4 id="best-for_8">Best for</h4>
 <p>B2B software businesses.</p>
-<h4 id="what-stands-out_7">What stands out</h4>
+<h4 id="what-stands-out_8">What stands out</h4>
 <ul>
 <li>An organic growth agency covering SEO, AI search and content programs for B2B brands.</li>
 <li>Its leadership led SEO, growth and content at HubSpot, Shopify and Workato.</li>
@@ -546,26 +582,26 @@ const bodyHtml = `<h1 id="best-generative-engine-optimization-geo-agencies-in-20
 <li>Ties programs to qualified leads, pipeline and revenue, rather than traffic alone.</li>
 <li>Its Convert case study reports LLM prompt visibility growing from 31% to 55% over 60 days in 2025.</li>
 </ul>
-<h4 id="limitation_7">Limitation</h4>
+<h4 id="limitation_8">Limitation</h4>
 <p>Full-service engagements start at $120,000 a year, which prices out smaller teams. Its AI search offer sits inside a wider SEO and content menu, so confirm how much of the budget goes to GEO.</p>
-<h4 id="pricing_7">Pricing</h4>
+<h4 id="pricing_8">Pricing</h4>
 <p>Full-service engagements start at $120,000/year.</p>
-<h4 id="hq_7">HQ</h4>
+<h4 id="hq_8">HQ</h4>
 <p>Addresses in Austin, Boston, Chicago, New York and San Francisco.</p>
-<h3 id="9-thrive-internet-marketing-agency">9. Thrive Internet Marketing Agency</h3>
-<h4 id="best-for_8">Best for</h4>
+<h3 id="10-thrive-internet-marketing-agency">10. Thrive Internet Marketing Agency</h3>
+<h4 id="best-for_9">Best for</h4>
 <p>Businesses that want GEO inside a full-service marketing relationship.</p>
-<h4 id="what-stands-out_8">What stands out</h4>
+<h4 id="what-stands-out_9">What stands out</h4>
 <ul>
 <li>Offers fully managed GEO services.</li>
 <li>Says it grew its own traffic from AI platforms by 5,556% in 2025, including a 1,078% increase from ChatGPT.</li>
 <li>Established in 2005, with more than 160 employees across 34 states and 10 countries.</li>
 </ul>
-<h4 id="limitation_8">Limitation</h4>
+<h4 id="limitation_9">Limitation</h4>
 <p>Its biggest AI number is its own traffic, and its client AI results are unnamed and undated. As a full-service agency spanning SEO, PPC, social, web design and Amazon marketing, GEO is one service among dozens.</p>
-<h4 id="pricing_8">Pricing</h4>
+<h4 id="pricing_9">Pricing</h4>
 <p>No GEO price. Its pricing page lists SEO for small businesses from $500/month.</p>
-<h4 id="hq_8">HQ</h4>
+<h4 id="hq_9">HQ</h4>
 <p>Arlington, Texas.</p>
 <h2 id="how-to-choose-a-generative-engine-optimization-agency">How to choose a generative engine optimization agency</h2>
 <figure><img src="/journal/best-generative-engine-optimization-agencies/best-generative-engine-optimization-agencies-checklist.webp" alt="Checklist of questions to ask before hiring a generative engine optimization agency" width="1600" height="820" loading="lazy" decoding="async"><figcaption>Questions to ask before you hire a generative engine optimization agency.</figcaption></figure>
@@ -644,13 +680,13 @@ export const geoAgenciesArticle: Article = {
    "Best Generative Engine Optimization (GEO) Agencies in 2026, Compared\nLast updated October 2026",
    "By Yash Kumar, Co-founder and CEO, Nakama Growth",
    "Image: Best generative engine optimization agencies in 2026 compared",
-   "Choosing a generative engine optimization agency is harder than choosing an SEO agency, because almost every agency now claims GEO. This guide compares nine GEO agencies and generative engine optimization companies on the same five criteria, with every claim linked to the agency's own website or confirmed by the agency directly. If you are hiring in India, see our comparison of the best GEO agencies in India."
+   "Choosing a generative engine optimization agency is harder than choosing an SEO agency, because almost every agency now claims GEO. This guide compares ten GEO agencies and generative engine optimization companies on the same five criteria, with every claim linked to the agency's own website or confirmed by the agency directly. If you are hiring in India, see our comparison of the best GEO agencies in India."
   ]
  },
  {
   "heading": "Short answer",
   "paragraphs": [
-   "\nThe best generative engine optimization agency depends on where you need to show up. Nakama is our pick for brands that need to be named in ChatGPT, Perplexity, Gemini and Google AI Overviews through off-site sources like Reddit, YouTube and review sites. Percepture suits teams that want published package pricing. iPullRank fits enterprise teams with complex, technical search programs.",
+   "\nThe best generative engine optimization agency depends on where you need to show up. Nakama is our pick for brands that need to be named in ChatGPT, Perplexity, Gemini and Google AI Overviews through off-site sources like Reddit, YouTube and review sites. Nine Peaks Media fits B2B SaaS, software, IT, and technology companies looking to grow organic traffic and AI search visibility. Percepture suits teams that want published package pricing. iPullRank fits enterprise teams with complex, technical search programs.",
    "Curious how AI tools describe your brand today? Book a call with Nakama and we will look at a few of your buyers' questions together."
   ]
  },
@@ -670,7 +706,7 @@ export const geoAgenciesArticle: Article = {
    "GEO vs SEO: what a GEO agency does",
    "How we evaluated these GEO agencies",
    "Comparison table: the best GEO agencies at a glance",
-   "The 9 best generative engine optimization agencies in 2026",
+   "The 10 best generative engine optimization agencies in 2026",
    "How to choose a generative engine optimization agency",
    "Red flags when hiring a GEO agency",
    "Frequently asked questions about GEO agencies",
@@ -709,22 +745,23 @@ export const geoAgenciesArticle: Article = {
  {
   "heading": "Comparison table: the best GEO agencies at a glance",
   "paragraphs": [
-   "Image: Comparison table of 9 GEO agencies by best fit, HQ and public pricing, with Nakama ranked first.",
-   "The 9 GEO agencies at a glance. Pricing and HQ from each agency's own site or the agency directly, October 2026.",
+   "Image: Comparison table of 10 GEO agencies by best fit, HQ and public pricing, with Nakama ranked first.",
+   "The 10 GEO agencies at a glance. Pricing and HQ from each agency's own site or the agency directly, October 2026.",
    "Rank | Agency | Best for | HQ or offices | Pricing (public) | Standout strength",
    "1 | Nakama | Brands that need to be named in AI answers via off-site sources | Delhi, India | Custom quote | Off-site GEO across Reddit, YouTube, Quora, LinkedIn, editorial and review sites",
-   "2 | Percepture | Teams that want fixed package pricing | New York, NY | From $3,500/mo | Published GEO packages plus digital PR",
-   "3 | First Page Sage | Teams that want to read the research first | SF Bay Area (per its contact page) | Not published on GEO page | Large library of GEO and AI ranking guides",
-   "4 | iPullRank | Enterprise and Fortune 500 search programs | Not stated on pages we checked | Not published | Technical depth and relevance engineering",
-   "5 | Siege Media | Content and digital PR led GEO | Remote (US addresses) | Not published | Research reports and publisher relationships",
-   "6 | NoGood | Growth teams wanting AEO plus performance marketing | New York (Soho) | Average retainer above $20,000/mo | Award-recognized AEO practice",
-   "7 | Minuttia | Established B2B SaaS brands | Not stated on pages we checked | Not published | Long client tenure and AI search research",
-   "8 | Omniscient Digital | B2B software companies | Austin, Boston, Chicago, New York, San Francisco | Full service from $120,000/yr | SEO, AI search and content for B2B",
-   "9 | Thrive | Businesses wanting full-service marketing with GEO | Arlington, TX | SEO from $500/mo; no GEO price | Breadth of services under one roof"
+   "2 | Nine Peaks Media | B2B SaaS, software, IT, and technology companies looking to grow organic traffic and AI search visibility | Global, Remote | $3,500–$10,000/month | Combines B2B AI SEO, content marketing, link building, and AI visibility optimization",
+   "3 | Percepture | Teams that want fixed package pricing | New York, NY | From $3,500/mo | Published GEO packages plus digital PR",
+   "4 | First Page Sage | Teams that want to read the research first | SF Bay Area (per its contact page) | Not published on GEO page | Large library of GEO and AI ranking guides",
+   "5 | iPullRank | Enterprise and Fortune 500 search programs | Not stated on pages we checked | Not published | Technical depth and relevance engineering",
+   "6 | Siege Media | Content and digital PR led GEO | Remote (US addresses) | Not published | Research reports and publisher relationships",
+   "7 | NoGood | Growth teams wanting AEO plus performance marketing | New York (Soho) | Average retainer above $20,000/mo | Award-recognized AEO practice",
+   "8 | Minuttia | Established B2B SaaS brands | Not stated on pages we checked | Not published | Long client tenure and AI search research",
+   "9 | Omniscient Digital | B2B software companies | Austin, Boston, Chicago, New York, San Francisco | Full service from $120,000/yr | SEO, AI search and content for B2B",
+   "10 | Thrive | Businesses wanting full-service marketing with GEO | Arlington, TX | SEO from $500/mo; no GEO price | Breadth of services under one roof"
   ]
  },
  {
-  "heading": "The 9 best generative engine optimization agencies in 2026",
+  "heading": "The 10 best generative engine optimization agencies in 2026",
   "paragraphs": [
    "\n1. Nakama",
    "Best for",
@@ -732,7 +769,7 @@ export const geoAgenciesArticle: Article = {
    "What stands out",
    "Nakama works off-site, in the places that shape the answer: Reddit, Quora and forums, YouTube, Medium, Substack and LinkedIn, digital PR and listicles, and G2 and category review pages.",
    "It tracks visibility across ChatGPT, Perplexity, Gemini and Google AI Overviews, and every engagement starts with a buyer prompt map and a competitor and source audit.",
-   "Proof you can check. The Work page lists seven clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.",
+   "Proof you can check. The Work page lists five clients with the exact searches where Nakama's work surfaced, so you can run each query yourself. In one example, Google's AI Overview cited a Nakama LinkedIn comparison right under a B2B SaaS client's recommendation.",
    "Every community post is disclosed. No fake reviews and no hidden endorsements.",
    "One plan with everything included: strategy, editorial content, community, YouTube and video, digital PR and listicles, review site presence, a dedicated strategist and a monthly evidence report. Nothing publishes without your sign-off.",
    "A clear rhythm: weekly async updates, a fortnightly working session, a monthly evidence review and a quarterly strategy reset.",
@@ -742,7 +779,24 @@ export const geoAgenciesArticle: Article = {
    "No price is published. One all-inclusive plan with no tiers or add-ons, priced by custom quote. A written proposal arrives within two business days of a 15-minute pricing call. Minimum commitment is three months.",
    "HQ",
    "Delhi, India.",
-   "2. Percepture",
+   "2. Nine Peaks Media",
+   "Best for",
+   "B2B SaaS, software, IT, cybersecurity, and technology companies that want to improve their Google rankings, attract qualified organic traffic, generate leads, and get their brands mentioned in AI-generated answers.",
+   "What stands out",
+   "Nine Peaks Media combines traditional SEO with AI search optimization. Its services cover keyword research, technical SEO, content strategy, link building, and AI visibility.",
+   "Its AI SEO and AI Visibility Growth Program (https://ninepeaks.io/) helps businesses improve their presence across ChatGPT, Perplexity, Gemini, Claude, Google AI Overviews, and other AI-powered search platforms.",
+   "Its AI visibility process follows five main areas: prompt-based query analysis, AI crawlability and indexing audits, on-site optimization, AI-focused content strategy, and citation and authority building.",
+   "The agency also works on third-party sources that influence AI-generated answers, including editorial content, listicles, directories, Reddit, and review platforms.",
+   "Published case studies include a cybersecurity company that increased AI and organic traffic by 167% and marketing-qualified leads by 111%. Other examples include a global IoT company reporting 99% traffic growth and 611% more MQLs.",
+   "Nine Peaks has operated since 2009, and reports helping more than 60 SaaS, software, and technology companies improve search rankings and generate leads.",
+   "Its team operates remotely, with members working from around the world, and serves clients internationally.",
+   "Limitation",
+   "Nine Peaks Media is not exclusively a GEO or AEO agency. Its core business also covers traditional B2B SEO, content marketing, and link building. Companies looking for a provider focused entirely on off-site GEO, community engagement, or Reddit placements may want to consider a more specialized agency. Its published case studies provide reported business results, but they do not all include independently verified AI citation experiments or complete testing methodologies.",
+   "Pricing",
+   "Most clients invest between $3,500 and $10,000 per month for AI visibility optimization. Pricing depends on the campaign scope, number of content assets, citation placements, and analysis required. The agency indicates a typical engagement period of 6 to 18 months, with an initial two-month onboarding commitment followed by a flexible rolling engagement.",
+   "HQ",
+   "Global, Remote. Nine Peaks Media has a distributed team with members working from different parts of the world and serves clients internationally.",
+   "3. Percepture",
    "Best for",
    "Teams that want GEO with published package pricing and a digital PR arm.",
    "What stands out",
@@ -756,7 +810,7 @@ export const geoAgenciesArticle: Article = {
    "Launch from $3,500/mo, Growth from $6,000/mo, Authority from $8,500/mo, Enterprise from $10k+/mo.",
    "HQ",
    "104 W. 40th Street, New York, NY.",
-   "3. First Page Sage",
+   "4. First Page Sage",
    "Best for",
    "Teams that want to study an agency's thinking before hiring it.",
    "What stands out",
@@ -770,7 +824,7 @@ export const geoAgenciesArticle: Article = {
    "Not published. Its GEO cost breakdown is an industry survey of other companies' prices.",
    "HQ",
    "SF Bay Area, per its contact page; no address given.",
-   "4. iPullRank",
+   "5. iPullRank",
    "Best for",
    "Enterprise brands and category leaders with multiple lines of business.",
    "What stands out",
@@ -784,7 +838,7 @@ export const geoAgenciesArticle: Article = {
    "Not published.",
    "HQ",
    "Not stated on the pages we checked.",
-   "5. Siege Media",
+   "6. Siege Media",
    "Best for",
    "Brands that want GEO driven by content, original research and digital PR.",
    "What stands out",
@@ -798,7 +852,7 @@ export const geoAgenciesArticle: Article = {
    "Not published.",
    "HQ",
    "A 100% remote team, with addresses listed in Austin, New York, Chicago and San Francisco.",
-   "6. NoGood",
+   "7. NoGood",
    "Best for",
    "Growth-stage brands that want AEO alongside paid and organic performance marketing.",
    "What stands out",
@@ -812,7 +866,7 @@ export const geoAgenciesArticle: Article = {
    "Monthly retainers, with an average retainer above $20,000/month.",
    "HQ",
    "New York City (Soho), with hubs in Miami and Dubai.",
-   "7. Minuttia",
+   "8. Minuttia",
    "Best for",
    "Established B2B SaaS brands.",
    "What stands out",
@@ -826,7 +880,7 @@ export const geoAgenciesArticle: Article = {
    "Not published.",
    "HQ",
    "Not stated on the pages we checked.",
-   "8. Omniscient Digital",
+   "9. Omniscient Digital",
    "Best for",
    "B2B software businesses.",
    "What stands out",
@@ -841,7 +895,7 @@ export const geoAgenciesArticle: Article = {
    "Full-service engagements start at $120,000/year.",
    "HQ",
    "Addresses in Austin, Boston, Chicago, New York and San Francisco.",
-   "9. Thrive Internet Marketing Agency",
+   "10. Thrive Internet Marketing Agency",
    "Best for",
    "Businesses that want GEO inside a full-service marketing relationship.",
    "What stands out",
