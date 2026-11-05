@@ -30,7 +30,7 @@ main.ih-page{
  -webkit-font-smoothing:antialiased;
  padding:96px 0 0!important;
 }
-main.ih-page :is(h1,h2,h3,p,a,span,b,li,ol,summary){
+main.ih-page :is(h1,h2,h3,p,a,span,b,em,li,ol,summary){
  font-family:var(--ih-font);
 }
 main.ih-page :is(h1,h2,h3){
@@ -104,17 +104,21 @@ main.ih-page :focus-visible{
  flex:none;
 }
 
-main.ih-page h1{
- font-size:74px;
+main.ih-page .ih-hero h1{
+ max-width:none;
+ font-size:clamp(44px,6vw,74px);
  line-height:1.02;
  letter-spacing:-.035em;
- margin:18px 0 22px;
- max-width:12ch;
+ margin:18px 0 20px;
  color:#f6f3ee;
+}
+@media (min-width:900px){
+ main.ih-page .ih-hero h1{white-space:nowrap}
 }
 .ih-grad{
  font-style:normal;
  font-weight:700;
+ white-space:nowrap;
  background:linear-gradient(100deg,#ffd2ad 0%,#f59a5c 45%,#f4b083 100%);
  -webkit-background-clip:text;
  background-clip:text;
@@ -175,6 +179,18 @@ main.ih-page h1{
  transform:translateY(0) scale(.98);
  box-shadow:0 0 0 1px #f07c3240,0 6px 24px -12px #f07c32b3,inset 0 1px #fffc;
 }
+/* Beat main.ih-page a {color:inherit} and any text-fill leak. Peach pill stays secondary. */
+main.ih-page .ih-hero a.ih-btn,
+main.ih-page .ih-hero a.ih-btn:visited,
+main.ih-page .ih-hero a.ih-btn:hover,
+main.ih-page .ih-hero a.ih-btn:active{
+ color:#1a120c!important;
+ -webkit-text-fill-color:#1a120c;
+}
+main.ih-page .ih-hero a.ih-btn .ih-arr{
+ color:#ffd6b6!important;
+ -webkit-text-fill-color:#ffd6b6;
+}
 .ih-arr{
  width:38px;
  height:38px;
@@ -214,7 +230,11 @@ main.ih-page h1{
 }
 .ih-ghost:hover{background-image:linear-gradient(#ffd2ad,#ffd2ad)}
 .ih-ghost:focus-visible,
-.ih-go:focus-visible{box-shadow:var(--ih-ring)}
+.ih-go:focus-visible{
+ outline:2px solid #ffd2ad;
+ outline-offset:3px;
+ box-shadow:none;
+}
 .ih-ghost:active,
 .ih-go:active{opacity:.85}
 
@@ -431,7 +451,7 @@ main.ih-page .ip-faq-item summary{
  border-radius:18px;
 }
 main.ih-page .ip-faq-item summary::-webkit-details-marker{display:none}
-main.ih-page .ip-faq-item summary:focus-visible{box-shadow:var(--ih-ring);outline:none}
+main.ih-page .ip-faq-item summary:focus-visible{outline:2px solid #ffd2ad;outline-offset:3px;box-shadow:none}
 main.ih-page .ip-faq-item summary i{
  background:#ffffff0f;
  border-radius:50%;
@@ -509,14 +529,18 @@ main.ih-page .ip-svc-btn{
  border:1px solid transparent;
  transition:background .18s,border-color .18s,color .18s,box-shadow .18s,transform .18s;
 }
-main.ih-page .svc-next-btn-primary{
- color:#17110c;
+main.ih-page a.svc-next-btn-primary,
+main.ih-page a.svc-next-btn-primary:visited,
+main.ih-page a.svc-next-btn-primary:hover,
+main.ih-page a.svc-next-btn-primary:active{
+ color:#17110c!important;
+ -webkit-text-fill-color:#17110c;
  background:#f07c32;
  border:0;
  box-shadow:0 10px 28px #f07c3238;
 }
-main.ih-page .svc-next-btn-primary:hover{color:#17110c;background:#f38948;box-shadow:0 12px 32px #f07c3248}
-main.ih-page .svc-next-btn-primary:focus-visible{outline:2px solid #ffd2ad;outline-offset:3px}
+main.ih-page a.svc-next-btn-primary:hover{background:#f38948;box-shadow:0 12px 32px #f07c3248}
+main.ih-page a.svc-next-btn-primary:focus-visible{outline:2px solid #ffd2ad;outline-offset:3px}
 main.ih-page .svc-next-btn-primary:active{transform:translateY(1px)}
 main.ih-page .ip-svc-btn-line{color:#f3f1ed;background:transparent;border:1px solid #f3f1ed40}
 main.ih-page .ip-svc-btn-line:hover{color:#fff;border-color:#f3f1ed80;background:#f3f1ed0a}
@@ -530,7 +554,7 @@ main.ih-page .ip-svc-btn-line:focus-visible{outline:2px solid #ffd2ad;outline-of
  .ih-wrap{padding:0 22px}
  main.ih-page{padding-top:68px!important}
  .ih-crumb{margin:16px 0 16px}
- main.ih-page h1{font-size:42px;margin:14px 0 14px}
+ main.ih-page .ih-hero h1{font-size:42px;margin:14px 0 14px;white-space:normal}
  .ih-lead{font-size:15px;line-height:1.45;letter-spacing:-.02em}
  .ih-entity{font-size:14.5px;margin-top:10px;line-height:1.5}
  .ih-ctas{margin:22px 0 76px;gap:18px}

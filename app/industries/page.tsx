@@ -115,16 +115,18 @@ export default function IndustriesHub() {
      <span aria-hidden="true"> › </span>
      <span aria-current="page">Industries</span>
     </nav>
-    <p className="ih-eye"><span className="ih-dot" aria-hidden="true" />Industries</p>
-    <h1>Industries <span className="ih-grad">we serve</span></h1>
-    <p className="ih-lead">{LEAD}</p>
-    <p className="ih-entity">{ENTITY}</p>
-    <div className="ih-ctas">
-     <Link className="ih-btn" href="/pricing#quote">
-      Book a call
-      <span className="ih-arr" aria-hidden="true">→</span>
-     </Link>
-     <Link className="ih-ghost" href="/services/ai-visibility-audit">AI visibility audit</Link>
+    <div className="ih-hero">
+     <p className="ih-eye"><span className="ih-dot" aria-hidden="true" />Industries</p>
+     <h1>Industries <em className="ih-grad">we serve</em></h1>
+     <p className="ih-lead">{LEAD}</p>
+     <p className="ih-entity">{ENTITY}</p>
+     <div className="ih-ctas">
+      <Link className="ih-btn" href="/pricing#quote">
+       Book a call
+       <span className="ih-arr" aria-hidden="true">→</span>
+      </Link>
+      <Link className="ih-ghost" href="/services/ai-visibility-audit">AI visibility audit</Link>
+     </div>
     </div>
 
     <section className="ih-hall" aria-label="Industries index">
